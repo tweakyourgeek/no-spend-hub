@@ -19,7 +19,7 @@ export default function AppHome({ data, onUpdate }: Props) {
   const today = data.days.find((d) => d.day === data.currentDay);
   const [showSpendForm, setShowSpendForm] = useState(false);
   const [amount, setAmount] = useState("");
-  const [category, setCategory] = useState(CATEGORIES[0]);
+  const [category, setCategory] = useState<string>(CATEGORIES[0]);
   const [pattern, setPattern] = useState("");
   const [note, setNote] = useState("");
   const [journalResponse, setJournalResponse] = useState(today?.journalResponse || "");
