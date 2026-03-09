@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import LandingNav from "@/components/landing/LandingNav";
+import HeroSection from "@/components/landing/HeroSection";
+import PhilosophyStrip from "@/components/landing/PhilosophyStrip";
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
+import PatternsSection from "@/components/landing/PatternsSection";
+import ToolsSection from "@/components/landing/ToolsSection";
+import PricingSection from "@/components/landing/PricingSection";
+import FinalCTA from "@/components/landing/FinalCTA";
+import LandingFooter from "@/components/landing/LandingFooter";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <LandingNav />
+      <HeroSection />
+      <PhilosophyStrip />
+      <HowItWorksSection />
+      <PatternsSection />
+      <ToolsSection />
+      <PricingSection />
+      <FinalCTA />
+      <LandingFooter />
     </div>
   );
 };
