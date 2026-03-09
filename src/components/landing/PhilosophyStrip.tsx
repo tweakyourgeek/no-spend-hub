@@ -1,6 +1,6 @@
 export default function PhilosophyStrip() {
   return (
-    <section className="py-16 px-4" style={{ background: "hsl(var(--charcoal))" }}>
+    <section className="py-16 px-4" style={{ background: "#4A2040" }}>
       <div className="container mx-auto text-center max-w-3xl">
         <p className="font-display italic text-2xl md:text-3xl leading-relaxed mb-4" style={{ color: "hsl(var(--cream))" }}>
           "A spend becomes data. Not a mistake. Not a moral failing. Just information."
