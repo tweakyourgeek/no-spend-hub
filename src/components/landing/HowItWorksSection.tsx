@@ -1,0 +1,80 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const weeks = [
+  {
+    label: "Week 1",
+    title: "Starting the Experiment",
+    theme: "Curiosity, not commitment",
+    color: "var(--purple)",
+    description: "Name why you're here. Notice what comes up when you interrupt a habit. Nothing to fix — just data to collect.",
+  },
+  {
+    label: "Week 2",
+    title: "Meeting Resistance",
+    theme: "The work, not failure",
+    color: "var(--peach)",
+    description: "Triggers will show up. That's the point. Resistance is information, not a sign you're doing it wrong.",
+  },
+  {
+    label: "Week 3",
+    title: "What's Enough?",
+    theme: "Identity and comparison",
+    color: "var(--sage)",
+    description: "Notice what you buy to feel like yourself. Ask what enough looks like. You might surprise yourself.",
+  },
+  {
+    label: "Week 4",
+    title: "What Comes Next",
+    theme: "Integration",
+    color: "var(--purple-dark)",
+    description: "Sit with wanting without answering immediately. What does this 30 days want you to know?",
+  },
+];
+
+export default function HowItWorksSection() {
+  const [active, setActive] = useState(0);
+
+  return (
+    <section id="how-it-works" className="py-20 px-4">
+      <div className="container mx-auto max-w-3xl">
+        <p className="section-label mb-3">The 30 Days</p>
+        <h2 className="display-heading text-3xl md:text-4xl mb-10">
+          Four weeks. Four different jobs.
+        </h2>
+
+        <div className="flex flex-wrap gap-3 mb-8">
+          {weeks.map((w, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className={`btn-pill text-sm px-5 py-2 transition-all ${
+                active === i
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+              }`}
+            >
+              {w.label}
+            </button>
+          ))}
+        </div>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+            className="card-soft border-l-4 pl-8"
+            style={{ borderLeftColor: `hsl(${weeks[active].color})` }}
+          >
+            <h3 className="font-display text-2xl font-semibold mb-1">{weeks[active].title}</h3>
+            <p className="font-body font-medium text-sm text-primary mb-4">{weeks[active].theme}</p>
+            <p className="body-text text-base leading-relaxed">{weeks[active].description}</p>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </section>
+  );
+}
