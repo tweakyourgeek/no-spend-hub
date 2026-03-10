@@ -7,38 +7,38 @@ const tiers = [
     period: "always",
     features: [
       "Skool community access",
+      "Monthly no-spend challenges",
+      "Quarterly community resets",
       "Pattern quiz",
-      "Quick-start guide",
       "Basic worksheets",
-      "Quarterly challenge access (30 Bags, Pantry, Holiday, No-Spend)",
     ],
     cta: "Start Free",
     highlight: false,
   },
   {
     name: "Premium",
-    price: "$27",
+    price: "$9",
     period: "/mo",
     features: [
       "Everything in Free",
-      "Complete No-Spend Guide (personal + business editions)",
-      "Premium spreadsheet pack",
-      "Monthly workshops",
-      "Current month content",
+      "Monthly live check-in",
+      "Current month bonuses",
+      "Priority community support",
     ],
     cta: "Go Premium",
     highlight: true,
   },
   {
     name: "VIP",
-    price: "$97",
+    price: "$125",
     period: "/year",
     features: [
       "Everything in Premium",
-      "17 custom GPTs",
-      "Live co-working sessions",
-      "VIP workshops",
+      "Full GPT suite",
+      "Quarterly resets",
+      "Couples & Teen Modules",
       "Full content archives",
+      "Founding rate locked forever (first 100 members)",
     ],
     cta: "Join VIP",
     highlight: false,
@@ -98,7 +98,10 @@ export default function PricingSection() {
           ))}
         </div>
 
-        <p className="text-center font-body text-base md:text-sm text-muted-foreground mt-8">
+        <p className="text-center font-body text-base md:text-sm font-medium text-foreground mt-8">
+          First 100 members lock founding rates forever. Pricing increases after that.
+        </p>
+        <p className="text-center font-body text-base md:text-sm text-muted-foreground mt-3">
           No guilt trips when you leave. We'd check a Rainbows pattern if that were us.
         </p>
       </div>

@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Open Sans"', 'sans-serif'],
+        display: ['"Cormorant Garamond"', 'serif'],
         body: ['"Open Sans"', 'sans-serif'],
         accent: ['"Cormorant Garamond"', 'serif'],
       },

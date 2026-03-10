@@ -89,7 +89,7 @@
     font-weight: 400;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
   }
 }
@@ -127,7 +127,7 @@
     color: hsl(var(--primary));
   }
   .display-heading {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
     @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
     color: hsl(var(--navy));
