@@ -66,12 +66,12 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 157 28% 40%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 18 10% 18%;
+    --muted: 20 10% 16%;
     --muted-foreground: 25 15% 60%;
     --accent: 18 40% 50%;
     --accent-foreground: 0 0% 100%;
-    --border: 18 10% 20%;
-    --input: 18 10% 20%;
+    --border: 20 10% 18%;
+    --input: 20 10% 18%;
     --ring: 318 25% 60%;
     --sidebar-background: 18 10% 12%;
     --sidebar-foreground: 25 20% 90%;
