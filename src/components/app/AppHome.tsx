@@ -159,7 +159,7 @@ export default function AppHome({ data, onUpdate }: Props) {
           </AnimatePresence>
         </div>
       ) : (
-        <div className="card-soft text-center" style={{ background: "hsl(var(--sage-light))" }}>
+        <div className="card-soft text-center" style={{ background: "hsl(156 24% 86%)" }}>
           <p className="font-body font-medium text-foreground">✓ Day {data.currentDay} logged</p>
           <p className="font-body text-sm text-muted-foreground">Come back tomorrow for your next check-in.</p>
         </div>

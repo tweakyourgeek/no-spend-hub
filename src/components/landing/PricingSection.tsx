@@ -4,8 +4,14 @@ const tiers = [
   {
     name: "Free",
     price: "$0",
-    period: "forever",
-    features: ["Community access", "Pattern quiz", "Quick-start guide", "Basic worksheets", "Quarterly challenge access"],
+    period: "always",
+    features: [
+      "Skool community access",
+      "Pattern quiz",
+      "Quick-start guide",
+      "Basic worksheets",
+      "Quarterly challenge access (30 Bags, Pantry, Holiday, No-Spend)",
+    ],
     cta: "Start Free",
     highlight: false,
   },
@@ -13,15 +19,27 @@ const tiers = [
     name: "Premium",
     price: "$27",
     period: "/mo",
-    features: ["Everything in Free", "Complete No-Spend Guide (personal + business)", "Premium spreadsheet pack", "Monthly workshops", "Current month content"],
+    features: [
+      "Everything in Free",
+      "Complete No-Spend Guide (personal + business editions)",
+      "Premium spreadsheet pack",
+      "Monthly workshops",
+      "Current month content",
+    ],
     cta: "Go Premium",
     highlight: true,
   },
   {
     name: "VIP",
     price: "$97",
-    period: "/mo",
-    features: ["Everything in Premium", "17 custom GPTs", "Live co-working sessions", "VIP workshops", "Full content archives"],
+    period: "/year",
+    features: [
+      "Everything in Premium",
+      "17 custom GPTs",
+      "Live co-working sessions",
+      "VIP workshops",
+      "Full content archives",
+    ],
     cta: "Join VIP",
     highlight: false,
   },
@@ -41,25 +59,38 @@ export default function PricingSection() {
             <div
               key={tier.name}
               className={`card-soft flex flex-col ${
-                tier.highlight ? "ring-2 ring-primary scale-[1.02]" : ""
+                tier.highlight ? "scale-[1.02]" : ""
               }`}
+              style={tier.highlight ? { background: "#B375A0" } : undefined}
             >
-              <p className="font-body font-medium text-sm text-muted-foreground mb-1">{tier.name}</p>
+              <p className={`font-body font-medium text-sm mb-1 ${
+                tier.highlight ? "text-primary-foreground/70" : "text-muted-foreground"
+              }`}>{tier.name}</p>
               <div className="flex items-baseline gap-1 mb-4">
-                <span className="font-display text-4xl font-bold text-foreground">{tier.price}</span>
-                <span className="font-body text-sm text-muted-foreground">{tier.period}</span>
+                <span className={`font-display text-4xl font-bold ${
+                  tier.highlight ? "text-primary-foreground" : "text-foreground"
+                }`}>{tier.price}</span>
+                <span className={`font-body text-sm ${
+                  tier.highlight ? "text-primary-foreground/70" : "text-muted-foreground"
+                }`}>{tier.period}</span>
               </div>
               <ul className="space-y-2 mb-8 flex-1">
                 {tier.features.map((f) => (
-                  <li key={f} className="font-body text-sm text-foreground flex items-start gap-2">
-                    <span className="text-secondary mt-0.5">✓</span>
+                  <li key={f} className={`font-body text-sm flex items-start gap-2 ${
+                    tier.highlight ? "text-primary-foreground" : "text-foreground"
+                  }`}>
+                    <span className={`mt-0.5 ${tier.highlight ? "text-primary-foreground/70" : "text-secondary"}`}>✓</span>
                     {f}
                   </li>
                 ))}
               </ul>
               <Link
                 to="/app"
-                className={tier.highlight ? "btn-pill-primary text-center" : "btn-pill-outline text-center"}
+                className={tier.highlight
+                  ? "btn-pill inline-flex items-center justify-center px-8 py-3 text-center font-medium transition-all duration-200 hover:opacity-90"
+                  : "btn-pill-outline text-center"
+                }
+                style={tier.highlight ? { background: "#F9F0F5", color: "#B375A0", borderRadius: "100px" } : undefined}
               >
                 {tier.cta}
               </Link>

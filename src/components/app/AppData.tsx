@@ -66,13 +66,13 @@ export default function AppData({ data }: Props) {
           <p className="font-body font-medium text-sm text-foreground mb-4">Spending by Day</p>
           <ResponsiveContainer width="100%" height={200}>
             <BarChart data={chartData}>
-              <XAxis dataKey="day" tick={{ fontSize: 11, fontFamily: "DM Sans" }} />
-              <YAxis tick={{ fontSize: 11, fontFamily: "DM Sans" }} />
+              <XAxis dataKey="day" tick={{ fontSize: 11, fontFamily: "Open Sans" }} />
+              <YAxis tick={{ fontSize: 11, fontFamily: "Open Sans" }} />
               <Tooltip
                 contentStyle={{
                   borderRadius: "12px",
                   border: "1px solid hsl(var(--border))",
-                  fontFamily: "DM Sans",
+                  fontFamily: "Open Sans",
                   fontSize: "13px",
                 }}
               />

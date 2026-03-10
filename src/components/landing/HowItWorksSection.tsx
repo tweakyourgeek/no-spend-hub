@@ -6,28 +6,24 @@ const weeks = [
     label: "Week 1",
     title: "Starting the Experiment",
     theme: "Curiosity, not commitment",
-    color: "var(--purple)",
-    description: "Name why you're here. Notice what comes up when you interrupt a habit. Nothing to fix — just data to collect.",
+    description: "Name why you're here. Notice what comes up when you interrupt a habit. Nothing to fix. Just data to collect.",
   },
   {
     label: "Week 2",
     title: "Meeting Resistance",
     theme: "The work, not failure",
-    color: "var(--peach)",
     description: "Triggers will show up. That's the point. Resistance is information, not a sign you're doing it wrong.",
   },
   {
     label: "Week 3",
     title: "What's Enough?",
     theme: "Identity and comparison",
-    color: "var(--sage)",
     description: "Notice what you buy to feel like yourself. Ask what enough looks like. You might surprise yourself.",
   },
   {
     label: "Week 4",
     title: "What Comes Next",
     theme: "Integration",
-    color: "var(--purple-dark)",
     description: "Sit with wanting without answering immediately. What does this 30 days want you to know?",
   },
 ];
@@ -50,9 +46,12 @@ export default function HowItWorksSection() {
               onClick={() => setActive(i)}
               className={`btn-pill text-sm px-5 py-2 transition-all ${
                 active === i
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground hover:bg-muted/80"
+                  ? "text-primary-foreground"
+                  : "text-periwinkle hover:opacity-80"
               }`}
+              style={{
+                background: active === i ? "#B375A0" : "#F9F0F5",
+              }}
             >
               {w.label}
             </button>
@@ -67,7 +66,7 @@ export default function HowItWorksSection() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
             className="card-soft border-l-4 pl-8"
-            style={{ borderLeftColor: `hsl(${weeks[active].color})` }}
+            style={{ borderLeftColor: "#B375A0" }}
           >
             <h3 className="font-display text-2xl font-semibold mb-1">{weeks[active].title}</h3>
             <p className="font-body font-medium text-sm text-primary mb-4">{weeks[active].theme}</p>
