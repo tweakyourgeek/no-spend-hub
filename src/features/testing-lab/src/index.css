@@ -1,0 +1,100 @@
+/* Exhale Design System - Testing Lab */
+:root {
+  /* Exhale Colors */
+  --color-purple: #B375A0;
+  --color-purple-dark: #8a5a7a;
+  --color-purple-light: #d4a5c4;
+  --color-sage: #A6C9BB;
+  --color-sage-dark: #7da396;
+  --color-sage-light: #c8e0d6;
+  --color-peachy: #E8B4A0;
+  --color-peachy-dark: #c99580;
+  --color-peachy-light: #f5d4c8;
+
+  /* Neutrals */
+  --color-background: #F8F5F2;
+  --color-background-dark: #1a1a2e;
+  --color-white: #FFFFFF;
+  --color-text: #2D2D2D;
+  --color-text-light: #6B6B6B;
+  --color-text-dark-mode: #E8E8E8;
+
+  /* Cabinet/Wood tones */
+  --color-wood: #8B7355;
+  --color-wood-dark: #5C4A3A;
+  --color-wood-light: #A89078;
+  --color-shelf: #C4A882;
+
+  /* Glass/Jar tones */
+  --color-glass: rgba(255, 255, 255, 0.15);
+  --color-glass-shine: rgba(255, 255, 255, 0.4);
+
+  /* Typography */
+  --font-heading: 'Inter', 'Avenir', system-ui, sans-serif;
+  --font-body: 'Open Sans', system-ui, sans-serif;
+  --font-accent: 'Caveat', cursive;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 0 20px rgba(179, 117, 160, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+body.dark-mode {
+  background: var(--color-background-dark);
+  color: var(--color-text-dark-mode);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--color-purple);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+}
