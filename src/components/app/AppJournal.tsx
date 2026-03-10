@@ -16,7 +16,7 @@ export default function AppJournal({ data }: Props) {
 
       {sortedDays.length === 0 ? (
         <div className="card-soft text-center" style={{ background: "hsl(156 24% 86%)" }}>
-          <p className="font-body text-sm text-muted-foreground">
+          <p className="font-body text-sm text-foreground">
             Nothing here yet. Complete your first check-in to start your journal.
           </p>
         </div>

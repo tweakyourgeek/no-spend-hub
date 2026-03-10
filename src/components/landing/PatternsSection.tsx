@@ -38,7 +38,7 @@ export default function PatternsSection() {
               </span>
               <p
                 className="font-body text-sm mt-1"
-                style={{ color: expanded === p.name ? "#3B3B58" : "#A7AFC8" }}
+                style={{ color: expanded === p.name ? "#3B3B58" : "#B7BED2" }}
               >
                 {p.description}
               </p>

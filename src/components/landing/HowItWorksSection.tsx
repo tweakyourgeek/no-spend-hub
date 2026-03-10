@@ -47,10 +47,10 @@ export default function HowItWorksSection() {
               className={`btn-pill text-sm px-5 py-2 transition-all ${
                 active === i
                   ? "text-primary-foreground"
-                  : "text-periwinkle hover:opacity-80"
+                  : "text-muted-foreground hover:opacity-80"
               }`}
               style={{
-                background: active === i ? "#B375A0" : "#F9F0F5",
+                background: active === i ? "#9B5586" : "#F9F0F5",
               }}
             >
               {w.label}
@@ -66,7 +66,7 @@ export default function HowItWorksSection() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
             className="card-soft border-l-4 pl-8"
-            style={{ borderLeftColor: "#B375A0" }}
+            style={{ borderLeftColor: "#9B5586" }}
           >
             <h3 className="font-display text-2xl font-semibold mb-1">{weeks[active].title}</h3>
             <p className="font-body font-medium text-sm text-primary mb-4">{weeks[active].theme}</p>

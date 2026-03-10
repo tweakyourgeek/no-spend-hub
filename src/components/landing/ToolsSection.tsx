@@ -35,7 +35,7 @@ export default function ToolsSection() {
         </div>
 
         <div className="card-soft" style={{ background: "#D8EDE6" }}>
-          <p className="font-accent italic text-sm mb-2" style={{ color: "#A7AFC8" }}>The bigger framework</p>
+          <p className="font-accent italic text-sm mb-2" style={{ color: "#58668D" }}>The bigger framework</p>
           <h3 className="font-display text-2xl font-semibold mb-3 text-foreground">The Alignment Lab</h3>
           <p className="body-text text-sm mb-6">
             The No Spend Challenge is one experiment inside a bigger framework.

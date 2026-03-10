@@ -61,7 +61,7 @@ export default function PricingSection() {
               className={`card-soft flex flex-col ${
                 tier.highlight ? "scale-[1.02]" : ""
               }`}
-              style={tier.highlight ? { background: "#B375A0" } : undefined}
+              style={tier.highlight ? { background: "#9B5586" } : undefined}
             >
               <p className={`font-body font-medium text-sm mb-1 ${
                 tier.highlight ? "text-primary-foreground/70" : "text-muted-foreground"
@@ -90,7 +90,7 @@ export default function PricingSection() {
                   ? "btn-pill inline-flex items-center justify-center px-8 py-3 text-center font-medium transition-all duration-200 hover:opacity-90"
                   : "btn-pill-outline text-center"
                 }
-                style={tier.highlight ? { background: "#F9F0F5", color: "#B375A0", borderRadius: "100px" } : undefined}
+                style={tier.highlight ? { background: "#F9F0F5", color: "#9B5586", borderRadius: "100px" } : undefined}
               >
                 {tier.cta}
               </Link>

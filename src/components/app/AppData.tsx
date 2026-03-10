@@ -49,7 +49,7 @@ export default function AppData({ data }: Props) {
           <p className="font-body text-sm text-muted-foreground">Longest Streak</p>
         </div>
         <div className="card-soft text-center">
-          <p className="font-display text-3xl font-bold text-secondary">${stats.freedUp}</p>
+          <p className="font-display text-3xl font-bold" style={{ color: "#446F5E" }}>${stats.freedUp}</p>
           <p className="font-body text-sm text-muted-foreground">Freed Up</p>
         </div>
       </div>
