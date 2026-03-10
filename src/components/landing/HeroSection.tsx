@@ -55,7 +55,7 @@ export default function HeroSection() {
           {/* Card 2: Stats — mauve background */}
           <motion.div
             className="absolute top-36 left-0 w-64 rounded-soft p-5 float-2"
-            style={{ background: "#B375A0", borderRadius: "20px" }}
+            style={{ background: "#9B5586", borderRadius: "20px" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
@@ -79,7 +79,7 @@ export default function HeroSection() {
             <p className="font-accent italic text-lg mb-1" style={{ color: "#493751" }}>
               "You can't do this wrong."
             </p>
-            <p className="font-body text-sm text-muted-foreground">The only rule</p>
+            <p className="font-body text-sm text-foreground">The only rule</p>
           </motion.div>
         </div>
       </div>

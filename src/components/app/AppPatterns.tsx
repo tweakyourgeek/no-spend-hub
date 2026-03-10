@@ -43,7 +43,7 @@ export default function AppPatterns({ data }: Props) {
       </div>
 
       {topPattern && (
-        <div className="card-soft border-l-4" style={{ borderLeftColor: "#B375A0" }}>
+        <div className="card-soft border-l-4" style={{ borderLeftColor: "#9B5586" }}>
           <p className="font-body text-sm text-foreground leading-relaxed">
             <strong>{topPattern[0]}</strong> has shown up {topPattern[1]} time{topPattern[1] !== 1 ? "s" : ""}.
             No judgment. Just useful to know.
@@ -53,7 +53,7 @@ export default function AppPatterns({ data }: Props) {
 
       {Object.keys(stats.patternCounts).length === 0 && (
         <div className="card-soft text-center" style={{ background: "hsl(156 24% 86%)" }}>
-          <p className="font-body text-sm text-muted-foreground">
+          <p className="font-body text-sm text-foreground">
             No patterns logged yet. They'll show up here as you track your days.
           </p>
         </div>
