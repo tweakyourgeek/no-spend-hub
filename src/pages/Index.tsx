@@ -6,6 +6,7 @@ import PatternsSection from "@/components/landing/PatternsSection";
 import ToolsSection from "@/components/landing/ToolsSection";
 import PricingSection from "@/components/landing/PricingSection";
 import FinalCTA from "@/components/landing/FinalCTA";
+import OptInSection from "@/components/landing/OptInSection";
 import LandingFooter from "@/components/landing/LandingFooter";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
       <ToolsSection />
       <PricingSection />
       <FinalCTA />
+      <OptInSection />
       <LandingFooter />
     </div>
   );
