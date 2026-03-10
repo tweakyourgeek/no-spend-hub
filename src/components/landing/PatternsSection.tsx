@@ -37,7 +37,7 @@ export default function PatternsSection() {
                 {p.name}
               </span>
               <p
-                className="font-body text-sm mt-1"
+                className="font-body text-base md:text-sm mt-1"
                 style={{ color: expanded === p.name ? "#3B3B58" : "#B7BED2" }}
               >
                 {p.description}
@@ -46,7 +46,7 @@ export default function PatternsSection() {
           ))}
         </div>
 
-        <p className="font-body text-sm mt-8 text-center" style={{ color: "#A7AFC8" }}>
+        <p className="font-body text-base md:text-sm mt-8 text-center" style={{ color: "#A7AFC8" }}>
           The full Pattern Quiz is inside the challenge. It takes about 4 minutes and will absolutely make you go "oh."
         </p>
       </div>

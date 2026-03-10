@@ -20,7 +20,7 @@ export default function ToolsSection() {
                 <span className="text-2xl">{t.icon}</span>
                 <div>
                   <p className="font-body font-medium text-foreground">{t.title}</p>
-                  <p className="body-text text-sm">{t.desc}</p>
+                  <p className="body-text text-base md:text-sm">{t.desc}</p>
                 </div>
               </div>
             ))}
@@ -28,16 +28,16 @@ export default function ToolsSection() {
 
           <div className="mt-8 p-5 rounded-soft border border-border" style={{ background: "#F9F0F5" }}>
             <p className="font-accent italic text-base text-foreground mb-1">The Spent Anyway Protocol</p>
-            <p className="body-text text-sm">
+            <p className="body-text text-base md:text-sm">
               You spent. That's data, not a verdict. Name the pattern, note what was running, and keep going. No resets required.
             </p>
           </div>
         </div>
 
         <div className="card-soft" style={{ background: "#D8EDE6" }}>
-          <p className="font-accent italic text-sm mb-2" style={{ color: "#58668D" }}>The bigger framework</p>
+          <p className="font-accent italic text-base md:text-sm mb-2" style={{ color: "#58668D" }}>The bigger framework</p>
           <h3 className="font-display text-2xl font-semibold mb-3 text-foreground">The Alignment Lab</h3>
-          <p className="body-text text-sm mb-6">
+          <p className="body-text text-base md:text-sm mb-6">
             The No Spend Challenge is one experiment inside a bigger framework.
             Money is just where we're starting.
           </p>

@@ -15,7 +15,7 @@ export default function HeroSection() {
             Your spending is data.{" "}
             <em className="font-accent italic text-primary">Not a verdict.</em>
           </h1>
-          <p className="body-text text-lg mb-8 max-w-lg leading-relaxed">
+          <p className="body-text text-base md:text-lg mb-8 max-w-lg leading-relaxed">
             Thirty days. No shame. No perfection required. Just you, a little curiosity,
             and the patterns you've been running without knowing it.
           </p>
@@ -27,7 +27,7 @@ export default function HeroSection() {
               See How It Works
             </a>
           </div>
-          <p className="text-sm text-muted-foreground font-body">
+          <p className="text-base md:text-sm text-muted-foreground font-body">
             No credit card. No judgment. You can't do this wrong.
           </p>
         </motion.div>

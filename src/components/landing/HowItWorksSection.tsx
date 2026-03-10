@@ -44,7 +44,7 @@ export default function HowItWorksSection() {
             <button
               key={i}
               onClick={() => setActive(i)}
-              className={`btn-pill text-sm px-5 py-2 transition-all ${
+              className={`btn-pill text-base md:text-sm px-5 py-3 md:py-2 min-h-[44px] transition-all ${
                 active === i
                   ? "text-primary-foreground"
                   : "text-muted-foreground hover:opacity-80"
@@ -69,7 +69,7 @@ export default function HowItWorksSection() {
             style={{ borderLeftColor: "#9B5586" }}
           >
             <h3 className="font-display text-2xl font-semibold mb-1">{weeks[active].title}</h3>
-            <p className="font-body font-medium text-sm text-primary mb-4">{weeks[active].theme}</p>
+            <p className="font-body font-medium text-base md:text-sm text-primary mb-4">{weeks[active].theme}</p>
             <p className="body-text text-base leading-relaxed">{weeks[active].description}</p>
           </motion.div>
         </AnimatePresence>

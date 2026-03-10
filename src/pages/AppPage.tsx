@@ -120,12 +120,12 @@ export default function AppPage() {
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`flex-1 flex flex-col items-center py-2 gap-0.5 transition-colors ${
+            className={`flex-1 flex flex-col items-center py-2.5 gap-0.5 min-h-[44px] transition-colors ${
               activeTab === tab.id ? "text-primary" : "text-muted-foreground"
             }`}
           >
-            <tab.icon size={18} />
-            <span className="text-[10px] font-body font-medium">{tab.label}</span>
+            <tab.icon size={20} />
+            <span className="text-xs font-body font-medium">{tab.label}</span>
           </button>
         ))}
       </div>
