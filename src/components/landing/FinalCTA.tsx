@@ -2,17 +2,18 @@ import { Link } from "react-router-dom";
 
 export default function FinalCTA() {
   return (
-    <section className="py-20 px-4" style={{ background: "hsl(var(--purple))" }}>
+    <section className="py-20 px-4" style={{ background: "#B375A0" }}>
       <div className="container mx-auto max-w-2xl text-center">
-        <h2 className="font-display text-3xl md:text-4xl font-semibold text-primary-foreground mb-4">
+        <h2 className="font-display text-3xl md:text-4xl font-semibold mb-4" style={{ color: "#F8F1F2" }}>
           Any 30 days can be your reset.
         </h2>
-        <p className="font-body text-lg text-primary-foreground/80 mb-8">
+        <p className="font-body text-lg mb-8" style={{ color: "rgba(248, 241, 242, 0.8)" }}>
           The best time to start was 30 days ago. The second best time is today.
         </p>
         <Link
           to="/app"
-          className="btn-pill inline-flex bg-card text-foreground hover:bg-card/90 px-10 py-4 text-base font-medium"
+          className="btn-pill inline-flex px-10 py-4 text-base font-medium hover:opacity-90"
+          style={{ background: "#F9F0F5", color: "#B375A0" }}
         >
           Start the Challenge Free
         </Link>

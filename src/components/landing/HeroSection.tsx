@@ -13,7 +13,7 @@ export default function HeroSection() {
         >
           <h1 className="display-heading mb-6">
             Your spending is data.{" "}
-            <em className="text-primary">Not a verdict.</em>
+            <em className="font-accent italic text-primary">Not a verdict.</em>
           </h1>
           <p className="body-text text-lg mb-8 max-w-lg leading-relaxed">
             Thirty days. No shame. No perfection required. Just you, a little curiosity,
@@ -43,7 +43,7 @@ export default function HeroSection() {
           >
             <p className="font-body font-medium text-sm text-muted-foreground mb-1">Day 12 Check-in</p>
             <p className="font-body text-sm text-foreground mb-3">
-              You spent. 👍 That's not a failure. That's a data point. Which pattern was running?
+              You spent. That's not a failure. That's a data point. Which pattern was running?
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="chip-purple">🌈 Rainbows</span>
@@ -52,10 +52,10 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Card 2: Stats */}
+          {/* Card 2: Stats — mauve background */}
           <motion.div
             className="absolute top-36 left-0 w-64 rounded-soft p-5 float-2"
-            style={{ background: "hsl(var(--purple))", borderRadius: "20px" }}
+            style={{ background: "#B375A0", borderRadius: "20px" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
@@ -68,15 +68,15 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Card 3: Quote */}
+          {/* Card 3: Quote — lavender background with plum text */}
           <motion.div
             className="absolute bottom-0 right-8 w-60 rounded-soft p-5 float-3"
-            style={{ background: "hsl(var(--peach-light))", borderRadius: "20px" }}
+            style={{ background: "#E0DAE7", borderRadius: "20px" }}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.6 }}
           >
-            <p className="font-display italic text-lg text-foreground mb-1">
+            <p className="font-accent italic text-lg mb-1" style={{ color: "#493751" }}>
               "You can't do this wrong."
             </p>
             <p className="font-body text-sm text-muted-foreground">The only rule</p>

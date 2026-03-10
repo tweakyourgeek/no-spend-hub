@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,76 +7,75 @@
 @layer base {
   :root {
     /* Brand Colors (HSL) */
-    --purple: 318 25% 60%;
-    --purple-light: 318 35% 81%;
-    --purple-dark: 318 25% 44%;
-    --sage: 157 28% 72%;
-    --sage-dark: 157 20% 57%;
-    --sage-light: 157 35% 86%;
-    --peach: 18 56% 77%;
-    --peach-dark: 18 50% 63%;
-    --peach-light: 18 60% 88%;
-    --cream: 25 50% 97%;
-    --charcoal: 20 10% 9%;
-    --muted-brand: 18 8% 44%;
+    --cream: 351 33% 96%;
+    --off-white: 327 43% 96%;
+    --plum: 282 19% 27%;
+    --sage: 156 24% 72%;
+    --periwinkle: 225 23% 72%;
+    --lavender: 268 21% 88%;
+    --mauve: 318 29% 58%;
+    --navy: 240 20% 29%;
+    --peach: 17 61% 77%;
+    --peach-dark: 17 50% 63%;
+    --peach-light: 17 60% 88%;
 
     /* Shadcn Semantic Tokens */
-    --background: 25 50% 97%;
-    --foreground: 18 10% 22%;
-    --card: 0 0% 100%;
-    --card-foreground: 18 10% 22%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 18 10% 22%;
-    --primary: 318 25% 60%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 157 28% 72%;
-    --secondary-foreground: 18 10% 22%;
-    --muted: 25 20% 93%;
-    --muted-foreground: 18 8% 44%;
-    --accent: 18 56% 77%;
-    --accent-foreground: 18 10% 22%;
+    --background: 351 33% 96%;
+    --foreground: 240 20% 29%;
+    --card: 327 43% 96%;
+    --card-foreground: 240 20% 29%;
+    --popover: 327 43% 96%;
+    --popover-foreground: 240 20% 29%;
+    --primary: 318 29% 58%;
+    --primary-foreground: 351 33% 96%;
+    --secondary: 156 24% 72%;
+    --secondary-foreground: 240 20% 29%;
+    --muted: 268 21% 88%;
+    --muted-foreground: 225 23% 72%;
+    --accent: 17 61% 77%;
+    --accent-foreground: 240 20% 29%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 25 15% 88%;
-    --input: 25 15% 88%;
-    --ring: 318 25% 60%;
+    --border: 268 15% 85%;
+    --input: 268 15% 85%;
+    --ring: 318 29% 58%;
     --radius: 1.25rem;
 
-    --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 18 10% 22%;
-    --sidebar-primary: 318 25% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 157 35% 86%;
-    --sidebar-accent-foreground: 18 10% 22%;
-    --sidebar-border: 25 15% 88%;
-    --sidebar-ring: 318 25% 60%;
+    --sidebar-background: 327 43% 96%;
+    --sidebar-foreground: 240 20% 29%;
+    --sidebar-primary: 318 29% 58%;
+    --sidebar-primary-foreground: 351 33% 96%;
+    --sidebar-accent: 156 24% 82%;
+    --sidebar-accent-foreground: 240 20% 29%;
+    --sidebar-border: 268 15% 85%;
+    --sidebar-ring: 318 29% 58%;
 
     /* Custom */
-    --gradient-hero: linear-gradient(135deg, hsl(318 25% 60% / 0.08), hsl(157 28% 72% / 0.08), hsl(18 56% 77% / 0.08));
-    --shadow-card: 0 4px 24px -4px hsl(18 10% 22% / 0.06);
-    --shadow-card-hover: 0 8px 32px -4px hsl(18 10% 22% / 0.1);
+    --gradient-hero: linear-gradient(135deg, hsl(318 29% 58% / 0.08), hsl(156 24% 72% / 0.08), hsl(17 61% 77% / 0.08));
+    --shadow-card: 0 4px 24px -4px hsl(240 20% 29% / 0.06);
+    --shadow-card-hover: 0 8px 32px -4px hsl(240 20% 29% / 0.1);
   }
 
   .dark {
-    --background: 20 10% 9%;
-    --foreground: 25 20% 90%;
-    --card: 20 10% 13%;
-    --card-foreground: 25 20% 90%;
-    --popover: 18 10% 14%;
-    --popover-foreground: 25 20% 90%;
-    --primary: 318 25% 60%;
+    --background: 240 20% 9%;
+    --foreground: 351 33% 90%;
+    --card: 240 20% 13%;
+    --card-foreground: 351 33% 90%;
+    --popover: 240 20% 14%;
+    --popover-foreground: 351 33% 90%;
+    --primary: 318 29% 58%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 157 28% 40%;
+    --secondary: 156 24% 40%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 20 10% 16%;
-    --muted-foreground: 25 15% 60%;
-    --accent: 18 40% 50%;
+    --muted: 240 20% 16%;
+    --muted-foreground: 225 23% 60%;
+    --accent: 17 40% 50%;
     --accent-foreground: 0 0% 100%;
-    --border: 20 10% 18%;
-    --input: 20 10% 18%;
-    --ring: 318 25% 60%;
-    --sidebar-background: 20 10% 11%;
-    --sidebar-foreground: 25 20% 90%;
+    --border: 240 20% 18%;
+    --input: 240 20% 18%;
+    --ring: 318 29% 58%;
+    --sidebar-background: 240 20% 11%;
+    --sidebar-foreground: 351 33% 90%;
   }
 }
 
@@ -84,11 +85,12 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
   }
 }
 
@@ -96,7 +98,7 @@
   .btn-pill {
     @apply inline-flex items-center justify-center font-medium transition-all duration-200;
     border-radius: 100px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
   }
   .btn-pill-primary {
@@ -120,29 +122,33 @@
   }
   .section-label {
     @apply text-sm font-medium tracking-widest uppercase;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     color: hsl(var(--primary));
   }
   .display-heading {
-    font-family: 'Playfair Display', serif;
-    @apply text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight;
-    color: hsl(var(--charcoal));
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+    color: hsl(var(--navy));
   }
   .body-text {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    color: hsl(var(--muted-brand));
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(var(--navy));
+  }
+  .font-accent {
+    font-family: 'Cormorant Garamond', serif;
   }
   .chip {
     @apply inline-flex items-center px-3 py-1 rounded-full text-sm;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
   }
   .chip-sage {
     @apply chip;
-    background: hsl(var(--sage-light));
-    color: hsl(var(--sage-dark));
+    background: hsl(var(--off-white));
+    color: hsl(var(--sage));
   }
   .chip-peach {
     @apply chip;
@@ -151,8 +157,8 @@
   }
   .chip-purple {
     @apply chip;
-    background: hsl(var(--purple-light) / 0.3);
-    color: hsl(var(--purple-dark));
+    background: hsl(var(--lavender));
+    color: hsl(var(--plum));
   }
 }
 

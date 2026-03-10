@@ -1,7 +1,7 @@
 export default function ToolsSection() {
   const tools = [
     { icon: "📊", title: "Spreadsheet Pack", desc: "9 tabs. Auto-calculated. Streak counters. Because data is more fun with charts." },
-    { icon: "🤖", title: "17 Custom GPTs", desc: "Including 'Talk Me Out of This Purchase' — which does exactly that." },
+    { icon: "🤖", title: "17 Custom GPTs", desc: "Including 'Talk Me Out of This Purchase,' which does exactly that." },
     { icon: "📓", title: "30-Day Journal", desc: "Daily check-ins designed around pattern recognition, not guilt." },
     { icon: "🎯", title: "Pattern Quiz", desc: "4 minutes. Free. Will haunt you (in the best way)." },
   ];
@@ -25,10 +25,17 @@ export default function ToolsSection() {
               </div>
             ))}
           </div>
+
+          <div className="mt-8 p-5 rounded-soft border border-border" style={{ background: "#F9F0F5" }}>
+            <p className="font-accent italic text-base text-foreground mb-1">The Spent Anyway Protocol</p>
+            <p className="body-text text-sm">
+              You spent. That's data, not a verdict. Name the pattern, note what was running, and keep going. No resets required.
+            </p>
+          </div>
         </div>
 
-        <div className="card-soft" style={{ background: "hsl(var(--sage-light))" }}>
-          <p className="section-label mb-2" style={{ color: "hsl(var(--sage-dark))" }}>Coming Soon</p>
+        <div className="card-soft" style={{ background: "#D8EDE6" }}>
+          <p className="font-accent italic text-sm mb-2" style={{ color: "#A7AFC8" }}>The bigger framework</p>
           <h3 className="font-display text-2xl font-semibold mb-3 text-foreground">The Alignment Lab</h3>
           <p className="body-text text-sm mb-6">
             The No Spend Challenge is one experiment inside a bigger framework.

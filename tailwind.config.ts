@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['"DM Sans"', 'sans-serif'],
+        display: ['"Open Sans"', 'sans-serif'],
+        body: ['"Open Sans"', 'sans-serif'],
+        accent: ['"Cormorant Garamond"', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,24 +62,21 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        purple: {
-          DEFAULT: "hsl(var(--purple))",
-          light: "hsl(var(--purple-light))",
-          dark: "hsl(var(--purple-dark))",
-        },
+        cream: "hsl(var(--cream))",
+        "off-white": "hsl(var(--off-white))",
+        plum: "hsl(var(--plum))",
         sage: {
           DEFAULT: "hsl(var(--sage))",
-          light: "hsl(var(--sage-light))",
-          dark: "hsl(var(--sage-dark))",
         },
+        periwinkle: "hsl(var(--periwinkle))",
+        lavender: "hsl(var(--lavender))",
+        mauve: "hsl(var(--mauve))",
+        navy: "hsl(var(--navy))",
         peach: {
           DEFAULT: "hsl(var(--peach))",
           light: "hsl(var(--peach-light))",
           dark: "hsl(var(--peach-dark))",
         },
-        cream: "hsl(var(--cream))",
-        charcoal: "hsl(var(--charcoal))",
-        "muted-brand": "hsl(var(--muted-brand))",
       },
       borderRadius: {
         lg: "var(--radius)",
