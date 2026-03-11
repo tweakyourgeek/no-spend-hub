@@ -1110,6 +1110,8 @@ You can do this.
 
 # WEEK ONE: BEGINNING
 
+*If you already feel behind, congratulations. You're right on schedule.*
+
 ---
 
 ## Day 1: Why Now
@@ -1437,6 +1439,8 @@ You made it through the first week. Not perfectly, probably. That's fine. Today 
 
 # WEEK TWO: FRICTION
 
+*Friction is information. Annoying, inconvenient information, but still information.*
+
 ---
 
 ## Day 8: What Triggered You
@@ -1761,6 +1765,8 @@ Friction showed up this week. Maybe as boredom, maybe as emotional spending urge
 
 # WEEK THREE: WHAT'S ENOUGH?
 
+*You do not need new tools to be who you already are. Your cart disagrees. Your cart is wrong.*
+
 ---
 
 ## Day 15: The "Real Version" Fantasy
@@ -1894,7 +1900,7 @@ Comparison sneaks in through feeds, conversations, group chats, even podcasts. S
 
 ## Day 18: Who You Already Are
 
-You do not need new tools to be who you already are. That sentence might feel annoying or untrue. Sit with it anyway. The things that make you good at what you do are already present. Didn't seem that impressive at the time.
+You do not need new tools to be who you already are. That sentence might feel annoying or untrue. Sit with it anyway. The things that make you good at what you do are already present. You probably already have evidence that you're capable, qualified, or ready. It just doesn't feel like evidence because you were there when it happened and it didn't seem that impressive at the time.
 
 ### Reflection
 
@@ -2080,6 +2086,8 @@ This week asked questions about identity, comparison, and what "enough" looks li
 ---
 
 # WEEK FOUR: INTEGRATION
+
+*Week Four is where you find out what stuck. Some of it will surprise you. Some of it already slipped out the back door.*
 
 ---
 
