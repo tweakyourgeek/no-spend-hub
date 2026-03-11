@@ -376,17 +376,16 @@
       btn.textContent = 'Sending...';
 
       try {
-        // TODO: Replace with Mailerlite API call
-        // await fetch('https://connect.mailerlite.com/api/subscribers', {
-        //   method: 'POST',
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //     'Authorization': 'Bearer YOUR_API_KEY'
-        //   },
-        //   body: JSON.stringify({ email, groups: ['YOUR_GROUP_ID'] })
-        // });
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+        const data = await res.json();
 
-        await new Promise(r => setTimeout(r, 700)); // remove when live
+        if (!res.ok) {
+          throw new Error(data.error || 'Something went wrong');
+        }
 
         document.querySelector('.form-row').style.display = 'none';
         successMsg.classList.add('visible');
@@ -394,7 +393,8 @@
       } catch (err) {
         btn.disabled = false;
         btn.textContent = 'Notify me';
-        console.error(err);
+        emailInput.style.borderColor = 'var(--peach)';
+        setTimeout(() => emailInput.style.borderColor = 'var(--lavender)', 2000);
       }
     }
 
