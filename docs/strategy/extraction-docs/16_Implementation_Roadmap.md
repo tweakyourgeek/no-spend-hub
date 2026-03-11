@@ -308,7 +308,7 @@ This document provides a strategic implementation timeline for launching the No-
 - [ ] Founding rate increase (members 201+)
 
 **Week 3-4**:
-- [ ] Prepare for Q2 Pantry Challenge (April)
+- [ ] Prepare for Q2 Pantry Challenge (June-July)
 - [ ] Q1 retrospective and lessons learned
 - [ ] Analyze conversion data
 - [ ] Optimize based on findings
@@ -327,11 +327,11 @@ This document provides a strategic implementation timeline for launching the No-
 ### April - June 2026
 **Focus**: Retention and expansion
 
-**Q2 Challenge Launch** (April):
+**Q2 Challenge Launch** (June-July):
 - Pantry Challenge kicks off
 - Focus on "use what you have" (food)
-- FREE tier engagement
-- Conversion to PAID for full system
+- Standard tier engagement
+- Conversion to Premium for full system
 
 **Product Expansion**:
 - Launch supplemental products (Sticker Book, No-Spend Weekend)

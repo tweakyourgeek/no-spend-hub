@@ -207,8 +207,8 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 - Can pause/unpause sequence if user misses days
 
 **Segmentation**:
-- FREE tier: Gets notifications for quarterly challenges only
-- PAID tier: Gets notifications for all challenges
+- Standard tier: Gets notifications for quarterly challenges only
+- Premium tier: Gets notifications for all challenges
 - VIP tier: Gets notifications + exclusive content
 - Non-members: Gets nurture emails inviting them to join
 

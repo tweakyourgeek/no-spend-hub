@@ -664,8 +664,8 @@ All extractions consistently describe:
 
 **File**: `/skool/quarterly_challenges/`
 **Content**:
-- Q1: 30 Bags in 30 Days (worksheet + daily prompts)
-- Q2: Pantry Challenge (worksheet + daily prompts)
+- Q1: No-Spend Challenge (worksheet + daily prompts)
+- Q2: Pantry Challenge, June-July (worksheet + daily prompts)
 - Q3: No-Spend Group Round (basic roadmap)
 - Q4: Holiday Spending Reset (worksheet + weekly reflections)
 **Source**: Extraction 04 (lines 224-298)

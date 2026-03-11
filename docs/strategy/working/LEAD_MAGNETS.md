@@ -170,7 +170,7 @@ Want more support?
 
 Join The No Spend Collective (FREE tier):
 
-✓ Quarterly challenges (30 Bags, Pantry Challenge, etc.)
+✓ Quarterly challenges (No-Spend Challenge, Pantry Challenge, etc.)
 ✓ Community support
 ✓ Monthly check-in prompts
 ✓ Free worksheets and templates

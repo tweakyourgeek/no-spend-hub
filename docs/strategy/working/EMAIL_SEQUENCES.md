@@ -198,7 +198,7 @@ You also need:
 That's why I built The No Spend Collective.
 
 It's a FREE community where you can:
-- Join quarterly challenges (30 Bags in 30 Days, No-Spend rounds, etc.)
+- Join quarterly challenges (No-Spend Challenge, Pantry Challenge, etc.)
 - Get daily prompts and reflection questions
 - Connect with others who are figuring this out too
 - Ask questions and get real answers
@@ -572,7 +572,7 @@ You're now part of a community of 500+ people who are figuring out their spendin
    (Just say hi, share why you joined, what you hope to shift)
 
 2. **Check out the current challenge**: [LINK TO CURRENT CHALLENGE]
-   (We run quarterly challenges - 30 Bags, No-Spend rounds, Pantry Challenge, etc.)
+   (We run quarterly challenges - No-Spend Challenge, Pantry Challenge, Group No-Spend Round, Holiday Spending Reset)
 
 3. **Explore the resources**: [LINK TO RESOURCES]
    (Free downloads, templates, worksheets - all yours)

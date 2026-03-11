@@ -574,7 +574,7 @@ PAID Tier Conversion ($27/mo)
 3. **Quarterly Transition (Between Challenges)**
    - Email: "Q2 challenge starts in 2 weeks"
    - Community announcement: "What's coming in the Pantry Challenge"
-   - Offer: "Join PAID for the complete Q2 experience"
+   - Offer: "Join Premium for the complete Q2 experience"
 
 4. **When They Ask a Question**
    - Response: "That's covered in the full guide (PAID tier)"
@@ -947,7 +947,7 @@ PAID Tier Conversion ($27/mo)
 |------|-------|------------|
 | **Week 9** | Master Your Money Bundle | Premium bundle, PAID tier direct conversions |
 | **Week 10** | Q1 Review | Analyze metrics, gather feedback, plan improvements |
-| **Week 11** | Q2 Challenge Prep | Pantry Challenge planning, content creation |
+| **Week 11** | Q2 Challenge Prep | Pantry Challenge (June-July) planning, content creation |
 | **Week 12** | Founding Rate Increase | Members 101+ pay higher rates, final founding push |
 
 ---

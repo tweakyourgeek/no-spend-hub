@@ -310,7 +310,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 
 **The Change**:
 - **Before**: 30 Bags in 30 Days priced at $9-14 standalone
-- **After**: All quarterly challenges FREE (30 Bags, Pantry, No-Spend, Holiday)
+- **After**: All quarterly challenges FREE (No-Spend Challenge, Pantry, Group No-Spend Round, Holiday Reset)
 
 **Strategic Reasoning**:
 1. Drive year-round community engagement

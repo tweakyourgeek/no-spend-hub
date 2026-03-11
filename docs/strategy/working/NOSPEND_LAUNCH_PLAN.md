@@ -213,7 +213,7 @@
 - [ ] Review analytics (what's working? what's not?)
 - [ ] Address most common support questions (update FAQ)
 - [ ] Improve landing page (A/B test headlines, CTAs)
-- [ ] Plan Q2 Challenge (Pantry Challenge - April/May)
+- [ ] Plan Q2 Challenge (Pantry Challenge - June/July)
 - [ ] Build additional GPTs (if VIP tier is popular)
 - [ ] Create free supplemental materials (Pattern Quiz, wallpapers, etc.)
 

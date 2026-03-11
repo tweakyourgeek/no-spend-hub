@@ -797,7 +797,7 @@ A: You don't have to. We offer 10 different expense log versions—from detailed
 - [ ] Identify quick wins and gaps
 
 **✅ 12. Q2 Planning**
-- [ ] Prepare Q2 Quarterly Challenge (Pantry Challenge, April-May)
+- [ ] Prepare Q2 Quarterly Challenge (Pantry Challenge, June-July)
 - [ ] Review and update No-Spend Guide based on Q1 feedback
 - [ ] Plan marketing campaigns for Q2 launch
 - [ ] Evaluate pricing (should founding rates increase after 100 members?)

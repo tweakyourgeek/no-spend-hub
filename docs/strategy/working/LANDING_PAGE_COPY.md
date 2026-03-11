@@ -94,8 +94,8 @@ Start for FREE. Upgrade when you're ready.
 Join the FREE community and you get:
 
 ✓ Quarterly Challenges
-  30 Bags in 30 Days (Feb-Mar)
-  Pantry Challenge (Apr-May)
+  No-Spend Challenge (April)
+  Pantry Challenge (June-July)
   No-Spend Group Round (Aug-Sep)
   Holiday Spending Reset (Nov-Dec)
 

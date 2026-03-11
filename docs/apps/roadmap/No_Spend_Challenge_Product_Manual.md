@@ -355,8 +355,8 @@ Goals:
 
 | Quarter | Challenge | Timing | Theme |
 |---------|-----------|--------|-------|
-| Q1 | 30 Bags in 30 Days | Feb-Mar (Lent) | Clear clutter |
-| Q2 | Pantry Challenge | April-May | Use what you have (food) |
+| Q1 | No-Spend Challenge | April | Pattern recognition, spending as data |
+| Q2 | Pantry Challenge | June-July | Use what you have (food) |
 | Q3 | No-Spend Group Round | Aug-Sept | Pre-holiday reset |
 | Q4 | Holiday Spending Reset | Nov-Dec | Intentional holidays |
 
