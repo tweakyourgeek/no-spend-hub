@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Spend Hub — Coming Soon</title>
+  <meta name="description" content="A 30-day spending clarity challenge. No guilt. No restriction. Just pattern recognition and tools that actually help.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐷</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:      #F8F1F2;
+      --off-white:  #F9F0F5;
+      --plum:       #493751;
+      --sage:       #A6C9BB;
+      --periwinkle: #A7AFC8;
+      --lavender:   #E0DAE7;
+      --mauve:      #B375A0;
+      --navy:       #3B3B58;
+      --peach:      #E8B4A0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--cream);
+      font-family: 'Open Sans', sans-serif;
+      color: var(--navy);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .blob-1, .blob-2, .blob-3 {
+      position: fixed; border-radius: 50%; pointer-events: none; z-index: 0;
+    }
+    .blob-1 { width: 500px; height: 500px; top: -160px; right: -160px;
+      background: radial-gradient(circle, rgba(179,117,160,0.13) 0%, transparent 70%); }
+    .blob-2 { width: 420px; height: 420px; bottom: -120px; left: -120px;
+      background: radial-gradient(circle, rgba(166,201,187,0.16) 0%, transparent 70%); }
+    .blob-3 { width: 300px; height: 300px; top: 40%; left: 50%; transform: translateX(-50%);
+      background: radial-gradient(circle, rgba(232,180,160,0.09) 0%, transparent 70%); }
+
+    .page {
+      position: relative; z-index: 1;
+      max-width: 680px; margin: 0 auto;
+      padding: 60px 24px 80px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.06); }
+    }
+
+    .f1 { animation: fadeUp 0.6s ease both; }
+    .f2 { animation: fadeUp 0.7s 0.1s ease both; }
+    .f3 { animation: fadeUp 0.7s 0.2s ease both; }
+    .f4 { animation: fadeUp 0.7s 0.3s ease both; }
+    .f5 { animation: fadeUp 0.7s 0.4s ease both; }
+    .f6 { animation: fadeUp 0.7s 0.5s ease both; }
+    .f7 { animation: fadeUp 0.7s 0.6s ease both; }
+
+    /* Hero */
+    .pig {
+      font-size: 52px; line-height: 1; margin-bottom: 20px; display: block;
+      animation: pulse 4s ease-in-out infinite, fadeUp 0.6s ease both;
+    }
+    .eyebrow {
+      font-size: 10px; font-weight: 600; letter-spacing: 3.5px;
+      text-transform: uppercase; color: var(--periwinkle);
+      margin-bottom: 18px; text-align: center;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(42px, 8vw, 72px); font-weight: 600;
+      color: var(--plum); line-height: 1.06; text-align: center; margin-bottom: 16px;
+    }
+    h1 em { font-style: italic; color: var(--mauve); }
+    .subhead {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: clamp(18px, 3vw, 22px); color: var(--navy); opacity: 0.72;
+      text-align: center; line-height: 1.6; margin-bottom: 40px; max-width: 520px;
+    }
+
+    /* Divider */
+    .divider {
+      display: flex; align-items: center; gap: 14px;
+      width: 100%; max-width: 400px; margin-bottom: 40px;
+    }
+    .divider::before, .divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--lavender);
+    }
+    .divider-dots { display: flex; gap: 5px; }
+    .divider-dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--mauve); opacity: 0.5;
+    }
+
+    /* Countdown */
+    .countdown-section { text-align: center; margin-bottom: 48px; width: 100%; }
+    .section-label {
+      font-size: 11px; font-weight: 600; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--periwinkle); margin-bottom: 16px;
+    }
+    .countdown-tiles {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+    }
+    .tile {
+      background: var(--off-white); border: 1px solid var(--lavender);
+      border-radius: 14px; padding: 16px 20px 12px; min-width: 76px;
+      text-align: center; transition: transform 0.2s ease;
+    }
+    .tile:hover { transform: translateY(-2px); }
+    .tile-num {
+      font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 600;
+      color: var(--plum); line-height: 1; display: block;
+    }
+    .tile-label {
+      font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--periwinkle); margin-top: 6px; display: block;
+    }
+
+    /* What's coming */
+    .coming-section { width: 100%; margin-bottom: 48px; }
+    .coming-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .coming-card {
+      background: var(--off-white); border: 1px solid var(--lavender);
+      border-radius: 16px; padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .coming-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(73,55,81,0.08);
+    }
+    .coming-card .icon { font-size: 24px; margin-bottom: 10px; display: block; }
+    .coming-card h3 {
+      font-family: 'Cormorant Garamond', serif; font-size: 18px; font-weight: 600;
+      color: var(--plum); margin-bottom: 6px; line-height: 1.2;
+    }
+    .coming-card p { font-size: 13px; line-height: 1.6; color: var(--navy); opacity: 0.72; }
+    .coming-card.accent {
+      border-color: rgba(179,117,160,0.3);
+      background: linear-gradient(135deg, var(--off-white) 0%, rgba(179,117,160,0.06) 100%);
+    }
+
+    /* Skool CTA */
+    .skool-cta {
+      width: 100%; background: linear-gradient(135deg, var(--plum) 0%, #5d4570 100%);
+      border-radius: 20px; padding: 32px 28px; text-align: center;
+      margin-bottom: 48px; position: relative; overflow: hidden;
+    }
+    .skool-cta::before {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 200px; height: 200px; border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .skool-eyebrow {
+      font-size: 10px; font-weight: 600; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--sage); margin-bottom: 10px;
+    }
+    .skool-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(24px, 4vw, 34px); font-weight: 600;
+      color: white; line-height: 1.2; margin-bottom: 10px;
+    }
+    .skool-cta h2 em { font-style: italic; color: var(--peach); }
+    .skool-cta p {
+      font-size: 14px; color: rgba(255,255,255,0.72); line-height: 1.7;
+      margin-bottom: 24px; max-width: 420px; margin-left: auto; margin-right: auto;
+    }
+    .free-badge {
+      display: inline-block; margin-left: 8px;
+      background: rgba(255,255,255,0.15); color: white;
+      font-size: 10px; font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 100px;
+      vertical-align: middle;
+    }
+    .btn-skool {
+      display: inline-block; padding: 14px 32px;
+      background: var(--sage); color: var(--plum); border-radius: 100px;
+      font-family: 'Open Sans', sans-serif; font-size: 14px; font-weight: 600;
+      text-decoration: none; transition: background 0.2s ease, transform 0.15s ease;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .btn-skool:hover { background: white; transform: translateY(-2px); }
+
+    /* Email form */
+    .email-section { width: 100%; text-align: center; margin-bottom: 20px; }
+    .email-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(22px, 4vw, 30px); font-weight: 600;
+      color: var(--plum); margin-bottom: 8px;
+    }
+    .email-sub {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 16px; color: var(--navy); opacity: 0.65; margin-bottom: 24px;
+    }
+    .form-row {
+      display: flex; gap: 10px; max-width: 460px; margin: 0 auto;
+    }
+    input[type="email"] {
+      flex: 1; padding: 14px 20px;
+      border: 1.5px solid var(--lavender); border-radius: 100px;
+      background: var(--off-white); font-family: 'Open Sans', sans-serif;
+      font-size: 14px; color: var(--navy); outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease; min-width: 0;
+    }
+    input[type="email"]::placeholder { color: var(--periwinkle); opacity: 0.8; }
+    input[type="email"]:focus {
+      border-color: var(--mauve);
+      box-shadow: 0 0 0 3px rgba(179,117,160,0.12);
+    }
+    .btn-submit {
+      padding: 14px 26px; background: var(--mauve); color: white;
+      border: none; border-radius: 100px; font-family: 'Open Sans', sans-serif;
+      font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap;
+      transition: background 0.2s ease, transform 0.15s ease;
+      box-shadow: 0 4px 16px rgba(179,117,160,0.3);
+    }
+    .btn-submit:hover { background: var(--plum); transform: translateY(-1px); }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+    .success-msg {
+      display: none; font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 18px; color: var(--sage); margin-top: 16px;
+      padding: 16px 24px; background: rgba(166,201,187,0.12);
+      border-radius: 12px; border: 1px solid rgba(166,201,187,0.3);
+    }
+    .success-msg.visible { display: block; animation: fadeUp 0.4s ease both; }
+    .fine-print { font-size: 12px; color: var(--periwinkle); opacity: 0.75; margin-top: 14px; }
+
+    footer {
+      position: relative; z-index: 1; text-align: center;
+      padding: 0 24px 40px; font-size: 11px; color: var(--periwinkle); opacity: 0.6;
+    }
+
+    @media (max-width: 520px) {
+      .coming-grid { grid-template-columns: 1fr; }
+      .form-row { flex-direction: column; }
+      .btn-submit { width: 100%; }
+      .tile { min-width: 64px; padding: 12px 14px 10px; }
+      .tile-num { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blob-1"></div>
+  <div class="blob-2"></div>
+  <div class="blob-3"></div>
+
+  <div class="page">
+
+    <span class="pig f1">🐷</span>
+    <p class="eyebrow f1">No Spend Hub</p>
+
+    <h1 class="f2">Something <em>good</em><br>is almost here.</h1>
+
+    <p class="subhead f2">A 30-day spending clarity challenge for people who are tired of feeling bad about money. No restriction. No guilt. Just pattern recognition.</p>
+
+    <div class="divider f3">
+      <div class="divider-dots">
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+        <span class="divider-dot"></span>
+      </div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-section f4">
+      <p class="section-label">Launching in</p>
+      <div class="countdown-tiles">
+        <div class="tile"><span class="tile-num" id="cd-days">--</span><span class="tile-label">Days</span></div>
+        <div class="tile"><span class="tile-num" id="cd-hours">--</span><span class="tile-label">Hours</span></div>
+        <div class="tile"><span class="tile-num" id="cd-mins">--</span><span class="tile-label">Minutes</span></div>
+        <div class="tile"><span class="tile-num" id="cd-secs">--</span><span class="tile-label">Seconds</span></div>
+      </div>
+    </div>
+
+    <!-- What's coming -->
+    <div class="coming-section f5">
+      <p class="section-label">What's coming</p>
+      <div class="coming-grid">
+        <div class="coming-card accent">
+          <span class="icon">🧰</span>
+          <h3>Free Tools</h3>
+          <p>Impulse brake, pattern quiz, decision matrix, meal planner, and more. Built for the challenge. Free to use.</p>
+        </div>
+        <div class="coming-card">
+          <span class="icon">📊</span>
+          <h3>Spending Clarity Apps</h3>
+          <p>Subscription audit, C3 savings calculator, expense log. Real math, no judgment.</p>
+        </div>
+        <div class="coming-card">
+          <span class="icon">🤖</span>
+          <h3>GPT Suite</h3>
+          <p>Seven custom GPTs for coaching, accountability, budgeting, and navigating the messy middle of a challenge.</p>
+        </div>
+        <div class="coming-card accent">
+          <span class="icon">📋</span>
+          <h3>The 30-Day Guide</h3>
+          <p>Daily prompts, weekly reviews, the full C3 framework, and a container you actually want to show up in.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skool CTA -->
+    <div class="skool-cta f6">
+      <p class="skool-eyebrow">Don't want to wait?</p>
+      <h2>The community is already open. <span class="free-badge">Free</span></h2>
+      <p>Join the <em>No Spend Collective</em> on Skool right now. Grab the free 7-day tracker and be first to know when the full site goes live.</p>
+      
+      <a href="https://www.skool.com/nospend-8052/about" class="btn-skool">Join the No Spend Collective</a>
+    </div>
+
+    <!-- Email capture -->
+    <div class="email-section f7">
+      <p class="section-label">Stay in the loop</p>
+      <h2 class="email-heading">Get notified when we launch.</h2>
+      <p class="email-sub">One email. That's it. No drip campaigns hiding in the bushes.</p>
+      <div class="form-row">
+        <input type="email" id="email-input" placeholder="your@email.com" autocomplete="email" />
+        <button class="btn-submit" id="submit-btn" onclick="handleSubmit()">Notify me</button>
+      </div>
+      <div class="success-msg" id="success-msg">You're on the list. See you on launch day.</div>
+      <p class="fine-print">No spam. No daily affirmations. Just the good stuff.</p>
+    </div>
+
+  </div>
+
+  <footer>&copy; 2026 No Spend Hub &nbsp;&middot;&nbsp; nospend.net</footer>
+
+  <script>
+    // Countdown to March 15
+    const launchDate = new Date('2026-03-15T00:00:00');
+    // TODO: adjust timezone if needed, e.g. new Date('2026-03-15T09:00:00-08:00')
+
+    function updateCountdown() {
+      const diff = launchDate - new Date();
+      if (diff <= 0) {
+        document.querySelector('.countdown-section').style.display = 'none';
+        return;
+      }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('cd-days').textContent  = String(d).padStart(2,'0');
+      document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+      document.getElementById('cd-mins').textContent  = String(m).padStart(2,'0');
+      document.getElementById('cd-secs').textContent  = String(s).padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Email submit
+    async function handleSubmit() {
+      const emailInput = document.getElementById('email-input');
+      const btn = document.getElementById('submit-btn');
+      const successMsg = document.getElementById('success-msg');
+      const email = emailInput.value.trim();
+
+      if (!email || !email.includes('@')) {
+        emailInput.style.borderColor = 'var(--peach)';
+        emailInput.focus();
+        setTimeout(() => emailInput.style.borderColor = 'var(--lavender)', 1600);
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      try {
+        // TODO: Replace with Mailerlite API call
+        // await fetch('https://connect.mailerlite.com/api/subscribers', {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     'Authorization': 'Bearer YOUR_API_KEY'
+        //   },
+        //   body: JSON.stringify({ email, groups: ['YOUR_GROUP_ID'] })
+        // });
+
+        await new Promise(r => setTimeout(r, 700)); // remove when live
+
+        document.querySelector('.form-row').style.display = 'none';
+        successMsg.classList.add('visible');
+
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = 'Notify me';
+        console.error(err);
+      }
+    }
+
+    document.getElementById('email-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') handleSubmit();
+    });
+  </script>
+
+</body>
+</html>
