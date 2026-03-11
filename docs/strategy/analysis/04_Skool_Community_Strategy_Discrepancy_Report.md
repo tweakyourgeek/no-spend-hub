@@ -141,14 +141,27 @@ The original working doc referenced `2026_No_Spend_Project_Plan_UPDATED.md`. Thi
 
 ## Summary: What Still Needs Updating
 
-### Docs That Still Have Stale Data
+### Docs Updated (March 11, 2026)
 
-| Priority | File | Issues |
-|----------|------|--------|
-| High | `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` | $27/$97 pricing, "17 GPTs", PAID/VIP tier names |
-| High | `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` | $27/$97 pricing, FREE/PAID tier names, 6-section structure (now 7) |
-| Medium | `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` | Likely references 17 GPTs (now 7) |
-| Low | `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` | 30 Bags as Q1, Pantry as April-May |
+All previously stale docs have been updated:
+
+| File | Status |
+|------|--------|
+| `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` | ✅ Updated — pricing, tier names, GPT count |
+| `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` | ✅ Replaced entirely with current version |
+| `docs/strategy/extraction-docs/05_Marketing_And_Launch_Strategy.md` | ✅ Updated — launch timeline, pricing, conversion funnels |
+| `docs/strategy/extraction-docs/08_Lead_Magnets_And_Funnels.md` | ✅ Updated — pricing, tier names, Q1 challenge, conversion paths |
+| `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` | ✅ Updated — 17 → 7 GPTs, tier assignment TBD |
+| `docs/strategy/extraction-docs/11_Product_Architecture.md` | ✅ Partially updated — key pricing, GPTs, Q1, tier names corrected |
+| `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` | ✅ Updated — 7-classroom structure, pricing, tier names |
+| `src/components/landing/PricingSection.tsx` | ✅ Updated — VIP $99/yr, Standard tier name, features |
+
+### Still Stale (archive artifacts — not blocking)
+
+| File | Issues |
+|------|--------|
+| `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` | 30 Bags as Q1, Pantry as April-May |
+| `project-archive/artifacts/29-14-skool-classroom-structure-6-sections.md` | Old 6-section structure |
 
 ### Decisions Still Needed
 
@@ -157,34 +170,5 @@ The original working doc referenced `2026_No_Spend_Project_Plan_UPDATED.md`. Thi
 | GPT tier assignments (7 GPTs) | Pending |
 | Couples/Teens/Pets Modules — real products? Where do they live? | Pending |
 | Founding member escalation mechanics | Undocumented in current docs |
-| Weekly content calendar (Monday/Wednesday/Friday threads) | Exists in working doc, not in strategy doc |
+| Weekly content calendar (Monday/Wednesday/Friday threads) | Preserved in SKOOL_COMMUNITY_STRUCTURE.md, not in strategy doc |
 | Project plan as committed file | Not in repo |
-
----
-
-## Files to Retrieve from Repo for Review on Regular Claude
-
-Grouped by purpose — these are the files needed to reconcile the remaining discrepancies.
-
-### Must-Have: Stale Docs That Need Updating
-
-1. `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` — old $27/$97 pricing, "17 GPTs", old tier names
-2. `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` — old pricing, old tier names, old 6-section structure; has weekly content calendar worth preserving
-
-### Should-Have: Related Strategy Docs for Context
-
-3. `docs/strategy/extraction-docs/02_Challenge_Structure.md` — cross-referenced by the strategy doc
-4. `docs/strategy/extraction-docs/05_Marketing_And_Launch_Strategy.md` — cross-referenced for bundle strategy
-5. `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` — likely stale (17 GPTs vs current 7), needs update
-
-### Nice-to-Have: Artifacts with Relevant Detail
-
-6. `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` — old Q1/Q2 calendar, product ecosystem breakdown
-7. `project-archive/artifacts/29-14-skool-classroom-structure-6-sections.md` — old 6-section classroom detail (now superseded by 7-classroom structure)
-8. `project-archive/artifacts/28-6-10-day-skool-launch-sprint-plan.md` — launch sprint task breakdown
-
-### Already Correct (reference only)
-
-9. `public/coming-soon/index.html` — pricing and tier features are correct
-10. `src/components/landing/PricingSection.tsx` — now updated and correct
-11. `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` — now replaced with current version

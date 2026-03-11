@@ -100,7 +100,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - "Your pattern shows up in the challenge - here's how"
 - Invitation to join challenge
 
-**Conversion Goal**: $30 standalone guide OR $27/mo Skool
+**Conversion Goal**: $30 standalone guide OR Skool Premium ($9/mo)
 
 ---
 
@@ -131,7 +131,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 4. Email: "Comfort menu in action - real examples"
 5. Email: "Want daily support? Join the challenge"
 
-**Conversion Goal**: $30 guide or FREE Skool tier
+**Conversion Goal**: $30 guide or Skool Standard tier (free)
 
 ---
 
@@ -200,7 +200,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - Other business owners like you
 - CTA: Join FREE Skool
 
-**Conversion Goal**: FREE Skool → $27/mo PAID tier (Business Edition)
+**Conversion Goal**: Skool Standard → Premium ($9/mo) or VIP ($99/yr)
 
 ---
 
@@ -229,7 +229,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 4. Email: "Here's what I found in my audit: $3,400/year waste"
 5. Email: "Want help deciding what to keep? Try the spreadsheet pack + Subscription Audit GPT"
 
-**Conversion Goal**: $47 Business Spreadsheet Pack (includes Subscription Audit GPT)
+**Conversion Goal**: $47 Business Spreadsheet Pack
 
 ---
 
@@ -286,13 +286,14 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 ### Challenge-Specific Sequences
 
-**30 Bags in 30 Days (Q1 Free Challenge)**
-**Source**: File 15
+> **Updated March 11, 2026**: Q1 challenge is the No-Spend Challenge starting April 1, 2026. 30 Bags in 30 Days has been retired as a standalone quarterly event.
+
+**No-Spend Challenge (Q1, April 1)**
 
 **Pre-Challenge (1 week before)**:
 - Email 1: "Challenge starts next week - are you in?"
-- Email 2: "How to prepare for 30 Bags"
-- Email 3: "What counts as a bag?"
+- Email 2: "How to prepare for your no-spend month"
+- Email 3: "What counts as essential spending?"
 - Email 4: "Join the Skool community for daily support"
 
 **During Challenge (daily or weekly)**:
@@ -303,113 +304,92 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 **Post-Challenge**:
 - Email 1: "You did it! What did you learn?"
-- Email 2: "Want to keep the momentum? Join the No-Spend Challenge"
-- Email 3: "Special offer for 30 Bags graduates"
+- Email 2: "Want to keep the momentum? Upgrade to Premium"
+- Email 3: "Special offer for challenge graduates"
 
-**Conversion Goal**: FREE challenge → $30 guide or $27/mo Skool
+**Conversion Goal**: Standard challenge → Premium ($9/mo) or VIP ($99/yr)
 
 ---
 
 ## Conversion Funnels
 
 ### Bundle → Skool Funnel
-**Source**: File 9
 
 **Funnel Flow**:
 1. **Acquire**: User downloads bundle (Jan-Mar 2026)
 2. **Welcome**: Delivery email with Skool community mention
 3. **Nurture**: 5-7 email sequence (see above)
-4. **Invite**: "Join FREE Skool community" (Email 5)
-5. **Activate**: User joins FREE tier, experiences quarterly challenge
-6. **Convert**: Upgrade to PAID tier ($27 or $97/mo)
+4. **Invite**: "Join the No Spend Collective" (Email 5)
+5. **Activate**: User joins Standard tier, experiences challenge
+6. **Convert**: Upgrade to Premium ($9/mo) or VIP ($99/yr)
 
 **Key Touchpoints**:
 - Bundle delivery mentions Skool (soft)
 - Email 3-4 introduces Skool value (medium)
-- Email 5 strong CTA to join FREE tier (hard)
+- Email 5 strong CTA to join Standard tier (hard)
 - In Skool: Experience value, hit limitations, upgrade
-
-**Conversion Metrics**:
-- Bundle downloads → Email opens: 40-50%
-- Email opens → Skool signups: 10-15%
-- FREE tier → PAID tier: 20-30% (over 90 days)
 
 ---
 
 ### Landing Page → Standalone Purchase Funnel
-**Source**: Files 5, 15
 
 **Funnel Flow**:
 1. **Acquire**: User lands on sales page (ads, SEO, social, bundles)
 2. **Educate**: Sales page explains guide, framework, value
 3. **Convert**: User purchases $30 standalone guide
-4. **Deliver**: Welcome email + download link + "Join FREE Skool"
-5. **Upsell**: Email sequence promoting $27/mo for ongoing support
-6. **Retain**: User joins Skool (FREE or PAID)
-
-**Sales Page Elements**:
-- Hero: "30 days to understand your spending patterns"
-- Problem: "You keep buying things you don't use"
-- Solution: "The No-Spend Guide helps you see WHY"
-- Features: What's included (sections, tracking, logs)
-- Benefits: What changes (awareness, pattern recognition)
-- Testimonials: Success stories
-- FAQ: Objection handling
-- CTA: "Get the guide for $30" (or $15 with NOSPEND50)
+4. **Deliver**: Welcome email + download link + "Join the No Spend Collective"
+5. **Upsell**: Email sequence promoting Premium ($9/mo) for ongoing support
+6. **Retain**: User joins Skool (Standard or Premium)
 
 **Post-Purchase Sequence**:
-- Email 1: Delivery + "Join FREE Skool for support"
+- Email 1: Delivery + "Join Skool Standard tier for community support"
 - Email 2: "How to use the guide (quick start)"
 - Email 3: "Common challenges and how to handle them"
-- Email 4: "Want live support? Upgrade to $27/mo"
+- Email 4: "Want live check-ins and monthly themes? Upgrade to Premium $9/mo"
 
 ---
 
-### Skool FREE → PAID Funnel
-**Source**: Files 5, 15
+### Standard → Premium Funnel
 
 **Funnel Flow**:
-1. **Join FREE**: User joins FREE tier (via bundle, landing page, etc.)
-2. **Engage**: Participates in quarterly challenge (30 Bags, Pantry, etc.)
+1. **Join Standard**: User joins Standard tier (via bundle, landing page, etc.)
+2. **Engage**: Participates in no-spend challenge
 3. **Experience Value**: Completes challenge, sees results, wants more
-4. **Hit Limitation**: Wants full guide, premium templates, deeper support
+4. **Hit Limitation**: Wants monthly themed challenges, live check-ins, current month's tool
 5. **Upgrade Offer**: Strategic moment messaging
-6. **Convert**: Upgrades to $27/mo (or $97/mo for GPTs)
+6. **Convert**: Upgrades to Premium ($9/mo)
 
 **Strategic Upgrade Moments**:
-- Day 7 of challenge: "Want the full system? Upgrade"
-- Challenge completion: "Loved this? Get the guide for your next round"
-- When asking questions: "That's in the full guide (PAID tier)"
-- Quarterly transition: "Q2 starts soon - join PAID for complete access"
+- Day 7 of challenge: "Want monthly themed challenges? Upgrade"
+- Challenge completion: "Loved this? Premium gives you a new theme every month"
+- When asking questions: "That's in the Monthly Themes classroom (Premium)"
 
 **Upgrade Messaging**:
-- "You've proven this works. Invest in the full system."
-- "FREE tier tests. PAID tier transforms."
-- "The guide has the framework you're missing."
+- "You've proven this works. Invest in the full experience."
+- "Standard tests. Premium transforms."
+- "Monthly themes + live check-ins for $9/mo."
 
 ---
 
-### Skool PAID → VIP Funnel
-**Source**: Files 3, 5
+### Premium → VIP Funnel
 
 **Funnel Flow**:
-1. **Existing PAID member** ($27/mo)
-2. **Experiences GPT envy**: Sees VIP members using GPTs, sharing results
-3. **Hits decision fatigue**: "I wish I had help deciding if this is worth buying"
-4. **Upgrade offer**: "VIP has 17 GPTs that make decisions easier"
-5. **Convert**: Upgrades to $97/mo
+1. **Existing Premium member** ($9/mo)
+2. **Wants more**: Sees VIP quarterly challenges, annual bonuses
+3. **Hits limitation**: Wants full toolkit, journal, archives
+4. **Upgrade offer**: "VIP gives you everything for $99/year"
+5. **Convert**: Upgrades to VIP ($99/yr)
 
 **VIP Conversion Triggers**:
-- "I wish I had [specific GPT feature]"
-- Asks about live calls or co-working
+- Wants quarterly challenge access
+- Wants the full No Spend Toolkit
+- Wants the updated Journal and Guide
 - Wants access to archives
-- Loves automation and tools
-- Business owner with GPT budget
 
 **Upgrade Messaging**:
-- "17 GPTs for $70 more per month"
-- "You're getting results. VIP accelerates them."
-- "Live support + AI tools = VIP"
+- "Everything in Premium plus the complete ecosystem for $99/year."
+- "That's less than $9/month for the full toolkit."
+- "You're getting results. VIP gives you everything to keep going."
 
 ---
 
@@ -421,7 +401,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 ---
 
-**Document Status**: Complete lead magnet and funnel extraction
-**Last Updated**: December 28, 2024
-**Confidence Level**: High - comprehensive funnel strategy documented
+**Document Status**: Updated — pricing, tier names, and Q1 challenge corrected
+**Last Updated**: March 11, 2026
+**Confidence Level**: High - funnel strategy updated to current pricing
 **Notable Gaps**: Exact email copy, landing page designs, conversion rate projections

@@ -1,5 +1,7 @@
 # 11. Product Architecture
 
+> **Partially updated March 11, 2026**: Key pricing, tier names, GPT count, and Q1 challenge references have been corrected. Skool community pricing is now Standard ($0) / Premium ($9/mo) / VIP ($99/yr). GPT count is 7 (not 17). Q1 challenge is the No-Spend Challenge starting April 1 (not 30 Bags in 30 Days). Classroom structure is 7 sections. Some sections below retain original extraction detail for reference.
+
 ## Document Purpose
 This document extracts all product architecture, tier structure, deliverables, pricing discussions, and component relationships for the 30 Day No Spend Challenge across all versions.
 
@@ -250,8 +252,8 @@ Created 10 different expense log versions to accommodate different households:
 
 | Quarter | Challenge              | Timing         | Theme                    |
 |---------|------------------------|----------------|--------------------------|
-| **Q1**  | 30 Bags in 30 Days     | Lent (Feb-Mar) | Clear the clutter        |
-| **Q2**  | Pantry Challenge       | April-May      | Use what you have (food) |
+| **Q1**  | No-Spend Challenge     | April 1        | Pattern recognition, spending as data |
+| **Q2**  | Pantry Challenge       | June-July      | Use what you have (food) |
 | **Q3**  | No-Spend Group Round   | Aug-Sept       | Pre-holiday reset        |
 | **Q4**  | Holiday Spending Reset | Nov-Dec        | Intentional holidays     |
 
@@ -806,16 +808,16 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 **Pricing Tiers Discussed**:
 
-1. **FREE Version**
-   - Roadmap only
-   - PLR workbook
-   - Basic community access
+> **Updated March 11, 2026**: See current pricing below. Original $27/mo and $97/mo tiers have been replaced.
 
-2. **Paid Access**
-   - $27/month (Skool membership)
-   - OR $30 standalone for 30-Day No-Spend Workbook
-   - OR $37-47 one-time for complete bundle
-   - Includes better workbook + resources
+1. **Standard Tier** (Free)
+   - Community access, monthly challenge, 7-Day Tracker, Pattern Quiz, Impulse Brake, Decision Matrix
+
+2. **Premium Tier** ($9/mo)
+   - Everything in Standard + monthly themed challenge, live check-in, current month's tool
+
+3. **VIP Tier** ($99/yr)
+   - Everything in Premium + quarterly resets, full toolkit, journal/guide, archives
 
 ### CRITICAL PRICING DECISION (Claude File 5)
 **Date**: December 2024
@@ -828,7 +830,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 **New Policy**:
 - Journal is now PREMIUM ONLY
-- Available in paid Skool tier ($27/mo+) OR $30 standalone
+- Available in Skool Premium/VIP tier OR $30 standalone
 - Free tier gets challenges and worksheets only, NOT full journal
 - 50% discount code available: `NOSPEND50` (brings $30 to $15)
 
@@ -875,15 +877,15 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - **Gateway GPT Strategy**: Include 1 GPT (Subscription Audit) to:
   - Make spreadsheets immediately actionable
   - Create quick wins (people see results in first hour)
-  - Show power of GPT ecosystem without giving away all 17
+  - Show power of GPT ecosystem
   - Leave users wanting MORE GPTs
-  - Not cannibalize Premium tier (17 GPTs still exclusive)
+  - Not cannibalize tier value (note: GPT count now 7, tier assignment TBD)
 
 **Upsell Path** (Claude File 7):
 1. **Bundle** ($47) → Shows them how powerful GPTs are
 2. **Free Challenge** → They use spreadsheets + 1 GPT and love it
-3. **Premium Tier** → "Get 17 MORE GPTs to support your journey!" (templates + remaining GPTs)
-4. **VIP Tier** → Everything + lives for accountability
+3. **Premium** ($9/mo) → Monthly themed challenges + live check-ins
+4. **VIP** ($99/yr) → Full toolkit + quarterly resets + archives
 
 **Positioning**: Premium product, NOT low-ticket
 
@@ -995,46 +997,22 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 ### Technology Tools
 
-#### Custom GPTs (17 total)
-**Source**: Claude Files 3, 5, 10
-**Access**: VIP tier ($97/month) only
-**Purpose**: AI-powered business and financial tools
+#### Custom GPTs (7 total — updated March 2026)
+**Access**: Tier assignment TBD
+**Purpose**: AI-powered challenge and financial tools
 
-**A. Core Challenge Companion GPTs (9):**
+> **Updated March 11, 2026**: Reduced from 17 to 7 GPTs. See `09_GPT_Ecosystem.md` for full details including retired concepts.
+
+**Current 7 GPTs:**
 1. No Spend Challenge Coach
-2. No Spend Prep & Planning Assistant
-3. Spending Trigger Decoder
-4. No-Spend Meal Planner
-5. Paycheck & Budget Buddy
-6. Use-What-You-Have Activity Generator
-7. Accountability Partner GPT
-8. Post-Challenge Habit Builder
-9. Mindful Money Mindset Reset GPT
+2. No Spend Prep and Planning Assistant
+3. Paycheck and Budget Buddy
+4. Accountability Partner GPT
+5. Content and Resource Reuse GPT
+6. Slip Recovery Decision GPT
+7. Mindful Money Mindset Reset GPT
 
-**B. Anti-FOMO / Anti-Impulse GPTs (3):**
-10. Decision Matrix GPT
-11. Marketing Decoder GPT
-12. Talk Me Out of This Purchase GPT
-
-**C. Crossover GPTs (3):**
-13. Digital Declutter GPT
-14. PLR Hoard Reduction GPT
-15. Content-From-What-You-Have GPT
-
-**D. Optional Ecosystem-Level GPTs (2):**
-16. Workshop / Challenge Selector GPT
-17. Resource Locker Finder GPT
-
-**High Standalone Potential** (Claude File 10 analysis):
-- Marketing Decoder GPT (analyze bundle offers, detect manipulation tactics)
-- Decision Matrix GPT (objective purchase decision framework)
-- Talk Me Out of This Purchase GPT (accountability tool)
-- Spending Trigger Decoder (pattern analysis)
-- Use-What-You-Have Activity Generator (alternative to shopping)
-- Content-From-What-You-Have GPT (repurpose existing content)
-- Digital Declutter GPT (subscription audit and cancellation)
-
-**Note**: Total changed from 18 to 17 GPTs (final locked count from Claude File 10)
+**Open Items**: Tier assignment (Standard / Premium / VIP) pending. All 7 need verification as live in ChatGPT GPT Builder.
 
 ### Frameworks & Educational Content
 
@@ -1111,7 +1089,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Product: Money-related spreadsheet
 - Price tier: $27+ minimum
 - Purpose: Higher quality audience, authority building
-- Drives to: Skool PAID tier ($27/mo or $97/mo)
+- Drives to: Skool Premium ($9/mo) or VIP ($99/yr)
 - Categories: Money Mindset, Budgeting, Debt, Earning/Side Hustles, Planning Ahead
 
 **Bundle 4: [TBD]**
@@ -1228,12 +1206,12 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Easy to print if wanted
 - Lowers barrier to starting
 
-### 4. FREE vs PAID Tier Differentiation
-**Decision**: FREE gets PLR version, PAID gets new quality version
+### 4. Standard vs Premium/VIP Tier Differentiation
+**Decision**: Standard gets core tools and challenge access, Premium/VIP get enhanced content and support
 **Rationale**:
-- Rewards paying members with better quality
-- Provides upgrade path
-- FREE tier drives awareness
+- Rewards paying members with deeper content
+- Provides clear upgrade path
+- Standard tier drives awareness and community
 - Maintains value perception
 
 ### 5. Standalone Business Edition (File 16)
@@ -1304,7 +1282,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 ---
 
-**Document Status**: Comprehensive extraction complete
-**Last Updated**: Based on File 16 (most recent/complete conversation)
-**Confidence Level**: High - extensive detail in source material
-**Notable Gaps**: Pricing finals, some delivery mechanics, card deck status
+**Document Status**: Partially updated — pricing, GPTs, Q1 challenge, and tier names corrected
+**Last Updated**: March 11, 2026
+**Confidence Level**: High - pricing and tier structure confirmed
+**Notable Gaps**: Some sections retain original December 2024 extraction detail for reference

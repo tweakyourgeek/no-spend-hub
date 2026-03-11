@@ -17,75 +17,40 @@ This document extracts all marketing strategies, launch plans, bundle participat
 
 ## Launch Timeline
 
-### Pre-Launch Phase (December 2025)
-**Source**: Files 3, 5, 9
+> **Updated March 11, 2026**: Launch timeline has been revised. Original plan was January 2026; actual soft launch is March 20, 2026 with first challenge April 1, 2026. Pricing updated to Standard ($0) / Premium ($9/mo) / VIP ($99/yr). Q1 challenge is the No-Spend Challenge (not 30 Bags in 30 Days).
+
+### Pre-Launch Phase (March 11-19, 2026)
 
 **Activities**:
-- Complete No-Spend Guide rewrite (Aligned Life framework)
-- Set up Skool community structure
-- Create all FREE tier materials
-- Build email sequences
-- Test tier access and payment gating
-- Prepare founding member bonuses
-- Update index.html roadmap
-
-**Deliverables**:
-- The No-Spend Guide (PDF)
-- Skool community (ready for members)
-- Welcome email sequence
-- Quarterly challenge materials (Q1 ready)
-- Bundle contributions prepared
+- Build Skool community structure (7 classrooms, tiers)
+- Write and populate START HERE section
+- Upload Standard tier materials (7-Day Tracker, Pattern Quiz, Impulse Brake, Decision Matrix)
+- Load at minimum Week 1 challenge content ready for April 1
+- Write founding member welcome post
+- Set up welcome sequence
 
 ---
 
-### Launch Phase (January 2026)
-**Source**: Files 3, 5, 9
+### Soft Launch (March 20, 2026)
 
-**Launch Event**: Q1 Challenge (30 Bags in 30 Days) kicks off community
-
-**Week 1 (Jan 1-7)**:
 - Skool community goes live
-- Founding member offer announced
-- Email list announcement
-- Social media launch campaign
-- First 100 members goal
-
-**Week 2-4 (Jan 8-31)**:
-- January Bundle (Griffin) participation begins
-- FREE My Cash Envelope System drives traffic
-- Daily community engagement starts
-- 30 Bags in 30 Days challenge running
-- First conversions from FREE to PAID tier
-
-**Success Metrics**:
-- 100 founding members (locked rates)
-- 50/50 split PAID/VIP tiers
-- Email list growth from bundle
-- Community engagement (daily posts, check-ins)
+- nospend.net live with coming-soon page
+- Posted on personal account, Tweak Your Geek account, relevant Skool communities
+- Founding member pricing active
+- First 100 members lock rates forever
 
 ---
 
-### Post-Launch Phase (February-March 2026)
-**Source**: File 9
+### Challenge Kickoff (April 1, 2026)
 
-**February**:
-- "Penny Wise Skills Bundle" participation ($5+ minimum)
-- Budgeting spreadsheet contribution
-- Continue 30 Bags challenge (runs through Feb)
-- Drive to FREE tier with upgrade messaging
-- Q1 challenge completion (late Feb/early March)
+- First 30-day No-Spend Challenge begins
+- Promotion posts across all channels
 
-**March**:
-- "Master Your Money Bundle" participation ($27+ minimum)
-- Drive directly to PAID tier ($27 or $97)
-- Transition period between Q1 and Q2 challenges
-- Founding member rate increases (members 101+)
+### Ongoing (April-December 2026)
 
-**Goals**:
-- 500 total Skool members by end of Q1
-- 30% conversion rate (FREE to PAID)
-- Establish quarterly challenge rhythm
-- Prove community value proposition
+- Quarterly challenge calendar runs as planned
+- Track which acquisition sources (bundles, social, email) convert to paid members
+- Founding member rate closes after founding period — specific trigger TBD
 
 ---
 
@@ -113,7 +78,7 @@ This document extracts all marketing strategies, launch plans, bundle participat
 **Bundle 3: March 2026 - "Master Your Money Bundle"**
 - **Product**: Money-related spreadsheet or premium template
 - **Bundle Price**: $27+ minimum
-- **CTA**: Join PAID tier ($27/mo or $97/mo)
+- **CTA**: Join Premium ($9/mo) or VIP ($99/yr)
 - **Goal**: Higher quality audience, authority building
 - **Categories**: Money Mindset, Budgeting, Debt, Earning/Side Hustles, Planning
 - **Expected Volume**: Medium (higher price point filters for quality)
@@ -218,61 +183,53 @@ This document extracts all marketing strategies, launch plans, bundle participat
 
 ## Conversion Strategy
 
-### FREE to PAID Tier Conversion
-**Source**: Files 5, 15
+> **Updated March 11, 2026**: Tier names and pricing updated. Standard (Free) / Premium ($9/mo) / VIP ($99/yr).
+
+### Standard to Premium Conversion
 
 **Conversion Funnel**:
-1. **Join FREE tier** (via bundle, email, social)
-2. **Participate in quarterly challenge** (experience value)
-3. **Hit limitation** (want full guide, more templates)
+1. **Join Standard tier** (via bundle, email, social)
+2. **Participate in challenge** (experience value)
+3. **Hit limitation** (want themed challenges, live check-ins)
 4. **Upgrade offer** appears at strategic moment
-5. **Convert to $27/mo** (or $97/mo for GPT access)
+5. **Convert to Premium** ($9/mo)
 
 **Strategic Conversion Moments**:
 - **Day 7 of challenge**: "Want deeper support? Upgrade now"
-- **Challenge completion**: "Loved this? Get the full guide for next round"
-- **Quarterly transition**: "Q2 challenge starts soon - join PAID for complete system"
-- **When they ask a question**: "That's covered in the full guide (PAID tier)"
+- **Challenge completion**: "Loved this? Get monthly themed challenges"
+- **Quarterly transition**: "Next challenge starts soon — Premium gets the full experience"
+- **When they ask a question**: "That's covered in the Monthly Themes classroom (Premium)"
 
 **Messaging**:
-- "You've proven this works for you. Invest in the complete system."
-- "FREE tier is great for testing. PAID tier is for transforming."
-- "The guide you're missing has the exact framework you need."
+- "You've proven this works for you. Invest in the full experience."
+- "Standard tier tests. Premium tier transforms."
+- "Monthly themed challenges + live check-ins for just $9/mo."
 
 ### Standalone to Membership Conversion
-**Source**: File 5
 
 **Scenario**: Someone buys $30 standalone guide
 
 **Conversion Path**:
-1. **Welcome email**: "You also get FREE Skool access!"
-2. **Join FREE tier** (no-brainer, they already paid for guide)
-3. **Upsell in community**: "Want live support? Upgrade to $27/mo"
-4. **30 days later**: "You've been using the guide - join monthly for ongoing challenges"
+1. **Welcome email**: "You also get Standard Skool access!"
+2. **Join Standard tier** (no-brainer, they already paid for guide)
+3. **Upsell in community**: "Want live support? Upgrade to Premium $9/mo"
+4. **30 days later**: "You've been using the guide — join Premium for ongoing challenges"
 
-**Value Proposition**:
-- Standalone: $30 one-time (just the guide)
-- Monthly: $27/mo (guide + challenges + community + templates)
-- After 2 months, monthly is better value + ongoing support
-
-### PAID to VIP Tier Conversion
-**Source**: Files 3, 5
+### Premium to VIP Conversion
 
 **Who Converts**:
-- Business owners who want GPT tools
-- Power users who value automation
-- People who love live calls and co-working
-- Those who want full archives access
+- Committed members who want the full toolkit
+- People who love quarterly resets
+- Those who want full archives access and annual bonuses
 
 **Trigger Events**:
-- "I wish I had a GPT for [specific need]" → "VIP has 17 GPTs"
-- "I missed the workshop" → "VIP gets full archives"
-- Asks about live support → "VIP has weekly co-working"
+- "I missed the quarterly challenge" → "VIP gets all quarterly challenges"
+- "I want the full toolkit" → "VIP gets the complete No Spend Toolkit"
+- "I want the updated journal" → "VIP gets the updated Journal and Guide"
 
 **Messaging**:
-- "You're getting results. VIP gives you the tools to accelerate."
-- "17 GPTs that make decisions easier - only $70 more per month"
-- "Want me to answer questions live? Join VIP."
+- "You're getting results. VIP gives you the complete ecosystem for $99/year."
+- "That's less than $9/month for everything."
 
 ---
 
@@ -392,7 +349,7 @@ This document extracts all marketing strategies, launch plans, bundle participat
 ### Ongoing Campaigns
 
 **Quarterly Challenge Launches**
-- Q1: "Declutter to Clarity" (30 Bags)
+- Q1: No-Spend Challenge (April 1 kickoff)
 - Q2: "Pantry to Profit" (use what you have)
 - Q3: "Summer Reset" (pre-holiday no-spend)
 - Q4: "Intentional Holidays" (spending with purpose)
@@ -414,7 +371,7 @@ This document extracts all marketing strategies, launch plans, bundle participat
 
 ---
 
-**Document Status**: Complete marketing strategy extraction
-**Last Updated**: December 28, 2024
-**Confidence Level**: High - comprehensive launch strategy documented
+**Document Status**: Updated — launch timeline, pricing, and tier names corrected
+**Last Updated**: March 11, 2026
+**Confidence Level**: High - launch timeline confirmed
 **Notable Gaps**: Specific ad copy, landing page designs, exact email sequences
