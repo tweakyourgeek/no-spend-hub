@@ -3,6 +3,12 @@
 
 # Prompt for Claude Code (Extraction Repository Status)
 
+This prompt was designed to get a status report from the Claude Code extraction repository, covering documentation inventory, gap analysis, and current project state.
+
+---
+
+## PROMPT FOR CLAUDE CODE (EXTRACTION REPO)
+
 ```
 I need a status report on the No Spend Collective documentation work.
 
@@ -16,7 +22,7 @@ List every document you've created or updated in this repository:
    - Status (complete, draft, needs review)
 
 2. GAP ANALYSIS
-You created a gap analysis at some point. Please surface that document
+You created a gap analysis at some point. Please surface that document 
 and summarize:
    - What's missing
    - What's incomplete
@@ -38,6 +44,6 @@ Based on everything in this repo, summarize:
    - Are there open questions waiting on my decision?
    - Anything blocked?
 
-Export as a single markdown status report I can bring to another
+Export as a single markdown status report I can bring to another 
 conversation for planning.
 ```

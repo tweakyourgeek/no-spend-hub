@@ -1,7 +1,7 @@
 <!-- Source: Conversation 11 (Creating a spending assessment page redesign), Item 11.7 -->
 <!-- Status: REFERENCE -->
 
-# Complete Product Sort: Free vs. Paid
+# Complete Product Sort (Free vs. Paid)
 
 ## JOURNAL (CORE PAID PRODUCT) ~70-75 pages
 
@@ -43,24 +43,24 @@
 ## SUPPLEMENTAL PAID
 
 **Immediate (with journal launch):**
-- Spreadsheet Pack (10 templates) -- $7-17
+- Spreadsheet Pack (10 templates) — $7-17
 - Bundles (Starter $19-24, Complete $29-39)
 
 **Phase 2 (within 2 weeks):**
-- Sticker Book -- $5-8
-- 30 Bags in 30 Days -- $9-14
+- Sticker Book — $5-8
+- 30 Bags in 30 Days — $9-14
 
 **Phase 3 (30-60 days):**
-- No-Spend Weekend -- $5-7
-- Card Deck -- $9-12
+- No-Spend Weekend — $5-7
+- Card Deck — $9-12
 
 **Phase 4 (ongoing):**
-- No-Spend Week -- $7-9
-- Low-Spend Month -- $12-15
-- Category-Specific challenges -- $5-7 each
-- Holiday Edition -- $9-12 (seasonal)
-- No-Spend Year -- $17-27
-- Digital Course -- $27-47
+- No-Spend Week — $7-9
+- Low-Spend Month — $12-15
+- Category-Specific challenges — $5-7 each
+- Holiday Edition — $9-12 (seasonal)
+- No-Spend Year — $17-27
+- Digital Course — $27-47
 
 **Year Bundle:** $47-67 (the whole ecosystem)
 
@@ -91,9 +91,8 @@
 
 ---
 
-## UPDATED MASTER SORT
+## UPDATED NOTES
 
-**30 Bags moved from:** Paid ($9-14)
-**30 Bags moved to:** Free quarterly community challenge
-
-**Updated bundles** now emphasize "access to quarterly community challenges" as a value-add rather than 30 Bags as a paid inclusion.
+- 30 Bags moved from Paid ($9-14) to Free quarterly community challenge
+- Updated bundles emphasize "access to quarterly community challenges" as a value-add
+- Alternative/rotating challenges: Digital Declutter, Subscription Audit, No-Amazon, No-Scroll, Gratitude

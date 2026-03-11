@@ -3,8 +3,14 @@
 
 # Prompt for Claude Code (Apps Repository Technical Docs)
 
+This prompt was designed to get technical documentation from the Claude Code apps repository for a senior developer reviewer (SQLGod).
+
+---
+
+## PROMPT FOR CLAUDE CODE
+
 ```
-I need to create a technical documentation package for a senior developer
+I need to create a technical documentation package for a senior developer 
 who will be reviewing our NoSpend-related apps/tools.
 
 REVIEWER PROFILE:
