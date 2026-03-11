@@ -1,7 +1,10 @@
 # 04. Skool Community Strategy
 
 ## Document Purpose
-This document extracts all strategy, structure, pricing, and delivery plans for the Skool-based No-Spend Challenge community.
+This document captures all strategy, structure, pricing, and delivery plans for the Skool-based No Spend Collective community.
+
+**Last Updated**: March 11, 2026
+**Status**: Current — reflects live Skool about page and pricing as of March 2026
 
 ---
 
@@ -17,389 +20,240 @@ This document extracts all strategy, structure, pricing, and delivery plans for 
 
 ## Community Overview
 
-### Platform Decision
-**Source**: Files 1, 2, 3, 4, 7
-
-**Platform**: Skool (not Facebook Groups)
-
-**Community Name**: The No Spend Collective (early name - may have evolved)
-
-**Launch Date**: January 2026
+**Platform**: Skool
+**Community Name**: The No Spend Collective
+**URL**: https://www.skool.com/nospend-8052/about
+**Soft Launch**: March 20, 2026
+**First Challenge Kickoff**: April 1, 2026
 
 **Primary Purpose**:
 - Deliver 30-Day No-Spend Challenge in community format
 - Ongoing support beyond single challenge cycles
-- Quarterly rotating challenges
+- Monthly themed challenges + quarterly resets
 - Tiered access to materials and support
 
 ### Why Skool vs Facebook
-**Source**: Files 3, 4
 
-**Advantages of Skool**:
-- Better content organization (Classroom structure)
-- Tiered access built-in
-- Professional presentation
-- No algorithm interference
-- Member management tools
-- Payment integration
-- Gamification features
-
-**Facebook Considered But Rejected**:
-- Algorithm makes content delivery unreliable
-- Can't gate content by tier
-- Looks less professional
-- Harder to manage paid vs free members
+Facebook was considered and rejected. Skool wins on content organization, tiered access, no algorithm interference, member management, payment integration, and gamification. Facebook community has been deprecated — migration message to be sent, then archived. Do not maintain two communities.
 
 ---
 
 ## Tier Structure and Pricing
 
-### FREE Tier
-**Source**: ChatGPT Files 1-4 + Claude Files 3, 5, 15
+### Standard — Free
 
 **Price**: $0 (no credit card required)
 
 **Access Includes**:
-- 30-Day No-Spend Roadmap (HTML version - the existing index.html product)
-- Basic community access
-- Quarterly rotating challenges (worksheets and daily prompts)
-- Daily challenge posts in Skool classroom
-- Weekly check-in threads
-- Basic accountability and community support
-- Completion badges/shareable graphics
+- Community access
+- Monthly No-Spend Challenge
+- 7-Day Spending Tracker
+- Pattern Quiz, Impulse Brake, Decision Matrix
 
-**Materials Provided**:
-- OLD PLR-based workbook (being replaced)
-- Quarterly challenge worksheet PDFs
-- Basic tracking templates
-
-**Quote from ChatGPT File 4**:
-> "The free version has the roadmap, they have that PLR workbook that I rewrote but it's not as good as what I'm going to create, and they get daily emails."
-
-**Conversion Path**:
-- Free challenge → "Want the full experience? Get the guide" ($30 standalone or upgrade to $27/mo)
+**Conversion Path**: Free challenge experience → upgrade to Premium or VIP for full toolkit and live support
 
 ---
 
-### PAID Tier ($27/month)
-**Source**: Claude Files 3, 5, 15
+### Premium — $9/month
 
-**Price**: $27/month (founding rate)
-**Price Escalation**: Increases $2 for every 100 members
+**Price**: $9/month (founding rate)
 
 **Access Includes**:
-- Everything in FREE tier
-- **The No-Spend Guide** (personal AND business versions)
-- Premium templates and worksheets
-- Current month's workshops
-- Business Central Hub access
-- Enhanced spreadsheets
-- Deeper Skool community access
-- Additional support/engagement
-- All quarterly challenges (full versions)
-
-**Major Decision (December 2024)**: Stop giving The No-Spend Guide away for free
-**Source**: Claude File 5
-
-**Context**:
-- 1100+ copies downloaded for free (primarily through bundles)
-- Calculated value: ~$37,000 given away
-- Not converting to paid customers effectively
-
-**New Policy**:
-- Guide is now PREMIUM ONLY (in $27/mo tier OR $30 standalone)
-- Free tier gets challenges and worksheets only, NOT full guide
-- 50% discount code available: `NOSPEND50` (brings $30 to $15)
-
-**Quote from Claude File 5**:
-> "I've given away over 1100 copies of that thing and I want to stop giving it away... I'm really tired when I saw how many of those damn things I've been downloaded for free and I started doing the math... it's like almost $37,000"
-
-**Rationale**:
-- Free community + quarterly challenges + worksheets = substantial free value
-- 100+ page guide is premium product deserving premium pricing
-- Giving it away wasn't driving membership conversions
-- Need to value creator's work appropriately
+- Everything in Standard
+- Monthly Themed Challenge
+- Monthly live check-in
+- Current month's tool
 
 ---
 
-### VIP/Premium Tier ($97/month)
-**Source**: Claude Files 3, 5
+### VIP — $99/year
 
-**Price**: $97/month (founding rate)
-**Price Escalation**: Increases $2 for every 100 members
+**Price**: $99/year (founding rate)
 
 **Access Includes**:
-- Everything in $27/mo tier
-- Live co-working sessions
-- VIP workshops
-- Full Archives access
-- **All 17 custom GPTs** (major differentiator)
+- Everything in Premium
+- Quarterly Live VIP Reset
+- Updated No Spend Journal and Guide
+- Full No Spend Toolkit
+- Archives
 
-**First 100 Members Bonus**: Founding members get additional bonuses (specific bonuses TBD)
+**Founding Member Note**: Current pricing is founding member rate. Price increases after founding period closes.
 
-**GPT Ecosystem Value**:
-- 17 custom GPTs for challenges, decision-making, and business support
-- Available ONLY in VIP tier (not sold separately)
-- Major value add and upgrade incentive
+---
+
+### Add-Ons (available separately)
+
+- Couples Module
+- Teens Module
+- Pets Module
+
+---
+
+### GPTs — 7 Total (Tier Assignment Pending)
+
+Seven custom GPTs have been built. Tier assignment is TBD — each GPT needs to be assigned to Standard, Premium, or VIP. See project plan for the full list of GPT names and descriptions.
+
+---
+
+## About Page Copy (live as of March 2026)
+
+Welcome to The No-Spend Challenge Collective where patterns > perfection. Monthly challenges, quarterly resets, and a community that gets it.
+
+Check us out if:
+- You feel judged by your account balance
+- "Add to Cart" is your mantra
+- "Just stop spending" doesn't work for you
+
+How It Works:
+1. Join a monthly no-spend challenge
+2. Track what you notice
+3. Show up however works for you
+
+New cohort starts the 1st. Join anytime. Come for the challenge. Stay for the patterns. You can't do this wrong.
+
+Founding member pricing active.
 
 ---
 
 ## Content Delivery Model
 
-### Daily Content Evolution
-**Source**: Files 1, 2, 3, 4
+### Classroom Organization (7 Classrooms)
 
-**Evolution of thinking**:
-1. **Initial idea**: Post daily in Facebook group
-2. **Revised**: Daily emails driving traffic to Skool
-3. **Final preference**: Classroom posts in Skool with email notifications
+1. **START HERE** (visible to all members regardless of tier)
+   - Welcome message
+   - How to use the community
+   - What's included in your tier
+   - Navigation guide
 
-**Quote from File 3**:
-> "I think the daily content should live in the classroom. And then there's like an automated email that goes out every day that says, 'Hey, today's lesson is live in the classroom.'"
+2. **À La Carte Toolkit** (visible to all members regardless of tier)
+   - Individual tools available to all members
+   - Pattern Quiz, Impulse Brake, Decision Matrix, 7-Day Tracker
 
-### Classroom Organization
-**Source**: Files 1, 2, 3, 4, 7
+3. **Bonuses** (visible to all members regardless of tier)
+   - Downloadable templates
+   - Printables
+   - Reference materials
 
-**Structure**:
+4. **30-Day No-Spend Challenge** (Standard and above)
+   - Each week has its own section (Weeks 1-4)
+   - Daily lessons/prompts posted sequentially
+   - Weekly wrap-up and reflection
+   - Pattern recognition highlights
 
-**1. START HERE Section**
-- Welcome message
-- How to use the community
-- What's included in your tier
-- Navigation guide
+5. **Monthly Themes** (Premium and above)
+   - Monthly themed challenge content
+   - Current month's tool
+   - Monthly live check-in materials
 
-**2. Week 1-4 Content**
-- Each week has its own section
-- Daily lessons/prompts posted sequentially
-- Weekly wrap-up and reflection
-- Pattern recognition highlights
+6. **Quarterly Challenges** (VIP only)
+   - Quarterly challenge content and materials
+   - VIP-exclusive challenge resources
 
-**3. Resources Section**
-- Downloadable templates
-- Spreadsheets
-- Printables
-- Reference materials
-
-**4. Community Support**
-- Check-in threads
-- Wins sharing
-- Questions/troubleshooting
-- Pattern recognition discussions
-
-**5. Archives** (VIP only)
-- Past challenges
-- Past workshops
-- Historical content
+7. **Annual Bonuses** (VIP only)
+   - Updated No Spend Journal and Guide
+   - Full No Spend Toolkit
+   - Archives of past challenges and workshops
 
 ### Daily Email Strategy
-**Source**: Files 3, 4
 
-**Purpose**: Drive traffic to Skool classroom, not replace it
+Content lives in the Skool classroom. Email notifications drive traffic to it, not replace it.
 
-**Email Content**:
-- Subject line with day number and theme
-- Brief teaser (2-3 sentences)
-- "Today's lesson is live in the classroom" + link
-- Optional: Quick pattern tip or reminder
-
-**Frequency**: Daily during active 30-day challenges
-
-**Off-Challenge Timing**: Weekly digest emails
+- During active 30-day challenge: daily email with day number, brief teaser, link to classroom
+- Off-challenge: weekly digest
 
 ---
 
 ## Quarterly Challenge Calendar
 
-### Free Community Events
-**Source**: File 15
+All quarterly challenges are free community events. This drives consistent engagement, provides ongoing value to the Standard tier, and creates natural conversion touchpoints.
 
-**Major Strategy Shift**: Move supplemental challenges from paid products to FREE quarterly community events
-
-**Purpose**:
-- Drive consistent traffic to Skool community
-- Provide ongoing value to free tier
-- Create multiple conversion opportunities throughout year
-- Build engagement and retention
-
-### Q1: 30 Bags in 30 Days
-**Timing**: Lent season (February-March)
-
-**Theme**: Clear the clutter
-
-**What Free Tier Gets**:
-- Worksheet PDF (basic tracker, prompts, completion page)
-- Daily prompts in Skool
-- Weekly check-in threads
-- Completion badge/shareable graphic
-
-**Conversion Path**: "Want deeper support? Upgrade for the full decluttering system"
-
-**Note**: Originally priced at $9-14 as standalone product, now FREE to drive community growth
-
----
+### Q1: No-Spend Challenge
+**Timing**: April 1, 2026 (first cohort kickoff)
+**Theme**: Pattern recognition, spending as data
+**What Standard Gets**: Community access, daily prompts, 7-Day Tracker, Pattern Quiz
 
 ### Q2: Pantry Challenge
-**Timing**: April-May
-
+**Timing**: June-July
 **Theme**: Use what you have (food focus)
-
-**Structure**:
-- Use up pantry/freezer items before buying new groceries
-- Recipe ideas for "what you already have"
-- Meal planning without shopping
-- Food waste reduction
-
-**What Free Tier Gets**:
-- Pantry inventory worksheet
-- Daily check-ins
-- Recipe swap thread
-- Completion tracking
-
----
+**What Standard Gets**: Pantry inventory worksheet, daily check-ins, recipe swap thread
 
 ### Q3: No-Spend Group Round
 **Timing**: August-September
-
 **Theme**: Pre-holiday financial reset
-
-**Structure**:
-- Full 30-day no-spend challenge (the core product)
-- Group cohort format
-- Timed for back-to-school season
-- Builds financial buffer before Q4 holiday spending
-
-**What Free Tier Gets**:
-- Basic roadmap
-- Daily prompts
-- Community support
-
-**Conversion Path**: "Want the full guide and templates? Upgrade now"
-
----
+**What Standard Gets**: Basic roadmap, daily prompts, community support
 
 ### Q4: Holiday Spending Reset
 **Timing**: November-December
-
-**Theme**: Intentional holidays
-
-**Structure**:
-- NOT a no-spend challenge (unrealistic during holidays)
-- Focus: Intentional spending vs autopilot/obligation spending
-- Gift planning without overspending
-- Saying no to social pressure
-- Post-holiday financial planning
-
-**What Free Tier Gets**:
-- Holiday spending plan worksheet
-- Gift tracker
-- Social scripts for boundary setting
-- Weekly reflections
+**Theme**: Intentional holidays (NOT a no-spend challenge — unrealistic timing)
+**What Standard Gets**: Holiday spending plan worksheet, gift tracker, social scripts, weekly reflections
 
 ---
 
 ## Engagement Strategy
 
-### Accountability and Community
-**Source**: Files 3, 4, 7
+### Built-In Features
+- Check-in threads (daily or weekly depending on challenge phase)
+- Wins sharing — celebrate participation, not perfection
+- Accountability partnerships (optional member matching)
+- Skool gamification framed as participation, not perfection
 
-**Built-In Features**:
-- **Check-in threads**: Daily or weekly, depending on challenge phase
-- **Wins sharing**: Celebrate participation, not just perfection
-- **Accountability partnerships**: Member matching (optional)
-- **Leaderboards**: Skool gamification (but framed as participation, not perfection)
-
-**Engagement Drivers**:
+### Engagement Drivers
 - Daily prompts create conversation starters
 - Pattern recognition discussions
-- Shared struggles normalize experience
-- Community celebrates both spending and not-spending as data
+- Shared struggles normalize the experience
+- Community treats both spending and not-spending as data
 
-**Weekly Live Calls** (optional/VIP):
-- Co-working sessions
-- Q&A with creator
-- Pattern deep-dives
-- Guest experts (finance, systems, etc.)
+### VIP Live Events
+- Quarterly Live VIP Reset
+- Monthly live check-in (Premium and VIP)
 
 ### Micro-Challenges
-**Source**: File 15
 
-**Purpose**: Short engagement bursts between major challenges
-
-**Format**: 65 micro-challenges organized into:
-- Cleaning/organizing (when you want to "fix" something)
-- Using what you have (when you want something new)
-- Distraction challenges (when you need to DO something)
-- Social challenges (when FOMO is hitting)
-- Pattern-specific micro-challenges
-- Quick wins (5 minutes or less)
-
-**Deployment**:
-- Posted randomly in community
-- Members can request specific categories
-- Creates consistent touchpoints year-round
+Short engagement bursts between major challenges. 65 micro-challenges organized by situation: cleaning/organizing, using what you have, distraction, social/FOMO, pattern-specific, quick wins (5 minutes or less). Posted in community, members can request by category.
 
 ---
 
 ## Launch Timeline
 
-### Pre-Launch (December 2025)
-**Source**: Claude Files 3, 5, 9
+### March 11-19, 2026 (Pre-Launch)
+- [ ] Build Skool community structure (sections, classrooms, tiers)
+- [ ] Write and populate START HERE section
+- [ ] Upload Standard tier materials (7-Day Tracker, Pattern Quiz, Impulse Brake, Decision Matrix)
+- [ ] Load at minimum Week 1 challenge content ready for April 1
+- [ ] Write founding member welcome post
+- [ ] Set up welcome sequence
 
-**Activities**:
-- Set up Skool community structure
-- Create classroom sections
-- Upload FREE tier materials
-- Set up automated email sequences
-- Test tier access and gating
-- Finalize founding member bonuses
+### March 20, 2026 (Soft Launch)
+- Community open
+- Posted on personal account, Tweak Your Geek account, relevant Skool communities
+- Founding member pricing active
 
-**Bundle Strategy**: Participate in 4 bundles (Jan-Mar 2026) to drive initial members
+### April 1, 2026 (Challenge Kickoff)
+- First 30-day No-Spend Challenge begins
+- Promotion posts across all channels
 
----
-
-### Launch (January 2026)
-**Source**: Claude Files 3, 5
-
-**Launch Event**: Q1 Challenge (30 Bags in 30 Days) kicks off community
-
-**Founding Member Offer**:
-- $27/mo and $97/mo rates locked for first 100 members
-- Price increases $2 per tier for every 100 new members after
-- Special founding member bonuses
-
-**Initial Traffic Sources**:
-1. January 2026 "Kickoff Bundle" (Griffin) - **My Cash Envelope System** (B2C) drives to FREE tier
-2. Email list announcement
-3. Social media promotion
-4. Existing customer base
+### Ongoing (April-December 2026)
+- Quarterly challenge calendar runs as planned
+- Track which acquisition sources (bundles, social, email) convert to paid members
+- Founding member rate closes after founding period — specific trigger TBD
 
 ---
 
-### Post-Launch (February-March 2026)
-**Source**: Claude File 9
-
-**Bundle Participation**:
-- **February**: "Penny Wise Skills Bundle" ($5+ minimum) - budgeting spreadsheet drives to FREE tier
-- **March**: "Master Your Money Bundle" ($27+ minimum) - drives to PAID tier ($27 or $97)
-
-**Purpose**: Build community membership through strategic bundle participation
-
-**Conversion Focus**:
-- Free members experiencing Q1 challenge → upgrade to get full guide for Q3 No-Spend Round
-- Demonstrate value through free quarterly challenges
-- Create FOMO for premium materials
+## What Still Needs to Be Built
+- [ ] Community structure in Skool (7 classrooms, tiers) — currently empty
+- [ ] START HERE section written and populated
+- [ ] Week 1 challenge content loaded
+- [ ] Standard tier materials uploaded
+- [ ] Premium tier materials ready
+- [ ] Welcome sequence
+- [ ] Founding member welcome post
+- [ ] GPT tier assignments finalized (7 GPTs, assignment pending)
+- [ ] EFT tapping script (nice to have, not blocking launch)
+- [ ] Facebook group migration message + archive
 
 ---
 
 ## Cross-References
-- See **11_Product_Architecture.md** for products delivered through Skool
-- See **02_Challenge_Structure.md** for 30-day challenge structure delivered in community
-- See **05_Marketing_And_Launch_Strategy.md** for bundle strategy details
-- See **09_GPT_Ecosystem.md** for VIP tier GPT offerings
-
----
-
-**Document Status**: Complete extraction from Files 1-18
-**Last Updated**: December 28, 2024
-**Confidence Level**: High - extensive community strategy discussions
-**Notable Gaps**: Exact founding member bonuses not specified, final community name may have evolved
+- See `02_Challenge_Structure.md` for 30-day challenge structure
+- See `05_Marketing_And_Launch_Strategy.md` for bundle strategy
+- See 2026 No Spend Project Plan for full launch timeline

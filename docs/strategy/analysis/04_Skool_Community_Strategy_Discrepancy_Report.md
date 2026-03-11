@@ -2,235 +2,134 @@
 
 **Date**: March 11, 2026
 **Purpose**: Three-way comparison of the current working version of 04_Skool_Community_Strategy.md against the repository extraction doc, the 2026 No Spend Project Plan, and live code.
+**Updated**: March 11, 2026 — confirmed decisions applied, repo extraction doc replaced, PricingSection.tsx updated.
 
 **Sources compared:**
 1. **Working doc** — current version provided March 11, 2026
-2. **Repo extraction doc** — `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` (dated December 28, 2024)
+2. **Repo extraction doc** — `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` (was dated December 28, 2024 — now replaced)
 3. **Project plan** — 2026 No Spend Project Plan (last updated March 11, 2026)
 4. **Live code** — `src/components/landing/PricingSection.tsx`, `public/coming-soon/index.html`, working docs
 
 ---
 
-## The Repo Extraction Doc Is 15 Months Stale
+## Confirmed Decisions (March 11, 2026)
 
-The file at `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` was last updated **December 28, 2024**. The working doc is dated March 2026. They are completely different documents sharing the same name. The repo version:
+The following decisions have been made and applied to the repo:
 
-- Says launch date is **January 2026** (working doc and project plan say March 20)
-- Uses the old pricing: **$27/mo PAID, $97/mo VIP**
-- References **17 custom GPTs** as a VIP feature
-- Lists Q1 challenge as **30 Bags in 30 Days** (Feb-Mar/Lent)
-- Lists Q2 Pantry Challenge as **April-May**
-- References "PLR-based workbook" and "$30 standalone guide" conversion paths
-- Cross-references `11_Product_Architecture.md` and `09_GPT_Ecosystem.md` (working doc references `2026_No_Spend_Project_Plan_UPDATED.md` instead)
-- Has "Source: File X" citations throughout (extraction artifact format)
-- Includes lengthy quotes from original conversation files
-- Says community name "may have evolved" — it has; the project plan confirms it
+### 1. Classroom Structure — 7 Classrooms (APPLIED)
 
-**Bottom line:** The working doc is a full rewrite, not an update. The repo version needs to be replaced entirely.
+Replaces all previous 5-section and 6-section structures:
+
+| # | Classroom | Access |
+|---|-----------|--------|
+| 1 | START HERE | All members regardless of tier |
+| 2 | À La Carte Toolkit | All members regardless of tier |
+| 3 | Bonuses | All members regardless of tier |
+| 4 | 30-Day No-Spend Challenge | Standard and above |
+| 5 | Monthly Themes | Premium and above |
+| 6 | Quarterly Challenges | VIP only |
+| 7 | Annual Bonuses | VIP only |
+
+**Updated in**: `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` (replaced entirely)
+**Still stale**: `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` (shows old 6-section structure)
+
+### 2. VIP Price — $99/year (APPLIED)
+
+**Updated in**: `src/components/landing/PricingSection.tsx` (was $125/yr)
+**Already correct**: `public/coming-soon/index.html`
+**Still stale**: `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` (says $97/mo), `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` (says $97/mo)
+
+### 3. Free Tier Name — Standard (APPLIED)
+
+**Updated in**: `src/components/landing/PricingSection.tsx` (was "Free")
+**Already correct**: `public/coming-soon/index.html`
+**Still stale**: `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` (says "FREE")
+
+### 4. Q1 Challenge — No-Spend Challenge, April 1 (APPLIED)
+
+30 Bags in 30 Days is retired as a standalone quarterly event.
+
+**Updated in**: `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md`
+**Still stale**: `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` (shows 30 Bags as Q1)
+
+### 5. GPT Count — 7, Not 17 (APPLIED)
+
+Tier assignment is still TBD — flagged as pending in the strategy doc.
+
+**Updated in**: `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md`
+**Still stale**: `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` (likely references 17)
+
+### 6. Repo Extraction Doc — Replaced Entirely (APPLIED)
+
+The December 2024 extraction doc at `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` has been replaced with the current working version.
 
 ---
 
-## Pricing
+## Remaining Discrepancies (Not Yet Resolved)
 
-### Settled Pricing (working doc + project plan + coming-soon page agree)
+These conflicts still exist across the repo and need decisions or updates:
 
-| Tier | Price |
-|------|-------|
-| Standard | Free |
-| Premium | $9/mo |
-| VIP | $99/yr |
-
-### Files That Contradict This
+### Pricing in Other Docs
 
 | File | What It Says | What's Wrong |
 |------|-------------|-------------|
-| `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` | PAID $27/mo, VIP $97/mo | Old pricing, monthly VIP |
-| `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` (repo) | PAID $27/mo, VIP $97/mo | Same stale numbers |
-| `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` | $27/mo, $97/mo in header | Same stale numbers |
-| `src/components/landing/PricingSection.tsx` | VIP **$125/yr** | Wrong VIP price |
+| `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` | PAID $27/mo, VIP $97/mo, "17 GPTs" | Old pricing, old GPT count |
+| `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` | $27/mo, $97/mo in header | Old pricing |
 
-The coming-soon page (`public/coming-soon/index.html`) is correct.
+### SKOOL_COMMUNITY_STRUCTURE.md — Multiple Issues
 
----
+This file at `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` has:
+- Old pricing ($27/mo, $97/mo) in the header
+- Old tier names (FREE/PAID/VIP instead of Standard/Premium/VIP)
+- Old 6-section classroom structure (now 7 classrooms)
+- Weekly content calendar detail (Monday Momentum, Wednesday Pattern Drop, Friday Wins) that doesn't appear in the strategy doc — worth preserving or migrating
 
-## Tier Naming
+### VIP Features in PricingSection.tsx
 
-| Source | Free | Mid | Top |
-|--------|------|-----|-----|
-| Working doc | Standard | Premium | VIP |
-| Project plan | Standard | Premium | VIP |
-| Coming-soon page | Standard | Premium | VIP |
-| PricingSection.tsx | **Free** | Premium | VIP |
-| Repo extraction doc | **FREE** | **PAID** | **VIP/Premium** |
-| SKOOL_COMMUNITY_STRUCTURE.md | **FREE** | **PAID** | **VIP** |
+The VIP features list was updated to match the strategy doc, but there are items that were removed and may need a decision:
+- **"Full GPT suite"** — removed because GPT tier assignment is TBD. Once assigned, relevant GPT access should be added back to the correct tier's feature list
+- **"Couples & Teen Modules"** — removed from VIP. The strategy doc lists these as separate add-ons, not VIP-included. The project plan doesn't mention them at all. Decision needed on whether these are real products and where they live.
 
-The React component uses "Free" instead of "Standard" — minor but inconsistent.
+### Premium Features in PricingSection.tsx
 
----
+The Premium tier feature "Priority community support" was replaced with "Current month's tool" to match the strategy doc and project plan. Verify this is the intended Premium differentiator.
 
-## Quarterly Challenge Calendar
-
-| Quarter | Working Doc | Repo Extraction Doc | Project Plan |
-|---------|------------|-------------------|--------------|
-| Q1 | No-Spend Challenge, April 1 | **30 Bags in 30 Days, Lent (Feb-Mar)** | First 30-day No Spend Challenge, April 1 |
-| Q2 | Pantry Challenge, June-July | Pantry Challenge, **April-May** | Not mentioned |
-| Q3 | No-Spend Group Round, Aug-Sept | Same | Not mentioned |
-| Q4 | Holiday Spending Reset, Nov-Dec | Same | Not mentioned |
-
-The artifact at `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` also has the old Q1 (30 Bags) and Q2 (April-May) timing. Working doc and project plan agree on the current calendar.
-
----
-
-## GPTs
-
-| Source | Count | Tier Assignment |
-|--------|-------|----------------|
-| Working doc | No mention | N/A |
-| Project plan | **7 GPTs** listed by name | TBD |
-| Repo extraction doc | **17 custom GPTs** | VIP-only |
-| PricingSection.tsx | "Full GPT suite" | VIP feature |
-
-The working doc should probably acknowledge GPTs exist since the project plan has 7 of them pending tier assignment.
-
----
-
-## Classroom Structure: 5 vs 6 Sections
-
-**Working doc (5 sections):**
-1. START HERE
-2. Challenge Content (Weeks 1-4)
-3. Resources
-4. Community Support
-5. Archives (VIP only)
-
-**SKOOL_COMMUNITY_STRUCTURE.md (6 sections):**
-1. START HERE
-2. 30-Day No-Spend Challenge
-3. Quarterly Challenges
-4. Toolkit & Resources
-5. Community Hub
-6. VIP Lounge
-
-**Artifact 29-14** (`skool-classroom-structure-6-sections.md`) also shows 6 sections.
-
-The working doc is missing "Quarterly Challenges" as its own section and "VIP Lounge" entirely. The working doc evolved the structure but this wasn't carried into the strategy doc.
-
----
-
-## Free Tier Features
-
-| Feature | Working Doc | Project Plan | Coming-Soon | PricingSection.tsx | Repo Extraction Doc |
-|---------|------------|-------------|-------------|-------------------|-------------------|
-| Community access | Yes | Yes | Yes | Yes | Yes |
-| Monthly No-Spend Challenge | Yes | Yes | Yes | Yes | "Quarterly rotating challenges" |
-| 7-Day Spending Tracker | Yes | Yes | Yes | No ("Basic worksheets") | No |
-| Pattern Quiz | Yes | Yes | Yes | Yes | No |
-| Impulse Brake | Yes | Yes | Yes | No | No |
-| Decision Matrix | Yes | Yes | Yes | No | No |
-| Quarterly community resets | No | No | No | **Yes** | No |
-| PLR workbook | No | No | No | No | **Yes** |
-
-The React component generifies the tools. The repo extraction doc still references PLR materials.
-
----
-
-## Premium Tier Features
-
-| Feature | Working Doc | Project Plan | Repo Extraction Doc |
-|---------|------------|-------------|-------------------|
-| Monthly Themed Challenge | Yes | Yes | No — says "The No-Spend Guide (personal AND business)" |
-| Monthly live check-in | Yes | Yes | No — says "current month's workshops" |
-| Current month's tool | Yes | Yes | No — says "Business Central Hub access" |
-| Price | $9/mo | $9/mo | **$27/mo** |
-
-The repo extraction doc describes an entirely different Premium/PAID tier built around the Guide as the core product.
-
----
-
-## VIP Features
-
-| Feature | Working Doc | Project Plan | PricingSection.tsx | Repo Extraction Doc |
-|---------|------------|-------------|-------------------|-------------------|
-| Quarterly Live VIP Reset | Yes | Not mentioned | "Quarterly resets" | "Live co-working sessions" |
-| Updated Journal and Guide | Yes | Not mentioned | No | No |
-| Full No Spend Toolkit | Yes | Not mentioned | No | No |
-| Archives | Yes | Not mentioned | "Full content archives" | "Full Archives access" |
-| Full GPT suite | No | 7 GPTs, tier TBD | **Yes** | **"All 17 custom GPTs"** |
-| Couples & Teen Modules | No (listed as add-ons) | Not mentioned | **Yes (in VIP)** | No |
-
-The React component puts Couples & Teen Modules inside VIP. The working doc lists them as separate add-ons. The project plan doesn't mention them at all.
-
----
-
-## Content Calendar / Engagement
-
-- **SKOOL_COMMUNITY_STRUCTURE.md** has a detailed weekly thread schedule: Monday Momentum, Wednesday Pattern Drop, Friday Wins, monthly Micro-Challenge Drop
-- **Working doc** just says "check-in threads (daily or weekly)"
-- **Project plan** doesn't address this at all
-
----
-
-## Founding Member Escalation
+### Founding Member Escalation Mechanics
 
 | Source | Mechanism |
 |--------|-----------|
-| Working doc | "Price increases after founding period closes" — no specifics |
+| Strategy doc | "Price increases after founding period closes" — no specifics |
 | Project plan | "First 100 members lock founding rates forever. Price increases after that." — no specifics |
-| Repo extraction doc | "$2 increase per tier for every 100 members" — specific escalation model |
-| 03_Pricing doc | Same $2/100 escalation model |
+| 03_Pricing doc (stale) | "$2 increase per tier for every 100 members" — specific model |
 
-Nobody currently authoritative describes the mechanism. The specific model only exists in stale docs.
+Nobody currently authoritative describes the escalation mechanism. Decide whether the $2/100 model is still the plan.
 
----
+### Content Calendar / Engagement
 
-## Launch Timeline
+- `SKOOL_COMMUNITY_STRUCTURE.md` has a detailed weekly thread schedule: Monday Momentum, Wednesday Pattern Drop, Friday Wins, monthly Micro-Challenge Drop
+- Strategy doc just says "check-in threads (daily or weekly)"
+- Project plan doesn't address this
 
-| Item | Working Doc | Project Plan | Repo Extraction Doc |
-|------|------------|-------------|-------------------|
-| Pre-launch | March 11-19 | March 11-19 | **December 2025** |
-| Launch | March 20 | March 20 | **January 2026** |
-| First challenge | April 1 | April 1 | **January 2026 (30 Bags in 30 Days)** |
+### Cross-Reference to Nonexistent File
 
-Working doc and project plan align. The repo extraction doc is 3+ months behind on dates.
+The original working doc referenced `2026_No_Spend_Project_Plan_UPDATED.md`. This file doesn't exist in the repo. The updated strategy doc now references "2026 No Spend Project Plan" generically, but the project plan itself is not a committed file.
 
 ---
 
-## Cross-References
+## Things in the Project Plan Not in the Strategy Doc
 
-### Working Doc References
-
-| Referenced File | Exists in Repo? |
-|----------------|-----------------|
-| `02_Challenge_Structure.md` | Yes |
-| `05_Marketing_And_Launch_Strategy.md` | Yes |
-| `2026_No_Spend_Project_Plan_UPDATED.md` | **No — not a committed file** |
-
-### Repo Extraction Doc References
-
-| Referenced File | Exists in Repo? |
-|----------------|-----------------|
-| `11_Product_Architecture.md` | Yes |
-| `02_Challenge_Structure.md` | Yes |
-| `05_Marketing_And_Launch_Strategy.md` | Yes |
-| `09_GPT_Ecosystem.md` | Yes |
-
----
-
-## Things in the Project Plan Not in Either Version of the Skool Doc
-
-1. **Brand naming split** — "No Spend Hub = website, No Spend Collective = Skool community" is explicitly defined in the project plan but not stated in either Skool doc
-2. **The Lab** — solo user path as a parallel product. Neither Skool doc acknowledges it
+1. **Brand naming split** — "No Spend Hub = website, No Spend Collective = Skool community" — not stated in the strategy doc
+2. **The Lab** — solo user path as a parallel product, not acknowledged in the strategy doc
 3. **Auth decision** (Clerk/Supabase/defer) — affects how tier gating works
 4. **Old journal migration** on tweakyourgeek.net — links need updating to Skool
 5. **Mailerlite sequence updates** — swapping Facebook links to Skool across all sequences
-6. **7 named GPTs** with tier assignment pending
-7. **SQLGod financial review** of 3 apps (deadline March 13)
-8. **Bundle conversion tracking** as ongoing task
-9. **"What Ready to Launch Looks Like"** checklist — clear acceptance criteria not in Skool doc
+6. **SQLGod financial review** of 3 apps (deadline March 13)
+7. **Bundle conversion tracking** as ongoing task
+8. **"What Ready to Launch Looks Like"** checklist — clear acceptance criteria
 
 ---
 
-## Things in the Working Doc Not in the Project Plan
+## Things in the Strategy Doc Not in the Project Plan
 
 1. **Add-Ons** (Couples Module, Teens Module, Pets Module) — project plan doesn't mention
 2. **65 micro-challenges** in 6 categories — project plan doesn't mention
@@ -240,56 +139,52 @@ Working doc and project plan align. The repo extraction doc is 3+ months behind 
 
 ---
 
-## Summary: What's Out of Sync
+## Summary: What Still Needs Updating
 
-### The repo extraction doc is obsolete
-The working doc is the current version but it's not committed. The repo file should be replaced entirely.
+### Docs That Still Have Stale Data
 
-### Conflicts That Remain Across the Broader Repo
+| Priority | File | Issues |
+|----------|------|--------|
+| High | `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` | $27/$97 pricing, "17 GPTs", PAID/VIP tier names |
+| High | `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` | $27/$97 pricing, FREE/PAID tier names, 6-section structure (now 7) |
+| Medium | `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` | Likely references 17 GPTs (now 7) |
+| Low | `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` | 30 Bags as Q1, Pantry as April-May |
 
-| Priority | Issue | Files Affected |
-|----------|-------|---------------|
-| High | VIP price: $125/yr in code, should be $99/yr | `src/components/landing/PricingSection.tsx` |
-| High | Old $27/$97 pricing still in docs | `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md`, `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` |
-| Medium | GPTs: 0 vs 7 vs 17, no tier assignment | Working doc, project plan, extraction docs, `PricingSection.tsx` |
-| Medium | Classroom sections: 5 vs 6 | Working doc vs `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` |
-| Medium | Couples/Teen Modules: add-on vs VIP-included vs unmentioned | Working doc vs `PricingSection.tsx` vs project plan |
-| Medium | Founding member escalation mechanics undocumented in current docs | All current docs |
-| Low | Free tier name: "Standard" vs "Free" in React component | `src/components/landing/PricingSection.tsx` |
-| Low | Weekly content calendar exists in working doc but not in strategy doc | `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` |
-| Low | Cross-reference to nonexistent file | Working doc |
+### Decisions Still Needed
+
+| Item | Status |
+|------|--------|
+| GPT tier assignments (7 GPTs) | Pending |
+| Couples/Teens/Pets Modules — real products? Where do they live? | Pending |
+| Founding member escalation mechanics | Undocumented in current docs |
+| Weekly content calendar (Monday/Wednesday/Friday threads) | Exists in working doc, not in strategy doc |
+| Project plan as committed file | Not in repo |
 
 ---
 
 ## Files to Retrieve from Repo for Review on Regular Claude
 
-These are the files you need to bring into a regular Claude conversation to reconcile the discrepancies above. Grouped by purpose.
+Grouped by purpose — these are the files needed to reconcile the remaining discrepancies.
 
-### Must-Have: The Stale Docs That Need Updating
+### Must-Have: Stale Docs That Need Updating
 
-These contain outdated pricing, tier names, or structure that conflicts with the current strategy:
-
-1. `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` — the stale version to be replaced with the working doc
-2. `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` — old $27/$97 pricing, "17 GPTs"
-3. `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` — old pricing in header, but has the 6-section classroom structure and weekly content calendar worth preserving
-4. `src/components/landing/PricingSection.tsx` — VIP price wrong ($125 should be $99), tier name "Free" vs "Standard", GPT suite and Couples/Teen in VIP
+1. `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` — old $27/$97 pricing, "17 GPTs", old tier names
+2. `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` — old pricing, old tier names, old 6-section structure; has weekly content calendar worth preserving
 
 ### Should-Have: Related Strategy Docs for Context
 
-These are referenced by the Skool doc or contain overlapping content:
-
-5. `docs/strategy/extraction-docs/02_Challenge_Structure.md` — cross-referenced by the Skool doc
-6. `docs/strategy/extraction-docs/05_Marketing_And_Launch_Strategy.md` — cross-referenced for bundle strategy
-7. `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` — referenced by repo extraction doc, likely stale (17 GPTs vs current 7)
+3. `docs/strategy/extraction-docs/02_Challenge_Structure.md` — cross-referenced by the strategy doc
+4. `docs/strategy/extraction-docs/05_Marketing_And_Launch_Strategy.md` — cross-referenced for bundle strategy
+5. `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` — likely stale (17 GPTs vs current 7), needs update
 
 ### Nice-to-Have: Artifacts with Relevant Detail
 
-These contain specific content that may need to be carried forward or marked obsolete:
+6. `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` — old Q1/Q2 calendar, product ecosystem breakdown
+7. `project-archive/artifacts/29-14-skool-classroom-structure-6-sections.md` — old 6-section classroom detail (now superseded by 7-classroom structure)
+8. `project-archive/artifacts/28-6-10-day-skool-launch-sprint-plan.md` — launch sprint task breakdown
 
-8. `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` — old Q1/Q2 calendar, product ecosystem breakdown
-9. `project-archive/artifacts/29-14-skool-classroom-structure-6-sections.md` — 6-section classroom detail
-10. `project-archive/artifacts/28-6-10-day-skool-launch-sprint-plan.md` — launch sprint task breakdown
+### Already Correct (reference only)
 
-### Already Correct (no action needed, but useful as reference)
-
-11. `public/coming-soon/index.html` — pricing and tier features are correct, good baseline to compare against
+9. `public/coming-soon/index.html` — pricing and tier features are correct
+10. `src/components/landing/PricingSection.tsx` — now updated and correct
+11. `docs/strategy/extraction-docs/04_Skool_Community_Strategy.md` — now replaced with current version
