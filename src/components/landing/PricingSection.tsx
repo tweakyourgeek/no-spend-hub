@@ -2,17 +2,16 @@ import { Link } from "react-router-dom";
 
 const tiers = [
   {
-    name: "Free",
+    name: "Standard",
     price: "$0",
     period: "always",
     features: [
       "Skool community access",
       "Monthly no-spend challenges",
-      "Quarterly community resets",
-      "Pattern quiz",
-      "Basic worksheets",
+      "7-Day Spending Tracker",
+      "Pattern Quiz, Impulse Brake, Decision Matrix",
     ],
-    cta: "Start Free",
+    cta: "Join Free",
     highlight: false,
   },
   {
@@ -20,23 +19,23 @@ const tiers = [
     price: "$9",
     period: "/mo",
     features: [
-      "Everything in Free",
+      "Everything in Standard",
+      "Monthly themed challenge",
       "Monthly live check-in",
-      "Current month bonuses",
-      "Priority community support",
+      "Current month's tool",
     ],
     cta: "Go Premium",
     highlight: true,
   },
   {
     name: "VIP",
-    price: "$125",
+    price: "$99",
     period: "/year",
     features: [
       "Everything in Premium",
-      "Full GPT suite",
-      "Quarterly resets",
-      "Couples & Teen Modules",
+      "Quarterly Live VIP Reset",
+      "Updated No Spend Journal and Guide",
+      "Full No Spend Toolkit",
       "Full content archives",
       "Founding rate locked forever (first 100 members)",
     ],
