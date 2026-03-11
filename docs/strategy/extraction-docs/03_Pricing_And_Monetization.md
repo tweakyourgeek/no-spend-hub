@@ -43,53 +43,33 @@ This document extracts all pricing strategies, monetization models, revenue stre
 
 ## Skool Community Pricing
 
-### Three-Tier Model
-**Source**: Files 3, 5, 15
+> **Updated March 11, 2026**: Pricing has been finalized and is live on nospend.net and the Skool about page. Previous $27/mo and $97/mo pricing from December 2024 planning is superseded.
 
-**FREE Tier**
+### Three-Tier Model
+
+**Standard Tier**
 - **Price**: $0 (no credit card required)
 - **Target Audience**: People exploring no-spend concept
 - **Value Proposition**: Test before investing
-- **Access**: Basic challenges, community, PLR materials
+- **Access**: Community access, monthly No-Spend Challenge, 7-Day Spending Tracker, Pattern Quiz, Impulse Brake, Decision Matrix
 
-**PAID Tier**
-- **Price**: $27/month (founding rate)
-- **Target Audience**: Serious participants wanting premium materials
-- **Value Proposition**: The No-Spend Guide + enhanced support
-- **Access**: Everything FREE tier has PLUS premium guide, templates, workshops
+**Premium Tier**
+- **Price**: $9/month (founding rate)
+- **Target Audience**: Serious participants wanting enhanced support
+- **Value Proposition**: Monthly themed challenges + live check-ins
+- **Access**: Everything in Standard plus monthly themed challenge, monthly live check-in, current month's tool
 
 **VIP Tier**
-- **Price**: $97/month (founding rate)
-- **Target Audience**: Business owners, power users, GPT enthusiasts
-- **Value Proposition**: Complete ecosystem + 17 custom GPTs
-- **Access**: Everything PAID tier has PLUS live sessions, archives, all GPTs
+- **Price**: $99/year (founding rate)
+- **Target Audience**: Committed members wanting the full ecosystem
+- **Value Proposition**: Complete toolkit + quarterly resets + archives
+- **Access**: Everything in Premium plus Quarterly Live VIP Reset, updated No Spend Journal and Guide, Full No Spend Toolkit, archives
 
 ### Founding Member Pricing Strategy
-**Source**: File 3
 
-**Escalation Model**:
-- First 100 members: $27/mo and $97/mo (founding rates locked)
-- Every 100 new members: Price increases $2 per tier
-- Creates urgency and rewards early adopters
-
-**Example Progression**:
-- Members 1-100: $27/$97
-- Members 101-200: $29/$99
-- Members 201-300: $31/$101
-- And so on...
-
-**Psychology**:
-- Early adopters get permanent discount
-- Later joiners pay more (scarcity + value recognition)
-- Founding members feel valued and special
-
-### Annual vs Monthly Pricing
-**Source**: File 3
-
-**Not Explicitly Detailed** in conversations, but standard practice would be:
-- Monthly: $27 or $97
-- Annual: Potentially 10-15% discount (e.g., $290/yr instead of $324)
-- VIP Annual: Potentially $1,040/yr instead of $1,164
+- First 100 members lock founding rates forever
+- Price increases after founding period closes
+- Specific escalation mechanism TBD
 
 ---
 
@@ -115,8 +95,8 @@ This document extracts all pricing strategies, monetization models, revenue stre
 **Positioning**: Premium product, not low-ticket impulse buy
 
 **Conversion Path**:
-- Buy standalone ($30) → Later upgrade to Skool ($27/mo for ongoing support)
-- OR start with Skool ($27/mo) → Get guide included
+- Buy standalone ($30) → Later upgrade to Skool (Premium $9/mo for ongoing support)
+- OR start with Skool (Premium $9/mo) → Get enhanced challenge experience
 
 ### Business Edition Pricing
 **Source**: File 16
@@ -156,7 +136,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 **Bundle 3: March 2026 - "Master Your Money Bundle"**
 - **Product Contribution**: Money-related spreadsheet or template
 - **Minimum Bundle Price**: $27+
-- **Purpose**: Higher quality audience, drive directly to PAID tier ($27 or $97)
+- **Purpose**: Higher quality audience, drive directly to Premium tier ($9/mo) or VIP ($99/yr)
 
 ### Standalone Bundle Offers
 **Source**: File 15
@@ -230,7 +210,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 2. **Protects Entry Point**: Workbook/Guide is the spine, not spreadsheets
 3. **Values Infrastructure Work**: Formulas, automation, design deserve compensation
 4. **Allows Progressive Purchase**: Start with guide, add spreadsheets later if needed
-5. **Preserves Upgrade Integrity**: VIP tier still has exclusive value (GPTs)
+5. **Preserves Upgrade Integrity**: VIP tier still has exclusive value
 
 **Quote from File 16**:
 > "You are not withholding value. You are sequencing value."
@@ -314,7 +294,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 
 **The Solution**:
 - Guide is now PREMIUM ONLY
-- $30 standalone OR $27/mo Skool membership required
+- $30 standalone OR Skool Premium/VIP membership required
 - Free tier gets challenges + worksheets only (not full guide)
 - 50% discount code available: `NOSPEND50` ($30 → $15)
 
@@ -385,19 +365,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 
 ## Revenue Model Projections
 
-### Skool Community Revenue
-**Source**: Files 3, 5
-
-**Assuming 500 Members at Founding Rates**:
-- 300 FREE tier: $0
-- 150 PAID tier ($27/mo): $4,050/month = $48,600/year
-- 50 VIP tier ($97/mo): $4,850/month = $58,200/year
-- **Total**: $8,900/month = $106,800/year
-
-**After Price Escalation** (500 members in 5 tranches):
-- Founding rates locked for first 100
-- Next 400 pay escalated rates
-- Average revenue higher as membership grows
+> **Note**: These projections were based on the original $27/mo and $97/mo pricing model from December 2024. They need to be recalculated using the current pricing: Standard (Free), Premium ($9/mo), VIP ($99/yr). The revenue model changes significantly with VIP now being annual rather than monthly.
 
 ### Standalone Sales Revenue
 **Source**: File 15
@@ -413,19 +381,6 @@ This document extracts all pricing strategies, monetization models, revenue stre
 - Supplemental product sales
 - Course sales (Phase 4)
 
-### Combined Revenue Potential
-**Year 1 Conservative**:
-- Skool: $60,000 (ramping up to 500 members)
-- Standalone: $35,000
-- Bundles: $10,000 (one-time participation)
-- **Total**: ~$105,000
-
-**Year 2 Optimistic**:
-- Skool: $150,000 (1,000+ members with escalation)
-- Standalone: $50,000
-- Ecosystem products: $30,000
-- **Total**: ~$230,000
-
 ---
 
 ## Cross-References
@@ -437,6 +392,6 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ---
 
 **Document Status**: Complete pricing extraction
-**Last Updated**: December 28, 2024
-**Confidence Level**: High - extensive pricing discussions documented
-**Notable Gaps**: Some final product prices not locked (Business Edition, some supplements)
+**Last Updated**: March 11, 2026
+**Confidence Level**: High - Skool community pricing finalized and live
+**Notable Gaps**: Revenue projections need recalculation with current pricing; GPT tier assignments TBD

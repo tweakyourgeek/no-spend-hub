@@ -1,14 +1,18 @@
 # Skool Community Structure Guide
 
-**Community Name**: [Your Choice - "The No Spend Collective" or other]
+**Community Name**: The No Spend Collective
 **Platform**: Skool
-**Tiers**: FREE ($0) | PAID ($27/mo) | VIP ($97/mo)
+**URL**: https://www.skool.com/nospend-8052/about
+**Tiers**: Standard ($0) | Premium ($9/mo) | VIP ($99/yr)
+**Last Updated**: March 11, 2026
 
 ---
 
-## 🏗️ CLASSROOM SECTIONS (Left Sidebar Navigation)
+## 🏗️ CLASSROOM SECTIONS (7 Classrooms)
 
-### 1. 🎯 START HERE (All Tiers: FREE/PAID/VIP)
+> **Updated March 11, 2026**: Classroom structure finalized as 7 classrooms. Replaces previous 6-section structure.
+
+### 1. 🎯 START HERE (All members regardless of tier)
 
 **Purpose**: Onboarding and orientation for new members
 
@@ -20,8 +24,8 @@
   - Who this is for
 
 - **What's Included in Your Tier**
-  - FREE Tier: What you get
-  - PAID Tier: What you get (link to upgrade)
+  - Standard Tier: What you get
+  - Premium Tier: What you get (link to upgrade)
   - VIP Tier: What you get (link to upgrade)
 
 - **How to Use This Community**
@@ -38,17 +42,48 @@
 
 ---
 
-### 2. 📚 30-DAY NO-SPEND CHALLENGE (All Tiers)
+### 2. 🧰 À LA CARTE TOOLKIT (All members regardless of tier)
 
-**Purpose**: Core challenge delivery - all tiers participate, PAID/VIP get full materials
+**Purpose**: Individual tools available to all members
+
+**Contents**:
+- Pattern Quiz
+- Impulse Brake
+- Decision Matrix
+- 7-Day Spending Tracker
+- Cheat Sheet (quick reference guide)
+- Quick-Start Guide
+
+---
+
+### 3. 🎁 BONUSES (All members regardless of tier)
+
+**Purpose**: Downloadable templates, printables, reference materials
+
+**Contents**:
+- Phone Wallpapers (3-5 designs with key phrases)
+- Social Graphics (shareable quotes/progress images)
+- Wall Tracker Poster (printable)
+- Accountability Partner Template
+- Comfort Menu Starter
+- 5 Free Activities (no-spend entertainment ideas)
+- Transition Guide (between challenges)
+- Monthly Check-In Prompts
+- Seasonal Tips
+
+---
+
+### 4. 📚 30-DAY NO-SPEND CHALLENGE (Standard and above)
+
+**Purpose**: Core challenge delivery
 
 **Structure**: Organized by weeks (4 sub-sections)
 
 #### 📅 WEEK 1: Starting the Experiment (Days 1-7)
 **Theme**: Beginning - Participation over perfection
 **Access**:
-- FREE: Daily prompts posted in community
-- PAID/VIP: Daily prompts + downloadable journal pages
+- Standard: Daily prompts posted in community
+- Premium/VIP: Daily prompts + downloadable journal pages
 
 **Posts** (one per day):
 - **Day 1: [Theme Title]**
@@ -96,22 +131,27 @@
 
 ---
 
-### 3. 🎉 QUARTERLY CHALLENGES (All Tiers)
+### 5. 📅 MONTHLY THEMES (Premium and above)
 
-**Purpose**: Free rotating challenges throughout the year - drives engagement between no-spend rounds
+**Purpose**: Monthly themed challenge content and live support for Premium/VIP members
 
-#### Q1: 30 Bags in 30 Days (Feb-Mar, Lent Season)
-**Theme**: Clear the clutter
-**Access**: FREE tier gets basic worksheets, PAID/VIP get enhanced materials
+**Contents**:
+- Monthly themed challenge materials
+- Current month's tool
+- Monthly live check-in materials and recordings
+- Workshop recordings (current month)
 
-**Posts**:
-- Challenge Overview & Rules
-- Daily check-in thread (Days 1-30)
-- Wins & Before/After Photos
-- What to do with donated items (resources)
-- Completion celebration & badge
+---
 
-#### Q2: Pantry Challenge (Apr-May)
+### 6. 🎉 QUARTERLY CHALLENGES (VIP only)
+
+**Purpose**: Quarterly challenge content and materials — VIP-exclusive access
+
+#### Q1: No-Spend Challenge (April, first cohort)
+**Theme**: Pattern recognition, spending as data
+**What Standard gets via community**: Community access, daily prompts, 7-Day Tracker, Pattern Quiz
+
+#### Q2: Pantry Challenge (June-July)
 **Theme**: Use what you have (food focus)
 
 **Posts**:
@@ -124,17 +164,16 @@
 
 #### Q3: No-Spend Group Round (Aug-Sep)
 **Theme**: Pre-holiday financial reset
-**Note**: This is the FULL 30-day no-spend challenge (same as Section 2)
+**Note**: This is the FULL 30-day no-spend challenge (group cohort format)
 
 **Posts**:
 - Why August/September? (Build buffer before holidays)
 - Cohort kickoff
-- Link to main 30-Day Challenge classroom
 - Weekly accountability threads
 - End-of-round celebration
 
 #### Q4: Holiday Spending Reset (Nov-Dec)
-**Theme**: Intentional holidays (NOT no-spend - that's unrealistic)
+**Theme**: Intentional holidays (NOT no-spend — unrealistic timing)
 
 **Posts**:
 - Challenge Overview
@@ -146,188 +185,31 @@
 
 ---
 
-### 4. 📂 RESOURCES (Tiered Access)
+### 7. 🏆 ANNUAL BONUSES (VIP only)
 
-**Purpose**: Downloadable materials, templates, tools
+**Purpose**: Full toolkit, archives, and exclusive VIP content
 
-#### 🆓 FREE TIER RESOURCES
-**Sub-folder: Free Downloads**
-- Pattern Quiz
-- Cheat Sheet (quick reference guide)
-- 5 Free Activities (no-spend entertainment ideas)
-- Comfort Menu Starter
-- Quick-Start Guide
-- Phone Wallpapers (3-5 designs with key phrases)
-- Social Graphics (shareable quotes/progress images)
-- Wall Tracker Poster (printable)
-- Accountability Partner Template
-- Transition Guide (between challenges)
-- Monthly Check-In Prompts
-- Seasonal Tips
-
-**Sub-folder: Lead Magnets**
-- Cash Envelope System (Google Sheets)
-- [Future: Simple Business Bookkeeping]
-
-#### 💎 PAID TIER RESOURCES (PAID/VIP only)
-**Sub-folder: The No-Spend Guide**
-- Personal Edition (PDF download)
-- Business Edition (PDF download - when complete)
-- 10 Expense Log Variations (all household types)
-
-**Sub-folder: Spreadsheet Packs**
-- Personal Spreadsheet Pack (9-12 tabs)
-- Business Spreadsheet Pack (when complete)
-- How to Use Spreadsheets (video tutorial)
-
-**Sub-folder: Premium Templates**
-- Enhanced tracking worksheets
-- Advanced planning templates
-- Category-specific tools
-
-**Sub-folder: Workshop Recordings**
-- Current month's workshop (rotates monthly)
-- [VIP tier gets full archives]
-
-#### 🌟 VIP TIER RESOURCES (VIP only)
-**Sub-folder: GPT Ecosystem**
-- How to Use the 17 GPTs (guide)
-- GPT #1: No Spend Challenge Coach (link + instructions)
-- GPT #2: No Spend Prep & Planning (link + instructions)
-- GPT #3: Spending Trigger Decoder (link + instructions)
-- [Continue through all 17 GPTs]
-- GPT Tips & Tricks (monthly updates)
-
-**Sub-folder: Business Central Hub**
-- Business-specific resources
-- Business worksheets
-- Business challenge variations
-- Business case studies
-
----
-
-### 5. 💬 COMMUNITY SUPPORT (All Tiers)
-
-**Purpose**: Daily engagement, accountability, celebration
-
-**Posts/Threads**:
-
-#### Daily Check-Ins
-- **Monday Momentum** - Weekly intentions thread
-- **Wednesday Wins** - Mid-week celebration (no matter how small)
-- **Friday Reflection** - Week wrap-up and learning
-- **Weekend Check-In** - How are you holding up?
-
-#### Ongoing Threads
-- **📍 PINNED: Introduce Yourself**
-  - New members say hello
-  - Share why you're here
-  - What you hope to shift
-
-- **🎊 Wins & Celebrations**
-  - Paid off $X
-  - Completed X no-spend days
-  - Resisted a big temptation
-  - Discovered a pattern
-  - Share all wins here!
-
-- **❓ Questions & Troubleshooting**
-  - Ask anything
-  - Community helps community
-  - No judgment zone
-
-- **🤝 Accountability Partners**
-  - Looking for accountability buddy? Post here
-  - Match with someone at similar stage
-  - Check in with your partner weekly
-
-- **🧠 Pattern Recognition Discussion**
-  - Which pattern are you wrestling with?
-  - What interventions are working?
-  - Pattern of the month deep-dive
-
-- **💡 What I Did Instead of Spending**
-  - Creative alternatives thread
-  - Non-spending solutions
-  - Inspire others
-
-#### Special Threads (Monthly)
-- **📊 Monthly Metrics** - Optional sharing: days completed, $ saved, etc.
-- **🎯 Pattern of the Month** - Deep dive into one Chasing pattern
-- **🔥 Micro-Challenge Drop** - Random 24-hour or 3-day challenges
-
----
-
-### 6. 🎓 ARCHIVES (VIP Only)
-
-**Purpose**: Past challenges, workshops, exclusive content for VIP members
-
-**Sub-folders**:
-
-#### Past Challenges
-- January 2026 Challenge Archive
-- February 2026 (30 Bags) Archive
-- March 2026 Archive
-- [Continue monthly]
-
-#### Workshop Library
-- All past workshops (video + notes)
-- Guest expert sessions
-- Deep-dive trainings
-
-#### Exclusive VIP Content
+**Contents**:
+- Updated No Spend Journal and Guide
+- Full No Spend Toolkit
+- Archives of past challenges and workshops
+- Quarterly Live VIP Reset materials and recordings
+- VIP-only live session recordings
 - Advanced pattern work
-- Business-specific deep dives
-- Quarterly VIP-only sessions
-
----
-
-### 7. 🎤 VIP LOUNGE (VIP Only)
-
-**Purpose**: Exclusive VIP engagement, live sessions, special access
-
-**Posts**:
-- **Live Co-Working Sessions**
-  - Schedule (weekly or bi-weekly)
-  - Zoom links
-  - Recordings posted after
-
-- **VIP Q&A with [Your Name]**
-  - Monthly live session
-  - Ask anything
-  - Pattern deep-dives
-
-- **VIP-Only Workshops**
-  - Advanced topics
-  - Invited experts
-  - Exclusive trainings
-
-- **VIP Feedback & Requests**
-  - What do you want to see?
-  - Feature requests
-  - Shape the community
 
 ---
 
 ## 🔐 ACCESS CONTROL SUMMARY
 
-| Section | FREE | PAID | VIP |
-|---------|------|------|-----|
-| START HERE | ✅ | ✅ | ✅ |
-| 30-Day Challenge (prompts) | ✅ | ✅ | ✅ |
-| 30-Day Challenge (downloads) | ❌ | ✅ | ✅ |
-| Quarterly Challenges (basic) | ✅ | ✅ | ✅ |
-| Quarterly Challenges (enhanced) | ❌ | ✅ | ✅ |
-| Free Resources | ✅ | ✅ | ✅ |
-| No-Spend Guide | ❌ | ✅ | ✅ |
-| Spreadsheet Packs | ❌ | ✅ | ✅ |
-| Premium Templates | ❌ | ✅ | ✅ |
-| Current Month Workshop | ❌ | ✅ | ✅ |
-| GPT Ecosystem | ❌ | ❌ | ✅ |
-| Business Central Hub | ❌ | ✅ | ✅ |
-| Archives | ❌ | ❌ | ✅ |
-| VIP Lounge | ❌ | ❌ | ✅ |
-| Community Support | ✅ | ✅ | ✅ |
+| Classroom | Standard | Premium | VIP |
+|-----------|----------|---------|-----|
+| 1. START HERE | ✅ | ✅ | ✅ |
+| 2. À La Carte Toolkit | ✅ | ✅ | ✅ |
+| 3. Bonuses | ✅ | ✅ | ✅ |
+| 4. 30-Day No-Spend Challenge | ✅ | ✅ | ✅ |
+| 5. Monthly Themes | ❌ | ✅ | ✅ |
+| 6. Quarterly Challenges | ❌ | ❌ | ✅ |
+| 7. Annual Bonuses | ❌ | ❌ | ✅ |
 
 ---
 
@@ -343,8 +225,8 @@
 - **Weekly**: Monday Momentum + Friday Reflection threads
 - **Bi-weekly**: Micro-challenge drop
 - **Monthly**: Pattern deep-dive
-- **Monthly**: Workshop (PAID/VIP)
-- **Monthly**: VIP live session
+- **Monthly**: Workshop (Premium/VIP)
+- **Monthly**: VIP live session (VIP only)
 
 ### Quarterly Challenge Months
 - **Daily**: Challenge check-in thread
@@ -383,7 +265,7 @@
 
 ---
 
-**PAID/VIP Members**: Download today's journal page in Resources → The No-Spend Guide
+**Premium/VIP Members**: Download today's journal page in Monthly Themes
 
 **Pattern Tip**: [If relevant - brief intervention or recognition tip]
 
@@ -418,14 +300,15 @@ You made it through Week [X]! 🎉
 ## 🚀 LAUNCH SETUP CHECKLIST
 
 **Before members join**:
-- [ ] Create all 7 main sections (START HERE → VIP LOUNGE)
+- [ ] Create all 7 classrooms (START HERE → Annual Bonuses)
 - [ ] Set tier access for each section
 - [ ] Post welcome message in START HERE
 - [ ] Post Community Guidelines
 - [ ] Upload at least Week 1 daily prompts (Days 1-7)
-- [ ] Upload free resources (at least Pattern Quiz, Quick-Start, 3 wallpapers)
+- [ ] Upload À La Carte Toolkit materials (Pattern Quiz, Impulse Brake, Decision Matrix, 7-Day Tracker)
+- [ ] Upload Bonuses (wallpapers, printables, reference materials)
 - [ ] Create ongoing threads (Intros, Wins, Questions, Accountability)
-- [ ] Test with dummy accounts (can FREE see PAID content? They shouldn't!)
+- [ ] Test with dummy accounts (can Standard see Premium/VIP content? They shouldn't!)
 
 **Week 1 after launch**:
 - [ ] Post daily prompts (Days 1-7)
@@ -451,13 +334,12 @@ You made it through Week [X]! 🎉
 - Normalize slips and setbacks
 
 **Drive upgrades**:
-- In FREE tier posts, mention "PAID members can download..."
+- In Standard tier posts, mention "Premium members get..."
 - Share VIP member wins (with permission)
-- Highlight GPT ecosystem in action
-- Show value of enhanced materials
+- Show value of enhanced materials and quarterly challenges
 
 ---
 
-**Document Status**: Complete Skool Structure Guide
-**Next Step**: Build these sections in your Skool community
-**Questions?**: Ask and I'll refine!
+**Document Status**: Updated — 7-classroom structure confirmed
+**Last Updated**: March 11, 2026
+**Next Step**: Build these classrooms in Skool community before March 20 soft launch
