@@ -9,6 +9,7 @@ import {
   DAY_ENCOURAGEMENTS,
   DayEntry,
 } from "@/lib/challenge-data";
+import SevenDayTracker from "./SevenDayTracker";
 
 interface Props {
   data: ChallengeData;
@@ -85,6 +86,9 @@ export default function AppHome({ data, onUpdate }: Props) {
         <p className="font-body text-sm text-muted-foreground mb-1">Today is</p>
         <h1 className="font-display text-6xl font-bold text-foreground">Day {data.currentDay}</h1>
       </div>
+
+      {/* 7-Day Tracker */}
+      <SevenDayTracker data={data} />
 
       {/* Check-in Buttons */}
       {!logged ? (
