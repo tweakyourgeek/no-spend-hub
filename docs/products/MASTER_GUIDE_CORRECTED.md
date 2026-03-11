@@ -7,10 +7,10 @@
 
 ### Section 1: Before You Begin
 - Welcome to Your 30-Day Reset
+- What Counts as Participation
 - Who This Challenge Is For (and Who It's Not For)
 - Before You Start, Let This Go
 - A Promise to You
-- What Counts as Participation
 
 ### Section 2: The C3 Framework - Your Decision Tool
 - The Three Paths: CUT, CANCEL, COMBINE
@@ -39,6 +39,7 @@
 - Appendix D: Comfort Menu Template
 - Appendix E: Almost Bought It Log
 - Appendix F: Monthly Tracker Grid
+- Appendix G: Alternate Expense Log Formats
 
 
 ## Section 1: Before You Begin
@@ -51,11 +52,24 @@ It is a pause. A deliberate stop in the middle of habits that usually run on aut
 
 This challenge asks you to notice how and why you spend. What you reach for when you are tired, bored, stressed, hopeful, or avoiding something harder to look at. Those patterns are not failures. They are protective strategies that made sense at some point.
 
-You are allowed to acknowledge guilt here. You do not have to pretend it is not present. But guilt is not the driver of this process. Awareness is.
+If you feel guilty about your spending, that's okay. It's not running this show, though. Awareness is.
 
 Over these 30 days, the goal is not to be perfect. The goal is to forgive yourself for what came before, recognize the patterns that are still active, and move forward with a plan that feels steady and realistic.
 
 This is a reset rooted in clarity. You pause. You observe. You choose what comes next without shame.
+
+
+### What Counts as Participation
+
+Checking boxes counts.
+Skipping journal prompts counts.
+Spending during the challenge counts (it's data).
+Missing days counts.
+Coming back after quitting counts.
+
+There is no minimum effort requirement. If you showed up today, that's the work.
+
+> **Want to start now?** Skip ahead to Day 1 on page X. You can come back for the C3 Framework and setup pages whenever you are ready. The daily pages work on their own.
 
 
 ### Who This Challenge Is For
@@ -85,7 +99,7 @@ Before you begin, there are a few things this challenge asks you to loosen your 
 
 Blame. Shame. Guilt. Fear. Anger. Resentment. Frustration.
 
-Those emotions are understandable, and they are allowed to exist. But they are heavy guides. If they stay in charge, they will turn every observation into a verdict.
+Those emotions are understandable. But if they stay in charge, they will turn every observation into a verdict.
 
 This challenge works better when you stop expecting yourself to be perfect, hyper-disciplined, or endlessly in control of your emotions and decisions. You are not required to act like a financial expert, a machine, or a version of yourself that never gets tired, triggered, or overwhelmed.
 
@@ -93,36 +107,14 @@ Instead, this challenge asks you to work with your humanity.
 
 Your spending habits formed in a real life, under real pressures. They make sense in context. When you allow yourself to be human rather than flawless, you create space for honest reflection and practical change.
 
-Perfection tightens everything. Humanity opens the door.
-
 
 ### A Promise to You
 
-I want to be clear about what I am promising you here.
+I am not a financial advisor, a therapist, or an authority over your life. This challenge was built with care, intention, and lived experience. Nothing here is designed to shame you, rush you, or turn your spending into a moral issue.
 
-I promise to stay in my lane. I am not trying to be a financial advisor, a therapist, or an authority over your life. This challenge was built with care, intention, and lived experience, not from theory or pressure to perform expertise I do not claim.
-
-I promise that thought and care went into this challenge and the spaces where it is meant to be used. Nothing here is designed to shame you, rush you, or turn your spending into a moral issue.
-
-I promise that if you put in effort, even imperfect effort, you can see changes in how you relate to money. Those changes might show up as savings. They might show up as clarity, confidence, or fewer moments of self-judgment. All of those count.
-
-I promise honesty about the process. For some people, this challenge will feel straightforward. For others, it will feel uncomfortable or emotional. That difference is part of being human. There is nothing wrong with where you fall on that spectrum.
-
-I promise that this journal is private. You are not required to share anything you write here with anyone unless you choose to, and only with people or professionals you trust.
-
-If you picked this up, you already demonstrated a willingness to look at your life with care. That matters. This process is designed to honor that trust.
+If you put in effort, even imperfect effort, you can see changes in how you relate to money. Those changes might show up as savings. They might show up as clarity, confidence, or fewer moments of self-judgment. All of those count. For some people, this challenge will feel straightforward. For others, it will feel uncomfortable or emotional. There is nothing wrong with where you fall on that spectrum.
 
 
-
-### What Counts as Participation
-
-Checking boxes counts.
-Skipping journal prompts counts.
-Spending during the challenge counts (it's data).
-Missing days counts.
-Coming back after quitting counts.
-
-There is no minimum effort requirement. If you showed up today, that's the work.
 
 ## Section 2: The C3 Framework - Your Decision Tool
 
@@ -212,9 +204,9 @@ The C3 Framework does not replace your judgment. It supports it.
 
 ## C3 and the Chasing Patterns
 
-If you recognize yourself in these spending patterns, certain C3 strategies tend to work better for certain patterns.
+You do not need to memorize this. The pattern names are optional. The C3 strategies are the part you use.
 
-This is not a rule. It is a starting point.
+If you recognize yourself in these spending patterns, certain C3 strategies tend to work better for certain patterns. This is not a rule. It is a starting point.
 
 **Chasing Rainbows** (buying the next fix or solution) often responds to **CANCEL**. Stop collecting. Pause new resource purchases. Work with what you already own.
 
@@ -227,26 +219,6 @@ This is not a rule. It is a starting point.
 **Chasing Sunshine** (mood-seeking treats) often responds to **CUT**. Limit treats to 1-2 times per week instead of daily. Set a spending cap for small indulgences.
 
 **Chasing Moonbeams** (fantasy and someday purchases) often responds to **CANCEL or COMBINE**. Stop buying for imagined future projects. Consolidate all fantasies into one "maybe later" list but do not buy.
-
-You do not need to memorize this. The pattern names are optional. The C3 strategies are the part you use.
-
-
-## What C3 Is Not
-
-C3 is not deprivation.
-
-It is not about never spending again. It is not punishment for past purchases. It is not a test of willpower or discipline.
-
-C3 is a decision framework. A way to move from "I should probably spend less" to "here is exactly how."
-
-It offers flexibility. You can CUT without canceling. You can COMBINE without eliminating. You can CANCEL one tier while keeping another.
-
-The framework assumes you are human. That perfect execution is not the goal. That slips are data, not failures.
-
-If a C3 strategy does not work, you adjust it. If it feels too rigid, you soften it. If it reveals something unexpected about your spending, you write it down and keep going.
-
-This is a tool. You decide how to use it.
-
 
 ## Moving Forward
 
@@ -282,9 +254,7 @@ This page is not a full budget. It is a quick look at where your money goes righ
 
 You do not need precise amounts. Estimates work. The goal is to see the landscape so you can make decisions grounded in reality instead of hope.
 
-As you track expenses, you'll also start thinking about what to do with each one using the **C3 Framework**: CUT (reduce frequency), CANCEL (stop entirely or downgrade), or COMBINE (consolidate or share costs). This simple decision tool helps you move from "I should spend less" to "here's exactly how."
-
-Below is a basic expense check-in table. If your household looks different or you want a version with more personality, check the Appendix for alternate formats.
+When you are ready to make decisions about these expenses, the C3 Framework in Section 2 is your tool. Need a different table format? See Appendix G for versions designed for couples, families, businesses, and people who want to name their spending "The Damage."
 
 ---
 
@@ -332,200 +302,14 @@ Which could you COMBINE (consolidate or share)?
 
 ---
 
-## Appendix: Expense Logs - Choose Your Version
-
-The main journal uses a straightforward expense check-in table that works for most people. But not everyone's life looks the same, and not everyone wants the same tone when tracking money.
-
-This section offers alternate expense log formats. Some are practical. Some are irreverent. Some account for kids, pets, partners, or chaos.
-
-Pick the one that fits your household and your sense of humor. Copy it into your daily tracking, or swap it in for Page 7 if you prefer.
-
-You can also use different versions at different points in the challenge. Start serious, switch to irreverent when you need the levity. Whatever keeps you engaged.
-
----
-
-### Version 1: Singles (Regular)
-**"Expense Check-In"**
-
-| Date | Amount | Description | Need / Gray Area / Want | C3 Action | Notes |
-|------|--------|-------------|-------------------------|-----------|-------|
-|      |        |             |                         |           |       |
-|      |        |             |                         |           |       |
-|      |        |             |                         |           |       |
-
----
-
-### Version 2: Singles (Irreverent)
-**"The Receipts (Literal and Emotional)"**
-
-| Date | The Damage | What Happened | Survival / Sanity / Shiny Thing | C3 Strategy | What Was Going On With Me |
-|------|------------|---------------|---------------------------------|-------------|---------------------------|
-|      |            |               |                                 |             |                           |
-|      |            |               |                                 |             |                           |
-|      |            |               |                                 |             |                           |
-
----
-
-### Version 3: Couples (Regular)
-**"Household Expense Log"**
-
-| Date | Amount | Description | Who | Planned? | Need / Gray Area / Want | C3 Action | Notes |
-|------|--------|-------------|-----|----------|-------------------------|-----------|-------|
-|      |        |             |     | Y / N    |                         |           |       |
-|      |        |             |     | Y / N    |                         |           |       |
-|      |        |             |     | Y / N    |                         |           |       |
-
----
-
-### Version 4: Couples (Irreverent)
-**"Who Spent What and Do We Need to Talk About It"**
-
-| Date | The Damage | Who Did It | Did We Discuss This? | Survival / Sanity / Shiny Thing | C3 Strategy | The Backstory |
-|------|------------|------------|----------------------|---------------------------------|-------------|---------------|
-|      |            |            | Y / N / "Technically" |                                 |             |               |
-|      |            |            | Y / N / "Technically" |                                 |             |               |
-|      |            |            | Y / N / "Technically" |                                 |             |               |
-
----
-
-### Version 5: Families (Regular)
-**"Family Expense Tracker"**
-
-| Date | Amount | Description | For Whom | Planned? | Need / Gray Area / Want | C3 Action | Notes |
-|------|--------|-------------|----------|----------|-------------------------|-----------|-------|
-|      |        |             |          | Y / N    |                         |           |       |
-|      |        |             |          | Y / N    |                         |           |       |
-|      |        |             |          | Y / N    |                         |           |       |
-
----
-
-### Version 6: Families (Irreverent)
-**"Money Left the Building"**
-
-| Date | The Damage | Who/What For | Kid Tax?* | Survival / Sanity / Shiny Thing | C3 Strategy | Chaos Level |
-|------|------------|--------------|-----------|----------------------------------|-------------|-------------|
-|      |            |              | Y / N     |                                  |             | 1 2 3 4 5   |
-|      |            |              | Y / N     |                                  |             | 1 2 3 4 5   |
-|      |            |              | Y / N     |                                  |             | 1 2 3 4 5   |
-
-*Kid Tax: the snack at checkout, the thing for school tomorrow, the bribe to leave without a meltdown, the duplicate because someone lost the first one
-
----
-
-### Version 7: Pet Parents (Regular)
-**"Pet Expense Log"**
-
-| Date | Amount | Description | Pet | Need / Gray Area / Want | C3 Action | Notes |
-|------|--------|-------------|-----|-------------------------|-----------|-------|
-|      |        |             |     |                         |           |       |
-|      |        |             |     |                         |           |       |
-|      |        |             |     |                         |           |       |
-
----
-
-### Version 8: Pet Parents (Irreverent)
-**"The Vet Will See Your Wallet Now"**
-
-| Date | The Damage | What/Who | They Needed It / They Wanted It / I Wanted It For Them | C3 Strategy | Did They Even Use It? | Guilt Level |
-|------|------------|----------|--------------------------------------------------------|-------------|-----------------------|-------------|
-|      |            |          |                                                        |             | Y / N / Pending       | 1 2 3 4 5   |
-|      |            |          |                                                        |             | Y / N / Pending       | 1 2 3 4 5   |
-|      |            |          |                                                        |             | Y / N / Pending       | 1 2 3 4 5   |
-
----
-
-### Version 9: Maximum Chaos Combo (Regular)
-**"Family + Pet Expense Tracker"**
-
-| Date | Amount | Description | For Whom | Planned? | Need / Gray Area / Want | C3 Action | Notes |
-|------|--------|-------------|----------|----------|-------------------------|-----------|-------|
-|      |        |             |          | Y / N    |                         |           |       |
-|      |        |             |          | Y / N    |                         |           |       |
-|      |        |             |          | Y / N    |                         |           |       |
-
----
-
-### Version 10: Maximum Chaos Combo (Irreverent)
-**"The Money Vortex: Kids + Pets Edition"**
-
-| Date | The Damage | Who/What For | Species | Kid Tax / Pet Tax? | Survival / Sanity / Shiny Thing | C3 Strategy | Chaos + Guilt Level |
-|------|------------|--------------|---------|--------------------|---------------------------------|-------------|---------------------|
-|      |            |              |         | Y / N              |                                 |             | 1 2 3 4 5 6 7 8 9 10 |
-|      |            |              |         | Y / N              |                                 |             | 1 2 3 4 5 6 7 8 9 10 |
-|      |            |              |         | Y / N              |                                 |             | 1 2 3 4 5 6 7 8 9 10 |
-
----
-
-## Notes on Using These Tables
-
-**If you're using a printed version:** Copy the table that fits your life onto blank pages or into a notebook. You can recreate the structure however works for you.
-
-**If you're using a digital version:** Copy and paste the table into your preferred note-taking app, spreadsheet, or document.
-
-**If you hate all of these:** Make your own. The structure matters less than the act of noticing. Track in whatever format keeps you honest and engaged.
-
-**About the C3 Action column:** As you log expenses, start thinking about what action makes sense. You don't have to fill this in immediately—sometimes the pattern becomes clearer after a few days. The goal is to build the decision muscle: when you see a recurring expense, you automatically ask "Could I CUT, CANCEL, or COMBINE this?"
-
-The goal is not perfection. The goal is visibility.
-
 ### Page 8: C3 Strategy Worksheet
 
 
 ---
 
+You have already read about C3. Now you are designing your actual strategy.
+
 This is an experiment. Like any experiment, it needs parameters.
-
-The **C3 Framework** gives you three simple paths for any spending decision:
-
-- **CUT** (Curb/Reduce) — Reduce frequency or eliminate partially
-- **CANCEL** (Clear/Stop) — Stop paying entirely OR downgrade to lower tier
-- **COMBINE** (Consolidate) — Share costs, consolidate services, or replace with cheaper alternative
-
-These aren't rigid rules. They're design choices that help you create conditions where patterns become visible instead of staying buried in autopilot.
-
----
-
-## The C3 Framework: Your Decision Tool
-
-### CUT (Reduce Frequency)
-
-When you CUT something, you keep it but reduce how often it happens.
-
-**Examples:**
-- Coffee runs from 5x/week → 2x/week
-- Takeout from 4x/month → 1x/month
-- Impulse purchases under $20 → wait 24 hours first
-- New courses/templates → must finish one before buying another
-
-**Best for**: Habits you don't want to eliminate entirely, just bring into balance.
-
----
-
-### CANCEL (Stop or Downgrade)
-
-When you CANCEL something, you either stop it completely or downgrade to a lower tier.
-
-**Examples:**
-- Premium subscription → basic tier (or free version)
-- Unused gym membership → canceled
-- Multiple streaming services → keep one, cancel the rest
-- Newsletter bundles → unsubscribe from paid, keep free
-
-**Best for**: Things you're paying for but not using, or services where a lower tier would work fine.
-
----
-
-### COMBINE (Consolidate or Share)
-
-When you COMBINE something, you consolidate multiple services into one, share costs with others, or replace expensive options with cheaper alternatives.
-
-**Examples:**
-- Solo streaming plans → family plan split with household
-- Three separate tools → one tool that does all three jobs
-- New supplies → borrow, use what you have, or buy secondhand
-- Individual memberships → household or group rate
-
-**Best for**: Duplicate services, solo costs that could be shared, or expensive items that have cheaper alternatives.
 
 ---
 
@@ -1051,9 +835,7 @@ Success in this challenge is not a perfect no-spend streak.
 
 ## Emergency Clause
 
-**For me, an emergency that justifies spending outside my plan is:**
-
-(Health, safety, or significant financial consequences like late fees or loss of essential service. Not inconvenience, last-minute planning failures, discomfort, or social pressure.)
+**My emergency clause (from Page 8):**
 
 ---
 
@@ -1118,6 +900,8 @@ You can do this.
 
 You started. That matters more than most people who bookmarked this for later. Whether this is your first no-spend challenge or your fifth, something brought you to this page today. Take a minute to name it.
 
+> *Skipped ahead? Welcome. The daily check-in below mentions C3 strategies (CUT, CANCEL, COMBINE). That is your decision tool from Section 2. You can read it anytime, but you do not need it to start.*
+
 ### Reflection
 
 *What pushed this challenge from "interesting idea" to "I'm actually doing this"?*
@@ -1146,10 +930,8 @@ You started. That matters more than most people who bookmarked this for later. W
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1189,10 +971,8 @@ The word "essential" means different things to different people in different sea
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1232,10 +1012,8 @@ Goals work better when they're specific. Not "be better with money" but somethin
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1275,10 +1053,8 @@ Before buying anything new, take stock. Tools, resources, subscriptions, half-fi
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1318,10 +1094,8 @@ Perfectionism kills momentum. If you're waiting until you understand everything 
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1361,10 +1135,8 @@ Weekends are different. Routines shift, time opens up, spending patterns change.
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1421,10 +1193,8 @@ You made it through the first week. Not perfectly, probably. That's fine. Today 
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1475,10 +1245,8 @@ Spending urges don't appear out of nowhere. Something sets them off. A mood, a s
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1517,10 +1285,8 @@ When you want to feel better, spending is one option. It's not the only one. A c
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1560,10 +1326,8 @@ That voice is real. It shows up after hard days, long stretches of responsibilit
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1603,10 +1367,8 @@ Boredom is uncomfortable. Scrolling numbs it. Shopping gives it somewhere to go.
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1646,10 +1408,8 @@ Not every day will feel manageable. Some days the challenge will feel stupid, po
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1689,10 +1449,8 @@ Wins don't have to be dramatic. Closing a tab counts. Walking out of a store emp
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1747,10 +1505,8 @@ Friction showed up this week. Maybe as boredom, maybe as emotional spending urge
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1801,10 +1557,8 @@ There's a version of you in your head that has it together. The right tools, the
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1844,10 +1598,8 @@ Think about purchases you made to feel more legitimate, more professional, more 
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1887,10 +1639,8 @@ Comparison sneaks in through feeds, conversations, group chats, even podcasts. S
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1925,10 +1675,8 @@ You do not need new tools to be who you already are. That sentence might feel an
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -1968,10 +1716,8 @@ Sometimes the urge to spend is really an urge to be seen. New things feel like n
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2011,10 +1757,8 @@ Success for this challenge is not a perfect streak. It's not a specific dollar a
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2069,10 +1813,8 @@ This week asked questions about identity, comparison, and what "enough" looks li
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2123,10 +1865,8 @@ Underneath spending there's often a longing. Not for the object, but for what th
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2166,10 +1906,8 @@ Today, you're allowed to want things. Make a list. A fantasy cart with no checko
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2209,10 +1947,8 @@ You're close to the end. Before you get there, take stock. This challenge held a
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2261,10 +1997,8 @@ If you spent when you planned not to, that's data. Slips are data. Sometimes exp
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2304,10 +2038,8 @@ Imagine yourself three months from now. Six months. A year. The way you relate t
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2359,10 +2091,8 @@ You've built some new muscles over the past few weeks. Some of them will fade wh
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2417,10 +2147,8 @@ This is the last weekly check-in. You're almost done. Whatever happened over the
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2465,10 +2193,8 @@ Tomorrow is the last day. Today is for looking back at the full arc. The beginni
 **Pattern I noticed today:**
 
 
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
+**If you spent outside your plan today, which C3 strategy would have helped?**
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
 
 **Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
 
@@ -2508,26 +2234,6 @@ Write to the version of yourself who might do this again. Future you, who will h
 
 ---
 
-### Daily Check-In
-
-**Today's spending:**
-- ☐ No-spend day (stayed within my plan)
-- ☐ Spent outside plan: _________________ ($______)
-
-**Pattern I noticed today:**
-
-
-**C3 strategy for next time:**
-- ☐ CUT (reduce frequency)
-- ☐ CANCEL (stop or downgrade)
-- ☐ COMBINE (consolidate/share)
-
-**Energy level:** ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
-
-**One word for today:** _________________
-
----
-
 # 30-Day Challenge Complete
 
 **Final Summary:**
@@ -2535,6 +2241,10 @@ Write to the version of yourself who might do this again. Future you, who will h
 **Total no-spend days:** _____ / 30
 
 **Success rate:** _____%
+
+**Estimated savings this round:** $__________
+
+(Add up the "Almost Bought It" log totals, cancelled subscriptions, and reduced spending. This is money that stayed in your account because you paused.)
 
 **C3 strategies used:**
 - ☐ CUT (reduce frequency) - **Impact:**
@@ -2562,49 +2272,11 @@ Write to the version of yourself who might do this again. Future you, who will h
 
 ---
 
-## Notes on Using This Structure
-
-**Each daily page includes:**
-
-1. **Reflection section** (top 2/3 of page):
-   - Day theme and context
-   - Main prompt question
-   - Space for journaling/writing
-
-2. **Daily Check-In** (bottom 1/3 of page):
-   - Spending tracking (no-spend or spent)
-   - Pattern recognition
-   - C3 strategy checkboxes
-   - Energy level (1-5)
-   - One-word summary
-
-3. **Weekly reviews** (Days 7, 14, 21, 28):
-   - Additional C3 review section
-   - Weekly summary space
-   - Adjustment prompts
-
-**How to use:**
-- Fill out what feels useful, skip what doesn't
-- The check-in builds the C3 decision muscle daily
-- Weekly reviews create adjustment points
-- Final summary captures the full arc
-
-**Print/digital options:**
-- Print as full pages (one day per page)
-- Use digitally (type or handwrite in PDF)
-- Copy into your own journal/notebook
-- Adapt the structure to what works for you
-
-**The structure serves the work, not the other way around.**
-
-
 ## Section 5: Integration & Your Next Cycle
 
 ### Deciding What Comes Next
 
-The decision to repeat the challenge, modify it, or stop after one cycle comes from the data.
-
-This is not an emotional decision, even when emotions are present. Feelings can exist, but the choice itself is grounded in what you observed.
+The decision to go again, adjust, or stop comes from what you observed. Feelings are part of that data, not a distraction from it.
 
 You review what worked and what did not. You look at where improvement is possible. You return to the same C3 lens you used before.
 
@@ -2661,23 +2333,33 @@ The work is the work. The container can change.
 Each cycle stands on its own. When it ends, it ends.
 
 
-## Microâ€‘Challenges You Can Use During This Cycle
+## Micro-Challenges You Can Use During This Cycle
 
-Sometimes the hardest part of a noâ€‘spend cycle is not the money. It is the extra mental and physical energy that shows up when you change a habit.
+Sometimes the hardest part of a no-spend cycle is not the money. It is the extra mental and physical energy that shows up when you change a habit.
 
-Microâ€‘challenges exist to give that energy somewhere to go.
+Micro-challenges exist to give that energy somewhere to go.
 
-These are optional, shortâ€‘term challenges you can layer into your 30 days. They are designed to distract you from spending urges, create visible progress, and give you something concrete to work toward without adding pressure or cost.
+These are optional, short-term challenges you can layer into your 30 days. They are designed to distract you from spending urges, create visible progress, and give you something concrete to work toward without adding pressure or cost.
 
 You do not need to complete all of them. You do not need to complete any of them.
 
 Think of these as tools you can pick up when you need a break from thinking about money directly.
 
-You can also use microâ€‘challenges as the basis for small, planned rewards. For example, completing a decluttering goal or a movement goal might earn a modest treat that fits inside your container. This keeps motivation human without turning the challenge into deprivation.
+You can also use micro-challenges as the basis for small, planned rewards. For example, completing a decluttering goal or a movement goal might earn a modest treat that fits inside your container. This keeps motivation human without turning the challenge into deprivation.
 
-As you move through the 30 days, add notes here about which microâ€‘challenges helped, which ones fizzled, and which ones you might want to revisit in a future cycle.
+As you move through the 30 days, add notes here about which micro-challenges helped, which ones fizzled, and which ones you might want to revisit in a future cycle.
 
-[Space reserved for microâ€‘challenge list, tracking, and personal notes]
+### Suggested Micro-Challenges
+
+**Week 1: Declutter one drawer or shelf each day.** Use what you find instead of buying replacements.
+
+**Week 2: No-screen evening.** One night this week, skip the scroll. See what you reach for instead.
+
+**Week 3: Use-it-up week.** Pick one category (pantry, toiletries, craft supplies) and use only what you already have.
+
+**Week 4: Free fun challenge.** Plan one outing or activity this week that costs nothing.
+
+**Your micro-challenge notes:**
 
 
 
@@ -4102,3 +3784,134 @@ The format does not matter. What matters is that you mark each day and see your 
 ---
 
 **This tracker is a tool, not a test. Use it to see your patterns, not to judge yourself. Progress is not perfection. Participation is what counts.**
+
+
+## Appendix G: Alternate Expense Log Formats
+
+The main journal uses a straightforward expense check-in table that works for most people. But not everyone's life looks the same, and not everyone wants the same tone when tracking money.
+
+Pick the one that fits your household and your sense of humor. Copy it into your daily tracking, or swap it in for Page 7 if you prefer. Start serious, switch to irreverent when you need the levity. Whatever keeps you engaged.
+
+---
+
+### Version 1: Singles (Regular)
+**"Expense Check-In"**
+
+| Date | Amount | Description | Need / Gray Area / Want | C3 Action | Notes |
+|------|--------|-------------|-------------------------|-----------|-------|
+|      |        |             |                         |           |       |
+|      |        |             |                         |           |       |
+|      |        |             |                         |           |       |
+
+---
+
+### Version 2: Singles (Irreverent)
+**"The Receipts (Literal and Emotional)"**
+
+| Date | The Damage | What Happened | Survival / Sanity / Shiny Thing | C3 Strategy | What Was Going On With Me |
+|------|------------|---------------|---------------------------------|-------------|---------------------------|
+|      |            |               |                                 |             |                           |
+|      |            |               |                                 |             |                           |
+|      |            |               |                                 |             |                           |
+
+---
+
+### Version 3: Couples (Regular)
+**"Household Expense Log"**
+
+| Date | Amount | Description | Who | Planned? | Need / Gray Area / Want | C3 Action | Notes |
+|------|--------|-------------|-----|----------|-------------------------|-----------|-------|
+|      |        |             |     | Y / N    |                         |           |       |
+|      |        |             |     | Y / N    |                         |           |       |
+|      |        |             |     | Y / N    |                         |           |       |
+
+---
+
+### Version 4: Couples (Irreverent)
+**"Who Spent What and Do We Need to Talk About It"**
+
+| Date | The Damage | Who Did It | Did We Discuss This? | Survival / Sanity / Shiny Thing | C3 Strategy | The Backstory |
+|------|------------|------------|----------------------|---------------------------------|-------------|---------------|
+|      |            |            | Y / N / "Technically" |                                 |             |               |
+|      |            |            | Y / N / "Technically" |                                 |             |               |
+|      |            |            | Y / N / "Technically" |                                 |             |               |
+
+---
+
+### Version 5: Families (Regular)
+**"Family Expense Tracker"**
+
+| Date | Amount | Description | For Whom | Planned? | Need / Gray Area / Want | C3 Action | Notes |
+|------|--------|-------------|----------|----------|-------------------------|-----------|-------|
+|      |        |             |          | Y / N    |                         |           |       |
+|      |        |             |          | Y / N    |                         |           |       |
+|      |        |             |          | Y / N    |                         |           |       |
+
+---
+
+### Version 6: Families (Irreverent)
+**"Money Left the Building"**
+
+| Date | The Damage | Who/What For | Kid Tax?* | Survival / Sanity / Shiny Thing | C3 Strategy | Chaos Level |
+|------|------------|--------------|-----------|----------------------------------|-------------|-------------|
+|      |            |              | Y / N     |                                  |             | 1 2 3 4 5   |
+|      |            |              | Y / N     |                                  |             | 1 2 3 4 5   |
+|      |            |              | Y / N     |                                  |             | 1 2 3 4 5   |
+
+*Kid Tax: the snack at checkout, the thing for school tomorrow, the bribe to leave without a meltdown, the duplicate because someone lost the first one
+
+---
+
+### Version 7: Pet Parents (Regular)
+**"Pet Expense Log"**
+
+| Date | Amount | Description | Pet | Need / Gray Area / Want | C3 Action | Notes |
+|------|--------|-------------|-----|-------------------------|-----------|-------|
+|      |        |             |     |                         |           |       |
+|      |        |             |     |                         |           |       |
+|      |        |             |     |                         |           |       |
+
+---
+
+### Version 8: Pet Parents (Irreverent)
+**"The Vet Will See Your Wallet Now"**
+
+| Date | The Damage | What/Who | They Needed It / They Wanted It / I Wanted It For Them | C3 Strategy | Did They Even Use It? | Guilt Level |
+|------|------------|----------|--------------------------------------------------------|-------------|-----------------------|-------------|
+|      |            |          |                                                        |             | Y / N / Pending       | 1 2 3 4 5   |
+|      |            |          |                                                        |             | Y / N / Pending       | 1 2 3 4 5   |
+|      |            |          |                                                        |             | Y / N / Pending       | 1 2 3 4 5   |
+
+---
+
+### Version 9: Maximum Chaos Combo (Regular)
+**"Family + Pet Expense Tracker"**
+
+| Date | Amount | Description | For Whom | Planned? | Need / Gray Area / Want | C3 Action | Notes |
+|------|--------|-------------|----------|----------|-------------------------|-----------|-------|
+|      |        |             |          | Y / N    |                         |           |       |
+|      |        |             |          | Y / N    |                         |           |       |
+|      |        |             |          | Y / N    |                         |           |       |
+
+---
+
+### Version 10: Maximum Chaos Combo (Irreverent)
+**"The Money Vortex: Kids + Pets Edition"**
+
+| Date | The Damage | Who/What For | Species | Kid Tax / Pet Tax? | Survival / Sanity / Shiny Thing | C3 Strategy | Chaos + Guilt Level |
+|------|------------|--------------|---------|--------------------|---------------------------------|-------------|---------------------|
+|      |            |              |         | Y / N              |                                 |             | 1 2 3 4 5 6 7 8 9 10 |
+|      |            |              |         | Y / N              |                                 |             | 1 2 3 4 5 6 7 8 9 10 |
+|      |            |              |         | Y / N              |                                 |             | 1 2 3 4 5 6 7 8 9 10 |
+
+---
+
+## Notes on Using These Tables
+
+**If you're using a printed version:** Copy the table that fits your life onto blank pages or into a notebook.
+
+**If you're using a digital version:** Copy and paste into your preferred note-taking app, spreadsheet, or document.
+
+**If you hate all of these:** Make your own. The structure matters less than the act of noticing.
+
+The goal is not perfection. The goal is visibility.
