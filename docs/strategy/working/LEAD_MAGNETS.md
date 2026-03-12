@@ -23,7 +23,7 @@ This document provides complete implementation details for all lead magnets in t
 2. ✅ Demonstrate value before asking for purchase
 3. ✅ Segment audience (B2C vs B2B)
 4. ✅ Warm up cold traffic
-5. ✅ Drive to Skool FREE tier
+5. ✅ Drive to Skool Standard tier
 
 ### What Makes a Good Lead Magnet
 
@@ -40,9 +40,9 @@ This document provides complete implementation details for all lead magnets in t
 
 | Tier | Type | Example | Email Required? |
 |------|------|---------|-----------------|
-| **FREE** | Public content | Quarterly challenges, blog posts, social content | No |
+| **Standard** | Public content | Quarterly challenges, blog posts, social content | No |
 | **LEAD MAGNET** | Email opt-in | Spreadsheets, templates, quizzes | Yes |
-| **PAID** | Purchase | The No-Spend Guide, courses, VIP tier | Yes |
+| **Premium** | Purchase | The No-Spend Guide, courses, VIP tier | Yes |
 
 ---
 
@@ -168,7 +168,7 @@ Hi {{first_name}},
 You're using the Cash Envelope System.
 Want more support?
 
-Join The No Spend Collective (FREE tier):
+Join The No Spend Collective (Standard tier):
 
 ✓ Quarterly challenges (No-Spend Challenge, Pantry Challenge, etc.)
 ✓ Community support
@@ -204,16 +204,16 @@ Spending during the challenge = data, not failure.
 Get the guide: [LINK TO $30 GUIDE]
 Use code NOSPEND50 for 50% off ($15)
 
-Or join the FREE Skool community and start the next quarterly challenge.
+Or join the Standard Skool community and start the next quarterly challenge.
 
 [Signature]
 ```
 
 #### Conversion Goals
 
-**Primary Goal**: FREE Skool tier signup
+**Primary Goal**: Standard Skool tier signup
 **Secondary Goal**: $30 standalone guide purchase (with NOSPEND50 code)
-**Long-term Goal**: Eventually PAID tier conversion ($27/mo)
+**Long-term Goal**: Eventually Premium tier conversion ($9/mo)
 
 **Expected Conversion Rates**:
 - Email opens: 40-50%
@@ -225,7 +225,7 @@ Or join the FREE Skool community and start the next quarterly challenge.
 **January 2026 "Kickoff Bundle" (Griffin)**:
 - Product type: FREE bundle
 - Expected downloads: High (thousands)
-- CTA: Join FREE Skool tier
+- CTA: Join Standard Skool tier
 - Special offer: Founding member rates if they upgrade
 
 ---
@@ -421,8 +421,8 @@ Use code NOSPEND50 for 50% off
 #### Conversion Goals
 
 **Primary Goal**: $30 standalone guide purchase (with NOSPEND50 code)
-**Secondary Goal**: $27/mo Skool PAID tier signup
-**Long-term Goal**: VIP tier ($97/mo) for pattern-specific GPTs
+**Secondary Goal**: $9/mo Skool Premium tier signup
+**Long-term Goal**: VIP tier ($99/yr) for pattern-specific GPTs
 
 ---
 
@@ -634,9 +634,9 @@ Full guide ($15 with code NOSPEND50): [GUIDE LINK]
 
 #### Conversion Goals
 
-**Primary Goal**: $30 guide purchase OR FREE Skool tier signup
+**Primary Goal**: $30 guide purchase OR Standard Skool tier signup
 **Secondary Goal**: Recognition of emotional spending pattern
-**Long-term Goal**: PAID tier conversion ($27/mo)
+**Long-term Goal**: Premium tier conversion ($9/mo)
 
 ---
 
@@ -837,15 +837,15 @@ No credit card required.
 
 #### Conversion Goals
 
-**Primary Goal**: FREE Skool tier signup
+**Primary Goal**: Standard Skool tier signup
 **Secondary Goal**: $47 Business Spreadsheet Pack purchase (includes Subscription Audit GPT)
-**Long-term Goal**: $27/mo PAID tier OR $97/mo VIP tier
+**Long-term Goal**: $9/mo Premium tier OR $99/yr VIP tier
 
 **Expected Conversion Rates**:
 - Email opens: 40-50%
 - Skool signups: 10-15%
 - Spreadsheet pack purchases: 3-7%
-- Eventually PAID tier: 20-30% (over 90 days)
+- Eventually Premium tier: 20-30% (over 90 days)
 
 #### Bundle Use
 
@@ -1120,8 +1120,8 @@ Full system: [BUSINESS EDITION LINK]
 #### Conversion Goals
 
 **Primary Goal**: $47 Business Spreadsheet Pack purchase (includes Subscription Audit GPT)
-**Secondary Goal**: FREE Skool tier signup
-**Long-term Goal**: $27/mo PAID tier OR $97/mo VIP tier (17 GPTs)
+**Secondary Goal**: Standard Skool tier signup
+**Long-term Goal**: $9/mo Premium tier OR $99/yr VIP tier (7 custom GPTs)
 
 ---
 
@@ -1146,7 +1146,7 @@ Full system: [BUSINESS EDITION LINK]
 2. **Add tag**: [Lead Magnet Name] - [Date]
 3. **Send sequence**: [Lead Magnet] nurture sequence
 4. **Delay between emails**: As specified in each sequence
-5. **Remove from sequence if**: They purchase OR join Skool PAID tier
+5. **Remove from sequence if**: They purchase OR join Skool Premium tier
 6. **Add to segment**: B2C or B2B (for future campaigns)
 
 ### Landing Page Template
@@ -1176,7 +1176,7 @@ Full system: [BUSINESS EDITION LINK]
 | Opt-in rate | 30-50% | (Signups / Page views) x 100 |
 | Email open rate | 40-50% | Email platform analytics |
 | Email click rate | 10-20% | Email platform analytics |
-| Skool FREE signups | 10-15% | Tag + Skool member list |
+| Skool Standard signups | 10-15% | Tag + Skool member list |
 | Paid conversions | 2-5% | Tag + purchase platform |
 | Cost per lead | Varies | Ad spend / Leads (if running ads) |
 
@@ -1185,7 +1185,7 @@ Full system: [BUSINESS EDITION LINK]
 **Good Performance**:
 - ✅ Opt-in rate above 35%
 - ✅ Email open rate above 40%
-- ✅ At least 10% convert to Skool FREE tier
+- ✅ At least 10% convert to Skool Standard tier
 - ✅ At least 2% purchase within 30 days
 
 **Needs Improvement**:
@@ -1213,7 +1213,7 @@ Full system: [BUSINESS EDITION LINK]
 
 - See **EMAIL_SEQUENCES.md** for complete email copy
 - See **LANDING_PAGE_COPY.md** for landing page sales copy
-- See **SKOOL_COMMUNITY_STRUCTURE.md** for FREE tier experience
+- See **SKOOL_COMMUNITY_STRUCTURE.md** for Standard tier experience
 - See **extraction_docs/08_Lead_Magnets_And_Funnels.md** for original research
 - See **extraction_docs/05_Marketing_And_Launch_Strategy.md** for bundle strategy
 

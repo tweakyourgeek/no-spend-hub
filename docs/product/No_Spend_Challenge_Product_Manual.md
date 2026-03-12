@@ -2,8 +2,8 @@
 
 ## Complete System Guide for Personal and Business Editions
 
-**Last Updated**: December 2024
-**Status**: Comprehensive Product Manual
+**Last Updated**: March 12, 2026
+**Status**: Comprehensive Product Manual — fully updated to reflect current tiers, pricing, GPT count, and launch timeline
 
 ---
 
@@ -317,7 +317,7 @@ Goals:
 **December 2024**: Stop giving the guide away for free.
 - 1100+ copies downloaded free = ~$37,000 lost value
 - Guide is now PREMIUM ONLY
-- Free tier gets challenges and worksheets, NOT full guide
+- Standard tier gets challenges and worksheets, NOT full guide
 
 ---
 
@@ -325,26 +325,26 @@ Goals:
 
 ### Three Tiers
 
-#### FREE Tier ($0)
-- Basic community access
-- Monthly rotating challenges
-- PLR-based worksheets
-- Quarterly free challenges (30 Bags, Pantry, No-Spend, Holiday)
+#### Standard Tier ($0)
+- Community access
+- Monthly No-Spend Challenge
+- 7-Day Spending Tracker
+- Pattern Quiz, Impulse Brake, Decision Matrix
+- Quarterly free challenges (No-Spend, Pantry, Group Round, Holiday)
 
-#### PAID Tier ($27/month founding rate)
-- Everything FREE tier has
-- The No-Spend Guide (personal + business)
-- Premium templates
-- Current month's workshops
-- Business Central Hub access
-- Enhanced spreadsheets
+#### Premium Tier ($9/month founding rate)
+- Everything Standard tier has
+- Monthly Themed Challenge
+- Monthly live check-in
+- Current month's tool
 
-#### VIP Tier ($97/month founding rate)
-- Everything PAID tier has
-- Live co-working sessions
-- VIP workshops
-- Full archives access
-- All 17 custom GPTs
+#### VIP Tier ($99/year founding rate)
+- Everything Premium tier has
+- Quarterly Live VIP Reset
+- Updated No Spend Journal and Guide
+- Full No Spend Toolkit
+- Archives access
+- All 7 custom GPTs
 
 ### Founding Member Strategy
 
@@ -364,32 +364,19 @@ Goals:
 
 ## 8. GPT Ecosystem
 
-### 17 Custom GPTs (VIP Tier Only)
+### 7 Custom GPTs (Tier Assignment TBD)
 
-**Core Challenge Companions (9)**:
-1. No Spend Challenge Coach
-2. No Spend Prep & Planning Assistant
-3. Spending Trigger Decoder
-4. No-Spend Meal Planner
-5. Paycheck & Budget Buddy
-6. Use-What-You-Have Activity Generator
-7. Accountability Partner GPT
-8. Post-Challenge Habit Builder
-9. Mindful Money Mindset Reset GPT
+| # | GPT Name | Purpose |
+|---|----------|---------|
+| 1 | No Spend Challenge Coach | Challenge navigation, structure, mechanics |
+| 2 | No Spend Prep and Planning Assistant | Pre-challenge rule-setting |
+| 3 | Paycheck and Budget Buddy | Short-term cash flow decisions |
+| 4 | Accountability Partner GPT | Check-ins, mid-challenge emotional support |
+| 5 | Content and Resource Reuse GPT | Memory is the core mechanic |
+| 6 | Slip Recovery Decision GPT | Quit-or-continue fork after breaking rules |
+| 7 | Mindful Money Mindset Reset GPT | Old money stories and narratives |
 
-**Anti-FOMO / Anti-Impulse (3)**:
-10. Decision Matrix GPT
-11. Marketing Decoder GPT
-12. Talk Me Out of This Purchase GPT
-
-**Crossover GPTs (3)**:
-13. Digital Declutter GPT
-14. PLR Hoard Reduction GPT
-15. Content-From-What-You-Have GPT
-
-**Ecosystem-Level (2)**:
-16. Workshop/Challenge Selector GPT
-17. Resource Locker Finder GPT
+> **Note**: Reduced from original plan of 17. See `09_GPT_Ecosystem.md` for retired concepts and gateway strategy status.
 
 ### Gateway GPT Strategy
 
@@ -410,7 +397,7 @@ Goals:
 - Google Sheets template
 - Digital budgeting tracker
 - Visual progress tracking
-- Drives to: Skool FREE tier
+- Drives to: Skool Standard tier
 
 **B2B: Simple Business Bookkeeping**
 - Google Sheets template
@@ -423,9 +410,9 @@ Goals:
 
 | Bundle | Month | Product | Price Tier | Drives To |
 |--------|-------|---------|------------|-----------|
-| Kickoff (Griffin) | Jan | Cash Envelope | FREE | Skool FREE |
-| Penny Wise Skills | Feb | Budgeting sheet | $5+ | Skool FREE |
-| Master Your Money | Mar | Premium template | $27+ | Skool PAID/VIP |
+| Kickoff (Griffin) | Jan | Cash Envelope | FREE | Skool Standard |
+| Penny Wise Skills | Feb | Budgeting sheet | $5+ | Skool Standard |
+| Master Your Money | Mar | Premium template | $27+ | Skool Premium/VIP |
 
 ### Email Nurture Sequence (Simple Business Bookkeeping)
 
@@ -433,7 +420,7 @@ Goals:
 - Email 1 (Day 2): Getting started tips
 - Email 2 (Day 4): Monthly Bookkeeping Checklist bonus
 - Email 3 (Day 6): Business Central Hub + No-Spend Challenge callout
-- Email 4 (Day 8): FREE Skool community invite
+- Email 4 (Day 8): Skool Standard tier community invite
 
 ---
 
@@ -465,17 +452,19 @@ Goals:
 | Landing Pages | Nov 30, 2025 |
 | Beta Testing | Dec 15, 2025 |
 
-### Launch: January 2026
+### Launch: March 20, 2026 (Soft Launch)
 
-**Week 1**:
+**Soft Launch (March 20)**:
 - Skool community opens
-- Founding member offer (first 100)
-- Griffin bundle goes live
-- Q1 Challenge begins
+- Founding member pricing active (first 100 lock rates)
+
+**Challenge Kickoff (April 1)**:
+- First 30-day No-Spend Challenge begins
+- Promotion across all channels
 
 **Success Metrics (End of Q1)**:
 - 500+ members
-- 35% PAID tier conversion
+- 35% Premium tier conversion
 - 10% VIP tier conversion
 - 80%+ retention
 
@@ -533,25 +522,26 @@ Goals:
 ## Quick Reference: Product Ecosystem
 
 ```
-FREE TIER
-├── Skool Community Access
-├── Quarterly Challenges (30 Bags, Pantry, No-Spend, Holiday)
-├── Basic Worksheets (PLR-based)
+STANDARD TIER ($0)
+├── Community Access
+├── Monthly No-Spend Challenge
+├── 7-Day Spending Tracker
+├── Pattern Quiz, Impulse Brake, Decision Matrix
+├── Quarterly Challenges (No-Spend, Pantry, Group Round, Holiday)
 └── Lead Magnets
 
-PAID TIER ($27/mo)
-├── Everything in FREE
-├── The No-Spend Guide (Personal)
-├── The No-Spend Guide (Business)
-├── Premium Templates
-├── Current Month Workshops
-└── Enhanced Spreadsheets
+PREMIUM TIER ($9/mo)
+├── Everything in Standard
+├── Monthly Themed Challenge
+├── Monthly Live Check-In
+└── Current Month's Tool
 
-VIP TIER ($97/mo)
-├── Everything in PAID
-├── 17 Custom GPTs
-├── Live Co-Working Sessions
-├── VIP Workshops
+VIP TIER ($99/yr)
+├── Everything in Premium
+├── Quarterly Live VIP Reset
+├── Updated No Spend Journal and Guide
+├── Full No Spend Toolkit
+├── 7 Custom GPTs
 └── Full Archives
 
 STANDALONE PRODUCTS
@@ -576,7 +566,7 @@ For detailed information on specific topics, see the extraction_docs folder:
 - `06_Content_Delivery_Systems.md` - How content is delivered
 - `07_Technical_Implementation.md` - Technical setup
 - `08_Lead_Magnets_And_Funnels.md` - Funnel details
-- `09_GPT_Ecosystem.md` - All 17 GPTs detailed
+- `09_GPT_Ecosystem.md` - All 7 GPTs detailed
 - `10_Brand_Voice_Guide.md` - Voice and tone
 - `11_Product_Architecture.md` - Product structure
 - `12_Evolution_Documentation.md` - How products evolved

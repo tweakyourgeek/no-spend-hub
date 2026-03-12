@@ -23,7 +23,7 @@ Each email template includes:
 ## SEQUENCE 1: Cash Envelope System Lead Magnet
 
 **Trigger**: User downloads Cash Envelope System from bundle or landing page
-**Goal**: Drive to FREE Skool tier
+**Goal**: Drive to Standard Skool tier
 **Total Emails**: 5
 **Duration**: 10 days
 
@@ -197,7 +197,7 @@ You also need:
 
 That's why I built The No Spend Collective.
 
-It's a FREE community where you can:
+It's a Standard community where you can:
 - Join quarterly challenges (No-Spend Challenge, Pantry Challenge, etc.)
 - Get daily prompts and reflection questions
 - Connect with others who are figuring this out too
@@ -210,7 +210,7 @@ The community helps you understand the why.
 
 Ready to join?
 
-[LINK TO FREE SKOOL TIER]
+[LINK TO STANDARD SKOOL TIER]
 
 See you inside,
 — [Your Name]
@@ -218,7 +218,7 @@ See you inside,
 P.S. Our next challenge starts [DATE]. You don't want to miss it.
 ```
 
-**CTA**: Join FREE Skool community
+**CTA**: Join Standard Skool community
 **Tags**: skool-invite-sent
 
 ---
@@ -257,9 +257,9 @@ It's a 30-day experiment to see what you learn.
 
 And you don't have to do it alone.
 
-Join the FREE community, participate in the challenge, and see what shifts.
+Join the Standard community, participate in the challenge, and see what shifts.
 
-[LINK TO JOIN FREE TIER]
+[LINK TO JOIN STANDARD TIER]
 
 Or, if you want the full system (journal, worksheets, tracking tools, daily prompts), grab the No-Spend Guide for $30:
 
@@ -272,7 +272,7 @@ Either way, you're not doing this alone.
 P.S. The challenge starts on the 1st of every month. Join now and you'll be ready for the next round.
 ```
 
-**CTA**: Join FREE Skool OR Buy $30 guide
+**CTA**: Join Standard Skool OR Buy $30 guide
 **Tags**: challenge-invited
 
 ---
@@ -280,7 +280,7 @@ P.S. The challenge starts on the 1st of every month. Join now and you'll be read
 ## SEQUENCE 2: Business Bookkeeping Lead Magnet
 
 **Trigger**: User downloads Simple Business Bookkeeping template
-**Goal**: Drive to Business Edition + PAID Skool tier
+**Goal**: Drive to Business Edition + Premium Skool tier
 **Total Emails**: 5
 **Duration**: 8 days
 
@@ -476,7 +476,7 @@ It's not about deprivation. It's about intentional spending.
 - Spending pattern recognition
 - Business Central Hub (template organizer for business owners)
 
-Join the FREE tier and try it: [LINK TO FREE SKOOL]
+Join the Standard tier and try it: [LINK TO STANDARD SKOOL]
 
 Or get the full Business Edition ($47) with advanced spreadsheets, worksheets, and tools: [LINK TO BUSINESS EDITION]
 
@@ -487,19 +487,19 @@ Either way, you'll know exactly where your money is going and whether it's worth
 P.S. The Business Central Hub alone is worth the price. It's where all your business templates live (bookkeeping, subscriptions, project tracking, etc.). One organized place. Finally.
 ```
 
-**CTA**: Join FREE Skool OR Buy Business Edition
+**CTA**: Join Standard Skool OR Buy Business Edition
 **Tags**: business-challenge-invite
 
 ---
 
-### Email 4 (Day 8): FREE Skool Community Invite
+### Email 4 (Day 8): Standard Skool Community Invite
 
 **Send**: 8 days after Email 0
 **Subject Line**:
 - A: Join 500+ business owners optimizing their spending
 - B: You don't have to figure this out alone
 
-**Preview Text**: "FREE community for business owners who want to spend smarter..."
+**Preview Text**: "Standard community for business owners who want to spend smarter..."
 
 **Body**:
 ```
@@ -515,7 +515,7 @@ Am I the only one struggling with this?
 
 **You're not alone.**
 
-Join the Business Central community (FREE tier):
+Join the Business Central community (Standard tier):
 
 ✓ Other business owners like you
 ✓ Quarterly challenges (No-Spend rounds, Subscription Audits, etc.)
@@ -525,7 +525,7 @@ Join the Business Central community (FREE tier):
 
 No credit card required. Just show up and participate.
 
-[LINK TO JOIN FREE TIER]
+[LINK TO JOIN STANDARD TIER]
 
 Inside, you'll find people who get it.
 
@@ -537,15 +537,15 @@ See you in there,
 P.S. Next challenge starts [DATE]. Join now so you're ready.
 ```
 
-**CTA**: Join FREE Skool tier
+**CTA**: Join Standard Skool tier
 **Tags**: skool-invite-sent
 
 ---
 
-## SEQUENCE 3: Skool FREE Tier Welcome
+## SEQUENCE 3: Skool Standard Tier Welcome
 
-**Trigger**: User joins FREE tier in Skool
-**Goal**: Engage with community, upgrade to PAID tier
+**Trigger**: User joins Standard tier in Skool
+**Goal**: Engage with community, upgrade to Premium tier
 **Total Emails**: 7
 **Duration**: 14 days
 
@@ -553,7 +553,7 @@ P.S. Next challenge starts [DATE]. Join now so you're ready.
 
 ### Email 1 (Day 0): Welcome to the Community
 
-**Send**: Immediately upon joining FREE tier
+**Send**: Immediately upon joining Standard tier
 **Subject Line**: Welcome to The No Spend Collective! 🎉
 
 **Preview Text**: "You're in! Here's what to do first..."
@@ -577,13 +577,13 @@ You're now part of a community of 500+ people who are figuring out their spendin
 3. **Explore the resources**: [LINK TO RESOURCES]
    (Free downloads, templates, worksheets - all yours)
 
-**What you get as a FREE member:**
+**What you get as a Standard member:**
 ✓ Quarterly challenges with daily prompts
 ✓ Community support and accountability
 ✓ Basic templates and worksheets
 ✓ Access to check-in threads and wins sharing
 
-**Want more?** PAID members ($27/mo) get:
+**Want more?** Premium members ($9/mo) get:
 - The full No-Spend Guide (Personal + Business editions)
 - Premium templates and spreadsheets
 - Monthly workshops
@@ -600,7 +600,7 @@ P.S. Hit reply if you have questions. I read every email.
 ```
 
 **CTA**: Introduce yourself in community
-**Tags**: skool-free-member
+**Tags**: skool-standard-member
 
 ---
 
@@ -656,7 +656,7 @@ P.S. The most supportive people in the community? They're the ones who struggled
 
 **Send**: 5 days after joining
 **Subject Line**:
-- A: Loving the FREE community? Here's what PAID members get
+- A: Loving the Standard community? Here's what Premium members get
 - B: Ready for the full system?
 
 **Preview Text**: "Get the complete No-Spend Guide + all the tools..."
@@ -667,50 +667,50 @@ P.S. The most supportive people in the community? They're the ones who struggled
 
 How's the community treating you so far?
 
-If you're enjoying the FREE tier, you might be wondering what the PAID tier includes.
+If you're enjoying the Standard tier, you might be wondering what the Premium tier includes.
 
 Here's the breakdown:
 
-**FREE Tier (what you have now):**
+**Standard Tier (what you have now):**
 ✓ Quarterly challenges
 ✓ Basic community access
 ✓ Free templates
 
-**PAID Tier ($27/mo):**
-✓ Everything in FREE, PLUS:
+**Premium Tier ($9/mo):**
+✓ Everything in Standard, PLUS:
 ✓ The complete No-Spend Guide (100+ pages, Personal + Business editions)
 ✓ Premium spreadsheet packs
 ✓ Monthly workshops
 ✓ Business Central Hub
 ✓ Enhanced support
 
-**VIP Tier ($97/mo):**
-✓ Everything in PAID, PLUS:
-✓ 17 custom GPTs (decision support, pattern recognition, spending analysis)
+**VIP Tier ($99/yr):**
+✓ Everything in Premium, PLUS:
+✓ 7 custom GPTs (decision support, pattern recognition, spending analysis)
 ✓ Live co-working sessions
 ✓ Full archives
 ✓ VIP-only workshops
 
-**Who upgrades to PAID?**
+**Who upgrades to Premium?**
 People who want the full framework, not just the challenges. People who are serious about understanding their patterns and making lasting changes.
 
 **Who upgrades to VIP?**
 Business owners, GPT enthusiasts, people who want live support and AI tools.
 
-Not ready yet? That's cool. FREE tier is valuable on its own.
+Not ready yet? That's cool. Standard tier is valuable on its own.
 
 But if you're thinking "I want more," here's the link:
 
-[UPGRADE TO PAID] or [UPGRADE TO VIP]
+[UPGRADE TO PREMIUM] or [UPGRADE TO VIP]
 
-Founding member pricing ($27/$97) locked for first 100 members. After that, prices increase.
+Founding member pricing ($9/$99) locked for first 100 members. After that, prices increase.
 
 — [Your Name]
 
 P.S. You can cancel anytime. No contracts. Just value.
 ```
 
-**CTA**: Upgrade to PAID or VIP
+**CTA**: Upgrade to Premium or VIP
 **Tags**: upgrade-invite-sent
 
 ---
@@ -721,7 +721,7 @@ P.S. You can cancel anytime. No contracts. Just value.
 
 ## SEQUENCE 4: Daily Challenge Emails (30 Days)
 
-**Trigger**: User is PAID tier member + challenge active
+**Trigger**: User is Premium tier member + challenge active
 **Goal**: Keep user engaged, drive to Skool daily
 **Total Emails**: 30
 **Duration**: 30 days
@@ -853,10 +853,10 @@ P.S. Share your wins in the community. We want to celebrate with you.
 
 ---
 
-## SEQUENCE 5: FREE → PAID Conversion (Nurture)
+## SEQUENCE 5: Standard → Premium Conversion (Nurture)
 
-**Trigger**: User has been FREE member for 7+ days, hasn't upgraded
-**Goal**: Convert to PAID tier
+**Trigger**: User has been Standard member for 7+ days, hasn't upgraded
+**Goal**: Convert to Premium tier
 **Total Emails**: 7
 **Duration**: 14 days
 
@@ -864,7 +864,7 @@ P.S. Share your wins in the community. We want to celebrate with you.
 
 ### Email 1 (Day 7): Success Story
 
-**Send**: 7 days after joining FREE (if no upgrade)
+**Send**: 7 days after joining Standard (if no upgrade)
 **Subject Line**: "I paid off $3,200 in 60 days" (member story)
 
 **Preview Text**: "Sarah's transformation with the No-Spend Guide..."
@@ -875,9 +875,9 @@ P.S. Share your wins in the community. We want to celebrate with you.
 
 Meet Sarah.
 
-She joined the FREE community last year, participated in the Q1 challenge, and thought "This is interesting."
+She joined the Standard community last year, participated in the Q1 challenge, and thought "This is interesting."
 
-Then she upgraded to PAID and got the full No-Spend Guide.
+Then she upgraded to Premium and got the full No-Spend Guide.
 
 60 days later?
 
@@ -887,7 +887,7 @@ And she finally understood WHY she was spending.
 
 **Here's what she said:**
 
-"The FREE challenges are great, but the guide is what made it click. The framework, the daily prompts, the tracking tools - it all came together. I finally saw my patterns clearly."
+"The Standard challenges are great, but the guide is what made it click. The framework, the daily prompts, the tracking tools - it all came together. I finally saw my patterns clearly."
 
 **What made the difference?**
 
@@ -895,23 +895,23 @@ The guide gave her:
 - Daily structure (30 days of prompts designed to reveal patterns)
 - Tracking tools (spreadsheets that showed where money was going)
 - Framework (8 Pillars, 4 Lenses, pattern recognition)
-- Support (PAID community members going deeper)
+- Support (Premium community members going deeper)
 
-FREE tier tests.
-PAID tier transforms.
+Standard tier tests.
+Premium tier transforms.
 
-If you're ready for the full system: [UPGRADE TO PAID - $27/mo]
+If you're ready for the full system: [UPGRADE TO PREMIUM - $9/mo]
 
 Or grab the standalone guide for $30 (one-time): [BUY GUIDE]
 
-Not ready? That's okay. Stay in FREE and keep exploring.
+Not ready? That's okay. Stay in Standard and keep exploring.
 
 — [Your Name]
 
 P.S. Use code NOSPEND50 for 50% off the standalone guide ($15 instead of $30).
 ```
 
-**CTA**: Upgrade to PAID or Buy standalone
+**CTA**: Upgrade to Premium or Buy standalone
 **Tags**: conversion-story-sent
 
 ---
@@ -930,7 +930,7 @@ P.S. Use code NOSPEND50 for 50% off the standalone guide ($15 instead of $30).
 
 **Want me to continue with:**
 - Remaining emails in each sequence?
-- PAID → VIP conversion sequence?
+- Premium → VIP conversion sequence?
 - Post-challenge re-engagement sequence?
 - Specific email variations (A/B tests)?
 

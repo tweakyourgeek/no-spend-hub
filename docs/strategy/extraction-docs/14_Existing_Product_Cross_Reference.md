@@ -265,7 +265,7 @@ Uses Tweak Your Geek colors:
 **Relationship**: index.html is the MAP, The Guide is the TERRITORY
 
 **User Journey**:
-1. **User purchases The Guide** (or gets access via Skool $27/mo tier)
+1. **User purchases The Guide** (or gets access via Skool Premium $9/mo tier)
 2. **Welcome email includes link** to index.html roadmap
 3. **Page 1 of The Guide** references roadmap: "Feeling lost? Visit the roadmap: [link]"
 4. **User can toggle between**:

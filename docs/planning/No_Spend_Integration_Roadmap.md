@@ -54,7 +54,7 @@ This roadmap will:
 | 06 | Content_Delivery_Systems.md | Email sequences, classroom organization, automation | ~250 | Technical |
 | 07 | Technical_Implementation.md | Spreadsheet builds, Google Sheets, automation | ~280 | Technical |
 | 08 | Lead_Magnets_And_Funnels.md | Cash Envelope, Business Bookkeeping, nurture sequences | ~260 | Marketing |
-| 09 | GPT_Ecosystem.md | 17 custom GPTs, use cases, standalone potential | ~270 | Product |
+| 09 | GPT_Ecosystem.md | 7 custom GPTs (reduced from original 17), use cases, standalone potential | ~270 | Product |
 | 10 | Brand_Voice_Guide.md | Voice principles, do's/don'ts, examples | 353 | Creative |
 | 11 | Product_Architecture.md | Complete product versions, tiers, components, pricing | 1,311 | Architecture |
 | 12 | Evolution_Documentation.md | Complete timeline, framework shift, decision log | 432 | History |
@@ -515,24 +515,27 @@ From Extraction 10 (lines 86-110):
 
 From Extractions 03, 04, 11:
 
-**FREE TIER GETS**:
-- ✅ 30-Day No-Spend Roadmap (index.html - already exists)
-- ✅ OLD PLR-based workbook (being replaced)
+**STANDARD TIER GETS ($0)**:
+- ✅ Community access
+- ✅ Monthly No-Spend Challenge
+- ✅ 7-Day Spending Tracker
+- ✅ Pattern Quiz, Impulse Brake, Decision Matrix
 - ✅ Quarterly challenge worksheets (basic versions)
 - ✅ Daily prompts in Skool classroom
-- ✅ Community access
 - ✅ Completion badges
 
-**PAID TIER GETS ($27/mo OR $30 standalone)**:
-- ✅ The No-Spend Guide (NEW, rewritten, 70-75 pages)
-- ✅ All premium templates
-- ✅ Enhanced community access
-- ✅ Monthly workshops
+**PREMIUM TIER GETS ($9/mo)**:
+- ✅ Everything in Standard tier
+- ✅ Monthly Themed Challenge
+- ✅ Monthly live check-in
+- ✅ Current month's tool
 
-**VIP TIER GETS ($97/mo)**:
-- ✅ Everything in PAID tier
-- ✅ 17 custom GPTs
-- ✅ Live co-working sessions
+**VIP TIER GETS ($99/yr)**:
+- ✅ Everything in Premium tier
+- ✅ Quarterly Live VIP Reset
+- ✅ Updated No Spend Journal and Guide
+- ✅ Full No Spend Toolkit
+- ✅ 7 custom GPTs
 - ✅ Full archives
 
 **SPREADSHEET PACK** (separate purchase):
@@ -557,9 +560,9 @@ From Extraction 15 (lines 18-35):
 **NONE FOUND**
 
 All extractions consistently describe:
-- FREE tier uses OLD PLR workbook
-- PAID tier gets NEW rewritten guide
-- VIP tier adds GPTs
+- Standard tier gets challenges, worksheets, and free tools
+- Premium tier gets monthly themed challenges and live check-ins
+- VIP tier adds full toolkit, journal/guide, and GPTs
 - Spreadsheets are paid add-on
 - B2B and B2C are separate brands
 
@@ -735,7 +738,7 @@ All extractions consistently describe:
 
 **File**: `/gpts/gpt_build_specifications.md`
 **Content**:
-- All 17 GPT configurations
+- All 7 GPT configurations
 - Custom instructions for each
 - Knowledge base files needed
 - Testing protocols
@@ -838,9 +841,9 @@ Before publishing ANY content, verify:
 - [ ] Shame-free throughout
 
 ### Product Architecture
-- [ ] FREE tier gets OLD PLR workbook (not new guide)
-- [ ] PAID tier ($27/mo or $30) gets NEW guide
-- [ ] VIP tier ($97/mo) adds 17 GPTs
+- [ ] Standard tier ($0) gets challenges, worksheets, and free tools
+- [ ] Premium tier ($9/mo) gets monthly themed challenges and live check-ins
+- [ ] VIP tier ($99/yr) gets full toolkit, journal/guide, and 7 GPTs
 - [ ] Spreadsheets are paid add-on
 - [ ] B2B and B2C clearly separated
 

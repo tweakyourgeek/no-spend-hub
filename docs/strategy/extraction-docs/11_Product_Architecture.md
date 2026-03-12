@@ -1,6 +1,6 @@
 # 11. Product Architecture
 
-> **Partially updated March 11, 2026**: Key pricing, tier names, GPT count, and Q1 challenge references have been corrected. Skool community pricing is now Standard ($0) / Premium ($9/mo) / VIP ($99/yr). GPT count is 7 (not 17). Q1 challenge is the No-Spend Challenge starting April 1 (not 30 Bags in 30 Days). Classroom structure is 7 sections. Some sections below retain original extraction detail for reference.
+> **Fully updated March 12, 2026**: All pricing, tier names, GPT count, launch date, and challenge calendar references have been corrected throughout. Skool community pricing is now Standard ($0) / Premium ($9/mo) / VIP ($99/yr). GPT count is 7 (not 17). Soft launch is March 20, 2026. Q1 challenge is the No-Spend Challenge (April). Pantry Challenge is June-July. Classroom structure is 7 sections.
 
 ## Document Purpose
 This document extracts all product architecture, tier structure, deliverables, pricing discussions, and component relationships for the 30 Day No Spend Challenge across all versions.
@@ -35,7 +35,7 @@ This document extracts all product architecture, tier structure, deliverables, p
 - Based on PLR content that was rewritten/adapted
 - For personal and household spending
 - Lower price point
-- Used as FREE tier offering in some models
+- Used as Standard tier offering in some models
 
 **Quote from File 16**:
 > "The current 30-Day No Spend Challenge Journal explicitly states it's for personal and professional use ('for you and your clients'). Some prompts and examples naturally overlap with business realities (subscriptions, tools, planning, etc.), but they're framed generically."
@@ -257,7 +257,7 @@ Created 10 different expense log versions to accommodate different households:
 | **Q3**  | No-Spend Group Round   | Aug-Sept       | Pre-holiday reset        |
 | **Q4**  | Holiday Spending Reset | Nov-Dec        | Intentional holidays     |
 
-**What free tier gets**:
+**What Standard tier gets**:
 - Worksheet PDF (basic tracker, prompts, completion page)
 - Daily prompts in Skool
 - Weekly check-in threads
@@ -404,7 +404,7 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
 **Source**: Files 1, 2, 3, 4, 7
 **Platform**: Skool (formerly called "The No Spend Collective")
 
-### FREE Tier
+### Standard Tier (Free)
 **Source**: ChatGPT Files 1-4 + Claude Files 3, 5
 **Access Includes**:
 - 30-Day No Spend Roadmap (HTML version - the existing index.html product)
@@ -416,13 +416,13 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
 **Quote from ChatGPT File 4**:
 > "The free version has the roadmap, they have that PLR workbook that I rewrote but it's not as good as what I'm going to create, and they get daily emails."
 
-### PAID Tier ($27/month)
+### Premium Tier ($9/mo)
 **Source**: Claude Files 3, 5
-**Price Point**: $27/month (founding rate - increases $2 every 100 members)
-**Launch**: January 2026
+**Price Point**: $9/mo
+**Launch**: March 20, 2026 (soft launch)
 
 **Access Includes**:
-- Everything in FREE tier
+- Everything in Standard tier
 - 30-Day No-Spend Journal (personal AND business versions)
 - Premium templates
 - Current month's workshops
@@ -431,18 +431,18 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
 - Additional support/engagement
 - Deeper Skool community access
 
-**Upgrade Path**: FREE users can upgrade to PAID to access better materials
+**Upgrade Path**: Standard users can upgrade to Premium to access better materials
 
-### Premium/VIP Tier ($97/month)
+### VIP Tier ($99/yr)
 **Source**: Claude Files 3, 5
-**Price Point**: $97/month (founding rate - increases $2 every 100 members)
+**Price Point**: $99/yr
 
 **Access Includes**:
-- Everything in $27/mo tier
+- Everything in Premium tier
 - Live co-working sessions
 - VIP workshops
 - Full Archives access
-- All 18 custom GPTs
+- All 7 custom GPTs
 
 **First 100 Members Bonus**: Founding members get additional bonuses (specific bonuses TBD)
 
@@ -808,7 +808,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 **Pricing Tiers Discussed**:
 
-> **Updated March 11, 2026**: See current pricing below. Original $27/mo and $97/mo tiers have been replaced.
+> **Updated March 12, 2026**: See current pricing below. Original $27/mo and $97/mo tiers have been replaced.
 
 1. **Standard Tier** (Free)
    - Community access, monthly challenge, 7-Day Tracker, Pattern Quiz, Impulse Brake, Decision Matrix
@@ -828,11 +828,11 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Calculated value: ~$37,000 given away
 - Not converting to paid customers effectively
 
-**New Policy**:
+**New Policy** *(December 2024 — legacy pricing, see current tiers above)*:
 - Journal is now PREMIUM ONLY
-- Available in Skool Premium/VIP tier OR $30 standalone
-- Free tier gets challenges and worksheets only, NOT full journal
-- 50% discount code available: `NOSPEND50` (brings $30 to $15)
+- Available in Skool Premium/VIP tier OR $30 standalone *(legacy price)*
+- Standard tier gets challenges and worksheets only, NOT full journal
+- 50% discount code available: `NOSPEND50` (brings $30 to $15) *(legacy price)*
 
 **Quote from Claude File 5**:
 > "I've given away over 1100 copies of that thing and I want to stop giving it away... I'm really tired when I saw how many of those damn things I've been downloaded for free and I started doing the math... it's like almost $37,000"
@@ -1001,7 +1001,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 **Access**: Tier assignment TBD
 **Purpose**: AI-powered challenge and financial tools
 
-> **Updated March 11, 2026**: Reduced from 17 to 7 GPTs. See `09_GPT_Ecosystem.md` for full details including retired concepts.
+> **Updated March 12, 2026**: Reduced from 17 to 7 GPTs. See `09_GPT_Ecosystem.md` for full details including retired concepts.
 
 **Current 7 GPTs:**
 1. No Spend Challenge Coach
@@ -1077,13 +1077,13 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Product: My Cash Envelope System (B2C)
 - Type: Google Sheets template
 - Purpose: FREE lead magnet
-- Drives to: Skool FREE tier
+- Drives to: Skool Standard tier
 
 **Bundle 2: February 2026 - "Penny Wise Skills Bundle"**
 - Product: Budgeting spreadsheet (not Cash Envelope - already used)
 - Price tier: $5+ minimum
 - Purpose: Volume lead generation
-- Drives to: Skool FREE tier with upgrade path
+- Drives to: Skool Standard tier with upgrade path
 
 **Bundle 3: March 2026 - "Master Your Money Bundle"**
 - Product: Money-related spreadsheet
@@ -1099,7 +1099,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Each bundle contribution needs explicit CTA to Skool community
 - Bundle-specific discount codes or special access offers
 - Need tracking tags to identify which bundle drove each signup
-- Skool community must be ready by January 2026 to receive bundle traffic
+- Skool community must be ready by March 20, 2026 (soft launch) to receive bundle traffic
 
 ### Product Ecosystem Integration
 **Source**: ChatGPT Files 2, 3, 5, 7 + Claude Files 9
@@ -1145,8 +1145,8 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 **Source**: Files 3, 4, 7
 
 - Decided to host in Skool vs Facebook
-- Created FREE tier with PLR version
-- Developed PAID tier with enhanced materials
+- Created Standard tier with PLR version
+- Developed Premium tier with enhanced materials
 - Designed daily delivery system
 
 ### Phase 3: Business Edition Conceptualization
@@ -1282,7 +1282,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 ---
 
-**Document Status**: Partially updated — pricing, GPTs, Q1 challenge, and tier names corrected
-**Last Updated**: March 11, 2026
+**Document Status**: Fully updated March 12, 2026 — pricing, GPTs, launch date, Q1 challenge, and tier names corrected throughout
+**Last Updated**: March 12, 2026
 **Confidence Level**: High - pricing and tier structure confirmed
 **Notable Gaps**: Some sections retain original December 2024 extraction detail for reference

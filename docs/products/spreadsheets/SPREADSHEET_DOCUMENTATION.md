@@ -1,7 +1,7 @@
 # No-Spend Core Pack Spreadsheets: Documentation
 
 **Created**: January 1, 2026
-**Product Type**: Premium Spreadsheet Templates (PAID Tier)
+**Product Type**: Premium Spreadsheet Templates (Premium Tier)
 **Platforms**: Google Sheets, Excel
 **Editions**: Personal & Business
 
@@ -532,7 +532,7 @@ This is POWERFUL behavior change.
 ✓ Shame-free design (no "good" vs "bad" spending)
 ✓ Available in Personal + Business editions
 
-**CTA**: "Get the Core Pack - Included in PAID Tier ($27/mo)"
+**CTA**: "Get the Core Pack - Included in Premium Tier ($9/mo)"
 
 ---
 
@@ -620,7 +620,7 @@ It's a pattern decoder.
 No judgment. Just awareness.
 
 Available in Personal + Business editions.
-Included with PAID tier ($27/mo).
+Included with Premium tier ($9/mo).
 
 [Link in bio]
 
@@ -660,7 +660,7 @@ Included with PAID tier ($27/mo).
 - LibreOffice Calc
 
 **Delivery Method**:
-- Skool PAID tier: Pinned resource in classroom
+- Skool Premium tier: Pinned resource in classroom
 - Direct download link in welcome email
 - Duplicate/copy instructions included
 

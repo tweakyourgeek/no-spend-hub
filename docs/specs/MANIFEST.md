@@ -1,6 +1,29 @@
 # Documentation Manifest
 
-This manifest catalogs all documentation copied from the main repository (`nospend-bus-roadmap`) for use in app development.
+This manifest catalogs all documentation in the No Spend Hub repo and tracks currency status.
+
+**Last Updated**: March 12, 2026
+
+### Canonical Locations & Duplicates
+
+Some documents exist in multiple locations. **Canonical** copies are the source of truth; duplicates are synced from them.
+
+| Document | Canonical Location | Duplicate(s) |
+|----------|-------------------|--------------|
+| Product Manual | `docs/product/No_Spend_Challenge_Product_Manual.md` | `docs/apps/roadmap/` (synced copy) |
+| Integration Roadmap | `docs/planning/No_Spend_Integration_Roadmap.md` | `docs/apps/roadmap/` (synced copy) |
+
+### Current Naming Conventions
+
+| Item | Current Value |
+|------|--------------|
+| Tier names | Standard ($0) / Premium ($9/mo) / VIP ($99/yr) |
+| GPT count | 7 (reduced from original 17) |
+| Launch date | March 20, 2026 (soft launch) |
+| Q1 challenge | No-Spend Challenge (April) |
+| Q2 challenge | Pantry Challenge (June-July) |
+| Q3 challenge | No-Spend Group Round (Aug-Sep) |
+| Q4 challenge | Holiday Spending Reset (Nov-Dec) |
 
 ---
 
@@ -10,44 +33,46 @@ This manifest catalogs all documentation copied from the main repository (`nospe
 **Purpose:** Complete product overview and framework
 **Use For:** Understanding the entire No Spend Challenge concept, structure, and approach
 **Key Sections:** Challenge overview, participant journey, tools and resources
+**Status:** Current (updated March 12, 2026)
 
 ### `No_Spend_Integration_Roadmap.md`
 **Purpose:** Integration strategy and implementation roadmap
 **Use For:** Understanding how all pieces fit together, planned integrations
 **Key Sections:** Product ecosystem, integration points, technical requirements
+**Status:** Partially updated (tiers and challenge calendar current; task lists reflect original timeline)
 
 ---
 
 ## Framework Deep Dives (`extraction_docs/`)
 
 ### Philosophy & Structure
-- **`01_Frameworks_And_Philosophy.md`** - Core philosophy, anti-shame approach, "you can't do it wrong" messaging
-- **`02_Challenge_Structure.md`** - 30-day structure, week-by-week breakdown, participant experience
+- **`01_Frameworks_And_Philosophy.md`** - Core philosophy, anti-shame approach, "you can't do it wrong" messaging — **Current**
+- **`02_Challenge_Structure.md`** - 30-day structure, week-by-week breakdown, participant experience — **Current**
 
 ### Business & Community
-- **`03_Pricing_And_Monetization.md`** - Business model, pricing tiers, monetization strategy
-- **`04_Skool_Community_Strategy.md`** - Community platform strategy, engagement approach
-- **`05_Marketing_And_Launch_Strategy.md`** - Marketing plans, launch approach, positioning
+- **`03_Pricing_And_Monetization.md`** - Business model, pricing tiers, monetization strategy — **Current** (updated Mar 11)
+- **`04_Skool_Community_Strategy.md`** - Community platform strategy, engagement approach — **Current** (updated Mar 11)
+- **`05_Marketing_And_Launch_Strategy.md`** - Marketing plans, launch approach, positioning — **Current** (updated Mar 11)
 
 ### Content & Delivery
-- **`06_Content_Delivery_Systems.md`** - How content is delivered to participants
-- **`08_Lead_Magnets_And_Funnels.md`** - Lead generation, funnel strategy
+- **`06_Content_Delivery_Systems.md`** - How content is delivered to participants — **Current** (updated Mar 12)
+- **`08_Lead_Magnets_And_Funnels.md`** - Lead generation, funnel strategy — **Current** (updated Mar 12)
 
 ### Product Ecosystem
-- **`09_GPT_Ecosystem.md`** - AI tools and GPT integrations planned
-- **`11_Product_Architecture.md`** - Overall product structure, how pieces connect
-- **`13_Worksheet_And_Template_Inventory.md`** - Inventory of all worksheets and templates
-- **`14_Existing_Product_Cross_Reference.md`** - How this relates to existing products
+- **`09_GPT_Ecosystem.md`** - AI tools and GPT integrations (7 GPTs confirmed) — **Current** (updated Mar 11)
+- **`11_Product_Architecture.md`** - Overall product structure, how pieces connect — **Current** (updated Mar 12)
+- **`13_Worksheet_And_Template_Inventory.md`** - Inventory of all worksheets and templates — **Current**
+- **`14_Existing_Product_Cross_Reference.md`** - How this relates to existing products — **Current**
 
 ### Brand & Implementation
-- **`10_Brand_Voice_Guide.md`** - **CRITICAL** - Detailed voice, tone, messaging guidelines
-- **`15_Brand_Positioning.md`** - Market positioning, competitive analysis
-- **`07_Technical_Implementation.md`** - Technical approach and requirements
-- **`16_Implementation_Roadmap.md`** - Step-by-step implementation plan
-- **`17_Integration_Roadmap.md`** - Integration planning and priorities
+- **`10_Brand_Voice_Guide.md`** - **CRITICAL** - Detailed voice, tone, messaging guidelines — **Current**
+- **`15_Brand_Positioning.md`** - Market positioning, competitive analysis — **Current**
+- **`07_Technical_Implementation.md`** - Technical approach and requirements — **Current** (updated Mar 12)
+- **`16_Implementation_Roadmap.md`** - Step-by-step implementation plan — **Current** (updated Mar 12)
+- **`17_Integration_Roadmap.md`** - Integration planning and priorities — **Current** (updated Mar 12)
 
 ### Evolution Documentation
-- **`12_Evolution_Documentation.md`** - How the product evolved, decision history
+- **`12_Evolution_Documentation.md`** - How the product evolved, decision history — **Current** (updated Mar 12)
 
 ---
 
@@ -159,6 +184,6 @@ nospend-apps/
 
 ---
 
-**Note:** All documentation is copied for reference. The source of truth remains in the main repository at https://github.com/tweakyourgeek/nospend-bus-roadmap
+**Note:** All documentation is copied for reference. The source of truth remains in this repository (`no-spend-hub`).
 
-**Last Updated:** December 2025
+**Last Updated:** March 12, 2026

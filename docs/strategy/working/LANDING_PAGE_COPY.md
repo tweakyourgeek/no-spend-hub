@@ -26,7 +26,7 @@ Copy/paste into your landing page builder and customize as needed.
 
 **URL**: skool.com/no-spend-collective (or custom domain)
 **Purpose**: Main community signup page
-**Goal**: Drive signups to FREE, PAID, or VIP tiers
+**Goal**: Drive signups to Standard, Premium, or VIP tiers
 
 ---
 
@@ -53,11 +53,11 @@ It's a community where you experiment with your money patterns,
 gather data without judgment, and get ongoing support —
 whether you're managing a household budget or a business tool stack.
 
-Start for FREE. Upgrade when you're ready.
+Start for free. Upgrade when you're ready.
 ```
 
 **CTA Buttons**:
-- Primary: [JOIN FREE - $0] (bright, prominent)
+- Primary: [JOIN STANDARD - $0] (bright, prominent)
 - Secondary: [See What's Included ↓] (scroll anchor)
 
 ---
@@ -68,7 +68,7 @@ Start for FREE. Upgrade when you're ready.
 
 **3-Column Comparison Table**:
 
-| | FREE | PAID ($27/mo) | VIP ($97/mo) |
+| | Standard ($0) | Premium ($9/mo) | VIP ($99/yr) |
 |---|---|---|---|
 | **Access** | Basic | Full System | Everything + AI |
 | **Quarterly Challenges** | ✓ | ✓ | ✓ |
@@ -78,20 +78,20 @@ Start for FREE. Upgrade when you're ready.
 | **Premium Templates** | — | ✓ | ✓ |
 | **Spreadsheet Packs** | — | ✓ | ✓ |
 | **Monthly Workshops** | — | ✓ | ✓ |
-| **17 Custom GPTs** | — | — | ✓ |
+| **7 Custom GPTs** | — | — | ✓ |
 | **Live Co-Working** | — | — | ✓ |
 | **Full Archives** | — | — | ✓ |
-| **CTA** | [JOIN FREE] | [START PAID] | [START VIP] |
+| **CTA** | [JOIN STANDARD] | [START PREMIUM] | [START VIP] |
 
 ---
 
-### FREE Tier Details
+### Standard Tier Details
 
 **Headline**: Start Here (It's Free)
 
 **Copy**:
 ```
-Join the FREE community and you get:
+Join the Standard community and you get:
 
 ✓ Quarterly Challenges
   No-Spend Challenge (April)
@@ -115,19 +115,19 @@ This is where most people start. Test the community. Join a challenge.
 See if it resonates. Then upgrade when you're ready.
 ```
 
-**CTA**: [JOIN FREE COMMUNITY]
+**CTA**: [JOIN STANDARD COMMUNITY]
 
 ---
 
-### PAID Tier Details
+### Premium Tier Details
 
-**Headline**: Get the Full System ($27/mo)
+**Headline**: Get the Full System ($9/mo)
 
 **Copy**:
 ```
-FREE tier tests. PAID tier transforms.
+Standard tier tests. Premium tier transforms.
 
-When you upgrade to PAID, you get:
+When you upgrade to Premium, you get:
 
 ✓ The No-Spend Guide (Personal + Business Editions)
   100+ pages of framework, daily prompts, tracking tools,
@@ -153,16 +153,16 @@ When you upgrade to PAID, you get:
   Get the full worksheets, not just the basics
 
 Who's this for?
-- You've completed a FREE challenge and want more
+- You've completed a Standard challenge and want more
 - You're serious about understanding your patterns
 - You want the full framework, not just prompts
 - You're ready to invest in lasting change
 
-Founding member rate: $27/mo (locked for first 100 members)
-After 100 members, price increases $2 per tier for every 100 new members.
+Founding member rate: $9/mo (locked for first 100 members)
+After 100 members, price increases for every 100 new members.
 ```
 
-**CTA**: [UPGRADE TO PAID - $27/MO]
+**CTA**: [UPGRADE TO PREMIUM - $9/MO]
 
 **Money-Back Note**: Cancel anytime. No contracts.
 
@@ -170,7 +170,7 @@ After 100 members, price increases $2 per tier for every 100 new members.
 
 ### VIP Tier Details
 
-**Headline**: Get Everything + AI Tools ($97/mo)
+**Headline**: Get Everything + AI Tools ($99/yr)
 
 **Copy**:
 ```
@@ -181,14 +181,14 @@ VIP is for people who want:
 
 When you upgrade to VIP, you get:
 
-✓ Everything in PAID Tier
+✓ Everything in Premium Tier
   The guide, spreadsheets, workshops, community
 
-✓ 17 Custom GPTs
+✓ 7 Custom GPTs
   AI assistants for decision-making, pattern recognition,
   subscription audits, spending triggers, and more
 
-  (These GPTs alone would cost $200+/mo if sold separately)
+  (These GPTs alone would cost $200+ if sold separately)
 
 ✓ Live Co-Working Sessions
   Weekly or bi-weekly sessions for focused work with community
@@ -208,11 +208,11 @@ Who's this for?
 - Members who want live support and accountability
 - Power users who want everything
 
-Founding member rate: $97/mo (locked for first 100 members)
-After 100 members, price increases $2 per tier for every 100 new members.
+Founding member rate: $99/yr (locked for first 100 members)
+After 100 members, price increases for every 100 new members.
 ```
 
-**CTA**: [UPGRADE TO VIP - $97/MO]
+**CTA**: [UPGRADE TO VIP - $99/YR]
 
 **Money-Back Note**: Cancel anytime. Try it for 30 days.
 
@@ -244,7 +244,7 @@ The subscription audit GPT alone paid for my VIP membership."
 "The community is the best part. No judgment. No shame.
 Just people figuring it out together."
 
-— Maria L., PAID Member
+— Maria L., Premium Member
 ```
 
 ---
@@ -253,8 +253,8 @@ Just people figuring it out together."
 
 **Headline**: Common Questions
 
-**Q: Do I have to start with FREE?**
-A: No! You can join at any tier. But most people start FREE to test the community before upgrading.
+**Q: Do I have to start with Standard?**
+A: No! You can join at any tier. But most people start Standard to test the community before upgrading.
 
 **Q: Can I switch tiers?**
 A: Yes, anytime. Upgrade or downgrade as your needs change. No penalties.
@@ -266,13 +266,13 @@ A: You can't do this wrong. Missing days doesn't break the challenge. Just pick 
 A: No. This is pattern recognition. You're not tracking every penny, you're noticing WHY you spend.
 
 **Q: Will the price really go up?**
-A: Yes. Founding members (first 100) lock in $27/$97 rates. After that, prices increase $2 per tier for every 100 new members.
+A: Yes. Founding members (first 100) lock in $9/$99 rates. After that, prices increase for every 100 new members.
 
 **Q: Can I cancel?**
 A: Yes, anytime. No contracts. No hard sell. Just value.
 
 **Q: What if I've never done a no-spend challenge?**
-A: Perfect! Start with FREE tier, join a quarterly challenge, and see how it feels.
+A: Perfect! Start with Standard tier, join a quarterly challenge, and see how it feels.
 
 ---
 
@@ -284,9 +284,9 @@ A: Perfect! Start with FREE tier, join a quarterly challenge, and see how it fee
 ```
 Choose your tier and get started today.
 
-FREE: Test the community. Join a challenge. Zero risk.
+Standard: Test the community. Join a challenge. Zero risk.
 
-PAID: Get the full system. Understand your patterns. Transform your relationship with money.
+Premium: Get the full system. Understand your patterns. Transform your relationship with money.
 
 VIP: Get everything + AI tools. Live support. Full access.
 
@@ -294,9 +294,9 @@ You can't do this wrong. Just show up.
 ```
 
 **CTA Buttons**:
-- [JOIN FREE]
-- [UPGRADE TO PAID - $27/MO]
-- [UPGRADE TO VIP - $97/MO]
+- [JOIN STANDARD]
+- [UPGRADE TO PREMIUM - $9/MO]
+- [UPGRADE TO VIP - $99/YR]
 
 ---
 
@@ -558,7 +558,7 @@ Includes:
 - Pattern framework
 - Lifetime access (yours forever)
 
-Bonus: Join the FREE Skool community for ongoing support
+Bonus: Join the Standard Skool community for ongoing support
 (optional, no credit card required)
 ```
 
@@ -580,7 +580,7 @@ A: Yes! Use it together or separately.
 A: That's fine. Go at your own pace. It's a guide, not a contract.
 
 **Q: Do I need the Skool community to use the guide?**
-A: No. The guide works standalone. The community is optional (and FREE).
+A: No. The guide works standalone. The community is optional (and free).
 
 **Q: Is there a money-back guarantee?**
 A: This is a digital product, so no refunds. But use code NOSPEND50 to try it for $15.
@@ -816,7 +816,7 @@ Includes:
 
 One-time payment. Lifetime access.
 
-Want ongoing support? Join the PAID Skool tier ($27/mo) for monthly workshops,
+Want ongoing support? Join the Premium Skool tier ($9/mo) for monthly workshops,
 live sessions, and enhanced community.
 ```
 
@@ -955,7 +955,7 @@ Your Cash Envelope System is on its way to your inbox.
 
 Didn't get it? Check spam/promotions.
 
-While you're waiting, join the FREE NoSpend Collective community:
+While you're waiting, join the Standard NoSpend Collective community:
 [LINK TO SKOOL]
 ```
 
@@ -1043,7 +1043,7 @@ Your Simple Business Bookkeeping Template is headed to your inbox right now.
 
 Didn't get it? Check spam.
 
-Next step: Join Business Central Hub (FREE) for more templates and tools:
+Next step: Join Business Central Hub (free) for more templates and tools:
 [LINK TO SKOOL]
 ```
 

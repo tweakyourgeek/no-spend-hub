@@ -64,14 +64,14 @@ This document extracts all marketing strategies, launch plans, bundle participat
 - **Product**: My Cash Envelope System (B2C)
 - **Type**: Google Sheets template
 - **Bundle Price**: FREE
-- **CTA**: Join FREE Skool tier
+- **CTA**: Join Standard Skool tier
 - **Goal**: Mass list building, awareness
 - **Expected Volume**: High (free bundles get thousands of downloads)
 
 **Bundle 2: February 2026 - "Penny Wise Skills Bundle"**
 - **Product**: Budgeting spreadsheet (not Cash Envelope - already used)
 - **Bundle Price**: $5+ minimum
-- **CTA**: Join FREE tier, see upgrade options
+- **CTA**: Join Standard tier, see upgrade options
 - **Goal**: Volume lead generation with quality filter
 - **Expected Volume**: Medium-high (low price point)
 
@@ -132,7 +132,7 @@ This document extracts all marketing strategies, launch plans, bundle participat
 - Compelling bundle contribution
 - Strong CTA in bonus materials
 - Welcome sequence for bundle buyers
-- Nurture to FREE or PAID tier
+- Nurture to Standard or Premium tier
 
 **3. Social Media**
 - **Source**: Files 3, 4

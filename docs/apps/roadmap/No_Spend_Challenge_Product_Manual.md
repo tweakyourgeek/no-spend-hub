@@ -2,8 +2,8 @@
 
 ## Complete System Guide for Personal and Business Editions
 
-**Last Updated**: December 2025
-**Status**: Comprehensive Product Manual
+**Last Updated**: March 12, 2026
+**Status**: Comprehensive Product Manual — fully updated to reflect current tiers, pricing, GPT count, and launch timeline
 
 ---
 
@@ -314,10 +314,10 @@ Goals:
 
 ### Critical Pricing Decision
 
-**December 2025**: Stop giving the guide away for free.
+**December 2024**: Stop giving the guide away for free.
 - 1100+ copies downloaded free = ~$37,000 lost value
 - Guide is now PREMIUM ONLY
-- Free tier gets challenges and worksheets, NOT full guide
+- Standard tier gets challenges and worksheets, NOT full guide
 
 ---
 
@@ -325,26 +325,26 @@ Goals:
 
 ### Three Tiers
 
-#### FREE Tier ($0)
-- Basic community access
-- Monthly rotating challenges
-- PLR-based worksheets
-- Quarterly free challenges (30 Bags, Pantry, No-Spend, Holiday)
+#### Standard Tier ($0)
+- Community access
+- Monthly No-Spend Challenge
+- 7-Day Spending Tracker
+- Pattern Quiz, Impulse Brake, Decision Matrix
+- Quarterly free challenges (No-Spend, Pantry, Group Round, Holiday)
 
-#### PAID Tier ($27/month founding rate)
-- Everything FREE tier has
-- The No-Spend Guide (personal + business)
-- Premium templates
-- Current month's workshops
-- Business Central Hub access
-- Enhanced spreadsheets
+#### Premium Tier ($9/month founding rate)
+- Everything Standard tier has
+- Monthly Themed Challenge
+- Monthly live check-in
+- Current month's tool
 
-#### VIP Tier ($97/month founding rate)
-- Everything PAID tier has
-- Live co-working sessions
-- VIP workshops
-- Full archives access
-- All 17 custom GPTs
+#### VIP Tier ($99/year founding rate)
+- Everything Premium tier has
+- Quarterly Live VIP Reset
+- Updated No Spend Journal and Guide
+- Full No Spend Toolkit
+- Archives access
+- All 7 custom GPTs
 
 ### Founding Member Strategy
 
@@ -364,32 +364,19 @@ Goals:
 
 ## 8. GPT Ecosystem
 
-### 17 Custom GPTs (VIP Tier Only)
+### 7 Custom GPTs (Tier Assignment TBD)
 
-**Core Challenge Companions (9)**:
-1. No Spend Challenge Coach
-2. No Spend Prep & Planning Assistant
-3. Spending Trigger Decoder
-4. No-Spend Meal Planner
-5. Paycheck & Budget Buddy
-6. Use-What-You-Have Activity Generator
-7. Accountability Partner GPT
-8. Post-Challenge Habit Builder
-9. Mindful Money Mindset Reset GPT
+| # | GPT Name | Purpose |
+|---|----------|---------|
+| 1 | No Spend Challenge Coach | Challenge navigation, structure, mechanics |
+| 2 | No Spend Prep and Planning Assistant | Pre-challenge rule-setting |
+| 3 | Paycheck and Budget Buddy | Short-term cash flow decisions |
+| 4 | Accountability Partner GPT | Check-ins, mid-challenge emotional support |
+| 5 | Content and Resource Reuse GPT | Memory is the core mechanic |
+| 6 | Slip Recovery Decision GPT | Quit-or-continue fork after breaking rules |
+| 7 | Mindful Money Mindset Reset GPT | Old money stories and narratives |
 
-**Anti-FOMO / Anti-Impulse (3)**:
-10. Decision Matrix GPT
-11. Marketing Decoder GPT
-12. Talk Me Out of This Purchase GPT
-
-**Crossover GPTs (3)**:
-13. Digital Declutter GPT
-14. PLR Hoard Reduction GPT
-15. Content-From-What-You-Have GPT
-
-**Ecosystem-Level (2)**:
-16. Workshop/Challenge Selector GPT
-17. Resource Locker Finder GPT
+> **Note**: Reduced from original plan of 17. See `09_GPT_Ecosystem.md` for retired concepts and gateway strategy status.
 
 ### Gateway GPT Strategy
 
@@ -410,7 +397,7 @@ Goals:
 - Google Sheets template
 - Digital budgeting tracker
 - Visual progress tracking
-- Drives to: Skool FREE tier
+- Drives to: Skool Standard tier
 
 **B2B: Simple Business Bookkeeping**
 - Google Sheets template
@@ -423,9 +410,9 @@ Goals:
 
 | Bundle | Month | Product | Price Tier | Drives To |
 |--------|-------|---------|------------|-----------|
-| Kickoff (Griffin) | Jan | Cash Envelope | FREE | Skool FREE |
-| Penny Wise Skills | Feb | Budgeting sheet | $5+ | Skool FREE |
-| Master Your Money | Mar | Premium template | $27+ | Skool PAID/VIP |
+| Kickoff (Griffin) | Jan | Cash Envelope | FREE | Skool Standard |
+| Penny Wise Skills | Feb | Budgeting sheet | $5+ | Skool Standard |
+| Master Your Money | Mar | Premium template | $27+ | Skool Premium/VIP |
 
 ### Email Nurture Sequence (Simple Business Bookkeeping)
 
@@ -433,49 +420,51 @@ Goals:
 - Email 1 (Day 2): Getting started tips
 - Email 2 (Day 4): Monthly Bookkeeping Checklist bonus
 - Email 3 (Day 6): Business Central Hub + No-Spend Challenge callout
-- Email 4 (Day 8): FREE Skool community invite
+- Email 4 (Day 8): Skool Standard tier community invite
 
 ---
 
 ## 10. Implementation Roadmap
 
-### Phase 1: Immediate Priorities (Dec 2025 - Feb 2026)
-
-| Deliverable | Target Date | Status |
-|-------------|-------------|--------|
-| Personal No-Spend Guide (complete rewrite) | Jan 31, 2026 | ✅ DONE |
-| Spreadsheet Pack (both versions) | Feb 15, 2026 | ✅ DONE |
-| Business Edition Workbook | Feb 28, 2026 | In Progress |
-
-### Phase 2: Secondary Priorities (Mar - Jun 2026)
+### Phase 1: Immediate Priorities (Dec 2024 - Feb 2025)
 
 | Deliverable | Target Date |
 |-------------|-------------|
-| Lead Magnets (all 4) | Apr 30, 2026 |
-| Free Supplemental Materials | May 31, 2026 |
-| Email Sequences | Jun 15, 2026 |
+| Personal No-Spend Guide (complete rewrite) | Jan 31, 2025 |
+| Spreadsheet Pack (both versions) | Feb 15, 2025 |
+| Business Edition Workbook | Feb 28, 2025 |
 
-### Phase 3: Technical Setup (Completed 2025)
+### Phase 2: Secondary Priorities (Mar - Jun 2025)
 
-| Deliverable | Status |
-|-------------|--------|
-| Skool Community Setup | ✅ DONE |
-| Email Platform Setup | ✅ DONE |
-| Payment & Delivery Systems | In Progress |
-| Landing Pages | In Progress |
-| Beta Testing | Complete |
+| Deliverable | Target Date |
+|-------------|-------------|
+| Lead Magnets (all 4) | Apr 30, 2025 |
+| Free Supplemental Materials | May 31, 2025 |
+| Email Sequences | Jun 15, 2025 |
 
-### Launch: January 2026 ← NOW
+### Phase 3: Technical Setup (Jul - Dec 2025)
 
-**Week 1**:
+| Deliverable | Target Date |
+|-------------|-------------|
+| Skool Community Setup | Sep 30, 2025 |
+| Email Platform Setup | Oct 31, 2025 |
+| Payment & Delivery Systems | Nov 15, 2025 |
+| Landing Pages | Nov 30, 2025 |
+| Beta Testing | Dec 15, 2025 |
+
+### Launch: March 20, 2026 (Soft Launch)
+
+**Soft Launch (March 20)**:
 - Skool community opens
-- Founding member offer (first 100)
-- Griffin bundle goes live
-- Q1 Challenge begins
+- Founding member pricing active (first 100 lock rates)
+
+**Challenge Kickoff (April 1)**:
+- First 30-day No-Spend Challenge begins
+- Promotion across all channels
 
 **Success Metrics (End of Q1)**:
 - 500+ members
-- 35% PAID tier conversion
+- 35% Premium tier conversion
 - 10% VIP tier conversion
 - 80%+ retention
 
@@ -533,25 +522,26 @@ Goals:
 ## Quick Reference: Product Ecosystem
 
 ```
-FREE TIER
-├── Skool Community Access
-├── Quarterly Challenges (30 Bags, Pantry, No-Spend, Holiday)
-├── Basic Worksheets (PLR-based)
+STANDARD TIER ($0)
+├── Community Access
+├── Monthly No-Spend Challenge
+├── 7-Day Spending Tracker
+├── Pattern Quiz, Impulse Brake, Decision Matrix
+├── Quarterly Challenges (No-Spend, Pantry, Group Round, Holiday)
 └── Lead Magnets
 
-PAID TIER ($27/mo)
-├── Everything in FREE
-├── The No-Spend Guide (Personal)
-├── The No-Spend Guide (Business)
-├── Premium Templates
-├── Current Month Workshops
-└── Enhanced Spreadsheets
+PREMIUM TIER ($9/mo)
+├── Everything in Standard
+├── Monthly Themed Challenge
+├── Monthly Live Check-In
+└── Current Month's Tool
 
-VIP TIER ($97/mo)
-├── Everything in PAID
-├── 17 Custom GPTs
-├── Live Co-Working Sessions
-├── VIP Workshops
+VIP TIER ($99/yr)
+├── Everything in Premium
+├── Quarterly Live VIP Reset
+├── Updated No Spend Journal and Guide
+├── Full No Spend Toolkit
+├── 7 Custom GPTs
 └── Full Archives
 
 STANDALONE PRODUCTS
@@ -564,147 +554,29 @@ STANDALONE PRODUCTS
 
 ---
 
-## Document & File Locations (Complete Map)
+## Document Cross-References
 
-### Deliverable Products (Ready for Customers)
+For detailed information on specific topics, see the extraction_docs folder:
 
-| Product | File Location |
-|---------|---------------|
-| **30-Day No-Spend Guide** | `/MASTER_GUIDE_CORRECTED.md` |
-| **7-Day Spending Tracker (Encouraging)** | `/7-day-spending-tracker-encouraging.md` |
-| **7-Day Spending Tracker (Irreverent)** | `/7-day-spending-tracker-irreverent.md` |
-| **Interactive Roadmap** | `/app/index.html` (LIVE on GitHub Pages) |
-
-### Spreadsheets
-
-| File | Purpose |
-|------|---------|
-| `/No_Spend_Core_Pack_Personal.xlsx` | Personal edition core tracking |
-| `/No_Spend_Core_Pack_Business.xlsx` | Business edition core tracking |
-| `/Cash_Buffer_Runway_Personal.xlsx` | Personal cash runway tracker |
-| `/Cash_Buffer_Runway_Business.xlsx` | Business cash runway tracker |
-| `/Maybe_Later_Parking_Lot_Personal.xlsx` | Personal wish list/delay tracker |
-| `/Maybe_Later_Parking_Lot_Business.xlsx` | Business wish list/delay tracker |
-| `/products/spreadsheets/SPREADSHEET_DOCUMENTATION.md` | Complete spreadsheet docs (730 lines) |
-
-### C3 Framework Files
-
-| File | Purpose |
-|------|---------|
-| `/page_7.5_c3_framework_intro.md` | C3 Introduction |
-| `/page_7_with_c3.md` | C3 Framework integrated |
-| `/page_8_c3_strategy_worksheet.md` | C3 Strategy worksheet |
-| `/reference_c3_toolkit_examples.md` | C3 Examples & use cases |
-| `/reference_pattern_c3_quick_reference.md` | C3 Quick reference matrix |
-| `/SPREADSHEET_C3_INTEGRATION_GUIDE.md` | How to add C3 to spreadsheets |
-| `/docs/analysis/C3_FRAMEWORK_INTEGRATION_ANALYSIS.md` | Deep C3 analysis |
-
-### Reference & Support Materials
-
-| File | Purpose |
-|------|---------|
-| `/reference_comfort_menu.md` | Alternative activities menu |
-| `/reference_weekly_review_template.md` | Weekly reflection template |
-| `/tracking_almost_bought_it_log.md` | "Almost bought" tracking |
-| `/tracking_monthly_grid.md` | Monthly spending grid |
-| `/daily_pages_complete_structure.md` | Daily page architecture (27KB) |
-| `/page_9_support_environment_accountability.md` | Support systems |
-| `/page_10_commitment.md` | Commitment page |
-
-### Core Framework & Philosophy
-
-| File | Purpose |
-|------|---------|
-| `/alignment_lab_codex.md` | Alignment Lab Framework v0.3 |
-| `/extraction_docs/01_Frameworks_And_Philosophy.md` | Core beliefs deep dive |
-| `/extraction_docs/02_Challenge_Structure.md` | Daily/weekly progression |
-
-### Status & Inventory (Current State)
-
-| File | Purpose |
-|------|---------|
-| `/STATUS_REPORT_FOR_SQLGOD.md` | Comprehensive status report |
-| `/REPO_INVENTORY_AND_GAP_ANALYSIS.md` | What exists vs gaps |
-| `/app/No_Spend_Challenge_Product_Manual.md` | THIS FILE - master reference |
-
-### Strategy Documents (`/extraction_docs/`)
-
-| File | Purpose |
-|------|---------|
-| `01_Frameworks_And_Philosophy.md` | Core beliefs |
-| `02_Challenge_Structure.md` | Daily/weekly details |
-| `03_Pricing_And_Monetization.md` | Complete pricing strategy |
-| `04_Skool_Community_Strategy.md` | Community delivery |
-| `05_Marketing_And_Launch_Strategy.md` | Launch tactics |
-| `06_Content_Delivery_Systems.md` | How content is delivered |
-| `07_Technical_Implementation.md` | Technical setup |
-| `08_Lead_Magnets_And_Funnels.md` | Funnel details |
-| `09_GPT_Ecosystem.md` | All 17 GPTs detailed |
-| `10_Brand_Voice_Guide.md` | Voice and tone |
-| `11_Product_Architecture.md` | Product structure |
-| `12_Evolution_Documentation.md` | How products evolved |
-| `13_Worksheet_And_Template_Inventory.md` | All worksheets & 10 expense log specs |
-| `14_Existing_Product_Cross_Reference.md` | Current state comparison |
-| `15_Brand_Positioning.md` | Market positioning |
-| `16_Implementation_Roadmap.md` | Detailed timeline |
-| `17_Integration_Roadmap.md` | Integration strategy |
-
-### Working Documents (`/docs/working/`)
-
-| File | Purpose |
-|------|---------|
-| `NOSPEND_LAUNCH_PLAN.md` | Launch plan |
-| `NOSPEND_CHALLENGE_GAP_ANALYSIS.md` | Gap analysis |
-| `GPT_INSTRUCTIONS.md` | GPT build instructions |
-| `BRAND_VOICE_EXAMPLES.md` | Voice examples (1,113 lines) |
-| `EMAIL_SEQUENCES.md` | Email marketing sequences |
-| `LEAD_MAGNETS.md` | Lead magnet strategy |
-| `MARKETING_LAUNCH_STRATEGY.md` | Marketing strategy |
-| `NOSPEND_30DAY_THEMES.md` | Daily themes breakdown |
-| `SKOOL_COMMUNITY_STRUCTURE.md` | Skool setup |
-| `LANDING_PAGE_COPY.md` | Landing page copy |
-
-### Research (`/docs/research/`)
-
-| File | Purpose |
-|------|---------|
-| `NOSPEND_BUS_WORKING_DOCUMENT.md` | Business edition working doc |
-| `PERPLEXITY_RESEARCH_PROMPTS.md` | Research prompts used |
-| `RESEARCH_FINDINGS_EXECUTIVE_SUMMARY.md` | Research summary |
-
-### App/Deployment (`/app/`)
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Interactive roadmap (DEPLOYED) |
-| `No_Spend_Challenge_Product_Manual.md` | THIS FILE |
-| `No_Spend_Integration_Roadmap.md` | Integration roadmap (38.7KB) |
-| `DEPLOYMENT.md` | GitHub Pages setup |
-| `MANIFEST.md` | File inventory |
-| `HANDOFF.md` | Developer handoff |
-| `ENHANCEMENTS.md` | Enhancement tracker |
-
-### Archive (`/archive/`) - Superseded Files
-
-25 archived files including:
-- `MASTER_GUIDE_ASSEMBLY.md` - Earlier guide version (138KB)
-- `daily-prompts-30-days.md` - Earlier prompts
-- `daily_prompts_with_c3.md` - Earlier C3 integration
-- Previous planning docs, assembly guides, content fragments
-
-### AI Conversation Transcripts (`/conversations/`)
-
-- `/conversations/chatgpt/` - 18 ChatGPT transcripts
-- `/conversations/claude/` - 19 Claude transcripts
-
-### Assets
-
-- `/assets/images/tyg-logo.png`
-- `/assets/images/00 Tweak Your Geek Logo New.png`
+- `01_Frameworks_And_Philosophy.md` - Deep dive on core beliefs
+- `02_Challenge_Structure.md` - Daily/weekly progression details
+- `03_Pricing_And_Monetization.md` - Complete pricing strategy
+- `04_Skool_Community_Strategy.md` - Community delivery details
+- `05_Marketing_And_Launch_Strategy.md` - Launch tactics
+- `06_Content_Delivery_Systems.md` - How content is delivered
+- `07_Technical_Implementation.md` - Technical setup
+- `08_Lead_Magnets_And_Funnels.md` - Funnel details
+- `09_GPT_Ecosystem.md` - All 7 GPTs detailed
+- `10_Brand_Voice_Guide.md` - Voice and tone
+- `11_Product_Architecture.md` - Product structure
+- `12_Evolution_Documentation.md` - How products evolved
+- `13_Worksheet_And_Template_Inventory.md` - All worksheets
+- `14_Existing_Product_Cross_Reference.md` - Current state comparison
+- `15_Brand_Positioning.md` - Market positioning
+- `16_Implementation_Roadmap.md` - Detailed timeline
 
 ---
 
 **Document Status**: Complete Product Manual
-**Version**: 1.2
-**Created**: December 2025
-**Updated**: January 2026
+**Version**: 1.0
+**Created**: December 2024

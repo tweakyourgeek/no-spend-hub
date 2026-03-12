@@ -1,18 +1,20 @@
 # NoSpend Challenge: Launch Implementation Plan
 
 **Created**: December 31, 2024
-**Launch Target**: January 2026
+**Launch Target**: March 20, 2026 (soft launch)
 **Status**: Pre-Launch Preparation
+
+> **Updated March 12, 2026**: Tier names, pricing, GPT count, challenge calendar, and launch date updated.
 
 ---
 
 ## 🎯 LAUNCH GOALS
 
-**By January 2026:**
+**By March 20, 2026:**
 - [ ] Skool Community live and functional
-- [ ] FREE tier accessible with Q1 Challenge (30 Bags in 30 Days)
-- [ ] PAID tier ($27/mo) available with full No-Spend Guide
-- [ ] VIP tier ($97/mo) available with at least 5-7 core GPTs
+- [ ] Standard tier accessible with Q1 No-Spend Challenge (April 1)
+- [ ] Premium tier ($9/mo) available with full No-Spend Guide
+- [ ] VIP tier ($99/yr) available with at least 5-7 core GPTs
 - [ ] Landing pages live for community signup
 - [ ] Email automation running
 - [ ] 50-100 founding members joined
@@ -26,7 +28,7 @@
 
 #### Skool Community Setup
 - [x] Create Skool account ✅ (EXISTS!)
-- [ ] Verify 3 membership tiers configured correctly (FREE/$27/$97)
+- [ ] Verify 3 membership tiers configured correctly (Standard/$9/mo/$99/yr)
 - [ ] Test tier gating and access rules
 - [ ] Complete classroom structure:
   - [ ] START HERE section
@@ -78,14 +80,14 @@
 
 #### Email Sequences
 - [ ] Write 30 daily challenge emails (teaser + link to classroom)
-- [ ] Write FREE tier welcome sequence (5 emails):
+- [ ] Write Standard tier welcome sequence (5 emails):
   - [ ] Email 1: Welcome + what's included
   - [ ] Email 2: How to use Skool community
   - [ ] Email 3: Start your first challenge
   - [ ] Email 4: Pattern Quiz introduction
-  - [ ] Email 5: Upgrade to PAID tier CTA
-- [ ] Write FREE→PAID nurture sequence (7 emails)
-- [ ] Write PAID tier welcome email
+  - [ ] Email 5: Upgrade to Premium tier CTA
+- [ ] Write Standard→Premium nurture sequence (7 emails)
+- [ ] Write Premium tier welcome email
 - [ ] Write VIP tier welcome email
 
 #### Upload Content to Skool
@@ -106,8 +108,8 @@
 - [ ] Load daily challenge emails (30 emails)
 - [ ] Set up automation triggers:
   - [ ] New subscriber → Welcome sequence
-  - [ ] FREE tier member → FREE welcome
-  - [ ] PAID tier member → PAID welcome
+  - [ ] Standard tier member → FREE welcome
+  - [ ] Premium tier member → PAID welcome
   - [ ] VIP tier member → VIP welcome
   - [ ] Challenge start → Daily email sequence (30 days)
 - [ ] Test all automation flows
@@ -115,13 +117,13 @@
 #### Support Systems
 - [ ] Write Community Guidelines
 - [ ] Create FAQ document (10-15 common questions)
-- [ ] Write FREE tier welcome post (pinned in Skool)
-- [ ] Write PAID tier welcome post
+- [ ] Write Standard tier welcome post (pinned in Skool)
+- [ ] Write Premium tier welcome post
 - [ ] Write VIP tier welcome post
 - [ ] Set up support inbox (Skool? Email? Both?)
 
 #### Beta Test Preparation
-- [ ] Recruit 10-20 beta testers (offer FREE PAID tier access)
+- [ ] Recruit 10-20 beta testers (offer FREE Premium tier access)
 - [ ] Create beta tester onboarding doc:
   - [ ] What you're testing
   - [ ] How to give feedback
@@ -140,7 +142,7 @@
 - [ ] Monitor Skool for questions/issues
 - [ ] Collect feedback daily
 - [ ] Test email automation (are emails going out?)
-- [ ] Test tier gating (can FREE tier access PAID content? They shouldn't!)
+- [ ] Test tier gating (can Standard tier access PAID content? They shouldn't!)
 - [ ] Watch for bugs, confusion, friction points
 
 #### Collect Feedback
@@ -232,7 +234,7 @@ Track weekly:
 
 **Year 1 Targets** (from product manual):
 - 500+ members
-- 35% PAID tier conversion (FREE → PAID)
+- 35% Premium tier conversion (Standard → Premium)
 - 10% VIP tier conversion
 - 80%+ retention
 - $105K-230K revenue

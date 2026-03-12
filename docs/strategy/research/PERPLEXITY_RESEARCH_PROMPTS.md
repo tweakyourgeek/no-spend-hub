@@ -264,7 +264,7 @@ Include:
 What's working? What's missing? Where are the opportunities?
 ```
 
-**Why This Question**: Assess whether our 17 custom GPTs are truly differentiated or if the market is saturated.
+**Why This Question**: Assess whether our 7 custom GPTs are truly differentiated or if the market is saturated.
 
 ---
 
@@ -373,7 +373,7 @@ Include:
 Focus on: Skool communities, Circle communities, financial coaching programs.
 ```
 
-**Why This Question**: Validate our $0/$27/$97 tier pricing.
+**Why This Question**: Validate our $0/$9/$99 tier pricing.
 
 ---
 
@@ -461,7 +461,7 @@ Include:
 Sources: Creator interviews, content strategy analysis, marketing case studies.
 ```
 
-**Why This Question**: Determine how much content to keep in FREE Skool tier vs PAID tier.
+**Why This Question**: Determine how much content to keep in Standard Skool tier vs Premium tier.
 
 ---
 
@@ -595,7 +595,7 @@ Sources: BJ Fogg's research, James Clear (Atomic Habits), behavioral design.
 After completing this research, we should have:
 
 ✅ **Clear competitive positioning** - What makes us different (with evidence)
-✅ **Validated pricing** - Confidence in $0/$27/$97 tier structure
+✅ **Validated pricing** - Confidence in $0/$9/$99 tier structure
 ✅ **Audience insights** - Who we're serving and what they need
 ✅ **Evidence-based tactics** - What actually works (not guesses)
 ✅ **Market gaps identified** - Opportunities competitors aren't filling

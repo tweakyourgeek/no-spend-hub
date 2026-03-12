@@ -1,5 +1,7 @@
 # 07. Technical Implementation
 
+> **Updated March 12, 2026**: Tier names updated to reflect current naming (Standard/Premium/VIP).
+
 ## Document Purpose
 This document extracts technical specifications, platform requirements, integrations, and implementation details for the No-Spend Challenge ecosystem.
 
@@ -74,8 +76,8 @@ This document extracts technical specifications, platform requirements, integrat
 6. Archives (VIP only)
 
 **Permissions by Tier**:
-- **FREE**: Sections 1, 2 (limited), 4 (basic), 5 (read-only)
-- **PAID**: Sections 1-5 (full access)
+- **Standard**: Sections 1, 2 (limited), 4 (basic), 5 (read-only)
+- **Premium**: Sections 1-5 (full access)
 - **VIP**: All sections (full access + exclusive VIP section)
 
 ---
@@ -83,20 +85,20 @@ This document extracts technical specifications, platform requirements, integrat
 ### Tier Configuration
 **Source**: Files 3, 5
 
-**FREE Tier**:
+**Standard Tier**:
 - Price: $0
 - Access: Limited sections
 - No credit card required
 - Can upgrade anytime
 
-**PAID Tier**:
-- Price: $27/mo (founding rate)
+**Premium Tier**:
+- Price: $9/mo (founding rate)
 - Access: Full sections except archives
 - Auto-renewing subscription
 - Cancellable anytime
 
 **VIP Tier**:
-- Price: $97/mo (founding rate)
+- Price: $99/yr (founding rate)
 - Access: All sections + exclusive VIP content
 - Auto-renewing subscription
 - Priority support tag
@@ -330,8 +332,8 @@ This document extracts technical specifications, platform requirements, integrat
 - Ends with Skool community invitation
 
 **3. Conversion Sequences**
-- FREE tier → PAID tier (triggered by Skool join date + tier tag)
-- PAID tier → VIP tier (triggered by engagement level)
+- Standard tier → Premium tier (triggered by Skool join date + tier tag)
+- Premium tier → VIP tier (triggered by engagement level)
 - Standalone buyer → Skool member
 - Bundle buyer → Skool member
 
@@ -346,7 +348,7 @@ This document extracts technical specifications, platform requirements, integrat
 
 **Skool → Email Platform**:
 - Sync new members (name, email, tier)
-- Tag by tier (FREE, PAID, VIP)
+- Tag by tier (Standard, Premium, VIP)
 - Update tags on tier changes
 - Remove from lists on cancellation
 
@@ -370,7 +372,7 @@ This document extracts technical specifications, platform requirements, integrat
 - Discount codes (if supported)
 
 **User Experience**:
-1. Click "Join PAID Tier"
+1. Click "Join Premium Tier"
 2. Redirected to Skool checkout
 3. Enter payment details (Stripe)
 4. Auto-enrolled in tier
@@ -480,8 +482,8 @@ This document extracts technical specifications, platform requirements, integrat
 7. **Google Apps Script**: Does month generator work?
 
 **Test Users Needed**:
-- FREE tier test account
-- PAID tier test account
+- Standard tier test account
+- Premium tier test account
 - VIP tier test account
 - Email sequences test subscribers
 - Payment flow testers (refund after)

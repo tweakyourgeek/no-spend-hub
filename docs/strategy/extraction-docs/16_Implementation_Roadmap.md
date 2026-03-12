@@ -8,7 +8,7 @@ This document provides a strategic implementation timeline for launching the No-
 ## Table of Contents
 1. [Current State Assessment](#current-state-assessment)
 2. [Pre-Launch Phase (Q4 2024 - December 2025)](#pre-launch-phase-q4-2024---december-2025)
-3. [Launch Phase (January 2026)](#launch-phase-january-2026)
+3. [Launch Phase (March 20, 2026)](#launch-phase-march-20-2026)
 4. [Growth Phase (February-March 2026)](#growth-phase-february-march-2026)
 5. [Optimization Phase (Q2 2026+)](#optimization-phase-q2-2026)
 6. [Critical Path and Dependencies](#critical-path-and-dependencies)
@@ -29,7 +29,7 @@ This document provides a strategic implementation timeline for launching the No-
 - Weekly themes mapped to Lab Loop
 - Business Edition tri-hybrid model designed
 - Spreadsheet pack structure designed (both B2B and B2C)
-- GPT ecosystem planned (17 GPTs)
+- GPT ecosystem planned (7 GPTs)
 - Pricing strategy locked
 - Brand positioning clarified
 
@@ -118,7 +118,7 @@ This document provides a strategic implementation timeline for launching the No-
 **6. Email Sequences**
 - Welcome sequences (5-7 emails each for different entry points)
 - Daily challenge notification emails (30 emails)
-- Conversion sequences (FREE→PAID, PAID→VIP)
+- Conversion sequences (Standard→Premium, Premium→VIP)
 - Nurture campaigns
 - **Owner**: Creator + Copywriter (if hiring)
 - **Dependencies**: Products completed (to reference correctly)
@@ -131,7 +131,7 @@ This document provides a strategic implementation timeline for launching the No-
 
 **7. Skool Community Setup**
 - Create community structure
-- Set up tier access (FREE, PAID, VIP)
+- Set up tier access (Standard, Premium, VIP)
 - Configure payment processing (Stripe integration)
 - Upload placeholder content to all sections
 - Test tier permissions
@@ -209,12 +209,12 @@ This document provides a strategic implementation timeline for launching the No-
 
 ---
 
-## Launch Phase (January 2026)
+## Launch Phase (March 20, 2026)
 
-### Week 1 (January 1-7, 2026)
-**Launch Event**: Skool community goes live + Q1 Challenge (30 Bags in 30 Days)
+### Week 1 (March 20-27, 2026)
+**Launch Event**: Skool community soft launch (originally planned January 2026) + No-Spend Challenge (April)
 
-**Day 1 (January 1)**:
+**Day 1 (March 20)**:
 - [ ] Skool community opens to public
 - [ ] Founding member offer announced (first 100)
 - [ ] Email to entire list: "We're live!"
@@ -228,24 +228,24 @@ This document provides a strategic implementation timeline for launching the No-
 - [ ] First founding members join
 
 **Days 4-7**:
-- [ ] Q1 Challenge (30 Bags) begins (if starting mid-month)
+- [ ] No-Spend Challenge (April) begins
 - [ ] Daily posts in Skool
 - [ ] Monitor signups and troubleshoot issues
-- [ ] First conversions from FREE to PAID tier
+- [ ] First conversions from Standard to Premium tier
 - [ ] Celebrate first 20, 50, 100 members
 
 **Success Metrics**:
 - 50+ members by end of Week 1
-- 20% PAID tier conversion
+- 20% Premium tier conversion
 - Email open rate >40%
 - No major technical issues
 
 ---
 
-### Weeks 2-4 (January 8-31, 2026)
+### Weeks 2-4 (March 27 - April 2026)
 
 **Ongoing**:
-- Daily Skool posts for 30 Bags challenge
+- Daily Skool posts for No-Spend Challenge (April)
 - Email notifications to members
 - Community engagement and support
 - Address questions and troubleshooting
@@ -259,13 +259,12 @@ This document provides a strategic implementation timeline for launching the No-
 
 **End of Month**:
 - First founding member rate increase (if 100 members reached)
-- Prepare for February bundle
-- Begin Q1 challenge completion activities
-- Plan Q1-Q2 transition
+- Begin No-Spend Challenge (April) completion activities
+- Plan Q2 transition
 
 **Success Metrics**:
-- 100-150 members by end of January
-- 30% PAID tier conversion
+- 100-150 members by end of April
+- 30% Premium tier conversion
 - 5-10% VIP tier conversions
 - Active daily engagement in community
 
@@ -280,13 +279,13 @@ This document provides a strategic implementation timeline for launching the No-
 - [ ] "Penny Wise Skills Bundle" goes live ($5+)
 - [ ] Budgeting spreadsheet contribution
 - [ ] Bundle-specific landing page and sequence
-- [ ] Continue 30 Bags challenge (runs through early Feb)
+- [ ] Continue No-Spend Challenge (runs through April)
 
 **Week 2-4**:
 - [ ] Bundle traffic arrives
-- [ ] Nurture to FREE Skool tier
-- [ ] Conversion messaging to PAID tier
-- [ ] Q1 challenge wraps up (late Feb)
+- [ ] Nurture to Standard Skool tier
+- [ ] Conversion messaging to Premium tier
+- [ ] No-Spend Challenge wraps up (late April)
 - [ ] Completion badges distributed
 - [ ] Transition period to Q2
 
@@ -303,20 +302,20 @@ This document provides a strategic implementation timeline for launching the No-
 
 **Week 1-2**:
 - [ ] "Master Your Money Bundle" goes live ($27+)
-- [ ] Premium contribution drives to PAID tier
-- [ ] Direct PAID/VIP tier messaging
+- [ ] Premium contribution drives to Premium tier
+- [ ] Direct Premium/VIP tier messaging
 - [ ] Founding rate increase (members 201+)
 
 **Week 3-4**:
-- [ ] Prepare for Q2 Pantry Challenge (June-July)
-- [ ] Q1 retrospective and lessons learned
+- [ ] Prepare for Pantry Challenge (June-July)
+- [ ] Launch retrospective and lessons learned
 - [ ] Analyze conversion data
 - [ ] Optimize based on findings
 - [ ] Plan Q2 content calendar
 
 **Success Metrics**:
 - 500+ members by end of March (Q1 goal)
-- 35% PAID tier conversion rate
+- 35% Premium tier conversion rate
 - 10% VIP tier conversion rate
 - Strong retention (80%+ month 1-2)
 
@@ -346,7 +345,7 @@ This document provides a strategic implementation timeline for launching the No-
 - Enhance member experience
 
 **GPT Development**:
-- Begin building 17 custom GPTs
+- Begin building 7 custom GPTs
 - Start with gateway GPT (Subscription Audit)
 - Release GPTs to VIP tier
 - Gather feedback and iterate
@@ -377,7 +376,7 @@ This document provides a strategic implementation timeline for launching the No-
 **Success Metrics (Year 1)**:
 - 750-1000 members
 - $100,000-150,000 revenue
-- 40% PAID tier
+- 40% Premium tier
 - 10% VIP tier
 - 80%+ retention
 
@@ -390,12 +389,12 @@ This document provides a strategic implementation timeline for launching the No-
 2. ✅ Skool community - SET UP
 3. ✅ Email platform - CONFIGURED
 4. ✅ Payment processing - WORKING
-5. ✅ Q1 Challenge materials (30 Bags) - READY
+5. ✅ No-Spend Challenge (April) materials - READY
 6. ✅ Welcome sequences - WRITTEN AND AUTOMATED
 
 ### Nice-to-Have for Launch (Can launch without, add later)
 - Business Edition (can launch in February)
-- All 17 GPTs (can build throughout year)
+- All 7 GPTs (can build throughout year)
 - Full supplemental product line (phase in)
 - Perfect landing pages (can improve over time)
 - All lead magnets (can add as we go)
@@ -405,7 +404,7 @@ This document provides a strategic implementation timeline for launching the No-
 ### Dependency Chain
 
 **The No-Spend Guide enables**:
-→ Skool PAID tier content
+→ Skool Premium tier content
 → Standalone sales
 → Bundle contributions (credibility)
 
@@ -416,7 +415,7 @@ This document provides a strategic implementation timeline for launching the No-
 
 **Skool community enables**:
 → Quarterly challenges
-→ FREE tier value
+→ Standard tier value
 → Community engagement
 → Conversion opportunities
 
@@ -429,8 +428,8 @@ This document provides a strategic implementation timeline for launching the No-
 
 ## Risks and Mitigation
 
-### Risk 1: Guide not finished by January
-**Mitigation**: Push launch to February, use Q1 challenge as soft launch with existing materials
+### Risk 1: Guide not finished before March 20 soft launch
+**Mitigation**: Push launch further, use Q1 challenge as soft launch with existing materials
 
 ### Risk 2: Technical issues with Skool
 **Mitigation**: Beta test in December, have backup plan (Facebook Group temporarily)
@@ -454,7 +453,9 @@ This document provides a strategic implementation timeline for launching the No-
 
 ---
 
+> **Updated March 12, 2026**: Tier names, pricing, GPT count, launch date, and challenge calendar updated.
+
 **Document Status**: Complete implementation roadmap
-**Last Updated**: December 28, 2024
+**Last Updated**: March 12, 2026
 **Confidence Level**: High - strategic roadmap with clear milestones
 **Notable Gaps**: Exact resource allocation (budget, team), specific hiring needs, detailed Gantt chart

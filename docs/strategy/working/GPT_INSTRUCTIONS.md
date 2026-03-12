@@ -1,7 +1,7 @@
 # NoSpend Challenge: Custom GPT Instructions
 
 **Created**: December 31, 2024
-**Purpose**: Instructions and templates for building all 17 custom GPTs for VIP tier
+**Purpose**: Instructions and templates for building all 7 custom GPTs for VIP tier
 **Platform**: ChatGPT (Custom GPTs)
 
 ---
@@ -9,7 +9,7 @@
 ## 📖 HOW TO USE THIS DOCUMENT
 
 This document provides:
-- **Complete GPT list** (all 17)
+- **Complete GPT list** (all 7)
 - **Instruction templates** (what to configure in ChatGPT)
 - **Setup guidance** (how to create each GPT)
 - **Access strategy** (how to share with VIP members)
@@ -27,9 +27,9 @@ This document provides:
 ## 🎯 GPT STRATEGY OVERVIEW
 
 **Access Model**:
-- **FREE/PAID Tiers**: No GPT access
+- **Standard/Premium Tiers**: No GPT access
 - **Business Spreadsheet Pack ($47)**: 1 GPT (Subscription Audit - gateway)
-- **VIP Tier ($97/mo)**: All 17 GPTs
+- **VIP Tier ($99/yr)**: All 7 GPTs
 
 **Purpose**:
 - Provide 24/7 decision support
@@ -37,7 +37,7 @@ This document provides:
 - Create unique VIP value proposition
 - Differentiate from competitors
 
-**Value**: If sold standalone at avg $20 each = $340 value. VIP members get all 17 for $97/mo.
+**Value**: If sold standalone at avg $20 each = $140 value. VIP members get all 7 for $99/yr.
 
 ---
 
@@ -588,7 +588,7 @@ Be firm but not preachy. The goal: conscious decisions about subscriptions, not 
 
 ---
 
-## 🎯 SETUP GUIDE FOR ALL 17 GPTS
+## 🎯 SETUP GUIDE FOR ALL 7 GPTS
 
 ### Quick Reference List
 
@@ -655,14 +655,14 @@ EXAMPLES:
 
 ### How to Share with VIP Members
 
-**Step 1: Create all 17 GPTs**
+**Step 1: Create all 7 GPTs**
 - Set each to "Only people with the link can access"
 - Test each one thoroughly
 - Collect links
 
 **Step 2: Create GPT Directory in Skool**
 - VIP Lounge section
-- Post: "Your 17 Custom GPTs"
+- Post: "Your 7 Custom GPTs"
 - List each GPT with:
   - Name
   - What it does (1 sentence)
@@ -670,7 +670,7 @@ EXAMPLES:
   - Example use case
 
 **Step 3: Create GPT User Guide**
-- "How to Use the 17 GPTs"
+- "How to Use the 7 GPTs"
 - When to use which GPT
 - Examples of effective prompts
 - Best practices
@@ -707,7 +707,7 @@ EXAMPLES:
 Track:
 - Which GPTs get used most (ask VIP members)
 - Which GPTs drive the most value (testimonials)
-- Which GPTs drive VIP upgrades (from PAID tier)
+- Which GPTs drive VIP upgrades (from Premium tier)
 - Which GPTs could be standalone products later
 
 Iterate based on usage and feedback.
@@ -715,6 +715,6 @@ Iterate based on usage and feedback.
 ---
 
 **Document Status**: GPT Instructions (First 4 Complete)
-**GPTs Fully Documented**: 4/17
-**Remaining**: 13 GPTs (template provided)
+**GPTs Fully Documented**: 4/7
+**Remaining**: 3 GPTs (template provided)
 **Next Step**: Build the 4 priority GPTs, test with beta users, then build remaining

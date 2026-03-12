@@ -80,7 +80,7 @@ Business Edition is designed but not fully built:
 **Why It Matters**:
 - Business Edition priced at $47-67 - significant revenue opportunity
 - Business owners have different needs than personal users
-- Gateway to VIP tier ($97/mo) conversions
+- Gateway to VIP tier ($99/yr) conversions
 - Differentiation in market (most no-spend challenges are personal-only)
 
 **Priority**: HIGH
@@ -105,7 +105,7 @@ Community infrastructure not yet built (Launch: Jan 2026):
 
 **Current State**:
 - Platform selected (Skool)
-- 3-tier structure defined (FREE/$27/$97)
+- 3-tier structure defined (Standard/$9/$99)
 - Quarterly challenge calendar planned
 - Content strategy outlined
 
@@ -130,7 +130,7 @@ Community infrastructure not yet built (Launch: Jan 2026):
 **Quick Wins**:
 - Create Skool account and basic structure THIS WEEK
 - Upload Week 1 content to test classroom functionality
-- Write welcome email sequence for FREE tier
+- Write welcome email sequence for Standard tier
 - Set up tier gating (test with dummy accounts)
 
 ---
@@ -176,33 +176,33 @@ Spreadsheet Pack automation incomplete:
 ## GAP 5: GPT Ecosystem - Build Status Unknown
 
 ### What's Missing
-17 Custom GPTs are defined, but build status unclear:
+7 Custom GPTs are defined, but build status unclear:
 - Which GPTs actually exist vs. planned?
 - Are they configured with correct instructions?
 - Have they been tested with real users?
 - Are they accessible only to VIP tier as intended?
 
 **Current State**:
-- All 17 GPTs conceptualized and named
+- All 7 GPTs conceptualized and named
 - Strategic purpose clear (VIP tier differentiator)
 - Gateway GPT strategy defined (Subscription Audit with Business Bundle)
 - GPT categories organized (Core Challenge, Anti-FOMO, Crossover, Ecosystem)
 
 **Target State**:
-- All 17 GPTs built and functional
+- All 7 GPTs built and functional
 - Instructions refined based on testing
 - Access properly gated (VIP tier only)
 - Gateway GPT integrated with Business Bundle
 - User guide for each GPT
 
 **Why It Matters**:
-- GPTs are THE differentiator for $97/mo VIP tier
+- GPTs are THE differentiator for $99/yr VIP tier
 - Promised value must be delivered
-- Building 17 GPTs is significant time investment
+- Building 7 GPTs is significant time investment
 - Users will test and review GPTs - they must work well
 
 **Priority**: HIGH (for VIP tier launch)
-**Effort**: Significant (17 GPTs × setup/testing/refinement time)
+**Effort**: Significant (7 GPTs × setup/testing/refinement time)
 
 **Quick Wins**:
 - Build top 3 most valuable GPTs first:
@@ -233,7 +233,7 @@ Spreadsheet Pack automation incomplete:
 
 **Current State**:
 - List of free materials defined
-- Purpose: Add value to FREE tier, drive upgrades
+- Purpose: Add value to Standard tier, drive upgrades
 
 **Target State**:
 - All 19 items created and available for download
@@ -319,7 +319,7 @@ Email sequences planned but not written:
 - All sequences written and loaded into email platform
 - Automated triggers configured
 - A/B testing plan for subject lines and CTAs
-- Segmentation by tier (FREE/PAID/VIP get different emails)
+- Segmentation by tier (Standard/Premium/VIP get different emails)
 
 **Why It Matters**:
 - Email is primary conversion tool
@@ -331,8 +331,8 @@ Email sequences planned but not written:
 **Effort**: Moderate (writing + setup in email platform)
 
 **Quick Wins**:
-- Write 5-email welcome sequence (deliver lead magnet, introduce product, invite to Skool FREE tier, offer PAID tier)
-- Write 7-email FREE→PAID nurture (case studies, testimonials, pattern education, upgrade CTA)
+- Write 5-email welcome sequence (deliver lead magnet, introduce product, invite to Skool Standard tier, offer Premium tier)
+- Write 7-email Standard→Premium nurture (case studies, testimonials, pattern education, upgrade CTA)
 - Set up basic automation in ConvertKit/MailerLite/ActiveCampaign
 
 ---
@@ -341,7 +341,7 @@ Email sequences planned but not written:
 
 ### What's Missing
 No dedicated landing pages built:
-- **Skool Community landing page** (FREE/PAID/VIP tiers explained)
+- **Skool Community landing page** (Standard/Premium/VIP tiers explained)
 - **No-Spend Guide landing page** (standalone $30 product)
 - **Business Edition landing page** ($47-67 bundle)
 - **Lead magnet landing pages** (Cash Envelope System, Business Bookkeeping)
@@ -369,7 +369,7 @@ No dedicated landing pages built:
 
 **Quick Wins**:
 - Use Carrd or ConvertKit to build simple landing pages (fast, cheap)
-- Skool Community page: 3 columns showing FREE/PAID/VIP tiers
+- Skool Community page: 3 columns showing Standard/Premium/VIP tiers
 - Lead magnet pages: Headline + 3 benefits + email signup form
 - Reuse copy from Product Manual for benefits/features
 
@@ -380,7 +380,7 @@ No dedicated landing pages built:
 ### What's Missing
 No customer onboarding or support strategy:
 - **New member onboarding** (how to use Skool, where to start)
-- **Tier-specific onboarding** (FREE vs PAID vs VIP - different experiences)
+- **Tier-specific onboarding** (Standard vs Premium vs VIP - different experiences)
 - **Challenge kickoff process** (how to start your 30 days)
 - **Support system** (who answers questions? where? response time?)
 - **Community moderation** (who moderates? what are the rules?)
@@ -409,7 +409,7 @@ No customer onboarding or support strategy:
 **Effort**: Moderate
 
 **Quick Wins**:
-- Create "Welcome to FREE Tier" email (what's included, where to start, next steps)
+- Create "Welcome to Standard Tier" email (what's included, where to start, next steps)
 - Write Community Guidelines (shame-free zone, support each other, no financial advice, etc.)
 - Build FAQ doc (start with 10-15 questions you know people will ask)
 - Decide: Will you moderate alone or bring in help?
@@ -459,13 +459,13 @@ Significant B2B revenue potential not explored:
 No plan for tracking product success:
 - **User analytics** (who's engaging? who's churning?)
 - **Challenge completion rates** (how many finish 30 days?)
-- **Tier conversion rates** (FREE→PAID, PAID→VIP)
+- **Tier conversion rates** (Standard→Premium, Premium→VIP)
 - **Revenue tracking** (MRR, churn, LTV)
 - **Content engagement** (which classroom posts get most interaction?)
 - **Support metrics** (most common questions, pain points)
 
 **Current State**:
-- Success metrics defined for Year 1 (500+ members, 35% PAID conversion, 10% VIP, 80% retention)
+- Success metrics defined for Year 1 (500+ members, 35% Premium conversion, 10% VIP, 80% retention)
 - No tracking system in place to measure against these goals
 
 **Target State**:
@@ -651,7 +651,7 @@ No visual brand identity documented:
 Limited strategy for keeping members engaged BETWEEN quarterly challenges:
 - **What happens in Jan/Jun/Oct?** (months without major challenges)
 - **How to prevent churn between challenges?**
-- **What keeps VIP tier worth $97/mo year-round?**
+- **What keeps VIP tier worth $99/yr year-round?**
 
 **Current State**:
 - Quarterly challenges provide 4 engagement spikes per year (Feb, Apr, Aug, Nov)
@@ -667,7 +667,7 @@ Limited strategy for keeping members engaged BETWEEN quarterly challenges:
 
 **Why It Matters**:
 - Members churn when they don't see ongoing value
-- VIP tier must justify $97/mo even in quiet months
+- VIP tier must justify $99/yr even in quiet months
 - Consistent engagement builds community culture
 - Retention is cheaper than acquisition
 
@@ -711,7 +711,7 @@ No documented plan for gathering user feedback:
 **Effort**: Low-Moderate
 
 **Quick Wins**:
-- Recruit 10-20 beta testers (offer free access to PAID tier)
+- Recruit 10-20 beta testers (offer free access to Premium tier)
 - Create 5-question post-challenge survey (what worked? what didn't? would you recommend?)
 - Ask beta testers for testimonials ("Can I quote you?")
 
@@ -827,9 +827,9 @@ If you have **30 days until launch**, here's what to prioritize:
 
 ### Week 1: Foundation
 - [ ] Set up Skool community (basic structure)
-- [ ] Write FREE tier welcome email
+- [ ] Write Standard tier welcome email
 - [ ] Complete Week 1 daily prompts (Personal Edition)
-- [ ] Build simple landing page (FREE/PAID/VIP tiers)
+- [ ] Build simple landing page (Standard/Premium/VIP tiers)
 
 ### Week 2: Content
 - [ ] Complete Weeks 2-4 daily prompts (Personal Edition)
@@ -851,7 +851,7 @@ If you have **30 days until launch**, here's what to prioritize:
 - [ ] Final review: Is everything functional for launch?
 
 ### Launch Day Checklist
-- [ ] Skool community open (FREE tier accessible)
+- [ ] Skool community open (Standard tier accessible)
 - [ ] Landing pages live
 - [ ] Email automation active
 - [ ] Founding member offer posted

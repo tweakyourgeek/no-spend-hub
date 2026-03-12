@@ -24,7 +24,7 @@ This document tracks the complete evolution of the No-Spend Challenge from PLR d
 **Late 2024**: Business edition conceptualization
 **December 2024**: Critical framework shift identified
 **December 2024-Present**: Complete rewrite underway
-**January 2026**: Planned launch
+**March 20, 2026**: Soft launch (originally planned January 2026)
 
 ---
 
@@ -233,7 +233,7 @@ Section 5: Integration & Your Next Cycle (Reflection phase completion)
 - Other micro-challenges: Individual paid products
 
 **After**:
-- Quarterly challenges: FREE (Q1: 30 Bags, Q2: Pantry, Q3: No-Spend, Q4: Holiday)
+- Quarterly challenges: FREE (Q1: No-Spend Challenge (April), Q2: Pantry, Q3: No-Spend, Q4: Holiday)
 - Drives Skool community engagement
 - Creates year-round conversion opportunities
 
@@ -425,7 +425,9 @@ Section 5: Integration & Your Next Cycle (Reflection phase completion)
 
 ---
 
+> **Updated March 12, 2026**: Launch date and Q1 challenge corrected.
+
 **Document Status**: Complete evolution tracking
-**Last Updated**: December 28, 2024
+**Last Updated**: March 12, 2026
 **Confidence Level**: Very High - comprehensive timeline documented
 **Notable Gaps**: Exact dates for some early phases (PLR discovery period approximate)

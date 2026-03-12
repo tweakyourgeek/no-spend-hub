@@ -24,7 +24,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 2. Demonstrate value before asking for purchase
 3. Segment audience (B2C vs B2B)
 4. Warm up cold traffic
-5. Drive to Skool FREE tier
+5. Drive to Skool Standard tier
 
 **What Makes a Good Lead Magnet**:
 - Immediately actionable
@@ -65,12 +65,12 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 2. Email 1 (Day 0): Welcome + how to set up
 3. Email 2 (Day 2): Tips for using cash envelopes digitally
 4. Email 3 (Day 5): Common mistakes to avoid
-5. Email 4 (Day 7): "Want more? Join FREE Skool community"
+5. Email 4 (Day 7): "Want more? Join Standard Skool community"
 6. Email 5 (Day 10): No-Spend Challenge invitation
 
-**Conversion Goal**: FREE Skool tier → Eventually PAID tier
+**Conversion Goal**: Standard Skool tier → Eventually Premium tier
 
-**Bundle Use**: January 2026 "Kickoff Bundle" (Griffin) - FREE bundle
+**Bundle Use**: March 2026 "Kickoff Bundle" (Griffin) - FREE bundle
 
 ---
 
@@ -193,12 +193,12 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - Introduce 30-Day Business No-Spend Challenge
 - Special offer for template buyers
 
-**Email 4 (Day 8): FREE Skool Community Invite**
+**Email 4 (Day 8): Standard Skool Community Invite**
 - "Join the Business Central community"
-- FREE tier access
+- Standard tier access
 - Quarterly challenges
 - Other business owners like you
-- CTA: Join FREE Skool
+- CTA: Join Standard Skool
 
 **Conversion Goal**: Skool Standard → Premium ($9/mo) or VIP ($99/yr)
 
@@ -265,8 +265,8 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - No hard sell, just awareness
 
 **Email 5 (Day 9-10): Community Invitation**
-- "Join the FREE Skool community"
-- What they get in FREE tier
+- "Join the Standard Skool community"
+- What they get in Standard tier
 - Success stories from members
 - Low-friction CTA
 
@@ -286,7 +286,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 ### Challenge-Specific Sequences
 
-> **Updated March 11, 2026**: Q1 challenge is the No-Spend Challenge starting April 1, 2026. 30 Bags in 30 Days has been retired as a standalone quarterly event.
+> **Updated March 12, 2026**: Q1 challenge is the No-Spend Challenge starting April 1, 2026. 30 Bags in 30 Days has been retired as a standalone quarterly event. Tier names updated: FREE→Standard, PAID→Premium. Soft launch March 20, first challenge April 1.
 
 **No-Spend Challenge (Q1, April 1)**
 
@@ -401,7 +401,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 ---
 
-**Document Status**: Updated — pricing, tier names, and Q1 challenge corrected
-**Last Updated**: March 11, 2026
-**Confidence Level**: High - funnel strategy updated to current pricing
+**Document Status**: Updated — pricing, tier names (Standard/Premium), launch date, and Q1 challenge corrected
+**Last Updated**: March 12, 2026
+**Confidence Level**: High - funnel strategy updated to current pricing and tier names
 **Notable Gaps**: Exact email copy, landing page designs, conversion rate projections

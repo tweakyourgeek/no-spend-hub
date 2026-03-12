@@ -5,6 +5,8 @@
 **Research Foundation**: Based on 16 validated research prompts
 **Status**: Strategic Framework Complete
 
+> **Updated March 12, 2026**: Tier names and pricing updated throughout (Standard $0 / Premium $9/mo / VIP $99/yr).
+
 ---
 
 ## 📋 TABLE OF CONTENTS
@@ -82,21 +84,21 @@ Our marketing strategy rests on 4 research-backed differentiators:
 
 ### Core Value Proposition by Tier
 
-**FREE Tier ($0)**
+**Standard Tier ($0)**
 - **Promise**: "Test the system risk-free"
 - **Value**: Quarterly challenges + community + basic resources
 - **Why It Matters**: Community = primary behavior change mechanism (research-validated)
 - **Marketing Message**: "Start here. No credit card. No pressure."
 
-**PAID Tier ($27/mo)**
+**Premium Tier ($9/mo)**
 - **Promise**: "Get the complete framework"
 - **Value**: Full guide + templates + workshops + premium community
 - **Why It Matters**: After 2 months = better value than $30 standalone
-- **Marketing Message**: "FREE tier tests. PAID tier transforms."
+- **Marketing Message**: "Standard tier tests. Premium tier transforms."
 
-**VIP Tier ($97/mo)**
+**VIP Tier ($99/yr)**
 - **Promise**: "The only behavior change AI ecosystem"
-- **Value**: 17 custom GPTs + live support + full archives
+- **Value**: 7 custom GPTs + live support + full archives
 - **Why It Matters**: Competitors have budgeting AI; we have behavior change AI
 - **Marketing Message**: "AI that helps you understand WHY, not just what."
 
@@ -266,20 +268,20 @@ Not for 30 days. For life.
 - ✉️ Email to existing list: "Founding member spots open (first 100)"
 - 📱 Social media announcement: "The No-Spend Collective is live"
 - 👥 Personal outreach to beta testers and past customers
-- 🎯 Founding member offer: Lock rates forever ($27 → $27 forever, even when we raise to $37)
+- 🎯 Founding member offer: Lock rates forever ($9 → $9 forever, even when we raise to $15)
 
 **Messaging Focus**:
 - Urgency (without fake scarcity): "First 100 lock founding rates"
 - Exclusivity: "Be part of building this community"
-- Risk reversal: "Start FREE, upgrade when ready"
+- Risk reversal: "Start Standard, upgrade when ready"
 
 ---
 
 **Week 2-4 (Jan 8-31): Bundle Traffic + Q1 Challenge**
 
 **Goals**:
-- 200-300 total members (FREE + PAID + VIP)
-- 30-40% PAID tier conversion from FREE
+- 200-300 total members (Standard + Premium + VIP)
+- 30-40% Premium tier conversion from Standard
 - Email list growth from Griffin bundle
 
 **Tactics**:
@@ -287,7 +289,7 @@ Not for 30 days. For life.
 - 🏆 30 Bags in 30 Days challenge running
 - 📧 Daily challenge emails (engagement + value)
 - 💬 Community activity (daily prompts, check-ins)
-- 🎁 Lead magnet funnel (Cash Envelope → FREE Skool → PAID tier)
+- 🎁 Lead magnet funnel (Cash Envelope → Standard Skool → Premium tier)
 
 **Messaging Focus**:
 - "Join 300+ people in the Q1 challenge"
@@ -302,11 +304,11 @@ Not for 30 days. For life.
 - 350-400 total members
 - Penny Wise Skills Bundle ($5+ minimum)
 - Continue 30 Bags challenge momentum
-- Drive FREE → PAID conversions
+- Drive Standard → Premium conversions
 
 **March Goals**:
 - 500 total members by end of Q1
-- Master Your Money Bundle ($27+ minimum, drives to PAID tier)
+- Master Your Money Bundle ($27+ minimum, drives to Premium tier)
 - Plan Q2 challenge launch
 - Founding member rate increases for members 101+
 
@@ -326,27 +328,27 @@ Not for 30 days. For life.
 **A. List Building**:
 - Bundle participation (Jan, Feb, Mar 2026) = thousands of downloads
 - Lead magnets (Cash Envelope System, Pattern Quiz)
-- Skool FREE tier signup (collect email)
+- Skool Standard tier signup (collect email)
 - Social media CTAs ("Get the free guide")
 
 **B. Segmentation**:
 - Bundle buyers (by bundle)
-- FREE tier members
-- PAID tier members
+- Standard tier members
+- Premium tier members
 - VIP tier members
 - Pattern type (after Pattern Quiz)
 
 **C. Email Types**:
 - **Welcome sequences** (5-7 emails per tier)
 - **Daily challenge emails** (30 days during active challenge)
-- **Nurture sequences** (FREE → PAID conversion)
+- **Nurture sequences** (Standard → Premium conversion)
 - **Educational content** (weekly no-spend tips)
 - **Launch campaigns** (quarterly challenges, new GPTs)
 
 **Success Metrics**:
 - Open rate: 35-45% (industry average: 21%)
 - Click rate: 5-10% (industry average: 2.3%)
-- FREE → PAID conversion: 30% within 90 days
+- Standard → Premium conversion: 30% within 90 days
 
 ---
 
@@ -360,7 +362,7 @@ Not for 30 days. For life.
 
 **Skool Strategy**:
 
-**A. FREE Tier as Lead Magnet**:
+**A. Standard Tier as Lead Magnet**:
 - No credit card required (eliminate friction)
 - Quarterly challenges = recurring value
 - Daily prompts = consistent engagement
@@ -376,13 +378,13 @@ Not for 30 days. For life.
 **C. Upgrade Triggers**:
 - Day 7 of challenge: "Want the full guide? Upgrade now"
 - Challenge completion: "Loved this? Get complete system"
-- When they ask questions: "That's covered in PAID tier guide"
+- When they ask questions: "That's covered in Premium tier guide"
 - Quarterly transitions: "Q2 challenge starts soon"
 
 **Success Metrics**:
 - Daily active users: 20-30% of total members
 - Posts per week: 50-100
-- FREE → PAID conversion: 30-35%
+- Standard → Premium conversion: 30-35%
 - Retention: 80%+ monthly
 
 ---
@@ -399,21 +401,21 @@ Not for 30 days. For life.
 
 **January 2026: Griffin Bundle (FREE)**
 - **Product**: My Cash Envelope System (Google Sheets)
-- **CTA**: Join FREE Skool community
+- **CTA**: Join Standard Skool community
 - **Goal**: Volume (1,000-5,000 downloads)
-- **Follow-up**: 5-email sequence → Skool FREE tier → PAID upgrade
+- **Follow-up**: 5-email sequence → Skool Standard tier → Premium upgrade
 
 **February 2026: Penny Wise Skills Bundle ($5+)**
 - **Product**: Budgeting spreadsheet (different from Cash Envelope)
-- **CTA**: Join FREE tier, see PAID upgrade options
+- **CTA**: Join Standard tier, see Premium upgrade options
 - **Goal**: Medium volume, quality filter (paid bundle)
 - **Follow-up**: 7-email sequence with upgrade messaging
 
 **March 2026: Master Your Money Bundle ($27+)**
 - **Product**: Premium money template or mini-course
-- **CTA**: Join PAID tier directly ($27/mo or $97/mo)
+- **CTA**: Join Premium tier directly ($9/mo or $99/yr)
 - **Goal**: Higher quality audience, direct conversions
-- **Follow-up**: PAID tier welcome sequence
+- **Follow-up**: Premium tier welcome sequence
 
 **Bundle Best Practices**:
 - ✅ Include special offer for bundle buyers
@@ -522,13 +524,13 @@ Not for 30 days. For life.
 - **Focus**: Solution differentiation
 - **Message**: "Pattern recognition works better than willpower"
 - **Content**: Research-backed posts, method explanations, community testimonials
-- **CTA**: "Join the FREE Community" / "See How It Works"
+- **CTA**: "Join the Standard Community" / "See How It Works"
 
 **Decision (Hot Audience)**:
 - **Focus**: Conversion
 - **Message**: "Join 500+ people who've reset their spending"
 - **Content**: Success stories, tier comparisons, founding member offer
-- **CTA**: "Start Your 30-Day Reset" / "Upgrade to PAID"
+- **CTA**: "Start Your 30-Day Reset" / "Upgrade to Premium"
 
 **Retention (Existing Members)**:
 - **Focus**: Engagement and upsells
@@ -540,7 +542,7 @@ Not for 30 days. For life.
 
 ## Conversion Funnel Strategy
 
-### FREE to PAID Tier Conversion
+### Standard to Premium Tier Conversion
 
 **Funnel Architecture**:
 ```
@@ -548,7 +550,7 @@ Bundle/Lead Magnet
     ↓
 Email Sequence (5-7 emails)
     ↓
-FREE Skool Tier Signup
+Standard Skool Tier Signup
     ↓
 Participate in Quarterly Challenge (30 days)
     ↓
@@ -556,14 +558,14 @@ Hit Limitation (want full guide, more templates)
     ↓
 Upgrade Offer (strategic timing)
     ↓
-PAID Tier Conversion ($27/mo)
+Premium Tier Conversion ($9/mo)
 ```
 
 **Strategic Conversion Moments**:
 
 1. **Day 7 of Challenge**
    - Email: "You're one week in. Want deeper support?"
-   - Community post: "PAID members get the full pattern recognition guide"
+   - Community post: "Premium members get the full pattern recognition guide"
    - Offer: "Upgrade now, get Week 2 prompts with full context"
 
 2. **Challenge Completion (Day 30)**
@@ -577,19 +579,19 @@ PAID Tier Conversion ($27/mo)
    - Offer: "Join Premium for the complete Q2 experience"
 
 4. **When They Ask a Question**
-   - Response: "That's covered in the full guide (PAID tier)"
+   - Response: "That's covered in the full guide (Premium tier)"
    - DM: "Want me to send you the framework? Upgrade here"
 
 **Conversion Messaging**:
 - "You've proven this works for you. Invest in the complete system."
-- "FREE tier is great for testing. PAID tier is for transforming."
+- "Standard tier is great for testing. Premium tier is for transforming."
 - "The guide you're missing has the exact framework you need."
 
-**Target**: 30-35% conversion rate (FREE → PAID)
+**Target**: 30-35% conversion rate (Standard → Premium)
 
 ---
 
-### PAID to VIP Tier Conversion
+### Premium to VIP Tier Conversion
 
 **Who Converts**:
 - Business owners who want GPT tools (Subscription Audit, Decision Matrix)
@@ -598,18 +600,18 @@ PAID Tier Conversion ($27/mo)
 - Those who want full archives access
 
 **Trigger Events**:
-- "I wish I had a GPT for [specific need]" → "VIP has 17 GPTs"
+- "I wish I had a GPT for [specific need]" → "VIP has 7 GPTs"
 - "I missed the workshop" → "VIP gets full archives"
 - Asks about live support → "VIP has weekly co-working"
 - Business owner asks about subscription audit → "That's a VIP GPT"
 
 **Conversion Messaging**:
 - "You're getting results. VIP gives you the tools to accelerate."
-- "17 GPTs that make decisions easier—only $70 more per month"
+- "7 GPTs that make decisions easier—upgrade to VIP for $99/yr"
 - "AI that helps you understand WHY you spend, not just what"
 - "The only behavior change AI ecosystem"
 
-**Target**: 10-15% of PAID members upgrade to VIP
+**Target**: 10-15% of Premium members upgrade to VIP
 
 ---
 
@@ -619,11 +621,11 @@ PAID Tier Conversion ($27/mo)
 - **Includes**: Subscription Audit GPT + Business No-Spend Spreadsheet
 - **Target**: Business owners (solopreneurs, freelancers)
 - **Value Prop**: "Saves $1,270/year on average in unused subscriptions"
-- **Conversion Path**: $47 one-time → FREE Skool → PAID ($27/mo) → VIP ($97/mo)
+- **Conversion Path**: $47 one-time → Standard Skool → Premium ($9/mo) → VIP ($99/yr)
 
 **Why This Works**:
-- Lower barrier than $97/mo
-- Showcases GPT power without giving away all 17
+- Lower barrier than $99/yr
+- Showcases GPT power without giving away all 7
 - Creates demand for full VIP access
 - Positions GPTs as "must-have" not "nice-to-have"
 
@@ -637,7 +639,7 @@ PAID Tier Conversion ($27/mo)
 - ✅ Money/finance/budgeting theme
 - ✅ Audience = women 25-45 (our demographic)
 - ✅ Timing aligns with launch (Jan-Mar 2026)
-- ✅ Price point matches tier strategy (FREE/low/mid)
+- ✅ Price point matches tier strategy (Standard/low/mid)
 - ✅ Organizer has good track record (thousands of downloads)
 
 **What to Avoid**:
@@ -653,23 +655,23 @@ PAID Tier Conversion ($27/mo)
 **January 2026: Griffin Bundle (FREE)**
 - **Our Contribution**: My Cash Envelope System (Google Sheets)
 - **Positioning**: "Track your savings goals digitally"
-- **CTA in Bonus PDF**: "Join the FREE No-Spend Collective on Skool"
+- **CTA in Bonus PDF**: "Join the Standard No-Spend Collective on Skool"
 - **Expected Volume**: 2,000-5,000 downloads
-- **Conversion Target**: 10-15% join FREE Skool (200-750 members)
+- **Conversion Target**: 10-15% join Standard Skool (200-750 members)
 
 **February 2026: Penny Wise Skills Bundle ($5+)**
 - **Our Contribution**: Budgeting spreadsheet (not Cash Envelope—different product)
 - **Positioning**: "Complete budget dashboard with automation"
-- **CTA**: "Join FREE Skool + see upgrade options"
+- **CTA**: "Join Standard Skool + see upgrade options"
 - **Expected Volume**: 1,000-3,000 downloads
-- **Conversion Target**: 15-20% join FREE Skool (150-600 members)
+- **Conversion Target**: 15-20% join Standard Skool (150-600 members)
 
 **March 2026: Master Your Money Bundle ($27+)**
 - **Our Contribution**: Money mindset mini-course or premium template
 - **Positioning**: "Pattern recognition framework + tools"
-- **CTA**: "Join PAID tier ($27/mo or $97/mo)"
+- **CTA**: "Join Premium tier ($9/mo or $99/yr)"
 - **Expected Volume**: 500-1,500 downloads
-- **Conversion Target**: 20-30% join PAID tier (100-450 members)
+- **Conversion Target**: 20-30% join Premium tier (100-450 members)
 
 ---
 
@@ -680,7 +682,7 @@ PAID Tier Conversion ($27/mo)
 **Email 1 (Immediate)**: Delivery + Welcome
 - Subject: "Your [Product Name] is ready!"
 - Content: Download link + setup instructions
-- CTA: "P.S. Join the FREE No-Spend Collective"
+- CTA: "P.S. Join the Standard No-Spend Collective"
 
 **Email 2 (Day 2)**: Tips + Value
 - Subject: "3 tips to make your [product] work"
@@ -700,7 +702,7 @@ PAID Tier Conversion ($27/mo)
 **Email 5 (Day 10)**: Invitation to Challenge
 - Subject: "Ready for a 30-day experiment?"
 - Content: Explain no-spend challenge (shame-free framing)
-- CTA: "Join the FREE community and start"
+- CTA: "Join the Standard community and start"
 
 ---
 
@@ -736,21 +738,21 @@ PAID Tier Conversion ($27/mo)
 - FAQ: "What happens after 100 members?" (rates increase)
 
 **Founding Member Offer**:
-- PAID: $27/mo forever (normally $37/mo after 100 members)
-- VIP: $97/mo forever (normally $127/mo after 100 members)
+- Premium: $9/mo forever (normally $15/mo after 100 members)
+- VIP: $99/yr forever (normally $127/yr after 100 members)
 - Founding member badge in Skool community
 - Exclusive "Founding 100" role/recognition
 
 **Success Metrics**:
 - 100 founding members by Jan 31
-- 50% PAID tier, 50% VIP tier
+- 50% Premium tier, 50% VIP tier
 - 80% retention after 3 months
 
 ---
 
 ### Campaign 2: "30 Days to Data" (Q1 Challenge Launch)
 
-**Goal**: Engage FREE tier, convert to PAID
+**Goal**: Engage Standard tier, convert to Premium
 
 **Campaign Elements**:
 
@@ -773,8 +775,8 @@ PAID Tier Conversion ($27/mo)
 
 **Mid-Challenge Upgrade Campaign** (Day 15):
 - Email: "Halfway there—want the complete guide?"
-- Offer: "Upgrade to PAID, get Weeks 3-4 with full framework"
-- Discount: 20% off first month ($22 instead of $27)
+- Offer: "Upgrade to Premium, get Weeks 3-4 with full framework"
+- Discount: 20% off first month ($7 instead of $9)
 
 **Post-Challenge Survey** (Day 31):
 - "What did you learn in 30 days?"
@@ -784,7 +786,7 @@ PAID Tier Conversion ($27/mo)
 
 **Success Metrics**:
 - 60% completion rate (people still active on Day 30)
-- 30% conversion to PAID tier
+- 30% conversion to Premium tier
 - 100+ testimonials collected
 
 ---
@@ -821,8 +823,8 @@ PAID Tier Conversion ($27/mo)
 
 **Success Metrics**:
 - 1,000+ quiz completions
-- 40% join FREE Skool tier
-- 15% convert to PAID within 90 days
+- 40% join Standard Skool tier
+- 15% convert to Premium within 90 days
 
 ---
 
@@ -851,19 +853,19 @@ PAID Tier Conversion ($27/mo)
 
 **Skool Community Growth**:
 - **Target**: 500 total members by end of Q1
-- **Breakdown**: 300 FREE, 150 PAID, 50 VIP
+- **Breakdown**: 300 Standard, 150 Premium, 50 VIP
 - **Monthly Growth**: 150-200 new members
 
 **Conversion Rates**:
-- **Email → FREE Skool**: 10-15%
-- **FREE → PAID**: 30-35% (within 90 days)
-- **PAID → VIP**: 10-15%
+- **Email → Standard Skool**: 10-15%
+- **Standard → Premium**: 30-35% (within 90 days)
+- **Premium → VIP**: 10-15%
 - **Bundle → Skool**: 15-20%
 
 **Revenue**:
 - **MRR Target by March 2026**: $10K-15K
-  - 150 PAID @ $27/mo = $4,050
-  - 50 VIP @ $97/mo = $4,850
+  - 150 Premium @ $9/mo = $1,350
+  - 50 VIP @ $99/yr = $4,950
   - Gateway products = $2K-5K
 - **Year 1 Target**: $105K-230K
 
@@ -878,7 +880,7 @@ PAID Tier Conversion ($27/mo)
 - **Average Session Length**: 8-12 minutes
 
 **Challenge Completion**:
-- **Participation Rate**: 70% (of FREE tier members)
+- **Participation Rate**: 70% (of Standard tier members)
 - **Completion Rate**: 60% (still active Day 30)
 - **Data Sharing Rate**: 40% (post their spending patterns)
 
@@ -898,12 +900,12 @@ PAID Tier Conversion ($27/mo)
 
 **Customer Acquisition Cost (CAC)**:
 - **Bundle CAC**: $2-5 per member (time investment)
-- **Paid Ad CAC**: $15-25 per FREE member (if we test ads)
-- **Acceptable CAC**: <$10 for PAID tier (3-month payback)
+- **Paid Ad CAC**: $15-25 per Standard member (if we test ads)
+- **Acceptable CAC**: <$10 for Premium tier (3-month payback)
 
 **Lifetime Value (LTV)**:
-- **PAID Tier**: $27/mo × 12 months = $324
-- **VIP Tier**: $97/mo × 12 months = $1,164
+- **Premium Tier**: $9/mo × 12 months = $108
+- **VIP Tier**: $99/yr
 - **Target LTV:CAC Ratio**: 3:1 or better
 
 **Churn Rate**:
@@ -924,7 +926,7 @@ PAID Tier Conversion ($27/mo)
 | Week | Focus | Activities |
 |------|-------|------------|
 | **Week 1** | Soft Launch | Founding member email campaign, Skool goes live, social media launch |
-| **Week 2** | Griffin Bundle | Bundle goes live, email sequence starts, FREE tier growth |
+| **Week 2** | Griffin Bundle | Bundle goes live, email sequence starts, Standard tier growth |
 | **Week 3** | Challenge Momentum | Q1 Challenge (30 Bags) active, daily emails, community engagement |
 | **Week 4** | First Conversions | Day 7 upgrade campaign, testimonial gathering, refine messaging |
 
@@ -936,7 +938,7 @@ PAID Tier Conversion ($27/mo)
 |------|-------|------------|
 | **Week 5** | Penny Wise Bundle | Bundle contribution, lead magnet funnel, email sequences |
 | **Week 6** | Mid-Challenge Engagement | Challenge halfway point, pattern recognition deep dives |
-| **Week 7** | Upgrade Campaign | FREE → PAID conversion focus, workshops announced |
+| **Week 7** | Upgrade Campaign | Standard → Premium conversion focus, workshops announced |
 | **Week 8** | Challenge Completion | Day 30 survey, testimonials, plan Q2 challenge |
 
 ---
@@ -945,7 +947,7 @@ PAID Tier Conversion ($27/mo)
 
 | Week | Focus | Activities |
 |------|-------|------------|
-| **Week 9** | Master Your Money Bundle | Premium bundle, PAID tier direct conversions |
+| **Week 9** | Master Your Money Bundle | Premium bundle, Premium tier direct conversions |
 | **Week 10** | Q1 Review | Analyze metrics, gather feedback, plan improvements |
 | **Week 11** | Q2 Challenge Prep | Pantry Challenge (June-July) planning, content creation |
 | **Week 12** | Founding Rate Increase | Members 101+ pay higher rates, final founding push |
@@ -960,8 +962,8 @@ PAID Tier Conversion ($27/mo)
 - **Mitigation**: Test multiple CTAs, improve follow-up sequences, offer exclusive bonuses
 - **Backup Plan**: Focus on organic social media and SEO instead
 
-**Risk 2: Poor FREE → PAID Conversion**
-- **Mitigation**: Survey FREE members, identify barriers, adjust value proposition
+**Risk 2: Poor Standard → Premium Conversion**
+- **Mitigation**: Survey Standard members, identify barriers, adjust value proposition
 - **Backup Plan**: Extend founding member offer, add mid-tier option ($17/mo)
 
 **Risk 3: Low Challenge Completion Rate**
@@ -992,7 +994,7 @@ PAID Tier Conversion ($27/mo)
 - [ ] Create 5-7 core GPTs (VIP tier)
 - [ ] Build social media launch content (10 posts)
 - [ ] Prepare founding member offer materials
-- [ ] Test entire user journey (FREE → PAID → VIP)
+- [ ] Test entire user journey (Standard → Premium → VIP)
 
 **Week 3:**
 - [ ] Confirm Griffin bundle participation

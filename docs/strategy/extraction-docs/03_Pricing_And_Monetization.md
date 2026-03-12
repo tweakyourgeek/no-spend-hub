@@ -126,12 +126,12 @@ This document extracts all pricing strategies, monetization models, revenue stre
 **Bundle 1: January 2026 - "Kickoff Bundle" (Griffin)**
 - **Product Contribution**: My Cash Envelope System (B2C)
 - **Bundle Price**: FREE (lead magnet bundle)
-- **Purpose**: Mass list building, drive to FREE Skool tier
+- **Purpose**: Mass list building, drive to Standard Skool tier
 
 **Bundle 2: February 2026 - "Penny Wise Skills Bundle"**
 - **Product Contribution**: Budgeting spreadsheet
 - **Minimum Bundle Price**: $5+
-- **Purpose**: Volume lead generation, drive to FREE tier with upgrade messaging
+- **Purpose**: Volume lead generation, drive to Standard tier with upgrade messaging
 
 **Bundle 3: March 2026 - "Master Your Money Bundle"**
 - **Product Contribution**: Money-related spreadsheet or template
