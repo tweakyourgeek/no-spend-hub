@@ -102,25 +102,25 @@ This document provides a comprehensive integration strategy for connecting all p
 ```
 User visits Skool
     ↓
-Signs up for FREE tier
+Signs up for Standard tier
     ↓
 Skool creates account
     ↓
 [INTEGRATION] Zapier detects new member
     ↓
-Zapier adds to Email Platform with tag "FREE-TIER"
+Zapier adds to Email Platform with tag "STANDARD-TIER"
     ↓
 [INTEGRATION] Email Platform triggers Welcome Sequence
     ↓
 User receives 5-email welcome series
     ↓
-Email 5 includes PAID tier upgrade CTA
+Email 5 includes Premium tier upgrade CTA
     ↓
-User upgrades to PAID tier in Skool
+User upgrades to Premium tier in Skool
     ↓
 [INTEGRATION] Zapier detects tier change
     ↓
-Zapier updates tag to "PAID-TIER"
+Zapier updates tag to "PREMIUM-TIER"
     ↓
 [INTEGRATION] Email Platform triggers Challenge Sequence
     ↓
@@ -142,19 +142,19 @@ Downloads lead magnet (Google Sheet template)
     ↓
 Opens spreadsheet, sees "Get Full System" CTA
     ↓
-Clicks link → Lands on Skool FREE tier page
+Clicks link → Lands on Skool Standard tier page
     ↓
-Signs up for FREE tier
+Signs up for Standard tier
     ↓
 [INTEGRATION] Zapier detects new member + bundle source tag
     ↓
-Zapier adds to Email Platform with tags "FREE-TIER" + "BUNDLE-SOURCE"
+Zapier adds to Email Platform with tags "STANDARD-TIER" + "BUNDLE-SOURCE"
     ↓
 [INTEGRATION] Email Platform triggers Bundle-Specific Welcome Sequence
     ↓
 Sequence emphasizes bundle → full system connection
     ↓
-User converts to PAID tier
+User converts to Premium tier
     ↓
 [Flow continues as in Flow 1]
 ```
@@ -188,7 +188,7 @@ Email Platform tags with "STANDALONE-BUYER"
     ↓
 Email 3: "Join the community for ongoing support" (Skool CTA)
     ↓
-User joins Skool FREE tier
+User joins Skool Standard tier
     ↓
 [Flow merges with Flow 1]
 ```
@@ -203,9 +203,9 @@ User joins Skool FREE tier
 ### Flow 4: Daily Challenge Participation
 
 ```
-User is PAID tier member in Skool
+User is Premium tier member in Skool
     ↓
-[INTEGRATION] Tagged as "PAID-TIER" in Email Platform
+[INTEGRATION] Tagged as "PREMIUM-TIER" in Email Platform
     ↓
 Challenge starts on Day 1 of month
     ↓
@@ -244,7 +244,7 @@ Re-engagement sequence starts after 14 days
 
 **Skool Community**:
 - [ ] Create Skool community
-- [ ] Configure tier structure (FREE, PAID, VIP)
+- [ ] Configure tier structure (Standard, Premium, VIP)
 - [ ] Set founding member pricing ($27/$97)
 - [ ] Test payment processing with test account
 - [ ] Create tier-specific sections
@@ -253,7 +253,7 @@ Re-engagement sequence starts after 14 days
 **Email Platform**:
 - [ ] Choose platform (ConvertKit recommended)
 - [ ] Create account
-- [ ] Set up initial segments (FREE, PAID, VIP)
+- [ ] Set up initial segments (Standard, Premium, VIP)
 - [ ] Create custom fields (tier, source, challenge_status)
 - [ ] Test email sending
 - [ ] Verify deliverability (DKIM, SPF records)
@@ -281,12 +281,12 @@ Re-engagement sequence starts after 14 days
    - Trigger: New member joins Skool
    - Action: Add subscriber to Email Platform
    - Fields to sync: Name, Email, Join Date
-   - Tag: "FREE-TIER" (default)
+   - Tag: "STANDARD-TIER" (default)
 5. Create Zap #2: Tier Change Sync
    - Trigger: Member tier changes in Skool
    - Action: Update subscriber tag in Email Platform
    - Logic:
-     - PAID tier → Replace with "PAID-TIER"
+     - Premium tier → Replace with "PREMIUM-TIER"
      - VIP tier → Replace with "VIP-TIER"
      - Canceled → Add tag "CANCELED"
 6. Test with dummy accounts
@@ -324,28 +324,28 @@ Re-engagement sequence starts after 14 days
 
 #### Week 5-6: Automation Setup
 
-**Email Automation 1: Welcome Sequence (FREE Tier)**
+**Email Automation 1: Welcome Sequence (Standard Tier)**
 
-**Trigger**: New subscriber tagged "FREE-TIER"
+**Trigger**: New subscriber tagged "STANDARD-TIER"
 
 **Sequence**:
 - Email 1 (immediate): Welcome to the No-Spend Collective
-- Email 2 (+2 days): What to expect in the FREE tier
+- Email 2 (+2 days): What to expect in the Standard tier
 - Email 3 (+5 days): Meet the community (member spotlights)
 - Email 4 (+8 days): How to prepare for a challenge
-- Email 5 (+12 days): Ready to commit? (PAID tier CTA)
+- Email 5 (+12 days): Ready to commit? (Premium tier CTA)
 
 **Setup**:
 - [ ] Write all emails
 - [ ] Create sequence in Email Platform
-- [ ] Set trigger rule (tag: FREE-TIER)
+- [ ] Set trigger rule (tag: STANDARD-TIER)
 - [ ] Test with dummy email
 
 ---
 
 **Email Automation 2: Daily Challenge Sequence**
 
-**Trigger**: Tag "PAID-TIER" + Challenge start date
+**Trigger**: Tag "PREMIUM-TIER" + Challenge start date
 
 **Sequence**:
 - 30 emails (Day 1 - Day 30)
@@ -360,7 +360,7 @@ Re-engagement sequence starts after 14 days
 **Setup**:
 - [ ] Write all 30 emails
 - [ ] Create sequence in Email Platform
-- [ ] Set trigger rule (tag: PAID-TIER)
+- [ ] Set trigger rule (tag: PREMIUM-TIER)
 - [ ] Add challenge_start_date custom field
 - [ ] Configure send time (6am)
 - [ ] Test with dummy account (send test Day 1, Day 15, Day 30)
@@ -369,19 +369,19 @@ Re-engagement sequence starts after 14 days
 
 **Email Automation 3: Conversion Sequences**
 
-**3A: FREE → PAID Conversion**
+**3A: Standard → Premium Conversion**
 
-**Trigger**: Tag "FREE-TIER" + 14 days since join
+**Trigger**: Tag "STANDARD-TIER" + 14 days since join
 
 **Sequence**:
-- Email 1: What you're missing (PAID tier benefits)
+- Email 1: What you're missing (Premium tier benefits)
 - Email 2 (+3 days): Member success stories
 - Email 3 (+7 days): Founding member pricing urgency
-- Email 4 (+14 days): Final reminder (if still FREE)
+- Email 4 (+14 days): Final reminder (if still Standard)
 
-**3B: PAID → VIP Conversion**
+**3B: Premium → VIP Conversion**
 
-**Trigger**: Tag "PAID-TIER" + 30 days since join
+**Trigger**: Tag "PREMIUM-TIER" + 30 days since join
 
 **Sequence**:
 - Email 1: Introducing VIP tier
@@ -421,20 +421,20 @@ Re-engagement sequence starts after 14 days
 
 #### Integration Testing Checklist
 
-**Test Scenario 1: New FREE Member**
-- [ ] Create test account in Skool (FREE tier)
+**Test Scenario 1: New Standard Member**
+- [ ] Create test account in Skool (Standard tier)
 - [ ] Verify Zapier detects new member
-- [ ] Verify Email Platform adds subscriber with "FREE-TIER" tag
+- [ ] Verify Email Platform adds subscriber with "STANDARD-TIER" tag
 - [ ] Verify Welcome Sequence triggers
 - [ ] Receive Email 1 immediately
 - [ ] Verify subsequent emails schedule correctly
 - [ ] Check all links work
 - [ ] Test mobile rendering
 
-**Test Scenario 2: FREE → PAID Upgrade**
-- [ ] Upgrade test account to PAID tier in Skool
+**Test Scenario 2: Standard → Premium Upgrade**
+- [ ] Upgrade test account to Premium tier in Skool
 - [ ] Verify Zapier detects tier change
-- [ ] Verify Email Platform updates tag to "PAID-TIER"
+- [ ] Verify Email Platform updates tag to "PREMIUM-TIER"
 - [ ] Verify Welcome Sequence stops
 - [ ] Verify Challenge Sequence doesn't trigger yet (no start date)
 - [ ] Set challenge_start_date to tomorrow
@@ -457,7 +457,7 @@ Re-engagement sequence starts after 14 days
 - [ ] Verify correct welcome sequence triggers
 
 **Test Scenario 5: Cancellation**
-- [ ] Cancel test PAID membership in Skool
+- [ ] Cancel test Premium membership in Skool
 - [ ] Verify Zapier detects cancellation
 - [ ] Verify Email Platform adds "CANCELED" tag
 - [ ] Verify Challenge Sequence stops
@@ -473,7 +473,7 @@ Re-engagement sequence starts after 14 days
 - Beta tester application
 
 **What to Test**:
-1. Full member journey (FREE → PAID)
+1. Full member journey (Standard → Premium)
 2. Email deliverability (Gmail, Outlook, Yahoo)
 3. Spreadsheet template functionality (copy, formulas, Apps Script)
 4. index.html roadmap on mobile devices
@@ -489,7 +489,7 @@ Re-engagement sequence starts after 14 days
 
 ---
 
-### Phase 3: Launch (January 1, 2026)
+### Phase 3: Launch (March 20, 2026)
 
 **Day -7**: Final Checks
 - [ ] All integrations tested and working
@@ -500,7 +500,7 @@ Re-engagement sequence starts after 14 days
 - [ ] Analytics tracking installed
 - [ ] index.html roadmap updated and deployed
 
-**Day 0** (January 1, 2026): Launch!
+**Day 0** (March 20, 2026): Launch!
 - [ ] Skool community opens to public
 - [ ] Email to existing list announcing launch
 - [ ] Social media launch posts
@@ -516,7 +516,7 @@ Re-engagement sequence starts after 14 days
 
 ---
 
-### Phase 4: Post-Launch Optimization (January 2026+)
+### Phase 4: Post-Launch Optimization (March 20, 2026+)
 
 **Week 2**: First Data Review
 - [ ] Review Zapier success rates
@@ -563,9 +563,9 @@ Re-engagement sequence starts after 14 days
 **Tag Mapping**:
 | Skool Status | Email Platform Tag | Action |
 |-------------|-------------------|--------|
-| FREE member | FREE-TIER | Add on join |
-| PAID member | PAID-TIER | Add on upgrade, remove FREE-TIER |
-| VIP member | VIP-TIER | Add on upgrade, remove PAID-TIER |
+| Standard member | STANDARD-TIER | Add on join |
+| Premium member | PREMIUM-TIER | Add on upgrade, remove STANDARD-TIER |
+| VIP member | VIP-TIER | Add on upgrade, remove PREMIUM-TIER |
 | Canceled | CANCELED | Add on cancel, remove tier tags |
 | Founding 100 | FOUNDING-MEMBER | Add if member #1-100 |
 
@@ -636,7 +636,7 @@ Re-engagement sequence starts after 14 days
 - Failed payment notifications
 
 **User Experience**:
-1. User clicks "Join PAID Tier" in Skool
+1. User clicks "Join Premium Tier" in Skool
 2. Redirected to Stripe Checkout (embedded)
 3. Enters payment details
 4. Payment processes
@@ -677,16 +677,16 @@ Re-engagement sequence starts after 14 days
 
 | Integration | Test Scenario | Expected Result | Pass/Fail | Notes |
 |------------|--------------|-----------------|-----------|-------|
-| Skool → Email | New FREE member | Subscriber added, tagged FREE-TIER | | |
-| Skool → Email | Upgrade to PAID | Tag updated to PAID-TIER | | |
-| Skool → Email | Downgrade to FREE | Tag updated to FREE-TIER | | |
+| Skool → Email | New Standard member | Subscriber added, tagged STANDARD-TIER | | |
+| Skool → Email | Upgrade to Premium | Tag updated to PREMIUM-TIER | | |
+| Skool → Email | Downgrade to Standard | Tag updated to STANDARD-TIER | | |
 | Skool → Email | Cancellation | Tag added: CANCELED | | |
 | Gumroad → Email | Purchase guide | Subscriber added, tagged STANDALONE-BUYER | | |
 | Gumroad → User | Purchase guide | PDF delivered via email | | |
 | Email Platform | Welcome Sequence | Email 1 sends immediately | | |
 | Email Platform | Challenge Sequence | Email 1 sends at 6am | | |
 | Email Platform | Conversion Sequence | Email 1 sends after 14 days | | |
-| Skool → Stripe | PAID signup | Payment processes, access granted | | |
+| Skool → Stripe | Premium signup | Payment processes, access granted | | |
 | Skool → Stripe | Failed payment | User notified, access suspended | | |
 | Google Sheets | Make a copy | All formulas work correctly | | |
 | Google Sheets | Apps Script | Month generator creates new sheet | | |
@@ -728,7 +728,7 @@ Re-engagement sequence starts after 14 days
 - [ ] Review Zapier success rate (target: >99%)
 - [ ] Email deliverability rate (target: >98%)
 - [ ] Email open rate (target: >40%)
-- [ ] Conversion rate FREE → PAID (target: >20%)
+- [ ] Conversion rate Standard → Premium (target: >20%)
 - [ ] Payment success rate (target: >95%)
 - [ ] Member growth rate
 
@@ -820,7 +820,7 @@ Re-engagement sequence starts after 14 days
 #### Issue 3: Payment Processing Failing
 
 **Symptoms**:
-- User tries to join PAID tier
+- User tries to join Premium tier
 - Payment fails
 - User not granted access
 

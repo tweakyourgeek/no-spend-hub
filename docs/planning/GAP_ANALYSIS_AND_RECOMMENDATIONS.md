@@ -26,7 +26,7 @@
 
 **Type**: Standalone HTML wayfinding tool
 **Current State**: Polished, accessible, feature-rich
-**Target Audience**: FREE tier users + roadmap for all participants
+**Target Audience**: Standard tier users + roadmap for all participants
 
 #### ✅ Strengths
 - Comprehensive accessibility features (keyboard nav, screen reader, WCAG AA)
@@ -173,13 +173,13 @@
 
 | App Concept | Priority | Value | Effort | Audience | Rationale |
 |-------------|----------|-------|--------|----------|-----------|
-| **30-Day Journal** | 🔴 CRITICAL | Very High | High | PAID tier | Core product experience - this IS the No Spend Challenge |
-| **Pattern Quiz** | 🟠 HIGH | High | Low | FREE tier | Lead magnet + personalization engine |
-| **Comfort Menu Builder** | 🟠 HIGH | High | Medium | PAID tier | Converts worksheet to interactive experience |
-| **No-Spend Day Tracker** | 🟡 MEDIUM | Medium | Low | FREE tier | Gamification + streak building |
+| **30-Day Journal** | 🔴 CRITICAL | Very High | High | Premium tier | Core product experience - this IS the No Spend Challenge |
+| **Pattern Quiz** | 🟠 HIGH | High | Low | Standard tier | Lead magnet + personalization engine |
+| **Comfort Menu Builder** | 🟠 HIGH | High | Medium | Premium tier | Converts worksheet to interactive experience |
+| **No-Spend Day Tracker** | 🟡 MEDIUM | Medium | Low | Standard tier | Gamification + streak building |
 | **Expense Log** | 🟡 MEDIUM | Medium | Medium | All tiers | Converts 10 PDF variations to one app |
-| **Freed-Up Money Planner** | 🟢 LOW | Medium | Medium | PAID tier | Forward-looking tool post-challenge |
-| **C3 Decision Matrix** | 🟢 LOW | Low | Low | FREE tier | Quick decision support tool |
+| **Freed-Up Money Planner** | 🟢 LOW | Medium | Medium | Premium tier | Forward-looking tool post-challenge |
+| **C3 Decision Matrix** | 🟢 LOW | Low | Low | Standard tier | Quick decision support tool |
 
 ---
 
@@ -235,10 +235,10 @@
 
 #### Business Value
 
-**Tier Placement**: PAID tier ($27/month or $30 standalone)
+**Tier Placement**: Premium tier ($27/month or $30 standalone)
 - This is the core product
-- FREE tier gets OLD PLR workbook
-- PAID tier gets this NEW interactive journal
+- Standard tier gets OLD PLR workbook
+- Premium tier gets this NEW interactive journal
 
 **Revenue Impact**:
 - Currently losing ~$37,000 in value (1100+ downloads given free)
@@ -273,7 +273,7 @@
 **Concept**: Interactive quiz to identify user's Chasing patterns
 
 **Why This Exists in the Materials**:
-- Listed as FREE tier supplement in Product Manual
+- Listed as Standard tier supplement in Product Manual
 - Mentioned in lead magnet strategy
 - Pattern Quiz referenced throughout docs
 - Critical for personalization
@@ -312,11 +312,11 @@
 
 #### Business Value
 
-**Tier Placement**: FREE tier (lead magnet)
+**Tier Placement**: Standard tier (lead magnet)
 
 **Conversion Value**:
 - Email capture mechanism
-- Drives to Skool FREE community
+- Drives to Skool Standard community
 - Personalization engine for other apps
 - Social sharing ("I'm a Rainbows + Unicorns spender")
 
@@ -384,7 +384,7 @@
 
 #### Business Value
 
-**Tier Placement**: PAID tier
+**Tier Placement**: Premium tier
 - Converts static worksheet to engaging tool
 - Daily touchpoint (like journal)
 - Builds healthier coping mechanisms
@@ -451,10 +451,10 @@
 
 #### Business Value
 
-**Tier Placement**: FREE tier
+**Tier Placement**: Standard tier
 - Demonstrates value quickly
 - Builds daily habit
-- Drives to PAID tier for full journal
+- Drives to Premium tier for full journal
 
 **Engagement**:
 - Daily touchpoint
@@ -527,12 +527,12 @@
 #### Business Value
 
 **Tier Placement**: All tiers
-- FREE: Basic tracking (Singles Regular)
-- PAID: All 10 variations
+- Standard: Basic tracking (Singles Regular)
+- Premium: All 10 variations
 - VIP: Advanced analytics
 
 **Conversion**:
-- FREE users see value, upgrade for full features
+- Standard users see value, upgrade for full features
 - Tone variations create personality fit
 
 #### Technical Scope
@@ -587,7 +587,7 @@
 
 #### Business Value
 
-**Tier Placement**: PAID tier
+**Tier Placement**: Premium tier
 - Post-challenge retention tool
 - Drives multi-round participation
 
@@ -644,11 +644,11 @@
 
 #### Business Value
 
-**Tier Placement**: FREE tier (gateway tool)
+**Tier Placement**: Standard tier (gateway tool)
 
 **Conversion**:
 - Quick value demonstration
-- Drives to PAID tier for deeper tools
+- Drives to Premium tier for deeper tools
 - Bridges impulse moment to reflection
 
 #### Technical Scope
@@ -778,8 +778,8 @@
 | Voice compliance review for journal | 4-6h | High | 🔴 Critical |
 
 **Deliverables**:
-- Pattern Quiz (FREE tier lead magnet)
-- 30-Day Journal (PAID tier core product)
+- Pattern Quiz (Standard tier lead magnet)
+- 30-Day Journal (Premium tier core product)
 
 **Dependencies**:
 - Journal prompts MUST be written first
@@ -799,8 +799,8 @@
 | Implement milestone triggers | 4-6h | Medium | 🟡 Medium |
 
 **Deliverables**:
-- Comfort Menu Builder (PAID tier)
-- No-Spend Day Tracker (FREE tier)
+- Comfort Menu Builder (Premium tier)
+- No-Spend Day Tracker (Standard tier)
 - Smarter cross-app recommendations
 
 ---
@@ -818,8 +818,8 @@
 
 **Deliverables**:
 - Expense Log (all tiers with variations)
-- Freed-Up Money Planner (PAID tier)
-- C3 Quick Decision tool (FREE tier)
+- Freed-Up Money Planner (Premium tier)
+- C3 Quick Decision tool (Standard tier)
 
 ---
 
@@ -860,7 +860,7 @@ window.noSpend = {
   user: {
     householdType: 'family',
     patterns: ['Rainbows', 'Unicorns'],
-    tier: 'paid', // free, paid, vip
+    tier: 'premium', // standard, premium, vip
     startDate: '2025-01-15',
     journeyDay: 12
   },
@@ -921,7 +921,7 @@ window.noSpend = {
 
 3. **🔴 CRITICAL: Build Pattern Quiz**
    - Fastest path to value
-   - FREE tier lead magnet
+   - Standard tier lead magnet
    - Personalization engine for ecosystem
    - 8-12 hours of development
 
@@ -932,7 +932,7 @@ window.noSpend = {
 
 5. **🟠 HIGH: Build 30-Day Journal app**
    - After prompts are written
-   - Core PAID tier product
+   - Core Premium tier product
    - 40-60 hours of development
    - Highest business value
 

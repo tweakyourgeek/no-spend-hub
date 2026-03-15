@@ -8,7 +8,7 @@ This document provides a strategic implementation timeline for launching the No-
 ## Table of Contents
 1. [Current State Assessment](#current-state-assessment)
 2. [Pre-Launch Phase (Q4 2024 - December 2025)](#pre-launch-phase-q4-2024---december-2025)
-3. [Launch Phase (January 2026)](#launch-phase-january-2026)
+3. [Launch Phase (March 20, 2026)](#launch-phase-january-2026)
 4. [Growth Phase (February-March 2026)](#growth-phase-february-march-2026)
 5. [Optimization Phase (Q2 2026+)](#optimization-phase-q2-2026)
 6. [Critical Path and Dependencies](#critical-path-and-dependencies)
@@ -29,7 +29,7 @@ This document provides a strategic implementation timeline for launching the No-
 - Weekly themes mapped to Lab Loop
 - Business Edition tri-hybrid model designed
 - Spreadsheet pack structure designed (both B2B and B2C)
-- GPT ecosystem planned (17 GPTs)
+- GPT ecosystem planned (7 GPTs)
 - Pricing strategy locked
 - Brand positioning clarified
 
@@ -118,7 +118,7 @@ This document provides a strategic implementation timeline for launching the No-
 **6. Email Sequences**
 - Welcome sequences (5-7 emails each for different entry points)
 - Daily challenge notification emails (30 emails)
-- Conversion sequences (FREE→PAID, PAID→VIP)
+- Conversion sequences (Standard→Premium, Premium→VIP)
 - Nurture campaigns
 - **Owner**: Creator + Copywriter (if hiring)
 - **Dependencies**: Products completed (to reference correctly)
@@ -131,7 +131,7 @@ This document provides a strategic implementation timeline for launching the No-
 
 **7. Skool Community Setup**
 - Create community structure
-- Set up tier access (FREE, PAID, VIP)
+- Set up tier access (Standard, Premium, VIP)
 - Configure payment processing (Stripe integration)
 - Upload placeholder content to all sections
 - Test tier permissions
@@ -209,10 +209,10 @@ This document provides a strategic implementation timeline for launching the No-
 
 ---
 
-## Launch Phase (January 2026)
+## Launch Phase (March 20, 2026)
 
-### Week 1 (January 1-7, 2026)
-**Launch Event**: Skool community goes live + Q1 Challenge (30 Bags in 30 Days)
+### Week 1 (March 20-27, 2026)
+**Launch Event**: Skool community goes live + Q1 Challenge (No-Spend Challenge)
 
 **Day 1 (January 1)**:
 - [ ] Skool community opens to public
@@ -228,24 +228,24 @@ This document provides a strategic implementation timeline for launching the No-
 - [ ] First founding members join
 
 **Days 4-7**:
-- [ ] Q1 Challenge (30 Bags) begins (if starting mid-month)
+- [ ] Q1 Challenge (No-Spend Challenge) begins (if starting mid-month)
 - [ ] Daily posts in Skool
 - [ ] Monitor signups and troubleshoot issues
-- [ ] First conversions from FREE to PAID tier
+- [ ] First conversions from Standard to Premium tier
 - [ ] Celebrate first 20, 50, 100 members
 
 **Success Metrics**:
 - 50+ members by end of Week 1
-- 20% PAID tier conversion
+- 20% Premium tier conversion
 - Email open rate >40%
 - No major technical issues
 
 ---
 
-### Weeks 2-4 (January 8-31, 2026)
+### Weeks 2-4 (March 28 - April 17, 2026)
 
 **Ongoing**:
-- Daily Skool posts for 30 Bags challenge
+- Daily Skool posts for No-Spend Challenge challenge
 - Email notifications to members
 - Community engagement and support
 - Address questions and troubleshooting
@@ -265,7 +265,7 @@ This document provides a strategic implementation timeline for launching the No-
 
 **Success Metrics**:
 - 100-150 members by end of January
-- 30% PAID tier conversion
+- 30% Premium tier conversion
 - 5-10% VIP tier conversions
 - Active daily engagement in community
 
@@ -280,12 +280,12 @@ This document provides a strategic implementation timeline for launching the No-
 - [ ] "Penny Wise Skills Bundle" goes live ($5+)
 - [ ] Budgeting spreadsheet contribution
 - [ ] Bundle-specific landing page and sequence
-- [ ] Continue 30 Bags challenge (runs through early Feb)
+- [ ] Continue No-Spend Challenge challenge (runs through early Feb)
 
 **Week 2-4**:
 - [ ] Bundle traffic arrives
-- [ ] Nurture to FREE Skool tier
-- [ ] Conversion messaging to PAID tier
+- [ ] Nurture to Standard Skool tier
+- [ ] Conversion messaging to Premium tier
 - [ ] Q1 challenge wraps up (late Feb)
 - [ ] Completion badges distributed
 - [ ] Transition period to Q2
@@ -303,12 +303,12 @@ This document provides a strategic implementation timeline for launching the No-
 
 **Week 1-2**:
 - [ ] "Master Your Money Bundle" goes live ($27+)
-- [ ] Premium contribution drives to PAID tier
-- [ ] Direct PAID/VIP tier messaging
+- [ ] Premium contribution drives to Premium tier
+- [ ] Direct Premium/VIP tier messaging
 - [ ] Founding rate increase (members 201+)
 
 **Week 3-4**:
-- [ ] Prepare for Q2 Pantry Challenge (April)
+- [ ] Prepare for Q2 Pantry Challenge (June)
 - [ ] Q1 retrospective and lessons learned
 - [ ] Analyze conversion data
 - [ ] Optimize based on findings
@@ -316,7 +316,7 @@ This document provides a strategic implementation timeline for launching the No-
 
 **Success Metrics**:
 - 500+ members by end of March (Q1 goal)
-- 35% PAID tier conversion rate
+- 35% Premium tier conversion rate
 - 10% VIP tier conversion rate
 - Strong retention (80%+ month 1-2)
 
@@ -330,8 +330,8 @@ This document provides a strategic implementation timeline for launching the No-
 **Q2 Challenge Launch** (April):
 - Pantry Challenge kicks off
 - Focus on "use what you have" (food)
-- FREE tier engagement
-- Conversion to PAID for full system
+- Standard tier engagement
+- Conversion to Premium for full system
 
 **Product Expansion**:
 - Launch supplemental products (Sticker Book, No-Spend Weekend)
@@ -377,7 +377,7 @@ This document provides a strategic implementation timeline for launching the No-
 **Success Metrics (Year 1)**:
 - 750-1000 members
 - $100,000-150,000 revenue
-- 40% PAID tier
+- 40% Premium tier
 - 10% VIP tier
 - 80%+ retention
 
@@ -390,12 +390,12 @@ This document provides a strategic implementation timeline for launching the No-
 2. ✅ Skool community - SET UP
 3. ✅ Email platform - CONFIGURED
 4. ✅ Payment processing - WORKING
-5. ✅ Q1 Challenge materials (30 Bags) - READY
+5. ✅ Q1 Challenge materials (No-Spend Challenge) - READY
 6. ✅ Welcome sequences - WRITTEN AND AUTOMATED
 
 ### Nice-to-Have for Launch (Can launch without, add later)
 - Business Edition (can launch in February)
-- All 17 GPTs (can build throughout year)
+- All 7 GPTs (can build throughout year)
 - Full supplemental product line (phase in)
 - Perfect landing pages (can improve over time)
 - All lead magnets (can add as we go)
@@ -405,7 +405,7 @@ This document provides a strategic implementation timeline for launching the No-
 ### Dependency Chain
 
 **The No-Spend Guide enables**:
-→ Skool PAID tier content
+→ Skool Premium tier content
 → Standalone sales
 → Bundle contributions (credibility)
 
@@ -416,7 +416,7 @@ This document provides a strategic implementation timeline for launching the No-
 
 **Skool community enables**:
 → Quarterly challenges
-→ FREE tier value
+→ Standard tier value
 → Community engagement
 → Conversion opportunities
 
