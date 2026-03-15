@@ -1,5 +1,11 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/coming-soon/index.html" }
-  ]
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD -- src/ public/ api/ package.json vite.config.ts index.html"
 }
