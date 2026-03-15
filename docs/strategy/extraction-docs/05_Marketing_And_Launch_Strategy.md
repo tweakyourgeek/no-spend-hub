@@ -265,13 +265,13 @@ This document extracts all marketing strategies, launch plans, bundle participat
 - Those who want full archives access
 
 **Trigger Events**:
-- "I wish I had a GPT for [specific need]" → "VIP has 17 GPTs"
+- "I wish I had a GPT for [specific need]" → "VIP has all 7 GPTs"
 - "I missed the workshop" → "VIP gets full archives"
 - Asks about live support → "VIP has weekly co-working"
 
 **Messaging**:
 - "You're getting results. VIP gives you the tools to accelerate."
-- "17 GPTs that make decisions easier - only $70 more per month"
+- "All 7 GPTs plus live sessions and archives — upgrade to VIP"
 - "Want me to answer questions live? Join VIP."
 
 ---

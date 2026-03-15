@@ -87,7 +87,7 @@ This file at `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` has:
 ### VIP Features in PricingSection.tsx
 
 The VIP features list was updated to match the strategy doc, but there are items that were removed and may need a decision:
-- **"Full GPT suite"** — removed because GPT tier assignment is TBD. Once assigned, relevant GPT access should be added back to the correct tier's feature list
+- **"Full GPT suite"** — ✅ RESOLVED: GPT tier assignments locked (March 2026). Standard gets Slip Recovery Decision GPT; Premium gets Challenge Coach, Prep & Planning, Budget Buddy, Accountability Partner; VIP gets Content & Resource Reuse + Money Mindset Reset. Relevant GPT access should now be added to each tier's feature list in PricingSection.tsx.
 - **"Couples & Teen Modules"** — removed from VIP. The strategy doc lists these as separate add-ons, not VIP-included. The project plan doesn't mention them at all. Decision needed on whether these are real products and where they live.
 
 ### Premium Features in PricingSection.tsx
@@ -147,14 +147,14 @@ The original working doc referenced `2026_No_Spend_Project_Plan_UPDATED.md`. Thi
 |----------|------|--------|
 | High | `docs/strategy/extraction-docs/03_Pricing_And_Monetization.md` | $27/$97 pricing, "17 GPTs", PAID/VIP tier names |
 | High | `docs/strategy/working/SKOOL_COMMUNITY_STRUCTURE.md` | $27/$97 pricing, FREE/PAID tier names, 6-section structure (now 7) |
-| Medium | `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` | Likely references 17 GPTs (now 7) |
+| ~~Medium~~ | ~~`docs/strategy/extraction-docs/09_GPT_Ecosystem.md`~~ | ✅ Updated — 7 GPTs with locked tier assignments |
 | Low | `project-archive/artifacts/conv11-quarterly-challenge-calendar.md` | 30 Bags as Q1, Pantry as April-May |
 
 ### Decisions Still Needed
 
 | Item | Status |
 |------|--------|
-| GPT tier assignments (7 GPTs) | Pending |
+| GPT tier assignments (7 GPTs) | ✅ Locked — 1 Standard, 4 Premium, 2 VIP |
 | Couples/Teens/Pets Modules — real products? Where do they live? | Pending |
 | Founding member escalation mechanics | Undocumented in current docs |
 | Weekly content calendar (Monday/Wednesday/Friday threads) | Exists in working doc, not in strategy doc |
@@ -175,7 +175,7 @@ Grouped by purpose — these are the files needed to reconcile the remaining dis
 
 3. `docs/strategy/extraction-docs/02_Challenge_Structure.md` — cross-referenced by the strategy doc
 4. `docs/strategy/extraction-docs/05_Marketing_And_Launch_Strategy.md` — cross-referenced for bundle strategy
-5. `docs/strategy/extraction-docs/09_GPT_Ecosystem.md` — likely stale (17 GPTs vs current 7), needs update
+5. ~~`docs/strategy/extraction-docs/09_GPT_Ecosystem.md`~~ — ✅ Updated with 7 GPTs and locked tier assignments
 
 ### Nice-to-Have: Artifacts with Relevant Detail
 

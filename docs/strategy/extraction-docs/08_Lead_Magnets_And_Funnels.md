@@ -394,9 +394,9 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 **Funnel Flow**:
 1. **Existing Premium member** ($27/mo)
-2. **Experiences GPT envy**: Sees VIP members using GPTs, sharing results
-3. **Hits decision fatigue**: "I wish I had help deciding if this is worth buying"
-4. **Upgrade offer**: "VIP has 7 GPTs that make decisions easier"
+2. **Experiences GPT envy**: Sees VIP members sharing Content Reuse and Money Mindset GPT outputs
+3. **Hits decision fatigue**: "I wish I had help seeing what I already own"
+4. **Upgrade offer**: "VIP unlocks 2 additional GPTs plus live sessions and archives"
 5. **Convert**: Upgrades to $97/mo
 
 **VIP Conversion Triggers**:
@@ -407,7 +407,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - Business owner with GPT budget
 
 **Upgrade Messaging**:
-- "7 GPTs for $70 more per month"
+- "Unlock the full 7-GPT suite plus live sessions"
 - "You're getting results. VIP accelerates them."
 - "Live support + AI tools = VIP"
 

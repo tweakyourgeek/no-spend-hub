@@ -12,7 +12,7 @@
 - [ ] Skool Community live and functional
 - [ ] FREE tier accessible with Q1 Challenge (30 Bags in 30 Days)
 - [ ] PAID tier ($27/mo) available with full No-Spend Guide
-- [ ] VIP tier ($97/mo) available with at least 5-7 core GPTs
+- [ ] VIP tier ($99/year) available with all 7 GPTs (1 Standard, 4 Premium, 2 VIP-exclusive)
 - [ ] Landing pages live for community signup
 - [ ] Email automation running
 - [ ] 50-100 founding members joined
