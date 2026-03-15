@@ -24,7 +24,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 2. Demonstrate value before asking for purchase
 3. Segment audience (B2C vs B2B)
 4. Warm up cold traffic
-5. Drive to Skool FREE tier
+5. Drive to Skool Standard tier
 
 **What Makes a Good Lead Magnet**:
 - Immediately actionable
@@ -36,7 +36,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 **Free vs Lead Magnet vs Paid**:
 - **Free** (no opt-in): Quarterly challenges, blog posts, social content
 - **Lead Magnet** (email required): Spreadsheets, templates, quizzes
-- **Paid**: The No-Spend Guide, full courses, VIP tier
+- **Premium**: The No-Spend Guide, full courses, VIP tier
 
 ---
 
@@ -65,12 +65,12 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 2. Email 1 (Day 0): Welcome + how to set up
 3. Email 2 (Day 2): Tips for using cash envelopes digitally
 4. Email 3 (Day 5): Common mistakes to avoid
-5. Email 4 (Day 7): "Want more? Join FREE Skool community"
+5. Email 4 (Day 7): "Want more? Join Standard Skool community"
 6. Email 5 (Day 10): No-Spend Challenge invitation
 
-**Conversion Goal**: FREE Skool tier → Eventually PAID tier
+**Conversion Goal**: Standard Skool tier → Eventually Premium tier
 
-**Bundle Use**: January 2026 "Kickoff Bundle" (Griffin) - FREE bundle
+**Bundle Use**: March 20, 2026 "Kickoff Bundle" (Griffin) - free bundle
 
 ---
 
@@ -131,7 +131,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 4. Email: "Comfort menu in action - real examples"
 5. Email: "Want daily support? Join the challenge"
 
-**Conversion Goal**: $30 guide or FREE Skool tier
+**Conversion Goal**: $30 guide or Standard Skool tier
 
 ---
 
@@ -193,14 +193,14 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - Introduce 30-Day Business No-Spend Challenge
 - Special offer for template buyers
 
-**Email 4 (Day 8): FREE Skool Community Invite**
+**Email 4 (Day 8): Standard Skool Community Invite**
 - "Join the Business Central community"
-- FREE tier access
+- Standard tier access
 - Quarterly challenges
 - Other business owners like you
-- CTA: Join FREE Skool
+- CTA: Join Standard Skool
 
-**Conversion Goal**: FREE Skool → $27/mo PAID tier (Business Edition)
+**Conversion Goal**: Standard Skool → $27/mo Premium tier (Business Edition)
 
 ---
 
@@ -265,8 +265,8 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - No hard sell, just awareness
 
 **Email 5 (Day 9-10): Community Invitation**
-- "Join the FREE Skool community"
-- What they get in FREE tier
+- "Join the Standard Skool community"
+- What they get in Standard tier
 - Success stories from members
 - Low-friction CTA
 
@@ -286,12 +286,12 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 
 ### Challenge-Specific Sequences
 
-**30 Bags in 30 Days (Q1 Free Challenge)**
+**No-Spend Challenge (Q1 Free Challenge)**
 **Source**: File 15
 
 **Pre-Challenge (1 week before)**:
 - Email 1: "Challenge starts next week - are you in?"
-- Email 2: "How to prepare for 30 Bags"
+- Email 2: "How to prepare for No-Spend Challenge"
 - Email 3: "What counts as a bag?"
 - Email 4: "Join the Skool community for daily support"
 
@@ -304,9 +304,9 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 **Post-Challenge**:
 - Email 1: "You did it! What did you learn?"
 - Email 2: "Want to keep the momentum? Join the No-Spend Challenge"
-- Email 3: "Special offer for 30 Bags graduates"
+- Email 3: "Special offer for No-Spend Challenge graduates"
 
-**Conversion Goal**: FREE challenge → $30 guide or $27/mo Skool
+**Conversion Goal**: free challenge → $30 guide or $27/mo Skool
 
 ---
 
@@ -319,20 +319,20 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 1. **Acquire**: User downloads bundle (Jan-Mar 2026)
 2. **Welcome**: Delivery email with Skool community mention
 3. **Nurture**: 5-7 email sequence (see above)
-4. **Invite**: "Join FREE Skool community" (Email 5)
-5. **Activate**: User joins FREE tier, experiences quarterly challenge
-6. **Convert**: Upgrade to PAID tier ($27 or $97/mo)
+4. **Invite**: "Join Standard Skool community" (Email 5)
+5. **Activate**: User joins Standard tier, experiences quarterly challenge
+6. **Convert**: Upgrade to Premium tier ($27 or $97/mo)
 
 **Key Touchpoints**:
 - Bundle delivery mentions Skool (soft)
 - Email 3-4 introduces Skool value (medium)
-- Email 5 strong CTA to join FREE tier (hard)
+- Email 5 strong CTA to join Standard tier (hard)
 - In Skool: Experience value, hit limitations, upgrade
 
 **Conversion Metrics**:
 - Bundle downloads → Email opens: 40-50%
 - Email opens → Skool signups: 10-15%
-- FREE tier → PAID tier: 20-30% (over 90 days)
+- Standard tier → Premium tier: 20-30% (over 90 days)
 
 ---
 
@@ -343,9 +343,9 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 1. **Acquire**: User lands on sales page (ads, SEO, social, bundles)
 2. **Educate**: Sales page explains guide, framework, value
 3. **Convert**: User purchases $30 standalone guide
-4. **Deliver**: Welcome email + download link + "Join FREE Skool"
+4. **Deliver**: Welcome email + download link + "Join Standard Skool"
 5. **Upsell**: Email sequence promoting $27/mo for ongoing support
-6. **Retain**: User joins Skool (FREE or PAID)
+6. **Retain**: User joins Skool (Standard or Premium)
 
 **Sales Page Elements**:
 - Hero: "30 days to understand your spending patterns"
@@ -358,19 +358,19 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - CTA: "Get the guide for $30" (or $15 with NOSPEND50)
 
 **Post-Purchase Sequence**:
-- Email 1: Delivery + "Join FREE Skool for support"
+- Email 1: Delivery + "Join Standard Skool for support"
 - Email 2: "How to use the guide (quick start)"
 - Email 3: "Common challenges and how to handle them"
 - Email 4: "Want live support? Upgrade to $27/mo"
 
 ---
 
-### Skool FREE → PAID Funnel
+### Skool Standard → Premium Funnel
 **Source**: Files 5, 15
 
 **Funnel Flow**:
-1. **Join FREE**: User joins FREE tier (via bundle, landing page, etc.)
-2. **Engage**: Participates in quarterly challenge (30 Bags, Pantry, etc.)
+1. **Join Standard**: User joins Standard tier (via bundle, landing page, etc.)
+2. **Engage**: Participates in quarterly challenge (No-Spend Challenge, Pantry, etc.)
 3. **Experience Value**: Completes challenge, sees results, wants more
 4. **Hit Limitation**: Wants full guide, premium templates, deeper support
 5. **Upgrade Offer**: Strategic moment messaging
@@ -379,24 +379,24 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 **Strategic Upgrade Moments**:
 - Day 7 of challenge: "Want the full system? Upgrade"
 - Challenge completion: "Loved this? Get the guide for your next round"
-- When asking questions: "That's in the full guide (PAID tier)"
-- Quarterly transition: "Q2 starts soon - join PAID for complete access"
+- When asking questions: "That's in the full guide (Premium tier)"
+- Quarterly transition: "Q2 starts soon - join Premium for complete access"
 
 **Upgrade Messaging**:
 - "You've proven this works. Invest in the full system."
-- "FREE tier tests. PAID tier transforms."
+- "Standard tier tests. Premium tier transforms."
 - "The guide has the framework you're missing."
 
 ---
 
-### Skool PAID → VIP Funnel
+### Skool Premium → VIP Funnel
 **Source**: Files 3, 5
 
 **Funnel Flow**:
-1. **Existing PAID member** ($27/mo)
+1. **Existing Premium member** ($27/mo)
 2. **Experiences GPT envy**: Sees VIP members using GPTs, sharing results
 3. **Hits decision fatigue**: "I wish I had help deciding if this is worth buying"
-4. **Upgrade offer**: "VIP has 17 GPTs that make decisions easier"
+4. **Upgrade offer**: "VIP has 7 GPTs that make decisions easier"
 5. **Convert**: Upgrades to $97/mo
 
 **VIP Conversion Triggers**:
@@ -407,7 +407,7 @@ This document extracts all lead magnet strategies, email funnels, nurture sequen
 - Business owner with GPT budget
 
 **Upgrade Messaging**:
-- "17 GPTs for $70 more per month"
+- "7 GPTs for $70 more per month"
 - "You're getting results. VIP accelerates them."
 - "Live support + AI tools = VIP"
 

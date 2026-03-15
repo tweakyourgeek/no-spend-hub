@@ -24,7 +24,7 @@ This document extracts all systems and methods for delivering daily content, cha
 - All challenge content lives here
 - Classroom posts with structured sections
 - Community engagement and support
-- Tiered access (FREE, PAID, VIP)
+- Tiered access (Standard, Premium, VIP)
 
 **2. Email** (notification and nurture)
 - Daily notifications driving to Skool
@@ -207,8 +207,8 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 - Can pause/unpause sequence if user misses days
 
 **Segmentation**:
-- FREE tier: Gets notifications for quarterly challenges only
-- PAID tier: Gets notifications for all challenges
+- Standard tier: Gets notifications for quarterly challenges only
+- Premium tier: Gets notifications for all challenges
 - VIP tier: Gets notifications + exclusive content
 - Non-members: Gets nurture emails inviting them to join
 
@@ -239,15 +239,15 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 
 ### Content Delivery by Tier
 
-**FREE Tier Gets**:
-- Quarterly challenge posts (30 Bags, Pantry, No-Spend, Holiday)
+**Standard Tier Gets**:
+- Quarterly challenge posts (No-Spend Challenge, Pantry, No-Spend, Holiday)
 - Basic worksheets (PDF)
 - Community access (limited sections)
 - Email notifications during active challenges
 - Completion badges
 
-**PAID Tier Gets** ($27/mo):
-- Everything FREE tier has, plus:
+**Premium Tier Gets** ($27/mo):
+- Everything Standard tier has, plus:
 - All daily prompts (full No-Spend Guide content)
 - Premium templates and worksheets
 - Current month's workshops
@@ -256,8 +256,8 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 - Email notifications for all challenges
 
 **VIP Tier Gets** ($97/mo):
-- Everything PAID tier has, plus:
-- Access to all 17 GPTs
+- Everything Premium tier has, plus:
+- Access to all 7 GPTs
 - Live co-working sessions (weekly)
 - VIP workshops (monthly)
 - Full archives (past challenges)
@@ -284,7 +284,7 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 **For Standalone Guide Buyers**:
 1. Purchase and download guide (PDF)
 2. Self-directed through 30 days
-3. Optional: Join FREE Skool for community support
+3. Optional: Join Standard Skool for community support
 4. Use guide for prompts and tracking
 5. No daily emails (unless they opt in)
 
@@ -301,7 +301,7 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 
 **Delivery Model**: Skool-based with email support
 
-**Q1: 30 Bags in 30 Days (Feb-Mar)**
+**Q1: No-Spend Challenge (April 1)**
 
 **Pre-Challenge**:
 - Email: "Challenge starts next week - join Skool"
@@ -319,7 +319,7 @@ P.S. Spent yesterday? That's data, not failure. Record it and keep going.
 - Reflection thread in Skool
 - Conversion email: "Loved this? Try the No-Spend Challenge"
 
-**Materials Provided (FREE tier)**:
+**Materials Provided (Standard tier)**:
 - Basic tracking worksheet (PDF)
 - Daily prompts in Skool
 - Weekly check-in threads

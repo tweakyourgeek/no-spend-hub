@@ -24,7 +24,7 @@ This document tracks the complete evolution of the No-Spend Challenge from PLR d
 **Late 2024**: Business edition conceptualization
 **December 2024**: Critical framework shift identified
 **December 2024-Present**: Complete rewrite underway
-**January 2026**: Planned launch
+**March 20, 2026**: Planned launch
 
 ---
 
@@ -65,13 +65,13 @@ This document tracks the complete evolution of the No-Spend Challenge from PLR d
 **What Happened**:
 - Decided to build community around no-spend challenge
 - Chose Skool over Facebook Groups
-- Designed 3-tier access model (FREE, $27/mo, $97/mo)
+- Designed 3-tier access model (Standard, $27/mo, $97/mo)
 - Planned daily content delivery system
 
 **Key Decisions**:
 1. **Platform**: Skool (not Facebook) for better organization and tiering
 2. **Content Location**: Classroom posts with email notifications (not email-based)
-3. **Free Tier Strategy**: Give away PLR version, upsell to premium
+3. **Standard Tier Strategy**: Give away PLR version, upsell to premium
 
 **Content Delivery Evolution**:
 - Initial: Post daily in Facebook group
@@ -229,11 +229,11 @@ Section 5: Integration & Your Next Cycle (Reflection phase completion)
 **Major Change**: Move challenges from paid products to FREE quarterly community events
 
 **Before**:
-- 30 Bags in 30 Days: $9-14 standalone
+- No-Spend Challenge: $9-14 standalone
 - Other micro-challenges: Individual paid products
 
 **After**:
-- Quarterly challenges: FREE (Q1: 30 Bags, Q2: Pantry, Q3: No-Spend, Q4: Holiday)
+- Quarterly challenges: free (Q1: No-Spend Challenge, Q2: Pantry, Q3: No-Spend, Q4: Holiday)
 - Drives Skool community engagement
 - Creates year-round conversion opportunities
 
@@ -245,12 +245,12 @@ Section 5: Integration & Your Next Cycle (Reflection phase completion)
 **Before**:
 - Given away in bundles (1100+ copies)
 - Used as lead magnet
-- Free tier of Skool gets guide
+- Standard tier of Skool gets guide
 
 **After**:
 - Guide is PREMIUM ONLY
 - $27/mo Skool tier OR $30 standalone
-- Free tier gets challenges + worksheets only
+- Standard tier gets challenges + worksheets only
 - 50% discount code available: NOSPEND50
 
 **Rationale**: $37,000 worth of value given away wasn't converting. Free community + challenges is substantial free value. Guide deserves premium pricing.
@@ -341,8 +341,8 @@ Section 5: Integration & Your Next Cycle (Reflection phase completion)
 
 **1. Three-Tier Skool Model**
 **When**: Mid 2024
-**Rationale**: Maximize accessibility (free tier) while creating upgrade paths
-**Tiers**: FREE, $27/mo, $97/mo
+**Rationale**: Maximize accessibility (Standard tier) while creating upgrade paths
+**Tiers**: Standard, $27/mo, $97/mo
 **Impact**: Community structure, product gating
 
 **2. Founding Member Pricing**

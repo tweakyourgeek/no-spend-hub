@@ -33,7 +33,7 @@ This document extracts all product architecture, tier structure, deliverables, p
 - Based on PLR content that was rewritten/adapted
 - For personal and household spending
 - Lower price point
-- Used as FREE tier offering in some models
+- Used as Standard tier offering in some models
 
 **Quote from File 16**:
 > "The current 30-Day No Spend Challenge Journal explicitly states it's for personal and professional use ('for you and your clients'). Some prompts and examples naturally overlap with business realities (subscriptions, tools, planning, etc.), but they're framed generically."
@@ -208,7 +208,7 @@ Created 10 different expense log versions to accommodate different households:
 - Printable wall tracker
 - Wallet cards
 
-**SUPPLEMENTAL FREE (19 items)**:
+**SUPPLEMENTAL STANDARD (19 items)**:
 - Pattern quiz
 - Cheat sheet
 - 5 free activities
@@ -223,14 +223,14 @@ Created 10 different expense log versions to accommodate different households:
 - Monthly check-in prompts
 - Seasonal tips
 
-**SUPPLEMENTAL PAID**:
+**SUPPLEMENTAL PREMIUM**:
 - **Immediate (with launch)**:
   - Spreadsheet Pack: $7-17 (see below)
   - Bundles: Starter $19-24, Complete $29-39
 
 - **Phase 2 (within 2 weeks)**:
   - Sticker Book: $5-8
-  - ~~30 Bags in 30 Days: $9-14~~ **CHANGED TO FREE** (see below)
+  - ~~No-Spend Challenge: $9-14~~ **CHANGED TO FREE** (see below)
 
 - **Phase 3 (30-60 days)**:
   - No-Spend Weekend: $5-7
@@ -246,16 +246,16 @@ Created 10 different expense log versions to accommodate different households:
   - **Year Bundle**: $47-67 (entire ecosystem)
 
 **Quarterly Challenge Calendar** (File 15):
-**30 Bags in 30 Days** and other challenges moved to **FREE quarterly community events**:
+**No-Spend Challenge** and other challenges moved to **free quarterly community events**:
 
 | Quarter | Challenge              | Timing         | Theme                    |
 |---------|------------------------|----------------|--------------------------|
-| **Q1**  | 30 Bags in 30 Days     | Lent (Feb-Mar) | Clear the clutter        |
-| **Q2**  | Pantry Challenge       | April-May      | Use what you have (food) |
+| **Q1**  | No-Spend Challenge     | April 1        | Clear the clutter        |
+| **Q2**  | Pantry Challenge       | June-July      | Use what you have (food) |
 | **Q3**  | No-Spend Group Round   | Aug-Sept       | Pre-holiday reset        |
 | **Q4**  | Holiday Spending Reset | Nov-Dec        | Intentional holidays     |
 
-**What free tier gets**:
+**What Standard tier gets**:
 - Worksheet PDF (basic tracker, prompts, completion page)
 - Daily prompts in Skool
 - Weekly check-in threads
@@ -359,7 +359,7 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
   6.1-6.4 Tab references and workflow guidance
 ```
 
-**Component 3: Spreadsheet Pack (Google Sheets - PAID Add-On)**
+**Component 3: Spreadsheet Pack (Google Sheets - Premium Add-On)**
 - **Job**: Execution, prevention, enforcement
 - **Positioning**: Optional, supplemental, NOT free
 - **Justification**: "Infrastructure" not insight
@@ -402,7 +402,7 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
 **Source**: Files 1, 2, 3, 4, 7
 **Platform**: Skool (formerly called "The No Spend Collective")
 
-### FREE Tier
+### Standard Tier
 **Source**: ChatGPT Files 1-4 + Claude Files 3, 5
 **Access Includes**:
 - 30-Day No Spend Roadmap (HTML version - the existing index.html product)
@@ -414,13 +414,13 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
 **Quote from ChatGPT File 4**:
 > "The free version has the roadmap, they have that PLR workbook that I rewrote but it's not as good as what I'm going to create, and they get daily emails."
 
-### PAID Tier ($27/month)
+### Premium Tier ($27/month)
 **Source**: Claude Files 3, 5
 **Price Point**: $27/month (founding rate - increases $2 every 100 members)
-**Launch**: January 2026
+**Launch**: March 20, 2026
 
 **Access Includes**:
-- Everything in FREE tier
+- Everything in Standard tier
 - 30-Day No-Spend Journal (personal AND business versions)
 - Premium templates
 - Current month's workshops
@@ -429,7 +429,7 @@ Section 6 – Spreadsheet Tie-ins (If You Purchased the Pack)
 - Additional support/engagement
 - Deeper Skool community access
 
-**Upgrade Path**: FREE users can upgrade to PAID to access better materials
+**Upgrade Path**: Standard users can upgrade to Premium to access better materials
 
 ### Premium/VIP Tier ($97/month)
 **Source**: Claude Files 3, 5
@@ -583,7 +583,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Breathing room (proper spacing)
 - Visual hierarchy (bigger titles, section headers in accent colors)
 
-**Note from ChatGPT File 16**: Spreadsheets are PAID add-on for Business Edition to prevent:
+**Note from ChatGPT File 16**: Spreadsheets are Premium add-on for Business Edition to prevent:
 - Overwhelm
 - Wrong entry point (some freeze at spreadsheets)
 - Undervaluing of infrastructure work
@@ -806,12 +806,12 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 **Pricing Tiers Discussed**:
 
-1. **FREE Version**
+1. **Standard Version**
    - Roadmap only
    - PLR workbook
    - Basic community access
 
-2. **Paid Access**
+2. **Premium Access**
    - $27/month (Skool membership)
    - OR $30 standalone for 30-Day No-Spend Workbook
    - OR $37-47 one-time for complete bundle
@@ -828,8 +828,8 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 **New Policy**:
 - Journal is now PREMIUM ONLY
-- Available in paid Skool tier ($27/mo+) OR $30 standalone
-- Free tier gets challenges and worksheets only, NOT full journal
+- Available in Premium Skool tier ($27/mo+) OR $30 standalone
+- Standard tier gets challenges and worksheets only, NOT full journal
 - 50% discount code available: `NOSPEND50` (brings $30 to $15)
 
 **Quote from Claude File 5**:
@@ -875,9 +875,9 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - **Gateway GPT Strategy**: Include 1 GPT (Subscription Audit) to:
   - Make spreadsheets immediately actionable
   - Create quick wins (people see results in first hour)
-  - Show power of GPT ecosystem without giving away all 17
+  - Show power of GPT ecosystem without giving away all 7
   - Leave users wanting MORE GPTs
-  - Not cannibalize Premium tier (17 GPTs still exclusive)
+  - Not cannibalize Premium tier (7 GPTs still exclusive)
 
 **Upsell Path** (Claude File 7):
 1. **Bundle** ($47) → Shows them how powerful GPTs are
@@ -941,7 +941,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Email 1 (Day 2): Getting started tips
 - Email 2 (Day 4): Monthly Bookkeeping Checklist bonus
 - Email 3 (Day 6): Business Central Hub callout + 30-Day No-Spend Challenge
-- Email 4 (Day 8): FREE Skool community invite
+- Email 4 (Day 8): Standard Skool community invite
 
 **Related Products**:
 - Monthly Bookkeeping Checklist & Review Worksheet
@@ -1034,7 +1034,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Content-From-What-You-Have GPT (repurpose existing content)
 - Digital Declutter GPT (subscription audit and cancellation)
 
-**Note**: Total changed from 18 to 17 GPTs (final locked count from Claude File 10)
+**Note**: Total changed from 18 to 7 GPTs (final locked count from Claude File 10)
 
 ### Frameworks & Educational Content
 
@@ -1076,8 +1076,8 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 **Type**: Skool community
 **Purpose**: PLR repurposing and usage support
 **Pricing**:
-- FREE: Community access + challenges
-- $5/mo: FREE PLUS Business Lab & SchoolhouseBot
+- Standard: Community access + challenges
+- $5/mo: Standard PLUS Business Lab & SchoolhouseBot
 - $27/mo: Above PLUS monthly content with funnel, VIP Group Zooms, Archives
 
 **Features**:
@@ -1095,23 +1095,23 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 **Purpose**: Drive traffic to Skool community through strategic bundle participation
 **Timeline**: January - March 2026
 
-**Bundle 1: January 2026 - "Kickoff Bundle" (Griffin)**
+**Bundle 1: March 20, 2026 - "Kickoff Bundle" (Griffin)**
 - Product: My Cash Envelope System (B2C)
 - Type: Google Sheets template
-- Purpose: FREE lead magnet
-- Drives to: Skool FREE tier
+- Purpose: Free lead magnet
+- Drives to: Skool Standard tier
 
 **Bundle 2: February 2026 - "Penny Wise Skills Bundle"**
 - Product: Budgeting spreadsheet (not Cash Envelope - already used)
 - Price tier: $5+ minimum
 - Purpose: Volume lead generation
-- Drives to: Skool FREE tier with upgrade path
+- Drives to: Skool Standard tier with upgrade path
 
 **Bundle 3: March 2026 - "Master Your Money Bundle"**
 - Product: Money-related spreadsheet
 - Price tier: $27+ minimum
 - Purpose: Higher quality audience, authority building
-- Drives to: Skool PAID tier ($27/mo or $97/mo)
+- Drives to: Skool Premium tier ($27/mo or $97/mo)
 - Categories: Money Mindset, Budgeting, Debt, Earning/Side Hustles, Planning Ahead
 
 **Bundle 4: [TBD]**
@@ -1121,7 +1121,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Each bundle contribution needs explicit CTA to Skool community
 - Bundle-specific discount codes or special access offers
 - Need tracking tags to identify which bundle drove each signup
-- Skool community must be ready by January 2026 to receive bundle traffic
+- Skool community must be ready by March 20, 2026 to receive bundle traffic
 
 ### Product Ecosystem Integration
 **Source**: ChatGPT Files 2, 3, 5, 7 + Claude Files 9
@@ -1167,8 +1167,8 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 **Source**: Files 3, 4, 7
 
 - Decided to host in Skool vs Facebook
-- Created FREE tier with PLR version
-- Developed PAID tier with enhanced materials
+- Created Standard tier with PLR version
+- Developed Premium tier with enhanced materials
 - Designed daily delivery system
 
 ### Phase 3: Business Edition Conceptualization
@@ -1228,12 +1228,12 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 - Easy to print if wanted
 - Lowers barrier to starting
 
-### 4. FREE vs PAID Tier Differentiation
-**Decision**: FREE gets PLR version, PAID gets new quality version
+### 4. Standard vs Premium Tier Differentiation
+**Decision**: Standard gets PLR version, Premium gets new quality version
 **Rationale**:
 - Rewards paying members with better quality
 - Provides upgrade path
-- FREE tier drives awareness
+- Standard tier drives awareness
 - Maintains value perception
 
 ### 5. Standalone Business Edition (File 16)
