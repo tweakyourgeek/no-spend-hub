@@ -750,8 +750,12 @@
       }
       emailInput.disabled = true;
       try {
-        // TODO: Wire up to Mailerlite API (same as bottom form)
-        await new Promise(r => setTimeout(r, 700)); // remove when live
+        const resp = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+        if (!resp.ok) throw new Error('Subscription failed');
         emailInput.closest('.form-row').style.display = 'none';
         successMsg.classList.add('visible');
       } catch (err) {
@@ -773,13 +777,12 @@
       btn.disabled = true;
       btn.textContent = 'Sending...';
       try {
-        // TODO: Replace with Mailerlite API call via serverless function
-        // await fetch('/api/subscribe', {
-        //   method: 'POST',
-        //   headers: { 'Content-Type': 'application/json' },
-        //   body: JSON.stringify({ email })
-        // });
-        await new Promise(r => setTimeout(r, 700)); // remove when live
+        const resp = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+        if (!resp.ok) throw new Error('Subscription failed');
         document.querySelector('.form-row').style.display = 'none';
         successMsg.classList.add('visible');
       } catch (err) {

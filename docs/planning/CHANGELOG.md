@@ -4,6 +4,81 @@ All notable changes to the No Spend Challenge Apps will be documented in this fi
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.0-beta.1] - 2026-03-15
+
+### Added
+- **Beta Release Preparation**
+  - Wire MailerLite email subscription to coming-soon page forms (both top and bottom)
+  - Create `.env.example` documenting required environment variables
+  - Create `CLAUDE.md` project instructions for Claude Code
+  - Add comprehensive test suite for challenge-data module (18 tests)
+    - Constants validation (prompts, encouragements, patterns, categories)
+    - Challenge lifecycle (start, get, save entries)
+    - Financial calculations (streaks, no-spend days, freed-up money, pattern tracking)
+
+### Changed
+- **Version bump** from 0.0.0 to 1.0.0-beta.1
+- **Updated documentation** — Changelog, Roadmap, and Deployment docs brought current
+
+---
+
+## [0.9.0] - 2026-03-14
+
+### Added
+- **Repo Audit** — Comprehensive REPO-AUDIT.md documenting all 23 deployable units
+- **Removed Lovable scaffold** — Tagger plugin, meta tags, boilerplate README cleaned out
+
+## [0.8.0] - 2026-03-11 – 2026-03-13
+
+### Added
+- **Content & Strategy**
+  - Complete No-Spend Guide compiled from all conversation sources
+  - Skool community strategy discrepancy report and confirmed decisions
+  - Developmental edit: cut bloat, fix tone, restructure for engagement
+  - Project archive: 206+ items indexed across 46 conversations with artifact extraction
+
+### Changed
+- **Coming-soon page** — New title, March 20 launch date, tier pricing, top email form added
+- **Stale strategy docs** updated with confirmed Skool decisions
+
+## [0.7.0] - 2026-03-08 – 2026-03-10
+
+### Added
+- **Coming-soon landing page** — Countdown timer, Skool CTA, feature cards, animated design
+- **7-day tracker component** added to Home view
+- **Vercel serverless function** (`api/subscribe.js`) for MailerLite email signup
+
+### Fixed
+- Fix `/api/subscribe` 404 by restructuring serverless function placement
+- Remove misplaced `subscribe.cjs` from wrong directory
+
+## [0.6.0] - 2026-03-01 – 2026-03-07
+
+### Added
+- **Migration**: 22 standalone apps migrated from `nospend-apps` repo into `src/features/`
+- **Migration**: `nospend` repo content migrated into `docs/`
+- **Archived repos** documented in `ARCHIVED_REPOS.md`
+
+### Changed
+- Vercel rewrite: `/` now serves `coming-soon/index.html`
+
+## [0.5.0] - 2026-02-01 – 2026-02-28
+
+### Added
+- **Main React app** — MVP scaffold with landing page + app dashboard
+- **Design system** — Brand colors, fonts, shadcn/ui components, Tailwind CSS
+- **Challenge data layer** — localStorage-based persistence (`challenge-data.ts`)
+- **Nav updates** — How It Works, The Lab, Join Free, Login links
+- **Email opt-in section** on landing page
+
+### Fixed
+- WCAG AA contrast failures across all color combinations
+- Mobile responsiveness: hamburger menu, 16px min fonts, 44px touch targets
+- Pricing tiers, feature lists, founding member note, font mapping
+- Dark mode updated to near-black
+
+---
+
 ## [1.2.0] - 2024-12-31
 
 ### Added
