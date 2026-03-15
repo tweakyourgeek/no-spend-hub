@@ -882,7 +882,7 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 **Upsell Path** (Claude File 7):
 1. **Bundle** ($47) → Shows them how powerful GPTs are
 2. **Free Challenge** → They use spreadsheets + 1 GPT and love it
-3. **Premium Tier** → "Get 17 MORE GPTs to support your journey!" (templates + remaining GPTs)
+3. **Premium Tier** → 4 GPTs + templates (Challenge Coach, Prep & Planning, Budget Buddy, Accountability Partner)
 4. **VIP Tier** → Everything + lives for accountability
 
 **Positioning**: Premium product, NOT low-ticket
@@ -995,35 +995,24 @@ Created complete spreadsheet packs in BOTH versions with different sample data:
 
 ### Technology Tools
 
-#### Custom GPTs (17 total)
-**Source**: Claude Files 3, 5, 10
-**Access**: VIP tier ($97/month) only
-**Purpose**: AI-powered business and financial tools
+#### Custom GPTs (7 built — tier assignments locked)
+**Source**: Claude Files 3, 5, 10; tier assignments finalized March 2026
+**Purpose**: AI-powered challenge support and financial tools
 
-**A. Core Challenge Companion GPTs (9):**
-1. No Spend Challenge Coach
-2. No Spend Prep & Planning Assistant
-3. Spending Trigger Decoder
-4. No-Spend Meal Planner
-5. Paycheck & Budget Buddy
-6. Use-What-You-Have Activity Generator
-7. Accountability Partner GPT
-8. Post-Challenge Habit Builder
-9. Mindful Money Mindset Reset GPT
+**Standard Tier (1 GPT):**
+1. Slip Recovery Decision GPT
 
-**B. Anti-FOMO / Anti-Impulse GPTs (3):**
-10. Decision Matrix GPT
-11. Marketing Decoder GPT
-12. Talk Me Out of This Purchase GPT
+**Premium Tier (4 GPTs):**
+2. No Spend Challenge Coach
+3. No Spend Prep & Planning Assistant
+4. Paycheck & Budget Buddy
+5. Accountability Partner GPT
 
-**C. Crossover GPTs (3):**
-13. Digital Declutter GPT
-14. PLR Hoard Reduction GPT
-15. Content-From-What-You-Have GPT
+**VIP Tier (2 GPTs):**
+6. Content & Resource Reuse GPT
+7. Mindful Money Mindset Reset GPT
 
-**D. Optional Ecosystem-Level GPTs (2):**
-16. Workshop / Challenge Selector GPT
-17. Resource Locker Finder GPT
+See **09_GPT_Ecosystem.md** for full descriptions, boundaries, and the original 17-GPT concept.
 
 **High Standalone Potential** (Claude File 10 analysis):
 - Marketing Decoder GPT (analyze bundle offers, detect manipulation tactics)

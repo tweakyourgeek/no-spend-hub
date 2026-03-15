@@ -190,13 +190,12 @@
 - [VIP tier gets full archives]
 
 #### 🌟 VIP TIER RESOURCES (VIP only)
-**Sub-folder: GPT Ecosystem**
-- How to Use the 17 GPTs (guide)
-- GPT #1: No Spend Challenge Coach (link + instructions)
-- GPT #2: No Spend Prep & Planning (link + instructions)
-- GPT #3: Spending Trigger Decoder (link + instructions)
-- [Continue through all 17 GPTs]
+**Sub-folder: VIP-Only GPTs**
+- Content & Resource Reuse GPT (link + instructions)
+- Mindful Money Mindset Reset GPT (link + instructions)
 - GPT Tips & Tricks (monthly updates)
+
+*Note: Standard tier gets Slip Recovery Decision GPT. Premium tier gets Challenge Coach, Prep & Planning, Paycheck & Budget Buddy, and Accountability Partner GPT. See 09_GPT_Ecosystem.md for full tier assignments.*
 
 **Sub-folder: Business Central Hub**
 - Business-specific resources
@@ -323,7 +322,9 @@
 | Spreadsheet Packs | ❌ | ✅ | ✅ |
 | Premium Templates | ❌ | ✅ | ✅ |
 | Current Month Workshop | ❌ | ✅ | ✅ |
-| GPT Ecosystem | ❌ | ❌ | ✅ |
+| GPT: Slip Recovery (Standard) | ✅ | ✅ | ✅ |
+| GPTs: Coach, Prep, Budget, Accountability (Premium) | ❌ | ✅ | ✅ |
+| GPTs: Content Reuse, Money Mindset (VIP) | ❌ | ❌ | ✅ |
 | Business Central Hub | ❌ | ✅ | ✅ |
 | Archives | ❌ | ❌ | ✅ |
 | VIP Lounge | ❌ | ❌ | ✅ |

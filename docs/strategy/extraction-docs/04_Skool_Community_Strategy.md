@@ -89,9 +89,21 @@ Facebook was considered and rejected. Skool wins on content organization, tiered
 
 ---
 
-### GPTs — 7 Total (Tier Assignment Pending)
+### GPTs — 7 Total (Tier Assignments Locked)
 
-Seven custom GPTs have been built. Tier assignment is TBD — each GPT needs to be assigned to Standard, Premium, or VIP. See project plan for the full list of GPT names and descriptions.
+Seven custom GPTs have been built with the following tier assignments:
+
+| GPT | Tier |
+|-----|------|
+| Slip Recovery Decision GPT | Standard (free) |
+| No Spend Challenge Coach | Premium |
+| No Spend Prep & Planning Assistant | Premium |
+| Paycheck & Budget Buddy | Premium |
+| Accountability Partner GPT | Premium |
+| Content & Resource Reuse GPT | VIP |
+| Mindful Money Mindset Reset GPT | VIP |
+
+See **09_GPT_Ecosystem.md** for full descriptions, boundaries, and upgrade path strategy.
 
 ---
 
@@ -247,7 +259,7 @@ Short engagement bursts between major challenges. 65 micro-challenges organized 
 - [ ] Premium tier materials ready
 - [ ] Welcome sequence
 - [ ] Founding member welcome post
-- [ ] GPT tier assignments finalized (7 GPTs, assignment pending)
+- [x] GPT tier assignments finalized (7 GPTs — 1 Standard, 4 Premium, 2 VIP)
 - [ ] EFT tapping script (nice to have, not blocking launch)
 - [ ] Facebook group migration message + archive
 

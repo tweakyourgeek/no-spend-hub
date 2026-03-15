@@ -346,7 +346,7 @@ This document provides a strategic implementation timeline for launching the No-
 - Enhance member experience
 
 **GPT Development**:
-- Begin building 17 custom GPTs
+- Begin building custom GPTs
 - Start with gateway GPT (Subscription Audit)
 - Release GPTs to VIP tier
 - Gather feedback and iterate

@@ -96,7 +96,7 @@ Our marketing strategy rests on 4 research-backed differentiators:
 
 **VIP Tier ($97/mo)**
 - **Promise**: "The only behavior change AI ecosystem"
-- **Value**: 17 custom GPTs + live support + full archives
+- **Value**: all 7 custom GPTs + live support + full archives
 - **Why It Matters**: Competitors have budgeting AI; we have behavior change AI
 - **Marketing Message**: "AI that helps you understand WHY, not just what."
 
@@ -598,14 +598,14 @@ PAID Tier Conversion ($27/mo)
 - Those who want full archives access
 
 **Trigger Events**:
-- "I wish I had a GPT for [specific need]" → "VIP has 17 GPTs"
+- "I wish I had a GPT for [specific need]" → "VIP has all 7 GPTs"
 - "I missed the workshop" → "VIP gets full archives"
 - Asks about live support → "VIP has weekly co-working"
 - Business owner asks about subscription audit → "That's a VIP GPT"
 
 **Conversion Messaging**:
 - "You're getting results. VIP gives you the tools to accelerate."
-- "17 GPTs that make decisions easier—only $70 more per month"
+- "All 7 GPTs plus live sessions and archives — upgrade to VIP"
 - "AI that helps you understand WHY you spend, not just what"
 - "The only behavior change AI ecosystem"
 

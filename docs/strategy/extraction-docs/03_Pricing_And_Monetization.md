@@ -61,8 +61,8 @@ This document extracts all pricing strategies, monetization models, revenue stre
 **VIP Tier**
 - **Price**: $97/month (founding rate)
 - **Target Audience**: Business owners, power users, GPT enthusiasts
-- **Value Proposition**: Complete ecosystem + 17 custom GPTs
-- **Access**: Everything PAID tier has PLUS live sessions, archives, all GPTs
+- **Value Proposition**: Complete ecosystem + all 7 custom GPTs (2 VIP-exclusive)
+- **Access**: Everything Premium tier has PLUS live sessions, archives, VIP-only GPTs (Content & Resource Reuse, Mindful Money Mindset Reset)
 
 ### Founding Member Pricing Strategy
 **Source**: File 3

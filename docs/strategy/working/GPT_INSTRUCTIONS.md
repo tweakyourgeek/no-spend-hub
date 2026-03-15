@@ -1,7 +1,7 @@
 # NoSpend Challenge: Custom GPT Instructions
 
 **Created**: December 31, 2024
-**Purpose**: Instructions and templates for building all 17 custom GPTs for VIP tier
+**Purpose**: Instructions and templates for building 7 custom GPTs across Standard, Premium, and VIP tiers
 **Platform**: ChatGPT (Custom GPTs)
 
 ---
@@ -9,7 +9,7 @@
 ## 📖 HOW TO USE THIS DOCUMENT
 
 This document provides:
-- **Complete GPT list** (all 17)
+- **Complete GPT list** (all 7)
 - **Instruction templates** (what to configure in ChatGPT)
 - **Setup guidance** (how to create each GPT)
 - **Access strategy** (how to share with VIP members)
@@ -26,10 +26,10 @@ This document provides:
 
 ## 🎯 GPT STRATEGY OVERVIEW
 
-**Access Model**:
-- **FREE/PAID Tiers**: No GPT access
-- **Business Spreadsheet Pack ($47)**: 1 GPT (Subscription Audit - gateway)
-- **VIP Tier ($97/mo)**: All 17 GPTs
+**Access Model** (locked March 2026):
+- **Standard Tier** (free): 1 GPT (Slip Recovery Decision GPT)
+- **Premium Tier** ($9/mo): 5 GPTs (Standard + No Spend Challenge Coach, Prep & Planning Assistant, Paycheck & Budget Buddy, Accountability Partner GPT)
+- **VIP Tier** ($99/year): All 7 GPTs (Premium + Content & Resource Reuse GPT, Mindful Money Mindset Reset GPT)
 
 **Purpose**:
 - Provide 24/7 decision support
@@ -655,14 +655,14 @@ EXAMPLES:
 
 ### How to Share with VIP Members
 
-**Step 1: Create all 17 GPTs**
+**Step 1: Create all 7 GPTs**
 - Set each to "Only people with the link can access"
 - Test each one thoroughly
 - Collect links
 
 **Step 2: Create GPT Directory in Skool**
 - VIP Lounge section
-- Post: "Your 17 Custom GPTs"
+- Post: "Your Custom GPTs"
 - List each GPT with:
   - Name
   - What it does (1 sentence)
@@ -670,7 +670,7 @@ EXAMPLES:
   - Example use case
 
 **Step 3: Create GPT User Guide**
-- "How to Use the 17 GPTs"
+- "How to Use the 7 GPTs"
 - When to use which GPT
 - Examples of effective prompts
 - Best practices
@@ -707,7 +707,7 @@ EXAMPLES:
 Track:
 - Which GPTs get used most (ask VIP members)
 - Which GPTs drive the most value (testimonials)
-- Which GPTs drive VIP upgrades (from PAID tier)
+- Which GPTs drive VIP upgrades (from Premium tier)
 - Which GPTs could be standalone products later
 
 Iterate based on usage and feedback.
