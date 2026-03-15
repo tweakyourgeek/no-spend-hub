@@ -1,142 +1,96 @@
 # Deployment Documentation
 
-## GitHub Pages Hosting
+## Vercel Hosting
 
 ### Live URL
-**https://tweakyourgeek.github.io/nospend-bus-roadmap/**
+**https://no-spend-hub.vercel.app** (or custom domain when configured)
 
-### Deployment Branch
-- **Source:** `main` branch
-- **Path:** Root directory (`/`)
-- **File:** `index.html` is the main roadmap page
+### Repository
+- **Repo:** https://github.com/tweakyourgeek/no-spend-hub
+- **Branch:** `main`
+- **Framework:** Vite (auto-detected by Vercel)
 
-### How Updates Are Deployed
+### Current Configuration
 
-1. **Merge to Main:** Changes must be merged to the `main` branch
-2. **Automatic Deployment:** GitHub Pages automatically rebuilds from `main`
-3. **Live in ~1-2 minutes:** Changes appear within a couple minutes of merging
+**Pre-launch (until March 20, 2026):**
+- `vercel.json` rewrites `/` → `/coming-soon/index.html`
+- Visitors see the coming-soon landing page with countdown
 
-### Current Branch Status
+**Post-launch:**
+- Remove the rewrite from `vercel.json` to serve the React app at `/`
+- The coming-soon page remains accessible at `/coming-soon/index.html`
 
-- **Production (live):** `main` branch
-- **Development:** Feature branches (e.g., `claude/savings-calculator-app-UEhZP`)
-- **To deploy updates:** Merge PR to `main`
+### Environment Variables (Vercel Dashboard)
 
----
+| Variable | Purpose |
+|----------|---------|
+| `MAILERLITE_API_KEY` | MailerLite API key for email subscription |
+| `MAILERLITE_GROUP_ID` | MailerLite group ID for subscriber list |
 
-## Repository Structure
+Set these in: Vercel Dashboard → Project → Settings → Environment Variables
 
-```
-nospend-bus-roadmap/
-├── index.html                              # Main roadmap (LIVE on GitHub Pages)
-├── HANDOFF.md                             # Handoff doc for nospend-apps
-├── MANIFEST.md                            # Documentation manifest
-├── No_Spend_Challenge_Product_Manual.md   # Product manual
-├── No_Spend_Integration_Roadmap.md        # Integration roadmap
-├── extraction_docs/                       # Framework documentation (17 files)
-├── conversations/                         # Conversation transcripts
-│   ├── chatgpt/                          # ChatGPT conversations (18 files)
-│   └── claude/                           # Claude conversations (19 files)
-├── tyg-logo.png                          # Branding assets
-├── favicon.svg
-└── README.md
+### Serverless Functions
 
-Total: ~60 files
-```
+| Endpoint | File | Purpose |
+|----------|------|---------|
+| `POST /api/subscribe` | `api/subscribe.js` | Subscribe email to MailerLite list |
 
 ---
 
-## What's Deployed vs. What's Documented
+## Deploying Updates
 
-### Deployed to GitHub Pages:
-- ✅ **index.html** - Interactive 30-Day No Spend Challenge Roadmap
-- ✅ **tyg-logo.png** - Tweak Your Geek logo
-- ✅ **favicon.svg** - Site favicon
+### Automatic (recommended)
+1. Push changes to `main` branch (or merge a PR)
+2. Vercel auto-deploys within ~1-2 minutes
+3. Preview deployments are created for every PR
 
-### Not Deployed (Documentation Only):
-- All `.md` files (product manual, roadmaps, extraction docs, conversations)
-- These are reference materials for development, not public-facing
-
----
-
-## Making Changes to the Live Roadmap
-
-### Step 1: Create Feature Branch
+### Manual
 ```bash
-git checkout -b claude/your-feature-name
+npx vercel          # Deploy preview
+npx vercel --prod   # Deploy to production
 ```
 
-### Step 2: Make Changes
-- Edit `index.html` for roadmap updates
-- Test locally by opening `index.html` in a browser
+---
 
-### Step 3: Commit & Push
+## Local Development
+
 ```bash
-git add index.html
-git commit -m "Description of changes"
-git push -u origin claude/your-feature-name
+npm install
+npm run dev          # Vite dev server on http://localhost:8080
+npm run build        # Production build to dist/
+npm run preview      # Preview production build
+npm test             # Run tests
 ```
 
-### Step 4: Create Pull Request
-- Visit: https://github.com/tweakyourgeek/nospend-bus-roadmap/pulls
-- Create PR from your branch → `main`
-- Review changes
-
-### Step 5: Merge to Deploy
-- Merge PR to `main`
-- Changes go live automatically within 1-2 minutes
-- Verify at: https://tweakyourgeek.github.io/nospend-bus-roadmap/
-
 ---
 
-## Related Repositories
+## Project Structure
 
-### nospend-apps
-- **Purpose:** Actual web applications (savings calculator, subscription analyzer, challenge tracker)
-- **Repo:** https://github.com/tweakyourgeek/nospend-apps
-- **Status:** In development
-
-### Relationship:
-- **nospend-bus-roadmap:** Documentation hub + deployed roadmap
-- **nospend-apps:** Actual applications (will link to/from roadmap when built)
-
----
-
-## Troubleshooting
-
-### Changes not showing on GitHub Pages?
-1. Check that PR was merged to `main` (not just created)
-2. Wait 2-3 minutes for rebuild
-3. Hard refresh browser (Ctrl+Shift+R or Cmd+Shift+R)
-4. Check GitHub Actions for build errors
-
-### Where to check deployment status?
-- GitHub repo → Settings → Pages
-- Shows current deployment status and URL
-
----
-
-## Important Notes
-
-### Placeholder Links
-The roadmap currently has placeholder download links:
-```html
-<a href="#" class="download-btn">Download Workbook</a>
-<a href="#" class="download-btn">Download Journal</a>
-<a href="#" class="download-btn">Download Spreadsheets</a>
+```
+no-spend-hub/
+├── api/subscribe.js           # Vercel serverless function
+├── public/coming-soon/        # Static coming-soon landing page
+├── src/
+│   ├── pages/                 # Route pages (Index, AppPage, NotFound)
+│   ├── components/            # Shared React components (shadcn/ui)
+│   ├── features/              # 22 standalone sub-apps
+│   └── lib/challenge-data.ts  # Core data layer (localStorage)
+├── docs/                      # Product docs, strategy, planning
+├── vercel.json                # Vercel routing config
+├── vite.config.ts             # Vite build config
+└── package.json               # Dependencies & scripts
 ```
 
-**Two versions needed:**
-1. **Public version** (GitHub Pages) - No download links or links to landing pages
-2. **Product owner version** - With actual download links to products
+---
 
-### Design Updates
-**Current:** Modern glassmorphism design (as of Dec 2024)
-- Frosted glass effects
-- Gradient backgrounds
-- Layered shadows
-- Smooth animations
+## Post-Launch Checklist
+
+- [ ] Set `MAILERLITE_API_KEY` and `MAILERLITE_GROUP_ID` in Vercel
+- [ ] Test email subscription end-to-end on production
+- [ ] Remove `vercel.json` rewrite to serve React app at `/`
+- [ ] Verify all routes work (/, /app, 404 fallback)
+- [ ] Test on mobile devices
 
 ---
 
-**Last Updated:** December 2024
+**Last Updated:** March 15, 2026
