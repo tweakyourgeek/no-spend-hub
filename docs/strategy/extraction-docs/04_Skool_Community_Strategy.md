@@ -47,8 +47,13 @@ Facebook was considered and rejected. Skool wins on content organization, tiered
 **Access Includes**:
 - Community access
 - Monthly No-Spend Challenge
+- 30-Day No Spend Guide (PLR version)
+- Cheat Sheet
+- Quick-Start Guide
 - 7-Day Spending Tracker
-- Pattern Quiz, Impulse Brake, Decision Matrix
+- Pattern Quiz
+- Impulse Brake
+- Decision Matrix
 
 **Conversion Path**: Free challenge experience → upgrade to Premium or VIP for full toolkit and live support
 

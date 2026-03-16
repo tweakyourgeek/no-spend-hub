@@ -225,8 +225,8 @@ Created 10 different expense log versions to accommodate different households:
 
 **SUPPLEMENTAL PREMIUM**:
 - **Immediate (with launch)**:
-  - Spreadsheet Pack: $7-17 (see below)
-  - Bundles: Starter $19-24, Complete $29-39
+  - Spreadsheet Pack: $39 (personal) / $59 (business)
+  - Bundles: Starter $17, Complete $37
 
 - **Phase 2 (within 2 weeks)**:
   - Sticker Book: $5-8
@@ -243,7 +243,7 @@ Created 10 different expense log versions to accommodate different households:
   - Holiday Edition: $9-12 (seasonal)
   - No-Spend Year: $17-27
   - Digital Course: $27-47
-  - **Year Bundle**: $47-67 (entire ecosystem)
+  - **Year Bundle**: $77 (entire ecosystem)
 
 **Quarterly Challenge Calendar** (File 15):
 **No-Spend Challenge** and other challenges moved to **free quarterly community events**:
@@ -256,7 +256,9 @@ Created 10 different expense log versions to accommodate different households:
 | **Q4**  | Holiday Spending Reset | Nov-Dec        | Intentional holidays     |
 
 **What Standard tier gets**:
-- Worksheet PDF (basic tracker, prompts, completion page)
+- Community access, monthly no-spend challenge
+- 30-Day No Spend Guide (PLR version), Cheat Sheet, Quick-Start Guide
+- 7-Day Spending Tracker, Pattern Quiz, Impulse Brake, Decision Matrix
 - Daily prompts in Skool
 - Weekly check-in threads
 - Completion badge/shareable graphic

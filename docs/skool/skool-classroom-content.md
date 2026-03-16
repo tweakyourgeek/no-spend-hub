@@ -109,8 +109,15 @@ The No Spend Collective has three tiers. Here's exactly what you get at each lev
 | What You Get | Details |
 |---|---|
 | Community access | Full community participation, check-in threads, wins sharing |
+| Monthly No-Spend Challenge | Full 30-day challenge participation |
+| 30-Day No Spend Guide (PLR version) | Pattern-based spending awareness guide |
+| Cheat Sheet | Quick-reference summary of key concepts |
+| Quick-Start Guide | Get started with the challenge in 10 minutes |
+| 7-Day Spending Tracker | Short-burst tracker to surface patterns fast |
+| Pattern Quiz | Identify which of the 6 Chasing Patterns drives your spending |
+| Impulse Brake | Quick-reference decision tool for in-the-moment spending urges |
+| Decision Matrix | Structured framework for evaluating purchases |
 | Quarterly challenges | No-Spend, Pantry, Group Round, Holiday Reset |
-| À La Carte Toolkit | Pattern Quiz, Impulse Brake, Decision Matrix, 7-Day Spending Tracker |
 | Bonuses classroom | Surprise drops, seasonal extras |
 | GPT access | 1 GPT: Slip Recovery Decision GPT |
 
@@ -184,11 +191,13 @@ Every member gets access to the free toolkit. Standalone products are available 
 
 | Tool | What It Does |
 |------|-------------|
+| 30-Day No Spend Guide (PLR version) | Pattern-based spending awareness guide |
+| Cheat Sheet | Quick-reference summary of key concepts |
+| Quick-Start Guide | Get started with the challenge in 10 minutes |
+| 7-Day Spending Tracker | A short-burst tracker to surface patterns fast |
 | Pattern Quiz | Identify which of the 6 Chasing Patterns drives your spending |
 | Impulse Brake | A quick-reference decision tool for in-the-moment spending urges |
 | Decision Matrix | Structured framework for evaluating purchases |
-| 7-Day Spending Tracker | A short-burst tracker to surface patterns fast |
-| Quick-Start Guide | Get started with the challenge in 10 minutes |
 | Comfort Menu Starter | Build a list of non-spending alternatives for emotional needs |
 | Phone Wallpapers | Daily visual reminders |
 | Social Graphics | Shareable images for accountability |
@@ -197,25 +206,22 @@ Every member gets access to the free toolkit. Standalone products are available 
 
 **Standalone Products (Available for Purchase)**
 
-> Prices below are from early planning and have not been confirmed for launch. Final pricing may differ.
-
 | Product | Price | Notes |
 |---------|-------|-------|
-| The No-Spend Guide (Personal Edition) | $30 | **Unconfirmed**. 70-75 page PDF. Included with Premium tier. Discount code `NOSPEND50` = $15. |
-| Business Edition Bundle (Workbook + Journal) | $47 | **Unconfirmed**. Operational focus, higher stakes, binding decisions. |
-| Business Edition + Spreadsheet Pack | $67 | **Unconfirmed**. Full business suite with automated tracking. |
-| Personal Spreadsheet Pack | $7-17 | **Unconfirmed**. 9-tab core pack with dashboard and tracking. |
-| Business Spreadsheet Pack | $47 | **Unconfirmed**. 12-tab full pack with Google Apps Script automation. |
+| Personal No Spend Guide | $30 | 70-75 page PDF. Included with Premium tier. Discount code `NOSPEND50` = $15. |
+| Personal Spreadsheet Pack | $39 | 9-tab core pack with dashboard and tracking. |
+| Personal Bundle | $49 | Personal Guide + Spreadsheet Pack. |
+| Business Edition | $47 | Operational focus, higher stakes, binding decisions. |
+| Business Spreadsheet Pack | $59 | 12-tab full pack with Google Apps Script automation. |
+| Business Bundle | $69 | Business Edition + Spreadsheet Pack. |
 
 **Bundle Options**
 
-> Bundle prices are from early planning and have not been confirmed for launch.
-
 | Bundle | Price | What's Included |
 |--------|-------|----------------|
-| Starter Bundle | $19-24 | **Unconfirmed**. Guide + Pattern Quiz + Cheat Sheet + Quick-Start Guide |
-| Complete Bundle | $29-39 | **Unconfirmed**. Starter + Spreadsheet Pack + Sticker Book + Accountability Template + Phone Wallpapers |
-| Year Bundle | $47-67 | **Unconfirmed**. Everything + All Challenges + Digital Course |
+| Starter Bundle | $17 | Personal No Spend Guide + Pattern Quiz + Phone Wallpapers + Accountability Partner Template |
+| Complete Bundle | $37 | Starter + Spreadsheet Pack + Sticker Book |
+| Year Bundle | $77 | Everything + All Challenges + Digital Course |
 
 **Supplemental Products**
 
@@ -945,7 +951,7 @@ Details and deliverables will be added as they become available. Your founding m
 | No-Spend Group Round full content | Classroom 6 > Q3 | Load before August |
 | Holiday Spending Reset full content | Classroom 6 > Q4 | Load before November |
 | Founding Member Bonus content | Classroom 7 > 2026 | TBD at launch |
-| All standalone product prices | Classroom 2 > Individual Tools | Unconfirmed, pending review |
+| All standalone product prices | Classroom 2 > Individual Tools | Confirmed |
 
 ---
 
