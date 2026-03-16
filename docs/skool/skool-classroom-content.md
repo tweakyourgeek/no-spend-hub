@@ -85,7 +85,7 @@ All quarterly challenges are free community events open to every tier.
 - **START HERE** (this section): Orientation, navigation, resources
 - **A La Carte Toolkit**: Individual tools available to all members
 - **Bonuses**: Surprise drops and seasonal extras
-- **30-Day No-Spend Challenge**: The full challenge experience (Premium+)
+- **30-Day No-Spend Challenge**: The full challenge experience (Standard+)
 - **Monthly Themes**: Themed challenge content (Premium+)
 - **Quarterly Challenges**: Quarterly challenge materials (VIP)
 - **Annual Bonuses**: Yearly bonuses and archives (VIP)
@@ -151,12 +151,6 @@ The No Spend Collective has three tiers. Here's exactly what you get at each lev
 |-----|-------------|
 | Content & Resource Reuse GPT | Helps you see and use what you already own instead of buying more |
 | Mindful Money Mindset Reset GPT | Works with old money stories and narratives that drive spending |
-
-**How GPTs Drive Value Across Tiers**
-
-- Standard members experience the Slip Recovery GPT at their most vulnerable moment. It demonstrates what the full GPT suite can do.
-- Premium members see VIP members sharing Content Reuse and Money Mindset outputs in the community. Those outputs create interest without giving away access.
-- VIP members get the complete ecosystem. All 7 GPTs, all live sessions, all archives.
 
 ---
 
@@ -267,9 +261,7 @@ Every member gets access to the free toolkit. Standalone products are available 
 
 **(Community)**
 
-[PLACEHOLDER: Content TBD before March 20, 2026]
-
-This is where founding member bonuses and surprise drops will land. First bonus drops at soft launch.
+March birthday bonus drops here on March 20. Check back.
 
 ---
 
@@ -279,7 +271,7 @@ This is where founding member bonuses and surprise drops will land. First bonus 
 
 # Classroom 4: 30-DAY NO-SPEND CHALLENGE
 
-**Visibility**: Premium and VIP members
+**Visibility**: All members (Standard, Premium, VIP)
 
 ## Course: The Challenge
 
@@ -358,7 +350,7 @@ This is not a contract. It is a design.
 
 **Your GPT Support**
 
-As a Premium or VIP member, you have access to GPTs that support this challenge:
+As a Standard, Premium, or VIP member, you have access to GPTs that support this challenge:
 
 | GPT | When to Use It |
 |-----|---------------|
@@ -635,8 +627,8 @@ That feeling is normal, especially in Week 2. You do not have to feel motivated 
 
 **"I need to talk to someone."**
 - Post in the community. This is what it's for.
-- Use the Accountability Partner GPT (Premium+) for shame-free check-ins.
-- Use the Challenge Coach GPT (Premium+) for "is this normal?" questions.
+- Use the Accountability Partner GPT (Standard+) for shame-free check-ins.
+- Use the Challenge Coach GPT (Standard+) for "is this normal?" questions.
 
 **"My rules aren't working."**
 Adjust them. Your C3 strategies can be modified at any weekly check-in. This is not a contract. It is a design.
@@ -709,11 +701,7 @@ A spend becomes data. Information, not correction. Keep going.
 
 **(Tools)**
 
-[PLACEHOLDER: Needs separate build. Content TBD.]
-
-March's themed challenge focuses on spring cleaning as a no-spend practice. Use what you have. Clear what you don't need. Rediscover what's already in your house before buying anything new.
-
-Full content for this module is being developed separately.
+Spring cleaning quest launches March 25. Come back when the doors open.
 
 ---
 
@@ -851,8 +839,8 @@ Details and deliverables will be added as they become available. Your founding m
 | Item | Location | Status |
 |------|----------|--------|
 | Affiliate links / resource list | Classroom 1 > Resources | TBD |
-| March Birthday Bonus content | Classroom 3 > March 2026 | TBD before March 20 |
-| Spring Cleaning Quest content | Classroom 5 > March | Needs separate build |
+| March Birthday Bonus content | Classroom 3 > March 2026 | Holding copy added, drops March 20 |
+| Spring Cleaning Quest content | Classroom 5 > March | Holding copy added, launches March 25 |
 | Pantry Challenge full content | Classroom 6 > Q2 | Load before June |
 | No-Spend Group Round full content | Classroom 6 > Q3 | Load before August |
 | Holiday Spending Reset full content | Classroom 6 > Q4 | Load before November |
