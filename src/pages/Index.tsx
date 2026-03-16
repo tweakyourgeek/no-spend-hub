@@ -1,6 +1,7 @@
 import LandingNav from "@/components/landing/LandingNav";
 import HeroSection from "@/components/landing/HeroSection";
 import PhilosophyStrip from "@/components/landing/PhilosophyStrip";
+import CheckUsOutSection from "@/components/landing/CheckUsOutSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import PatternsSection from "@/components/landing/PatternsSection";
 import ToolsSection from "@/components/landing/ToolsSection";
@@ -15,6 +16,7 @@ const Index = () => {
       <LandingNav />
       <HeroSection />
       <PhilosophyStrip />
+      <CheckUsOutSection />
       <HowItWorksSection />
       <PatternsSection />
       <ToolsSection />
