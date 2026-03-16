@@ -2,6 +2,8 @@ import { useParams, Navigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import GuideShell from "@/components/guides/GuideShell";
 import { WEEKEND_SECTIONS } from "@/components/guides/weekend";
+import { WEEK_SECTIONS } from "@/components/guides/week";
+import { MONTH_SECTIONS } from "@/components/guides/month";
 
 const GUIDES: Record<
   string,
@@ -12,7 +14,16 @@ const GUIDES: Record<
     subtitle: "A 3-Day Spending Pattern Mini-Guide",
     sections: WEEKEND_SECTIONS,
   },
-  // week and month guides will be added here
+  week: {
+    title: "No-Spend Week",
+    subtitle: "The Awareness Edition — 7 Days of Noticing",
+    sections: WEEK_SECTIONS,
+  },
+  month: {
+    title: "The 30-Day Challenge",
+    subtitle: "A Pattern-Based Guide to Intentional Spending",
+    sections: MONTH_SECTIONS,
+  },
 };
 
 export default function GuidePage() {
