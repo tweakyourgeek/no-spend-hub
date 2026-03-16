@@ -20,10 +20,9 @@ export default function LandingNav() {
           <a href="#how-it-works" className={navLinkClass}>
             How It Works
           </a>
-          {/* TODO: Link to The Lab destination once available */}
-          <a href="#" className={navLinkClass}>
+          <Link to="/lab" className={navLinkClass}>
             The Lab
-          </a>
+          </Link>
           <a href="#opt-in" className={navLinkClass}>
             Join Free
           </a>
@@ -52,10 +51,9 @@ export default function LandingNav() {
           <a href="#how-it-works" onClick={() => setOpen(false)} className={mobileLinkClass}>
             How It Works
           </a>
-          {/* TODO: Link to The Lab destination once available */}
-          <a href="#" onClick={() => setOpen(false)} className={mobileLinkClass}>
+          <Link to="/lab" onClick={() => setOpen(false)} className={mobileLinkClass}>
             The Lab
-          </a>
+          </Link>
           <a href="#opt-in" onClick={() => setOpen(false)} className={mobileLinkClass}>
             Join Free
           </a>
