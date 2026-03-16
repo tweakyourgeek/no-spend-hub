@@ -50,7 +50,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 - **Price**: $0 (no credit card required)
 - **Target Audience**: People exploring no-spend concept
 - **Value Proposition**: Test before investing
-- **Access**: Basic challenges, community, PLR materials, 1 GPT (Slip Recovery Decision GPT)
+- **Access**: Community access, monthly no-spend challenge, 30-Day No Spend Guide (PLR version), Cheat Sheet, Quick-Start Guide, 7-Day Spending Tracker, Pattern Quiz, Impulse Brake, Decision Matrix, 1 GPT (Slip Recovery Decision GPT)
 
 **Premium Tier**
 - **Price**: $9/month (founding rate)
@@ -82,12 +82,10 @@ This document extracts all pricing strategies, monetization models, revenue stre
 
 ## Standalone Product Pricing
 
-> **Note**: Standalone product prices below are from December 2024 planning and have not been confirmed for launch. Pending review.
-
 ### The No-Spend Guide (Personal Edition)
 **Source**: Files 5, 15
 
-**Price**: $30 (standalone purchase) — **Unconfirmed**
+**Price**: $30 (standalone purchase)
 
 **Discount Code**: `NOSPEND50` (50% off = $15)
 
@@ -110,15 +108,10 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ### Business Edition Pricing
 **Source**: File 16
 
-**Price**: Not explicitly set, likely **$47-67** — **Unconfirmed**. Based on:
-- Higher perceived value for business audience
-- More operational/ROI-focused content
-- Includes workbook + journal + optional spreadsheet pack
-
 **Component Pricing**:
-1. **Core Bundle** (Workbook + Journal): $47
-2. **With Spreadsheet Pack**: $67
-3. **Spreadsheet Pack Alone**: $20 add-on
+1. **Business Edition**: $47
+2. **Business Spreadsheet Pack**: $59
+3. **Business Bundle** (Edition + Spreadsheet Pack): $69
 
 **Quote from File 16**:
 > "This product is about preventing repetition, not restriction. This product is powerful for Q1, year-end review, and software renewal season."
@@ -150,25 +143,19 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ### Standalone Bundle Offers
 **Source**: File 15
 
-**Starter Bundle**: $19-24
-- The No-Spend Guide
-- Pattern quiz
-- Cheat sheet
-- Quick-start guide
+**Starter Bundle**: $17
+- Personal No Spend Guide
+- Pattern Quiz
+- Phone Wallpapers
+- Accountability Partner Template
 
-**Complete Bundle**: $29-39
+**Complete Bundle**: $37
 - Everything in Starter Bundle
-- Spreadsheet Pack ($7-17 value)
-- Sticker book ($5-8 value)
-- Accountability partner template
-- Phone wallpapers
-
-**Year Bundle**: $47-67
-- The No-Spend Guide
-- All supplemental challenges (No-Spend Weekend, Week, Month)
 - Spreadsheet Pack
-- Digital Course
-- Complete ecosystem access
+- Sticker Book
+
+**Year Bundle**: $77
+- Everything + All Challenges + Digital Course
 
 ---
 
@@ -177,7 +164,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ### Business Spreadsheet Pack
 **Source**: Files 7, 16
 
-**Standalone Price**: $47
+**Standalone Price**: $59
 
 **What's Included**:
 - Core Pack (9 tabs)
@@ -188,8 +175,6 @@ This document extracts all pricing strategies, monetization models, revenue stre
 
 **Stated Value**: $197
 
-**Add-On Price** (when bundled with Business Edition): $20
-
 **Positioning**: Premium infrastructure, not just templates
 
 **Quote from File 7**:
@@ -198,7 +183,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ### Personal Spreadsheet Pack
 **Source**: File 15, 17
 
-**Standalone Price**: $7-17
+**Standalone Price**: $39
 
 **What's Included**:
 - Core Pack (9 tabs) - personal version
@@ -231,11 +216,11 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ### Immediate Launch Supplements
 **Source**: File 15
 
-**Spreadsheet Pack**: $7-17 (personal) / $47 (business)
+**Spreadsheet Pack**: $39 (personal) / $59 (business)
 
 **Bundles**:
-- Starter: $19-24
-- Complete: $29-39
+- Starter: $17
+- Complete: $37
 
 ### Phase 2 (Within 2 Weeks)
 **Sticker Book**: $5-8
@@ -280,7 +265,7 @@ This document extracts all pricing strategies, monetization models, revenue stre
 - Implementation support
 
 ### Ecosystem Pricing
-**Year Bundle**: $47-67
+**Year Bundle**: $77
 - Access to entire ecosystem
 - All challenges (except quarterly free ones)
 - All templates
@@ -346,8 +331,8 @@ This document extracts all pricing strategies, monetization models, revenue stre
 ### Decision 4: Business Pricing Higher Than Personal
 **Source**: Files 7, 16
 
-**Personal**: $30 guide / $7-17 spreadsheets
-**Business**: $47-67 bundle / $47 spreadsheets
+**Personal**: $30 guide / $39 spreadsheets / $49 bundle
+**Business**: $47 edition / $59 spreadsheets / $69 bundle
 
 **Rationale**:
 - Business ROI justifies higher price
@@ -366,9 +351,12 @@ This document extracts all pricing strategies, monetization models, revenue stre
 - Creates upsell opportunity
 
 **Pricing Impact**:
-- Guide alone: $30
-- Guide + Spreadsheets: $37-47
-- Business bundle + Spreadsheets: $67
+- Personal Guide alone: $30
+- Personal Spreadsheet Pack: $39
+- Personal Bundle: $49
+- Business Edition: $47
+- Business Spreadsheet Pack: $59
+- Business Bundle: $69
 
 ---
 
@@ -402,5 +390,5 @@ These targets assume modest initial membership and are intentionally conservativ
 
 **Document Status**: Updated to reflect March 2026 Skool pricing and ultra-conservative revenue targets
 **Last Updated**: March 16, 2026
-**Confidence Level**: High for Skool tier pricing (confirmed live). Medium for standalone products (unconfirmed, carried from Dec 2024).
-**Notable Gaps**: Standalone product prices not locked (Business Edition, some supplements). Revenue targets beyond Year 1 not yet modeled at current pricing.
+**Confidence Level**: High for Skool tier pricing (confirmed live). High for standalone products and bundles (confirmed March 2026).
+**Notable Gaps**: Some supplemental product prices not locked. Revenue targets beyond Year 1 not yet modeled at current pricing.

@@ -263,12 +263,13 @@ Goals:
 
 ### Supplemental Materials
 
-**FREE (19 items)**:
-- Pattern quiz
+**FREE (Standard Tier)**:
+- 30-Day No Spend Guide (PLR version)
 - Cheat sheet
+- Quick-start guide
+- Pattern quiz
 - 5 free activities
 - Comfort menu starter
-- Quick-start guide
 - Phone wallpapers
 - Social graphics
 - Wall tracker poster
@@ -288,7 +289,7 @@ Goals:
 - Holiday Edition: $9-12
 - No-Spend Year: $17-27
 - Digital Course: $27-47
-- Year Bundle: $47-67
+- Year Bundle: $77
 
 ---
 
@@ -296,25 +297,22 @@ Goals:
 
 ### Standalone Products
 
-> **Note**: Standalone product prices below are from December 2024 planning and have not been confirmed for launch. Pending review.
-
-| Product | Price | Discount | Status |
-|---------|-------|----------|--------|
-| Personal Guide | $30 | NOSPEND50 = $15 | Unconfirmed |
-| Business Edition Bundle | $47 | — | Unconfirmed |
-| Business + Spreadsheets | $67 | — | Unconfirmed |
-| Personal Spreadsheet Pack | $7-17 | — | Unconfirmed |
-| Business Spreadsheet Pack | $47 | — | Unconfirmed |
+| Product | Price | Discount |
+|---------|-------|----------|
+| Personal No Spend Guide | $30 | NOSPEND50 = $15 |
+| Personal Spreadsheet Pack | $39 | — |
+| Personal Bundle | $49 | — |
+| Business Edition | $47 | — |
+| Business Spreadsheet Pack | $59 | — |
+| Business Bundle | $69 | — |
 
 ### Bundle Options
 
-> **Note**: Bundle prices below are from December 2024 planning and have not been confirmed for launch. Pending review.
-
-| Bundle | Price | Includes | Status |
-|--------|-------|----------|--------|
-| Starter | $19-24 | Guide + Quiz + Cheat sheet + Quick-start | Unconfirmed |
-| Complete | $29-39 | Starter + Spreadsheets + Sticker book | Unconfirmed |
-| Year Bundle | $47-67 | Everything + All challenges + Course | Unconfirmed |
+| Bundle | Price | Includes |
+|--------|-------|----------|
+| Starter | $17 | Personal No Spend Guide + Pattern Quiz + Phone Wallpapers + Accountability Partner Template |
+| Complete | $37 | Starter + Spreadsheet Pack + Sticker Book |
+| Year Bundle | $77 | Everything + All Challenges + Digital Course |
 
 ### Critical Pricing Decision
 
@@ -330,7 +328,13 @@ Goals:
 ### Three Tiers
 
 #### Standard Tier (Free, $0)
-- Basic community access
+- Community access
+- Monthly No-Spend Challenge
+- 30-Day No Spend Guide (PLR version)
+- Cheat Sheet
+- Quick-Start Guide
+- 7-Day Spending Tracker
+- Pattern Quiz, Impulse Brake, Decision Matrix
 - START HERE classroom
 - A La Carte Toolkit
 - Bonuses classroom
@@ -537,9 +541,12 @@ Goals:
 
 ```
 STANDARD TIER (Free)
-├── Skool Community Access (START HERE, A La Carte Toolkit, Bonuses)
+├── Community Access (START HERE, A La Carte Toolkit, Bonuses)
+├── Monthly No-Spend Challenge
+├── 30-Day No Spend Guide (PLR version)
+├── Cheat Sheet + Quick-Start Guide
+├── 7-Day Spending Tracker, Pattern Quiz, Impulse Brake, Decision Matrix
 ├── Quarterly Challenges (No-Spend, Pantry, Group Round, Holiday)
-├── Basic Worksheets (PLR-based)
 ├── Lead Magnets
 └── 1 GPT: Slip Recovery Decision GPT
 
@@ -559,11 +566,16 @@ VIP TIER ($99/yr)
 ├── Full Archives
 └── All 7 GPTs: + Content & Resource Reuse, Mindful Money Mindset Reset
 
-STANDALONE PRODUCTS (prices unconfirmed)
-├── Personal Guide: $30
-├── Business Bundle: $47
-├── Business + Sheets: $67
-├── Year Bundle: $47-67
+STANDALONE PRODUCTS
+├── Personal No Spend Guide: $30
+├── Personal Spreadsheet Pack: $39
+├── Personal Bundle: $49
+├── Business Edition: $47
+├── Business Spreadsheet Pack: $59
+├── Business Bundle: $69
+├── Starter Bundle: $17
+├── Complete Bundle: $37
+├── Year Bundle: $77
 └── Supplemental Challenges: $5-27
 ```
 

@@ -298,19 +298,20 @@ Goals:
 
 | Product | Price | Discount |
 |---------|-------|----------|
-| Personal Guide | $30 | NOSPEND50 = $15 |
-| Business Edition Bundle | $47 | — |
-| Business + Spreadsheets | $67 | — |
-| Personal Spreadsheet Pack | $7-17 | — |
-| Business Spreadsheet Pack | $47 | — |
+| Personal No Spend Guide | $30 | NOSPEND50 = $15 |
+| Personal Spreadsheet Pack | $39 | — |
+| Personal Bundle | $49 | — |
+| Business Edition | $47 | — |
+| Business Spreadsheet Pack | $59 | — |
+| Business Bundle | $69 | — |
 
 ### Bundle Options
 
 | Bundle | Price | Includes |
 |--------|-------|----------|
-| Starter | $19-24 | Guide + Quiz + Cheat sheet + Quick-start |
-| Complete | $29-39 | Starter + Spreadsheets + Sticker book |
-| Year Bundle | $47-67 | Everything + All challenges + Course |
+| Starter | $17 | Personal No Spend Guide + Pattern Quiz + Phone Wallpapers + Accountability Partner Template |
+| Complete | $37 | Starter + Spreadsheet Pack + Sticker Book |
+| Year Bundle | $77 | Everything + All Challenges + Digital Course |
 
 ### Critical Pricing Decision
 
