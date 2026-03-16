@@ -41,8 +41,12 @@ function readAllLocal(guideId: string): GuideField[] {
 // ── Supabase helpers ──────────────────────────────────
 
 async function getUserId(): Promise<string | null> {
-  const { data } = await supabase.auth.getUser();
-  return data.user?.id ?? null;
+  try {
+    const { data } = await supabase.auth.getUser();
+    return data.user?.id ?? null;
+  } catch {
+    return null;
+  }
 }
 
 // ── Public API ────────────────────────────────────────
@@ -63,15 +67,19 @@ export async function saveField(
   const userId = await getUserId();
   if (!userId) return;
 
-  await supabase.from("guide_responses").upsert(
-    {
-      user_id: userId,
-      guide_id: guideId,
-      field_id: fieldId,
-      value,
-    },
-    { onConflict: "user_id,guide_id,field_id" },
-  );
+  try {
+    await supabase.from("guide_responses").upsert(
+      {
+        user_id: userId,
+        guide_id: guideId,
+        field_id: fieldId,
+        value,
+      },
+      { onConflict: "user_id,guide_id,field_id" },
+    );
+  } catch {
+    // Supabase unavailable — localStorage already saved
+  }
 }
 
 /**
@@ -86,13 +94,18 @@ export async function loadGuide(
   const userId = await getUserId();
   if (!userId) return local;
 
-  const { data, error } = await supabase
-    .from("guide_responses")
-    .select("field_id, value")
-    .eq("user_id", userId)
-    .eq("guide_id", guideId);
-
-  if (error || !data) return local;
+  let data;
+  try {
+    const result = await supabase
+      .from("guide_responses")
+      .select("field_id, value")
+      .eq("user_id", userId)
+      .eq("guide_id", guideId);
+    if (result.error || !result.data) return local;
+    data = result.data;
+  } catch {
+    return local;
+  }
 
   // Merge: Supabase values take precedence
   const merged = { ...local };
@@ -124,7 +137,11 @@ export async function syncToSupabase(guideId: string): Promise<void> {
     value: f.value,
   }));
 
-  await supabase
-    .from("guide_responses")
-    .upsert(rows, { onConflict: "user_id,guide_id,field_id" });
+  try {
+    await supabase
+      .from("guide_responses")
+      .upsert(rows, { onConflict: "user_id,guide_id,field_id" });
+  } catch {
+    // Supabase unavailable
+  }
 }
