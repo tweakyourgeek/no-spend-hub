@@ -78,12 +78,14 @@ Each day includes a reflection prompt and a data check-in. The daily check-in ta
 | Q3 | No-Spend Group Round | August-September |
 | Q4 | Holiday Spending Reset | November-December |
 
+> Quarterly challenge dates are tentative and subject to change. We will announce confirmed dates in the community before each quarter.
+
 All quarterly challenges are free community events open to every tier.
 
 **Where to Find Things**
 
 - **START HERE** (this section): Orientation, navigation, resources
-- **A La Carte Toolkit**: Individual tools available to all members
+- **À La Carte Toolkit**: Individual tools available to all members
 - **Bonuses**: Surprise drops and seasonal extras
 - **30-Day No-Spend Challenge**: The full challenge experience (Standard+)
 - **Monthly Themes**: Themed challenge content (Premium+)
@@ -108,7 +110,7 @@ The No Spend Collective has three tiers. Here's exactly what you get at each lev
 |---|---|
 | Community access | Full community participation, check-in threads, wins sharing |
 | Quarterly challenges | No-Spend, Pantry, Group Round, Holiday Reset |
-| A La Carte Toolkit | Pattern Quiz, Impulse Brake, Decision Matrix, 7-Day Spending Tracker |
+| À La Carte Toolkit | Pattern Quiz, Impulse Brake, Decision Matrix, 7-Day Spending Tracker |
 | Bonuses classroom | Surprise drops, seasonal extras |
 | GPT access | 1 GPT: Slip Recovery Decision GPT |
 
@@ -158,17 +160,11 @@ The No Spend Collective has three tiers. Here's exactly what you get at each lev
 
 **(Tools)**
 
-[PLACEHOLDER: Affiliate links and resource list TBD]
-
-This lesson will include:
-- Recommended tools and apps
-- Affiliate links to partner products
-- External resources that complement the challenge
-- Community-recommended alternatives to common spending triggers
+Resources and recommendations coming soon. Check back after launch.
 
 ---
 
-# Classroom 2: A LA CARTE TOOLKIT
+# Classroom 2: À LA CARTE TOOLKIT
 
 **Visibility**: All members (Standard, Premium, VIP)
 
@@ -289,9 +285,9 @@ It is a pause. A deliberate stop in the middle of habits that usually run on aut
 
 This challenge asks you to notice how and why you spend. What you reach for when you are tired, bored, stressed, hopeful, or avoiding something harder to look at. Those patterns are not failures. They are protective strategies that made sense at some point.
 
-If you feel guilty about your spending, that's okay. It's not running this show, though. Awareness is.
+If you feel guilty about your spending, that's okay. This challenge is built on awareness.
 
-Over these 30 days, the goal is not to be perfect. The goal is to forgive yourself for what came before, recognize the patterns that are still active, and move forward with a plan that feels steady and realistic.
+Over these 30 days, the goal is not to be perfect. The goal is to treat everything that came before as useful data, recognize the patterns that are still active, and move forward with a plan that feels steady and realistic.
 
 **What Counts as Participation**
 
@@ -303,12 +299,12 @@ Over these 30 days, the goal is not to be perfect. The goal is to forgive yourse
 
 There is no minimum effort requirement. If you showed up today, that's the work.
 
-**What This Is NOT**
+**What This Is**
 
-- Not financial advice
-- Not budgeting
-- Not deprivation or punishment
-- Not one-size-fits-all
+- A pattern-recognition tool, not financial advice
+- A spending awareness practice, not a budget
+- A curiosity-driven experiment, not deprivation or punishment
+- A flexible framework you shape to fit your life
 
 **The C3 Framework: Your Decision Tool**
 
@@ -360,8 +356,7 @@ As a Standard, Premium, or VIP member, you have access to GPTs that support this
 | Paycheck & Budget Buddy | "My paycheck comes on the 15th. How do I time the challenge?" |
 | Accountability Partner GPT | "Check in with me. I need someone who won't make me feel bad." |
 
-**If the answer requires explaining the framework**, use the Coach.
-**If the answer requires processing the feeling**, use the Accountability Partner.
+The Coach is your go-to for questions about how the challenge works. The Accountability Partner is there when you need to talk through what you're feeling. Both are judgment-free.
 
 ---
 
@@ -492,7 +487,42 @@ If you slip, record it. It becomes data for the second half.
 
 **(Tools)**
 
-Same daily structure as Week 1. See the Week 1 Daily Rhythm lesson for the full template.
+Each day in the 30-Day Challenge follows the same rhythm. Here is the structure.
+
+**Top Section: Reflection**
+
+- Day number and theme (3-5 words)
+- Context paragraph (what this day is about)
+- Main prompt question
+- Space for your response
+
+You do not have to write in this space. The prompt is the prompt. How you respond is up to you. Voice memo. Social post. Text to a friend. Community thread. All count.
+
+**Bottom Section: Data Check-In**
+
+```
+Today's spending:
+☐ No-spend day (stayed within my plan)
+☐ Spent outside plan: _____________ ($_____)
+
+Pattern I noticed today: ________________
+
+If you spent outside your plan, which C3 strategy would have helped?
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
+
+Energy level: ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+One word for today: ________________
+```
+
+**How data and reflection work together:**
+
+"I spent $47 at Target. Why did I go to Target?" leads to writing.
+"Today was hard, I was stressed all afternoon..." leads to remembering "...oh right, I bought that thing. Let me log that."
+
+Neither one is the "real" part. They are both the real part. The page works either direction you enter it.
+
+**If you only have 30 seconds**: Check the boxes and jot a number. Page used. Data collected. That is enough.
 
 **Week 2 reminder**: If spending happens, use the Spent Anyway Protocol (see the Support module). Record it as data. Keep going. Do not restart from Day 1.
 
@@ -542,7 +572,42 @@ You do not need new tools to be who you already are.
 
 **(Tools)**
 
-Same daily structure as Weeks 1 and 2. See the Week 1 Daily Rhythm lesson for the full template.
+Each day in the 30-Day Challenge follows the same rhythm. Here is the structure.
+
+**Top Section: Reflection**
+
+- Day number and theme (3-5 words)
+- Context paragraph (what this day is about)
+- Main prompt question
+- Space for your response
+
+You do not have to write in this space. The prompt is the prompt. How you respond is up to you. Voice memo. Social post. Text to a friend. Community thread. All count.
+
+**Bottom Section: Data Check-In**
+
+```
+Today's spending:
+☐ No-spend day (stayed within my plan)
+☐ Spent outside plan: _____________ ($_____)
+
+Pattern I noticed today: ________________
+
+If you spent outside your plan, which C3 strategy would have helped?
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
+
+Energy level: ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+One word for today: ________________
+```
+
+**How data and reflection work together:**
+
+"I spent $47 at Target. Why did I go to Target?" leads to writing.
+"Today was hard, I was stressed all afternoon..." leads to remembering "...oh right, I bought that thing. Let me log that."
+
+Neither one is the "real" part. They are both the real part. The page works either direction you enter it.
+
+**If you only have 30 seconds**: Check the boxes and jot a number. Page used. Data collected. That is enough.
 
 **Week 3 reminder**: You are past the halfway point. If your C3 strategies need adjusting based on what you have learned, adjust them. This is not a contract. It is a design.
 
@@ -594,7 +659,42 @@ The end of the 30 days is not the end of the work. It is a checkpoint.
 
 **(Tools)**
 
-Same daily structure as previous weeks. See the Week 1 Daily Rhythm lesson for the full template.
+Each day in the 30-Day Challenge follows the same rhythm. Here is the structure.
+
+**Top Section: Reflection**
+
+- Day number and theme (3-5 words)
+- Context paragraph (what this day is about)
+- Main prompt question
+- Space for your response
+
+You do not have to write in this space. The prompt is the prompt. How you respond is up to you. Voice memo. Social post. Text to a friend. Community thread. All count.
+
+**Bottom Section: Data Check-In**
+
+```
+Today's spending:
+☐ No-spend day (stayed within my plan)
+☐ Spent outside plan: _____________ ($_____)
+
+Pattern I noticed today: ________________
+
+If you spent outside your plan, which C3 strategy would have helped?
+☐ CUT (reduce frequency)  ☐ CANCEL (stop or downgrade)  ☐ COMBINE (consolidate/share)
+
+Energy level: ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5
+
+One word for today: ________________
+```
+
+**How data and reflection work together:**
+
+"I spent $47 at Target. Why did I go to Target?" leads to writing.
+"Today was hard, I was stressed all afternoon..." leads to remembering "...oh right, I bought that thing. Let me log that."
+
+Neither one is the "real" part. They are both the real part. The page works either direction you enter it.
+
+**If you only have 30 seconds**: Check the boxes and jot a number. Page used. Data collected. That is enough.
 
 **Week 4 reminder**: Day 30 is a checkpoint, not a finish line. The challenge is designed for iterative cycles. You choose what to carry forward. Rules can evolve between rounds. Each round can focus on different patterns or pillars.
 
@@ -628,7 +728,7 @@ That feeling is normal, especially in Week 2. You do not have to feel motivated 
 **"I need to talk to someone."**
 - Post in the community. This is what it's for.
 - Use the Accountability Partner GPT (Standard+) for shame-free check-ins.
-- Use the Challenge Coach GPT (Standard+) for "is this normal?" questions.
+- Use the No Spend Challenge Coach (Standard+) for "is this normal?" questions.
 
 **"My rules aren't working."**
 Adjust them. Your C3 strategies can be modified at any weekly check-in. This is not a contract. It is a design.
@@ -776,7 +876,7 @@ Full content for this module will be loaded before the challenge begins.
 **Theme**: Intentional holidays
 **Timing**: November-December 2026
 
-This is NOT a no-spend challenge. The timing would make that unrealistic. Instead, this is about intentional holiday spending. Planned generosity instead of panicked purchases.
+This is an intentional spending challenge. The holiday season calls for a different approach: planned generosity instead of panicked purchases.
 
 **What Standard members get during this quarterly challenge (free community event):**
 - Holiday spending plan worksheet
@@ -825,7 +925,7 @@ Details and deliverables will be added as they become available. Your founding m
 | Classroom | Source Documents |
 |-----------|----------------|
 | START HERE | 04_Skool_Community_Strategy.md, 09_GPT_Ecosystem.md, Product Manual |
-| A La Carte Toolkit | 03_Pricing_And_Monetization.md, 11_Product_Architecture.md |
+| À La Carte Toolkit | 03_Pricing_And_Monetization.md, 11_Product_Architecture.md |
 | Bonuses | New content (no existing source) |
 | 30-Day Challenge | 02_Challenge_Structure.md, MASTER_GUIDE_CORRECTED.md |
 | Monthly Themes | 04_Skool_Community_Strategy.md (calendar only) |
