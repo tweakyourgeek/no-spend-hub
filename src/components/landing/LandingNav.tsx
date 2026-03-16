@@ -1,14 +1,22 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function LandingNav() {
   const [open, setOpen] = useState(false);
+  const { user, signOut } = useAuth();
+  const navigate = useNavigate();
 
   const navLinkClass =
     "font-body font-medium text-base text-muted-foreground hover:text-foreground transition-colors";
   const mobileLinkClass =
     "block font-body font-medium text-base text-muted-foreground hover:text-foreground py-3 px-3 rounded-lg hover:bg-muted transition-colors";
+
+  async function handleLogout() {
+    await signOut();
+    navigate("/");
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/80 backdrop-blur-md border-b border-border">
@@ -28,13 +36,23 @@ export default function LandingNav() {
           </a>
         </div>
         <div className="flex items-center gap-3">
-          {/* TODO: Wire up Login destination */}
-          <button
-            className="btn-pill border-2 px-6 py-2 text-base hidden md:inline-flex"
-            style={{ borderColor: "#3B3B58", color: "#3B3B58" }}
-          >
-            Login →
-          </button>
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="btn-pill border-2 px-6 py-2 text-base hidden md:inline-flex"
+              style={{ borderColor: "#3B3B58", color: "#3B3B58" }}
+            >
+              Log out
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              className="btn-pill border-2 px-6 py-2 text-base hidden md:inline-flex"
+              style={{ borderColor: "#3B3B58", color: "#3B3B58" }}
+            >
+              Login →
+            </Link>
+          )}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg text-foreground"
@@ -57,14 +75,24 @@ export default function LandingNav() {
           <a href="#opt-in" onClick={() => setOpen(false)} className={mobileLinkClass}>
             Join Free
           </a>
-          {/* TODO: Wire up Login destination */}
-          <button
-            onClick={() => setOpen(false)}
-            className="btn-pill border-2 w-full px-6 py-3 text-base mt-2"
-            style={{ borderColor: "#3B3B58", color: "#3B3B58" }}
-          >
-            Login →
-          </button>
+          {user ? (
+            <button
+              onClick={() => { setOpen(false); handleLogout(); }}
+              className="btn-pill border-2 w-full px-6 py-3 text-base mt-2"
+              style={{ borderColor: "#3B3B58", color: "#3B3B58" }}
+            >
+              Log out
+            </button>
+          ) : (
+            <Link
+              to="/login"
+              onClick={() => setOpen(false)}
+              className="btn-pill border-2 w-full px-6 py-3 text-base mt-2 block text-center"
+              style={{ borderColor: "#3B3B58", color: "#3B3B58" }}
+            >
+              Login →
+            </Link>
+          )}
         </div>
       )}
     </nav>
