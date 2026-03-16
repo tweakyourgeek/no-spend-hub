@@ -35,12 +35,17 @@ export default function GuideShell({
 
   // Load saved data on mount
   useEffect(() => {
-    loadGuide(guideId).then((data) => {
-      setFields(data);
-      setLoaded(true);
-    });
-    // Sync localStorage to Supabase on mount
-    syncToSupabase(guideId);
+    loadGuide(guideId)
+      .then((data) => {
+        setFields(data);
+        setLoaded(true);
+      })
+      .catch(() => {
+        setFields({});
+        setLoaded(true);
+      });
+    // Sync localStorage to Supabase on mount (fire and forget)
+    syncToSupabase(guideId).catch(() => {});
   }, [guideId]);
 
   // Debounced save on field change
