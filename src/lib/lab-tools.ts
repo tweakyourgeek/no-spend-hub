@@ -7,6 +7,8 @@ export interface LabTool {
   emoji: string;
   tier: ToolTier;
   featureDir: string;
+  /** If set, card links to this path instead of /lab/:slug */
+  href?: string;
 }
 
 export const LAB_TOOLS: LabTool[] = [
@@ -44,6 +46,35 @@ export const LAB_TOOLS: LabTool[] = [
     emoji: "✂️",
     tier: "email",
     featureDir: "c3-single-action",
+  },
+
+  // ── Mini-Guides (login-required) ─────────────────────
+  {
+    slug: "guide-weekend",
+    name: "No-Spend Weekend Guide",
+    description: "A 3-day spending pattern mini-guide. Track your weekend habits, map your patterns, and collect data — not guilt.",
+    emoji: "📅",
+    tier: "login",
+    featureDir: "",
+    href: "/guides/weekend",
+  },
+  {
+    slug: "guide-week",
+    name: "No-Spend Week Guide",
+    description: "Extend your awareness to a full week. Seven days of spending data across work, evenings, and routines.",
+    emoji: "📆",
+    tier: "login",
+    featureDir: "",
+    href: "/guides/week",
+  },
+  {
+    slug: "guide-month",
+    name: "No-Spend Month Guide",
+    description: "The complete 30-day guided experience. Paychecks, social events, stressful weeks — the full picture.",
+    emoji: "🗓️",
+    tier: "login",
+    featureDir: "",
+    href: "/guides/month",
   },
 
   // ── Login-required tier ───────────────────────────────
