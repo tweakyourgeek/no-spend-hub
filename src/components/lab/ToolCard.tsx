@@ -3,9 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { Lock } from "lucide-react";
 import { motion } from "framer-motion";
 import type { LabTool } from "@/lib/lab-tools";
+import { useAuth } from "@/contexts/AuthContext";
 import EmailCaptureModal from "./EmailCaptureModal";
-
-const SKOOL_URL = "https://www.skool.com/the-no-spend-collective";
 
 interface ToolCardProps {
   tool: LabTool;
@@ -15,6 +14,7 @@ interface ToolCardProps {
 export default function ToolCard({ tool, index }: ToolCardProps) {
   const navigate = useNavigate();
   const [modalOpen, setModalOpen] = useState(false);
+  const { user } = useAuth();
 
   const emailCaptured = localStorage.getItem("nsh-email-captured") === "true";
 
@@ -27,11 +27,13 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
       } else {
         setModalOpen(true);
       }
+    } else if (tool.tier === "login" && user) {
+      navigate(`/lab/${tool.slug}`);
     }
-    // login tier: button inside card handles its own action
+    // login tier without user: CTA button inside card handles navigation
   }
 
-  const isLocked = tool.tier === "login";
+  const isLocked = tool.tier === "login" && !user;
   const isClickable = !isLocked;
 
   return (
@@ -74,16 +76,13 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
 
         {/* Locked CTA */}
         {isLocked && (
-          <a
-            href={SKOOL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
+          <button
+            onClick={(e) => { e.stopPropagation(); navigate("/login"); }}
             className="mt-4 inline-flex items-center gap-2 btn-pill-outline text-sm self-start"
           >
             <Lock className="h-3.5 w-3.5" />
-            Join Free
-          </a>
+            Log in to unlock
+          </button>
         )}
       </motion.div>
 

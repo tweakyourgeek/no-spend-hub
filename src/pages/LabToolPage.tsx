@@ -2,6 +2,7 @@ import { lazy, Suspense, useMemo } from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { LAB_TOOLS } from "@/lib/lab-tools";
+import { useAuth } from "@/contexts/AuthContext";
 
 // Static map of lazy-loaded feature components.
 // Each import points to the feature's standalone App.jsx.
@@ -32,6 +33,7 @@ const featureComponents: Record<string, React.LazyExoticComponent<React.Componen
 
 export default function LabToolPage() {
   const { slug } = useParams<{ slug: string }>();
+  const { user, loading } = useAuth();
 
   const tool = useMemo(
     () => LAB_TOOLS.find((t) => t.slug === slug),
@@ -46,9 +48,16 @@ export default function LabToolPage() {
     if (!captured) return <Navigate to="/lab" replace />;
   }
 
-  // Gate check: login-tier tools are not yet accessible
+  // Gate check: login-tier tools require authentication
   if (tool.tier === "login") {
-    return <Navigate to="/lab" replace />;
+    if (loading) {
+      return (
+        <div className="flex items-center justify-center min-h-screen">
+          <p className="font-body text-muted-foreground animate-pulse">Loading…</p>
+        </div>
+      );
+    }
+    if (!user) return <Navigate to="/login" replace />;
   }
 
   const FeatureApp = featureComponents[tool.featureDir];
