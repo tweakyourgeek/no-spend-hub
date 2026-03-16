@@ -30,15 +30,15 @@ export default function GuidePage() {
   const { guideId } = useParams<{ guideId: string }>();
   const { user, loading } = useAuth();
 
-  // Auth gate (login tier)
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen">
-        <p className="font-body text-muted-foreground animate-pulse">Loading...</p>
-      </div>
-    );
-  }
-  if (!user) return <Navigate to="/login" replace />;
+  // TODO: Re-enable auth gate before launch
+  // if (loading) {
+  //   return (
+  //     <div className="flex items-center justify-center min-h-screen">
+  //       <p className="font-body text-muted-foreground animate-pulse">Loading...</p>
+  //     </div>
+  //   );
+  // }
+  // if (!user) return <Navigate to="/login" replace />;
 
   const guide = guideId ? GUIDES[guideId] : undefined;
   if (!guide) return <Navigate to="/lab" replace />;
