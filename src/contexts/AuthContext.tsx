@@ -20,21 +20,31 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Get initial session
-    supabase.auth.getSession().then(({ data: { session: s } }) => {
-      setSession(s);
-      setUser(s?.user ?? null);
-      setLoading(false);
-    });
+    supabase.auth
+      .getSession()
+      .then(({ data: { session: s } }) => {
+        setSession(s);
+        setUser(s?.user ?? null);
+        setLoading(false);
+      })
+      .catch(() => {
+        // Supabase unavailable (missing env vars or network) — continue without auth
+        setLoading(false);
+      });
 
     // Listen for auth changes
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, s) => {
-      setSession(s);
-      setUser(s?.user ?? null);
-    });
+    let subscription: { unsubscribe: () => void } | undefined;
+    try {
+      const result = supabase.auth.onAuthStateChange((_event, s) => {
+        setSession(s);
+        setUser(s?.user ?? null);
+      });
+      subscription = result.data.subscription;
+    } catch {
+      // Supabase unavailable
+    }
 
-    return () => subscription.unsubscribe();
+    return () => subscription?.unsubscribe();
   }, []);
 
   async function signUp(email: string, password: string) {
