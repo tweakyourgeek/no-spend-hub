@@ -10,6 +10,7 @@ import LabPage from "./pages/LabPage";
 import LabToolPage from "./pages/LabToolPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import GuidePage from "./pages/GuidePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/app" element={<AppPage />} />
             <Route path="/lab" element={<LabPage />} />
             <Route path="/lab/:slug" element={<LabToolPage />} />
+            <Route path="/guides/:guideId" element={<GuidePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
             <Route path="*" element={<NotFound />} />

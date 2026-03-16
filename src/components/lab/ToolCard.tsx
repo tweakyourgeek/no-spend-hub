@@ -28,7 +28,7 @@ export default function ToolCard({ tool, index }: ToolCardProps) {
         setModalOpen(true);
       }
     } else if (tool.tier === "login" && user) {
-      navigate(`/lab/${tool.slug}`);
+      navigate(tool.href || `/lab/${tool.slug}`);
     }
     // login tier without user: CTA button inside card handles navigation
   }
