@@ -1,72 +1,182 @@
-import React from 'react';
-import { useGameDispatch } from '../contexts/GameStateContext';
-import { colors, fonts } from '../theme';
-import type { DialogueData } from '../types';
+import React, { useState, useEffect } from 'react';
+import { useGameState, useGameDispatch } from '../contexts/GameStateContext';
+import { colors, fonts, animations } from '../theme';
+import { characters } from '../data/characters';
+import { dialogues } from '../data/dialogues';
+import { chasingPatterns } from '../data/patterns';
+import CharacterPortrait from './CharacterPortrait';
+import PatternCard from './PatternCard';
+import type { DialogueChoice } from '../types';
 
-interface Props {
-  data: DialogueData;
-  onChoice?: (choiceId: string) => void;
-}
-
-export default function DialogueScreen({ data, onChoice }: Props) {
+export default function DialogueScreen() {
+  const { currentDialogueId, flags } = useGameState();
   const dispatch = useGameDispatch();
+  const [displayedText, setDisplayedText] = useState('');
+  const [textComplete, setTextComplete] = useState(false);
+  const [revealedPattern, setRevealedPattern] = useState<string | null>(null);
+  const [choicesVisible, setChoicesVisible] = useState(false);
 
-  function handleChoice(choice: typeof data.choices[number]) {
+  const node = currentDialogueId ? dialogues[currentDialogueId] : null;
+  const character = node ? characters[node.characterId] : null;
+
+  // Typewriter effect
+  useEffect(() => {
+    if (!node) return;
+    setDisplayedText('');
+    setTextComplete(false);
+    setChoicesVisible(false);
+    setRevealedPattern(null);
+
+    let i = 0;
+    const text = node.text;
+    const speed = 18;
+
+    const interval = setInterval(() => {
+      i++;
+      setDisplayedText(text.slice(0, i));
+      if (i >= text.length) {
+        clearInterval(interval);
+        setTextComplete(true);
+        setTimeout(() => setChoicesVisible(true), 300);
+      }
+    }, speed);
+
+    return () => clearInterval(interval);
+  }, [node?.id]);
+
+  // Skip typewriter on click
+  function skipTypewriter() {
+    if (!node || textComplete) return;
+    setDisplayedText(node.text);
+    setTextComplete(true);
+    setTimeout(() => setChoicesVisible(true), 100);
+  }
+
+  function handleChoice(choice: DialogueChoice) {
     if (choice.setsFlag) {
       dispatch({ type: 'SET_FLAG', key: choice.setsFlag, value: true });
     }
-    if (choice.nextScreen) {
-      dispatch({ type: 'NAVIGATE', screen: choice.nextScreen });
+    if (choice.revealsPattern) {
+      dispatch({ type: 'REVEAL_PATTERN', patternId: choice.revealsPattern });
+      setRevealedPattern(choice.revealsPattern);
+      // Show pattern briefly, then continue
+      setTimeout(() => {
+        setRevealedPattern(null);
+        navigateAfterChoice(choice);
+      }, 3000);
+      return;
     }
-    onChoice?.(choice.id);
+    navigateAfterChoice(choice);
   }
 
-  return (
-    <div style={{
-      minHeight: '100vh',
-      background: `linear-gradient(180deg, ${colors.plum} 0%, ${colors.plum}ee 60%, ${colors.mauve}33 100%)`,
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '2rem',
-      color: colors.cream,
-    }}>
-      {/* Character portrait area */}
+  function navigateAfterChoice(choice: DialogueChoice) {
+    if (choice.nextDialogue) {
+      dispatch({ type: 'SET_DIALOGUE', dialogueId: choice.nextDialogue });
+    } else if (choice.nextScreen) {
+      if (choice.nextScreen === 'realm-map') {
+        dispatch({ type: 'ADVANCE_ENCOUNTER' });
+      }
+      dispatch({ type: 'NAVIGATE', screen: choice.nextScreen });
+    }
+  }
+
+  if (!node || !character) {
+    return (
       <div style={{
-        width: 100,
-        height: 100,
-        borderRadius: '50%',
-        background: data.portraitColor,
-        border: `3px solid ${colors.lavender}66`,
-        marginBottom: '1rem',
+        minHeight: '100vh',
+        background: colors.plum,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        fontSize: '1.5rem',
-        fontFamily: fonts.heading,
-        fontWeight: 700,
         color: colors.cream,
-        boxShadow: `0 0 30px ${data.portraitColor}44`,
+        fontFamily: fonts.body,
       }}>
-        {data.characterName.charAt(0)}
+        <p>No dialogue found. <button
+          onClick={() => dispatch({ type: 'NAVIGATE', screen: 'realm-map' })}
+          style={{
+            color: colors.sage,
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+            textDecoration: 'underline',
+          }}
+        >Return to crossroads</button></p>
+      </div>
+    );
+  }
+
+  // Pattern reveal overlay
+  if (revealedPattern && chasingPatterns[revealedPattern]) {
+    return (
+      <div style={{
+        minHeight: '100vh',
+        background: `radial-gradient(ellipse at 50% 40%, ${colors.deepPlum} 0%, ${colors.plum} 70%)`,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem',
+        color: colors.cream,
+      }}>
+        <p style={{
+          fontFamily: fonts.heading,
+          fontSize: 'clamp(1rem, 3vw, 1.3rem)',
+          color: colors.gold,
+          marginBottom: '1.5rem',
+          animation: `${animations.fadeIn} 0.5s ease-out`,
+        }}>
+          A Chasing Pattern revealed...
+        </p>
+        <PatternCard pattern={chasingPatterns[revealedPattern]} isNew />
+      </div>
+    );
+  }
+
+  return (
+    <div
+      onClick={skipTypewriter}
+      style={{
+        minHeight: '100vh',
+        background: `linear-gradient(180deg, ${colors.deepPlum} 0%, ${colors.plum} 40%, ${colors.mauve}22 100%)`,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '2rem',
+        color: colors.cream,
+        cursor: textComplete ? 'default' : 'pointer',
+      }}
+    >
+      {/* Character portrait */}
+      <div style={{ marginBottom: '1.5rem' }}>
+        <CharacterPortrait character={character} size={100} />
       </div>
 
       {/* Character name */}
       <h3 style={{
         fontFamily: fonts.heading,
-        fontSize: '1.5rem',
+        fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
         fontWeight: 600,
-        margin: '0 0 1.5rem',
+        margin: '0 0 0.25rem',
         letterSpacing: '0.03em',
+        animation: `${animations.fadeIn} 0.4s ease-out`,
       }}>
-        {data.characterName}
+        {character.name}
       </h3>
+      <p style={{
+        fontFamily: fonts.heading,
+        fontSize: '0.8rem',
+        opacity: 0.5,
+        margin: '0 0 1.5rem',
+        fontStyle: 'italic',
+      }}>
+        {character.title}
+      </p>
 
       {/* Dialogue text */}
       <div style={{
-        background: `${colors.plum}cc`,
-        border: `1px solid ${colors.mauve}44`,
+        background: `${colors.deepPlum}cc`,
+        border: `1px solid ${colors.mauve}33`,
         borderRadius: 12,
         padding: '1.5rem 2rem',
         maxWidth: 520,
@@ -74,48 +184,77 @@ export default function DialogueScreen({ data, onChoice }: Props) {
         marginBottom: '2rem',
         lineHeight: 1.7,
         fontFamily: fonts.body,
-        fontSize: '1rem',
+        fontSize: 'clamp(0.9rem, 2.5vw, 1rem)',
+        minHeight: 80,
       }}>
-        {data.dialogueText}
+        {displayedText}
+        {!textComplete && (
+          <span style={{
+            display: 'inline-block',
+            width: 2,
+            height: '1em',
+            background: colors.cream,
+            marginLeft: 2,
+            animation: `${animations.fadeIn} 0.5s ease-in-out infinite alternate`,
+          }} />
+        )}
       </div>
 
+      {/* Click hint */}
+      {!textComplete && (
+        <p style={{
+          fontFamily: fonts.body,
+          fontSize: '0.75rem',
+          opacity: 0.4,
+          marginBottom: '1rem',
+        }}>
+          click to skip
+        </p>
+      )}
+
       {/* Choice buttons */}
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '0.75rem',
-        maxWidth: 520,
-        width: '100%',
-      }}>
-        {data.choices.map((choice) => (
-          <button
-            key={choice.id}
-            onClick={() => handleChoice(choice)}
-            style={{
-              fontFamily: fonts.body,
-              background: `${colors.plum}`,
-              color: colors.cream,
-              border: `1px solid ${colors.sage}66`,
-              borderRadius: 8,
-              padding: '0.85rem 1.25rem',
-              cursor: 'pointer',
-              fontSize: '0.95rem',
-              textAlign: 'left',
-              transition: 'background 0.15s, border-color 0.15s',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = `${colors.sage}22`;
-              e.currentTarget.style.borderColor = colors.sage;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = colors.plum;
-              e.currentTarget.style.borderColor = `${colors.sage}66`;
-            }}
-          >
-            {choice.label}
-          </button>
-        ))}
-      </div>
+      {choicesVisible && (
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '0.75rem',
+          maxWidth: 520,
+          width: '100%',
+          animation: `${animations.slideUp} 0.4s ease-out`,
+        }}>
+          {node.choices.map((choice, i) => (
+            <button
+              key={choice.id}
+              onClick={(e) => { e.stopPropagation(); handleChoice(choice); }}
+              style={{
+                fontFamily: fonts.body,
+                background: `${colors.deepPlum}`,
+                color: colors.cream,
+                border: `1px solid ${colors.sage}44`,
+                borderRadius: 8,
+                padding: '0.85rem 1.25rem',
+                cursor: 'pointer',
+                fontSize: 'clamp(0.85rem, 2.5vw, 0.95rem)',
+                textAlign: 'left',
+                transition: 'all 0.2s ease',
+                animation: `${animations.fadeSlideIn} 0.3s ease-out ${i * 0.08}s both`,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = `${colors.sage}22`;
+                e.currentTarget.style.borderColor = colors.sage;
+                e.currentTarget.style.transform = 'translateX(4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = colors.deepPlum;
+                e.currentTarget.style.borderColor = `${colors.sage}44`;
+                e.currentTarget.style.transform = '';
+              }}
+            >
+              {choice.label}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

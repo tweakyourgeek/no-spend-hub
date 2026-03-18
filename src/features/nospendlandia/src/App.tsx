@@ -1,45 +1,64 @@
-import React from 'react';
-import { GameStateProvider, useGameState } from './contexts/GameStateContext';
+import React, { useEffect } from 'react';
+import { GameStateProvider, useGameState, useGameDispatch } from './contexts/GameStateContext';
+import ScreenTransition from './components/ScreenTransition';
 import EntryScreen from './screens/EntryScreen';
 import RealmMapScreen from './screens/RealmMapScreen';
 import DialogueScreen from './components/DialogueScreen';
-import { colors } from './theme';
-import type { DialogueData } from './types';
+import EndingScreen from './screens/EndingScreen';
+import JournalScreen from './screens/JournalScreen';
+import { suggestPatterns } from './data/spending-integration';
 
-/** Placeholder encounter for scaffolding — will be replaced with real content */
-const placeholderDialogue: DialogueData = {
-  characterName: 'Queen of Pentacles',
-  portraitColor: colors.mauve,
-  dialogueText:
-    'Welcome, Fool. I am Lexi, the Queen of Pentacles. You stand at the edge of something new. ' +
-    'Your spending is data — not a verdict. Shall we begin?',
-  choices: [
-    { id: 'yes', label: 'I am ready to see clearly.', nextScreen: 'realm-map' },
-    { id: 'curious', label: 'Tell me more about the Chasing Patterns.' },
-    { id: 'afraid', label: 'I am afraid of what I might find.' },
-    { id: 'back', label: 'Let me return to the crossroads.', nextScreen: 'realm-map' },
-  ],
-};
+/** Load spending pattern suggestions on first visit */
+function SpendingIntegration() {
+  const dispatch = useGameDispatch();
+  const { flags } = useGameState();
+
+  useEffect(() => {
+    if (flags.spending_checked) return;
+    const suggested = suggestPatterns();
+    for (const pid of suggested) {
+      dispatch({ type: 'REVEAL_PATTERN', patternId: pid });
+    }
+    if (suggested.length > 0) {
+      dispatch({ type: 'SET_FLAG', key: 'spending_checked', value: true });
+    }
+  }, []);
+
+  return null;
+}
 
 /** State machine router — renders the active screen */
 function GameRouter() {
   const { currentScreen } = useGameState();
 
-  switch (currentScreen) {
-    case 'entry':
-      return <EntryScreen />;
-    case 'realm-map':
-      return <RealmMapScreen />;
-    case 'dialogue':
-      return <DialogueScreen data={placeholderDialogue} />;
-    default:
-      return <EntryScreen />;
-  }
+  const screen = (() => {
+    switch (currentScreen) {
+      case 'entry':
+        return <EntryScreen />;
+      case 'realm-map':
+        return <RealmMapScreen />;
+      case 'dialogue':
+        return <DialogueScreen />;
+      case 'ending':
+        return <EndingScreen />;
+      case 'journal':
+        return <JournalScreen />;
+      default:
+        return <EntryScreen />;
+    }
+  })();
+
+  return (
+    <ScreenTransition screenKey={currentScreen}>
+      {screen}
+    </ScreenTransition>
+  );
 }
 
 export default function App() {
   return (
     <GameStateProvider>
+      <SpendingIntegration />
       <GameRouter />
     </GameStateProvider>
   );
