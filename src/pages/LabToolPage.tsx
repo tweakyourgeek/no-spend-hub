@@ -29,6 +29,7 @@ const featureComponents: Record<string, React.LazyExoticComponent<React.Componen
   "rumination-interrupter": lazy(() => import("@/features/rumination-interrupter/src/App")),
   "lab-loop-tracker": lazy(() => import("@/features/lab-loop-tracker/src/App")),
   "testing-lab": lazy(() => import("@/features/testing-lab/src/App")),
+  "nospendlandia": lazy(() => import("@/features/nospendlandia/src/App")),
 };
 
 export default function LabToolPage() {

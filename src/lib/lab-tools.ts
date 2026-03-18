@@ -214,4 +214,12 @@ export const LAB_TOOLS: LabTool[] = [
     tier: "login",
     featureDir: "lab-loop-tracker",
   },
+  {
+    slug: "nospendlandia",
+    name: "Nospendlandia",
+    description: "An RPG adventure through spending realms. Face the Merchants of More, befriend the Frugal Fox, and discover your financial patterns.",
+    emoji: "🏰",
+    tier: "free",
+    featureDir: "nospendlandia",
+  },
 ];
