@@ -9,6 +9,7 @@ import DialogueLine from '../components/DialogueLine';
 import ChoicePanel from '../components/ChoicePanel';
 import HermitBeatComp from '../components/HermitBeat';
 import MercyBeatComp from '../components/MercyBeat';
+import PatternGrid from '../components/PatternGrid';
 import type { Choice, Beat } from '../types';
 import { colors, fonts } from '../theme';
 
@@ -32,6 +33,9 @@ export default function SceneRunner() {
 
   // Track the player's last path for hermit resolution
   const [lastPath, setLastPath] = useState<'pull' | 'friction' | 'pattern' | 'mastery'>('friction');
+
+  // Track which patterns just changed for animation
+  const [changedPatterns, setChangedPatterns] = useState<string[]>([]);
 
   // Reset mercy state when scene changes
   useEffect(() => {
@@ -84,6 +88,9 @@ export default function SceneRunner() {
             advanceBeat();
           }}
         />
+        <div style={{ marginTop: 'auto', paddingTop: '2rem', width: '100%', opacity: 0.5 }}>
+          <PatternGrid compact changedPatterns={changedPatterns} />
+        </div>
       </SceneFrame>
     );
   }
@@ -137,6 +144,10 @@ export default function SceneRunner() {
     for (const action of result.actions) {
       dispatch(action);
     }
+
+    // Animate affected pattern cards
+    setChangedPatterns([...scene.patternTags]);
+    const timer = setTimeout(() => setChangedPatterns([]), 2000);
 
     // If pull, trigger mercy overlay (don't advance beat yet)
     if (result.triggersMercy) {
@@ -225,6 +236,16 @@ export default function SceneRunner() {
   return (
     <SceneFrame scene={scene}>
       {renderBeat(currentBeat)}
+      {/* Persistent mini pattern strip at bottom of scene */}
+      <div style={{
+        marginTop: 'auto',
+        paddingTop: '2rem',
+        width: '100%',
+        opacity: 0.7,
+        transition: 'opacity 0.3s ease',
+      }}>
+        <PatternGrid compact changedPatterns={changedPatterns} />
+      </div>
     </SceneFrame>
   );
 }

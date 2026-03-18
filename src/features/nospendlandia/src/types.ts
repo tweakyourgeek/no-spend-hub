@@ -49,6 +49,8 @@ export interface PatternDefinition {
   description: string;
   icon: string;
   advice: string;
+  /** Hermit-voice one-liner shown on revealed cards — a question, not a label */
+  hermitQuestion: string;
   unlock: { namedCount: number };
 }
 

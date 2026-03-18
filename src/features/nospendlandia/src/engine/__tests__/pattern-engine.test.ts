@@ -86,5 +86,55 @@ describe('pattern-engine', () => {
         expect(p.namedCount).toBe(0);
       }
     });
+
+    describe('fog-of-war tiers', () => {
+      it('fresh state = hidden tier', () => {
+        const grid = getPatternGridData(createInitialState());
+        for (const p of grid) {
+          expect(p.tier).toBe('hidden');
+        }
+      });
+
+      it('pullCount >= 1 = glowing tier', () => {
+        const s = createInitialState();
+        s.patternData.moonbeams = { pullCount: 1, observedCount: 0, namedCount: 0, masteryCount: 0, unlocked: false };
+        const grid = getPatternGridData(s);
+        expect(grid.find(p => p.id === 'moonbeams')?.tier).toBe('glowing');
+      });
+
+      it('observedCount >= 1 = observed tier', () => {
+        const s = createInitialState();
+        s.patternData.ambrosia = { pullCount: 0, observedCount: 1, namedCount: 0, masteryCount: 0, unlocked: false };
+        const grid = getPatternGridData(s);
+        expect(grid.find(p => p.id === 'ambrosia')?.tier).toBe('observed');
+      });
+
+      it('namedCount >= 1 but < 2 = observed tier', () => {
+        const s = createInitialState();
+        s.patternData.sunshine = { pullCount: 0, observedCount: 0, namedCount: 1, masteryCount: 0, unlocked: false };
+        const grid = getPatternGridData(s);
+        expect(grid.find(p => p.id === 'sunshine')?.tier).toBe('observed');
+      });
+
+      it('namedCount >= 2 = revealed tier', () => {
+        const grid = getPatternGridData(stateWithUnlockedPattern('moonbeams'));
+        expect(grid.find(p => p.id === 'moonbeams')?.tier).toBe('revealed');
+      });
+
+      it('observed overrides glowing (both pullCount and observedCount present)', () => {
+        const s = createInitialState();
+        s.patternData.rainbows = { pullCount: 3, observedCount: 1, namedCount: 0, masteryCount: 0, unlocked: false };
+        const grid = getPatternGridData(s);
+        expect(grid.find(p => p.id === 'rainbows')?.tier).toBe('observed');
+      });
+
+      it('includes hermitQuestion field', () => {
+        const grid = getPatternGridData(createInitialState());
+        for (const p of grid) {
+          expect(p.hermitQuestion).toBeTruthy();
+          expect(typeof p.hermitQuestion).toBe('string');
+        }
+      });
+    });
   });
 });
