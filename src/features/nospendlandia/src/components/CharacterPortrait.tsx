@@ -92,6 +92,7 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
           fontWeight: 700,
           textShadow: `0 0 20px ${character.portraitAccent}`,
           animation: `${animations.float} 4s ease-in-out infinite`,
+          overflow: 'hidden',
         }}>
           {character.icon}
         </div>
@@ -119,9 +120,9 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
             opacity: 0.3,
           }}
         >
-          <line x1="0" y1="5" x2="40" y2="5" stroke={character.portraitAccent} strokeWidth="0.5" />
+          <line x1="0" y1="5" x2="40" y2="5" stroke={character.portraitAccent} strokeWidth="0.5" strokeLinecap="round" />
           <circle cx="50" cy="5" r="2" fill={character.portraitAccent} />
-          <line x1="60" y1="5" x2="100" y2="5" stroke={character.portraitAccent} strokeWidth="0.5" />
+          <line x1="60" y1="5" x2="100" y2="5" stroke={character.portraitAccent} strokeWidth="0.5" strokeLinecap="round" />
         </svg>
       </div>
     </div>

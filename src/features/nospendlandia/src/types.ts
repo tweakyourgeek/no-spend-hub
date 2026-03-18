@@ -76,6 +76,7 @@ export interface QuestLine {
 /** Full game state shape */
 export interface GameState {
   currentScreen: Screen;
+  previousScreen: Screen | null;
   activeQuest: Quest | null;
   chasingPattern: ChasingPattern | null;
   revealedPatterns: string[];

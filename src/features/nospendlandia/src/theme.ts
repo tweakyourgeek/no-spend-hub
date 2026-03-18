@@ -28,6 +28,7 @@ export const animations = {
   shimmer: 'nsl-shimmer',
   pulseGlow: 'nsl-pulseGlow',
   typewriter: 'nsl-typewriter',
+  cursorBlink: 'nsl-cursorBlink',
 } as const;
 
 /** Keyframes CSS to inject */
@@ -63,5 +64,9 @@ export const keyframesCSS = `
 @keyframes ${animations.typewriter} {
   from { max-height: 0; }
   to { max-height: 500px; }
+}
+@keyframes ${animations.cursorBlink} {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 `;
