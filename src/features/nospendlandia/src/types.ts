@@ -225,7 +225,7 @@ export type GameAction =
   | { type: 'COMPLETE_QUEST'; questId: QuestId }
   // Scene
   | { type: 'START_SCENE'; sceneId: SceneId }
-  | { type: 'ADVANCE_BEAT' }
+  | { type: 'ADVANCE_BEAT'; fromIndex?: number }
   | { type: 'SET_BRANCH'; branchId: string }
   | { type: 'COMPLETE_SCENE'; sceneId: SceneId }
   // Patterns

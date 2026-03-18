@@ -68,7 +68,9 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         currentScreen: 'scene',
       };
     case 'ADVANCE_BEAT':
-      return { ...state, currentBeatIndex: state.currentBeatIndex + 1 };
+      // fromIndex allows advancing from the resolved beat index (which may differ
+      // from currentBeatIndex due to variant/mercy beat skipping in useScene)
+      return { ...state, currentBeatIndex: (action.fromIndex ?? state.currentBeatIndex) + 1 };
     case 'SET_BRANCH':
       return { ...state, currentBranch: action.branchId };
     case 'COMPLETE_SCENE': {
@@ -155,6 +157,11 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
     case 'LOAD_STATE':
       return { ...createInitialState(), ...action.state };
     case 'RESET':
+      // Clear both old and new storage keys
+      try {
+        localStorage.removeItem('nospendlandia_gamestate');
+        localStorage.removeItem('nospendlandia-save');
+      } catch { /* ignore */ }
       return createInitialState();
 
     default:

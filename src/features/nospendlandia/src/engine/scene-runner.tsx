@@ -1,8 +1,8 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useGameState, useGameDispatch } from '../contexts/GameStateContext';
 import { useScene } from '../hooks/useScene';
 import { resolveChoice, buildHermitEntry } from './choice-resolver';
-import { shouldTriggerMercy, getQueenLine, getHermitPullQuestion } from './mercy-engine';
+import { getQueenLine, getHermitPullQuestion } from './mercy-engine';
 import SceneFrame from '../components/SceneFrame';
 import NarrationBlock from '../components/NarrationBlock';
 import DialogueLine from '../components/DialogueLine';
@@ -10,31 +10,40 @@ import ChoicePanel from '../components/ChoicePanel';
 import HermitBeatComp from '../components/HermitBeat';
 import MercyBeatComp from '../components/MercyBeat';
 import type { Choice, Beat } from '../types';
-import { getCurrentPath } from '../state/selectors';
 import { colors, fonts } from '../theme';
 
 /**
  * Scene Runner — renders any scene from data. NOT scene-specific.
  *
- * Walks through the beat sequence, rendering each beat type,
- * and handling choice resolution, mercy, and hermit beats.
+ * Beat index walks the FULL scene.beats array.
+ * useScene() resolves the current relevant beat by skipping non-matching
+ * dialogue variants and mercy beats (which fire dynamically).
  */
 export default function SceneRunner() {
   const state = useGameState();
   const dispatch = useGameDispatch();
-  const { scene, currentBeat, activeBeats, currentBeatIndex } = useScene();
+  const { scene, currentBeat, currentBeatIndex } = useScene();
 
-  // Mercy state — inserted dynamically after Pull choices
+  // Mercy state — dynamically inserted after Pull choices
   const [mercyActive, setMercyActive] = useState(false);
   const [mercyQueenLine, setMercyQueenLine] = useState('');
   const [mercyHermitQ, setMercyHermitQ] = useState('');
+  const [mercyHandled, setMercyHandled] = useState(false);
 
   // Track the player's last path for hermit resolution
   const [lastPath, setLastPath] = useState<'pull' | 'friction' | 'pattern' | 'mastery'>('friction');
 
+  // Reset mercy state when scene changes
+  useEffect(() => {
+    setMercyActive(false);
+    setMercyHandled(false);
+  }, [state.currentScene]);
+
+  // Advance from the RESOLVED beat index (not the raw stored index)
+  // so that skipped variants/mercy beats don't cause index drift
   const advanceBeat = useCallback(() => {
-    dispatch({ type: 'ADVANCE_BEAT' });
-  }, [dispatch]);
+    dispatch({ type: 'ADVANCE_BEAT', fromIndex: currentBeatIndex });
+  }, [dispatch, currentBeatIndex]);
 
   if (!scene) {
     return (
@@ -61,7 +70,7 @@ export default function SceneRunner() {
     );
   }
 
-  // If mercy is active, show the mercy beat
+  // If mercy is active, show the mercy beat overlay
   if (mercyActive) {
     return (
       <SceneFrame scene={scene}>
@@ -70,6 +79,8 @@ export default function SceneRunner() {
           hermitQuestion={mercyHermitQ}
           onContinue={() => {
             setMercyActive(false);
+            setMercyHandled(true);
+            // Advance past the choice beat to the next relevant beat
             advanceBeat();
           }}
         />
@@ -77,11 +88,16 @@ export default function SceneRunner() {
     );
   }
 
-  // Scene complete — no more beats
+  // Scene complete — no more relevant beats
   if (!currentBeat) {
-    // Complete the scene and navigate
     const completeScene = () => {
       dispatch({ type: 'COMPLETE_SCENE', sceneId: scene.id });
+      // Process scene unlocks
+      if (scene.unlocks.scenes) {
+        for (const sid of scene.unlocks.scenes) {
+          dispatch({ type: 'SET_FLAG', key: `scene_unlocked_${sid}`, value: true });
+        }
+      }
       dispatch({ type: 'NAVIGATE', screen: 'realm-map' });
     };
 
@@ -115,15 +131,15 @@ export default function SceneRunner() {
 
     const result = resolveChoice(choice, scene, state);
     setLastPath(result.path);
+    setMercyHandled(false);
 
-    // Dispatch all actions
+    // Dispatch all actions (SET_BRANCH, APPLY_STATE_CHANGES, pattern tracking)
     for (const action of result.actions) {
       dispatch(action);
     }
 
-    // If pull, trigger mercy
+    // If pull, trigger mercy overlay (don't advance beat yet)
     if (result.triggersMercy) {
-      // Find the mercy beat in the scene for contextual lines
       const mercyBeat = scene.beats.find(b => b.type === 'mercy');
       const queenLine = mercyBeat && mercyBeat.type === 'mercy'
         ? getQueenLine(mercyBeat.queenLine)
@@ -138,16 +154,17 @@ export default function SceneRunner() {
       return;
     }
 
-    // Otherwise advance to next beat
+    // Non-pull choice: advance to next beat
     advanceBeat();
   }
 
-  // Handle hermit beat — resolve the question from the scene's hermitQuestions
+  // Handle hermit beat completion
   function handleHermit() {
     if (!scene) return;
 
-    const path = lastPath;
-    const entry = buildHermitEntry(scene, path);
+    // If mercy already handled the pull question, use a different path for the hermit
+    const effectivePath = (lastPath === 'pull' && mercyHandled) ? 'friction' : lastPath;
+    const entry = buildHermitEntry(scene, effectivePath);
     dispatch({ type: 'ADD_HERMIT_ENTRY', entry });
     advanceBeat();
   }
@@ -179,10 +196,11 @@ export default function SceneRunner() {
         );
 
       case 'hermit': {
-        const path = lastPath;
+        // If mercy already asked the pull question, show the friction question instead
+        const effectivePath = (lastPath === 'pull' && mercyHandled) ? 'friction' : lastPath;
         const question = beat.question
-          || (path === 'mastery' && scene!.hermitQuestions.mastery)
-          || scene!.hermitQuestions[path]
+          || (effectivePath === 'mastery' && scene!.hermitQuestions.mastery)
+          || scene!.hermitQuestions[effectivePath]
           || scene!.hermitQuestions.friction;
         return (
           <HermitBeatComp
@@ -193,9 +211,9 @@ export default function SceneRunner() {
         );
       }
 
+      // Mercy beats should never be reached here (skipped by useScene),
+      // but guard against it just in case
       case 'mercy':
-        // Mercy beats are handled dynamically by the choice resolver,
-        // not rendered in sequence. Skip if we reach one directly.
         advanceBeat();
         return null;
 
