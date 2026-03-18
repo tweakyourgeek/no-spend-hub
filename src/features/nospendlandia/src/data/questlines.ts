@@ -16,15 +16,13 @@ export interface QuestLine {
 }
 
 export const questLines: Record<string, QuestLine> = {
+  // Weekend quest uses the new scene-based system (data/quests.ts + data/scenes/).
+  // Legacy encounters removed to prevent conflict.
   'no_spend_weekend': {
     questId: 'no_spend_weekend',
     title: 'The Weekend Gate',
     description: 'A 2-day side quest of stillness',
-    encounters: [
-      { id: 'enc-weekend-1', dialogueNodeId: 'lexi-weekend' },
-      { id: 'enc-weekend-2', dialogueNodeId: 'arden-intro' },
-      { id: 'enc-weekend-3', dialogueNodeId: 'nova-intro', requiredFlags: { met_arden: true } },
-    ],
+    encounters: [],
     endingDialogueId: 'nova-farewell',
   },
   'no_spend_week': {
