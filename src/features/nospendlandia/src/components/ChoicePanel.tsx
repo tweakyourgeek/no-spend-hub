@@ -35,7 +35,7 @@ export default function ChoicePanel({ choices, state, onChoice }: Props) {
               color: isLocked ? `${colors.cream}44` : colors.cream,
               border: `1px solid ${isLocked ? `${colors.lavender}22` : `${colors.sage}44`}`,
               borderRadius: 8,
-              padding: '0.85rem 1.25rem',
+              padding: 'clamp(0.85rem, 3vw, 1rem) clamp(1rem, 3vw, 1.25rem)',
               cursor: available ? 'pointer' : 'not-allowed',
               fontSize: 'clamp(0.85rem, 2.5vw, 0.95rem)',
               textAlign: 'left',
@@ -43,6 +43,7 @@ export default function ChoicePanel({ choices, state, onChoice }: Props) {
               animation: `${animations.fadeSlideIn} 0.3s ease-out ${i * 0.08}s both`,
               position: 'relative',
               opacity: isLocked ? 0.5 : 1,
+              WebkitTapHighlightColor: 'transparent',
             }}
             onMouseEnter={(e) => {
               if (available) {

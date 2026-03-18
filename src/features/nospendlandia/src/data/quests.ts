@@ -15,8 +15,15 @@ export const QUESTS: Record<string, QuestDefinition> = {
     description: 'The main quest — a full week of intention',
     durationDays: 7,
     sessionMinutes: 10,
-    scenes: [],
-    // Scenes added when written
+    scenes: [
+      'scene_w1_monday_morning',
+      'scene_w2_tuesday_evening',
+      'scene_w3_wednesday_night',
+      'scene_w4_thursday_surprise',
+      'scene_w5_friday_paycheck',
+      'scene_w6_weekend_test',
+      'scene_w7_sunday_world',
+    ],
   },
   low_spend_month: {
     id: 'low_spend_month',
@@ -24,7 +31,23 @@ export const QUESTS: Record<string, QuestDefinition> = {
     description: 'The epic — thirty days of transformation',
     durationDays: 30,
     sessionMinutes: 12,
-    scenes: [],
-    // Scenes added when written
+    scenes: [
+      'scene_m01_day_one',
+      'scene_m03_first_test',
+      'scene_m05_first_weekend',
+      'scene_m07_one_week',
+      'scene_m08_temptation',
+      'scene_m10_week_two',
+      'scene_m12_social_pressure',
+      'scene_m14_two_weeks',
+      'scene_m15_halfway',
+      'scene_m17_the_slip',
+      'scene_m20_identity',
+      'scene_m21_week_three',
+      'scene_m23_relapse',
+      'scene_m25_almost',
+      'scene_m28_last_weekend',
+      'scene_m30_the_world',
+    ],
   },
 };

@@ -38,15 +38,16 @@ export default function EntryScreen() {
 
   return (
     <div style={{
-      minHeight: '100vh',
+      minHeight: '100dvh',
       background: `linear-gradient(170deg, ${colors.deepPlum} 0%, ${colors.plum} 40%, ${colors.mauve}33 100%)`,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '2rem',
+      padding: 'max(env(safe-area-inset-top, 0px), 1.5rem) clamp(1rem, 4vw, 2rem) max(env(safe-area-inset-bottom, 0px), 1.5rem)',
       color: colors.cream,
       animation: `${animations.fadeIn} 0.6s ease-out`,
+      overflowX: 'hidden',
     }}>
       {/* The Fool card */}
       <div style={{
@@ -110,7 +111,7 @@ export default function EntryScreen() {
         Three doors shimmer before you. Choose your path.
       </p>
 
-      {/* Three Doors */}
+      {/* Three Doors — stack vertically on narrow screens */}
       <div style={{
         display: 'flex',
         gap: 'clamp(0.75rem, 2vw, 1.5rem)',

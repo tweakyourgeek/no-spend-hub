@@ -20,14 +20,15 @@ export default function EndingScreen() {
 
   return (
     <div style={{
-      minHeight: '100vh',
+      minHeight: '100dvh',
       background: `radial-gradient(ellipse at 50% 30%, ${colors.starBlue}44 0%, ${colors.deepPlum} 50%, ${colors.plum} 100%)`,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '3rem 2rem',
+      padding: 'max(env(safe-area-inset-top, 0px), 2rem) clamp(1rem, 4vw, 2rem) max(env(safe-area-inset-bottom, 0px), 2rem)',
       color: colors.cream,
       animation: `${animations.fadeIn} 1s ease-out`,
+      overflowX: 'hidden',
     }}>
       {/* World glyph */}
       <div style={{
@@ -109,6 +110,17 @@ export default function EndingScreen() {
           }}>
             <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{guidesMet}</div>
             <div style={{ opacity: 0.7, fontSize: '0.8rem' }}>Guides Met</div>
+          </div>
+          <div style={{
+            background: `${colors.peach}22`,
+            border: `1px solid ${colors.peach}33`,
+            borderRadius: 8,
+            padding: '0.75rem 1rem',
+            flex: 1,
+            textAlign: 'center',
+          }}>
+            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{completedScenes.length}</div>
+            <div style={{ opacity: 0.7, fontSize: '0.8rem' }}>Scenes</div>
           </div>
           <div style={{
             background: `${colors.gold}22`,
