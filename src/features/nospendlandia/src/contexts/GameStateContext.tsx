@@ -5,6 +5,7 @@ const STORAGE_KEY = 'nospendlandia-save';
 
 const initialState: GameState = {
   currentScreen: 'entry',
+  previousScreen: null,
   activeQuest: null,
   chasingPattern: null,
   revealedPatterns: [],
@@ -39,7 +40,7 @@ function saveState(state: GameState) {
 function gameReducer(state: GameState, action: GameAction): GameState {
   switch (action.type) {
     case 'NAVIGATE':
-      return { ...state, currentScreen: action.screen };
+      return { ...state, previousScreen: state.currentScreen, currentScreen: action.screen };
     case 'SET_QUEST':
       return { ...state, activeQuest: action.quest, encounterIndex: 0 };
     case 'SET_CHASING_PATTERN':

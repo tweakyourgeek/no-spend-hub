@@ -14,6 +14,7 @@ export default function DialogueScreen() {
   const [displayedText, setDisplayedText] = useState('');
   const [textComplete, setTextComplete] = useState(false);
   const [revealedPattern, setRevealedPattern] = useState<string | null>(null);
+  const [pendingChoice, setPendingChoice] = useState<DialogueChoice | null>(null);
   const [choicesVisible, setChoicesVisible] = useState(false);
 
   const node = currentDialogueId ? dialogues[currentDialogueId] : null;
@@ -26,6 +27,7 @@ export default function DialogueScreen() {
     setTextComplete(false);
     setChoicesVisible(false);
     setRevealedPattern(null);
+    setPendingChoice(null);
 
     let i = 0;
     const text = node.text;
@@ -59,13 +61,17 @@ export default function DialogueScreen() {
     if (choice.revealsPattern) {
       dispatch({ type: 'REVEAL_PATTERN', patternId: choice.revealsPattern });
       setRevealedPattern(choice.revealsPattern);
-      // Show pattern briefly, then continue
-      setTimeout(() => {
-        setRevealedPattern(null);
-        navigateAfterChoice(choice);
-      }, 3000);
+      setPendingChoice(choice);
       return;
     }
+    navigateAfterChoice(choice);
+  }
+
+  function dismissPattern() {
+    if (!pendingChoice) return;
+    const choice = pendingChoice;
+    setRevealedPattern(null);
+    setPendingChoice(null);
     navigateAfterChoice(choice);
   }
 
@@ -78,6 +84,10 @@ export default function DialogueScreen() {
       }
       dispatch({ type: 'NAVIGATE', screen: choice.nextScreen });
     }
+  }
+
+  function leaveDialogue() {
+    dispatch({ type: 'NAVIGATE', screen: 'realm-map' });
   }
 
   if (!node || !character) {
@@ -105,19 +115,22 @@ export default function DialogueScreen() {
     );
   }
 
-  // Pattern reveal overlay
+  // Pattern reveal overlay — tap to continue
   if (revealedPattern && chasingPatterns[revealedPattern]) {
     return (
-      <div style={{
-        minHeight: '100vh',
-        background: `radial-gradient(ellipse at 50% 40%, ${colors.deepPlum} 0%, ${colors.plum} 70%)`,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '2rem',
-        color: colors.cream,
-      }}>
+      <div
+        onClick={dismissPattern}
+        style={{
+          minHeight: '100vh',
+          background: `radial-gradient(ellipse at 50% 40%, ${colors.deepPlum} 0%, ${colors.plum} 70%)`,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '2rem',
+          color: colors.cream,
+          cursor: 'pointer',
+        }}>
         <p style={{
           fontFamily: fonts.heading,
           fontSize: 'clamp(1rem, 3vw, 1.3rem)',
@@ -128,6 +141,15 @@ export default function DialogueScreen() {
           A Chasing Pattern revealed...
         </p>
         <PatternCard pattern={chasingPatterns[revealedPattern]} isNew />
+        <p style={{
+          fontFamily: fonts.body,
+          fontSize: '0.8rem',
+          opacity: 0.5,
+          marginTop: '1.5rem',
+          animation: `${animations.fadeIn} 1s ease-out 0.5s both`,
+        }}>
+          tap anywhere to continue
+        </p>
       </div>
     );
   }
@@ -185,7 +207,7 @@ export default function DialogueScreen() {
         lineHeight: 1.7,
         fontFamily: fonts.body,
         fontSize: 'clamp(0.9rem, 2.5vw, 1rem)',
-        minHeight: 80,
+        minHeight: 100,
       }}>
         {displayedText}
         {!textComplete && (
@@ -195,7 +217,7 @@ export default function DialogueScreen() {
             height: '1em',
             background: colors.cream,
             marginLeft: 2,
-            animation: `${animations.fadeIn} 0.5s ease-in-out infinite alternate`,
+            animation: `${animations.cursorBlink} 0.8s step-end infinite`,
           }} />
         )}
       </div>
@@ -253,6 +275,34 @@ export default function DialogueScreen() {
               {choice.label}
             </button>
           ))}
+          {/* Leave dialogue option */}
+          <button
+            onClick={(e) => { e.stopPropagation(); leaveDialogue(); }}
+            style={{
+              fontFamily: fonts.body,
+              background: 'transparent',
+              color: colors.lavender,
+              border: `1px solid ${colors.lavender}22`,
+              borderRadius: 8,
+              padding: '0.6rem 1.25rem',
+              cursor: 'pointer',
+              fontSize: '0.8rem',
+              textAlign: 'center',
+              opacity: 0.5,
+              transition: 'all 0.2s ease',
+              marginTop: '0.25rem',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.opacity = '0.8';
+              e.currentTarget.style.borderColor = `${colors.lavender}55`;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.opacity = '0.5';
+              e.currentTarget.style.borderColor = `${colors.lavender}22`;
+            }}
+          >
+            Leave conversation
+          </button>
         </div>
       )}
     </div>

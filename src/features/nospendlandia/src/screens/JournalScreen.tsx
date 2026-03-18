@@ -3,9 +3,10 @@ import { useGameState, useGameDispatch } from '../contexts/GameStateContext';
 import { colors, fonts, animations } from '../theme';
 
 export default function JournalScreen() {
-  const { journalEntries } = useGameState();
+  const { journalEntries, previousScreen } = useGameState();
   const dispatch = useGameDispatch();
   const [newEntry, setNewEntry] = useState('');
+  const [inputFocused, setInputFocused] = useState(false);
 
   function addEntry() {
     const text = newEntry.trim();
@@ -13,6 +14,11 @@ export default function JournalScreen() {
     const dated = `[${new Date().toLocaleDateString()}] ${text}`;
     dispatch({ type: 'ADD_JOURNAL', entry: dated });
     setNewEntry('');
+  }
+
+  function goBack() {
+    const target = previousScreen && previousScreen !== 'journal' ? previousScreen : 'ending';
+    dispatch({ type: 'NAVIGATE', screen: target });
   }
 
   return (
@@ -62,17 +68,21 @@ export default function JournalScreen() {
           value={newEntry}
           onChange={(e) => setNewEntry(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && addEntry()}
+          onFocus={() => setInputFocused(true)}
+          onBlur={() => setInputFocused(false)}
           placeholder="How did it feel today?"
           style={{
             flex: 1,
             fontFamily: fonts.body,
             fontSize: '0.95rem',
             background: `${colors.deepPlum}`,
-            border: `1px solid ${colors.gold}44`,
+            border: `1px solid ${inputFocused ? colors.gold : `${colors.gold}44`}`,
             borderRadius: 8,
             padding: '0.75rem 1rem',
             color: colors.cream,
             outline: 'none',
+            boxShadow: inputFocused ? `0 0 12px ${colors.gold}33` : 'none',
+            transition: 'border-color 0.2s, box-shadow 0.2s',
           }}
         />
         <button
@@ -131,7 +141,7 @@ export default function JournalScreen() {
 
       {/* Back button */}
       <button
-        onClick={() => dispatch({ type: 'NAVIGATE', screen: 'ending' })}
+        onClick={goBack}
         style={{
           fontFamily: fonts.body,
           background: 'transparent',

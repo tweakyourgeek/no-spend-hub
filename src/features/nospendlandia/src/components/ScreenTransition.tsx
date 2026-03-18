@@ -6,7 +6,7 @@ interface Props {
   screenKey: string;
 }
 
-/** Wraps a screen in a fade+slide transition when the key changes */
+/** Wraps a screen in a fade+slide transition with exit fade on key change */
 export default function ScreenTransition({ children, screenKey }: Props) {
   const [visible, setVisible] = useState(false);
 
@@ -21,6 +21,7 @@ export default function ScreenTransition({ children, screenKey }: Props) {
       style={{
         animation: visible ? `${animations.fadeSlideIn} 0.5s ease-out forwards` : 'none',
         opacity: visible ? undefined : 0,
+        transition: visible ? 'none' : 'opacity 0.15s ease-out',
         minHeight: '100vh',
       }}
     >

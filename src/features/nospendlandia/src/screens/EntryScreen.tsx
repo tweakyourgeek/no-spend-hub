@@ -28,7 +28,7 @@ const quests: { id: Quest; label: string; icon: string; description: string; col
 ];
 
 export default function EntryScreen() {
-  const { completedQuests } = useGameState();
+  const { completedQuests, activeQuest } = useGameState();
   const dispatch = useGameDispatch();
 
   function selectQuest(quest: Quest) {
@@ -121,13 +121,14 @@ export default function EntryScreen() {
       }}>
         {quests.map((q, i) => {
           const isCompleted = completedQuests.includes(q.id);
+          const isActive = activeQuest === q.id && !isCompleted;
           return (
             <button
               key={q.id}
               onClick={() => selectQuest(q.id)}
               style={{
                 background: `linear-gradient(160deg, ${colors.deepPlum}, ${colors.plum})`,
-                border: `2px solid ${q.color}44`,
+                border: `2px solid ${isActive ? q.color : `${q.color}44`}`,
                 borderRadius: 16,
                 padding: 'clamp(1.25rem, 3vw, 2rem) clamp(1rem, 2vw, 1.5rem)',
                 width: 'clamp(160px, 28vw, 200px)',
@@ -161,6 +162,18 @@ export default function EntryScreen() {
                   color: colors.sage,
                   opacity: 0.7,
                 }}>✓</div>
+              )}
+              {isActive && (
+                <div style={{
+                  position: 'absolute',
+                  top: 8,
+                  right: 10,
+                  fontSize: '0.6rem',
+                  fontFamily: fonts.body,
+                  color: q.color,
+                  opacity: 0.8,
+                  letterSpacing: '0.03em',
+                }}>in progress</div>
               )}
               <div style={{
                 fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',

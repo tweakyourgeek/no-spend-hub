@@ -147,6 +147,33 @@ export default function EndingScreen() {
         )}
       </div>
 
+      {/* Personal insight based on journey flags */}
+      {(flags.pattern_loneliness || flags.pattern_boredom || flags.pattern_stress || flags.arden_saving || flags.month_imperfect) && (
+        <div style={{
+          background: `${colors.deepPlum}88`,
+          border: `1px solid ${colors.lavender}22`,
+          borderRadius: 12,
+          padding: '1.25rem 1.5rem',
+          maxWidth: 500,
+          width: '100%',
+          marginBottom: '1.5rem',
+          fontFamily: fonts.body,
+          fontSize: '0.9rem',
+          lineHeight: 1.6,
+          opacity: 0.8,
+          fontStyle: 'italic',
+        }}>
+          <p style={{ color: colors.lavender, fontFamily: fonts.heading, fontSize: '0.95rem', marginBottom: '0.5rem', opacity: 0.7 }}>
+            Your path revealed:
+          </p>
+          {flags.pattern_loneliness && <p>You recognized loneliness as a spending trigger. Connection, not consumption, is the antidote.</p>}
+          {flags.pattern_boredom && <p>You saw boredom for what it is — an invitation to create, not consume.</p>}
+          {flags.pattern_stress && <p>You understood the stress-spending spiral. The pause is your power.</p>}
+          {flags.arden_saving && <p>You looked beyond saving money to find what saving really means — freedom and self-trust.</p>}
+          {flags.month_imperfect && <p>You embraced imperfection. Thirty fresh starts, not one impossible streak.</p>}
+        </div>
+      )}
+
       {/* Mantra */}
       <p style={{
         fontFamily: fonts.heading,

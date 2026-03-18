@@ -19,21 +19,30 @@ export default function RealmMapScreen() {
 
   const questLine = activeQuest ? questLines[activeQuest] : null;
 
-  // Find next available encounter
-  function getNextEncounter() {
+  // Find next available encounter, and track why it might be locked
+  function getNextEncounter(): { encounter: typeof questLine extends { encounters: (infer E)[] } ? E : never; lockedReason: string | null } | null {
     if (!questLine) return null;
     for (let i = encounterIndex; i < questLine.encounters.length; i++) {
       const enc = questLine.encounters[i];
       if (enc.requiredFlags) {
-        const met = Object.entries(enc.requiredFlags).every(([k, v]) => flags[k] === v);
-        if (!met) continue;
+        const unmet = Object.entries(enc.requiredFlags).filter(([k, v]) => flags[k] !== v);
+        if (unmet.length > 0) {
+          // Build a human-readable lock reason from the flag names
+          const names = unmet.map(([k]) => {
+            const match = k.match(/^met_(.+)$/);
+            return match ? match[1] : k;
+          });
+          return { encounter: enc as any, lockedReason: `Complete the encounter with ${names.join(', ')} first` };
+        }
       }
-      return enc;
+      return { encounter: enc as any, lockedReason: null };
     }
     return null;
   }
 
-  const nextEnc = getNextEncounter();
+  const nextResult = getNextEncounter();
+  const nextEnc = nextResult?.lockedReason ? null : nextResult?.encounter ?? null;
+  const lockedReason = nextResult?.lockedReason ?? null;
   const nextCharId = nextEnc
     ? (dialogues[nextEnc.dialogueNodeId]?.characterId ?? 'the-fool')
     : null;
@@ -236,7 +245,7 @@ export default function RealmMapScreen() {
                   opacity={completed || current ? 0.8 : 0.25}
                 >
                   {current && (
-                    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
                   )}
                 </circle>
               );
@@ -255,6 +264,20 @@ export default function RealmMapScreen() {
           fontStyle: 'italic',
         }}>
           Next: {nextChar.title} awaits...
+        </p>
+      )}
+      {lockedReason && (
+        <p style={{
+          fontFamily: fonts.body,
+          fontSize: '0.85rem',
+          color: colors.peach,
+          opacity: 0.7,
+          marginBottom: '1rem',
+          fontStyle: 'italic',
+          textAlign: 'center',
+          maxWidth: 400,
+        }}>
+          {lockedReason}
         </p>
       )}
 
@@ -307,29 +330,37 @@ export default function RealmMapScreen() {
       }}>
         <button
           onClick={beginEncounter}
+          disabled={!!lockedReason}
           style={{
             fontFamily: fonts.body,
-            background: `linear-gradient(135deg, ${colors.sage}, ${colors.sage}cc)`,
-            color: colors.plum,
+            background: lockedReason
+              ? `${colors.storm}66`
+              : `linear-gradient(135deg, ${colors.sage}, ${colors.sage}cc)`,
+            color: lockedReason ? colors.lavender : colors.plum,
             border: 'none',
             borderRadius: 8,
             padding: '0.85rem 2rem',
-            cursor: 'pointer',
+            cursor: lockedReason ? 'not-allowed' : 'pointer',
             fontWeight: 600,
             fontSize: 'clamp(0.85rem, 2.5vw, 0.95rem)',
             transition: 'all 0.2s ease',
-            boxShadow: `0 4px 16px ${colors.sage}33`,
+            boxShadow: lockedReason ? 'none' : `0 4px 16px ${colors.sage}33`,
+            opacity: lockedReason ? 0.6 : 1,
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)';
-            e.currentTarget.style.boxShadow = `0 6px 24px ${colors.sage}55`;
+            if (!lockedReason) {
+              e.currentTarget.style.transform = 'translateY(-2px)';
+              e.currentTarget.style.boxShadow = `0 6px 24px ${colors.sage}55`;
+            }
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.transform = '';
-            e.currentTarget.style.boxShadow = `0 4px 16px ${colors.sage}33`;
+            if (!lockedReason) {
+              e.currentTarget.style.transform = '';
+              e.currentTarget.style.boxShadow = `0 4px 16px ${colors.sage}33`;
+            }
           }}
         >
-          {nextEnc ? 'Begin Encounter' : 'Complete Quest'}
+          {lockedReason ? 'Locked' : nextEnc ? 'Begin Encounter' : 'Complete Quest'}
         </button>
         <button
           onClick={() => dispatch({ type: 'NAVIGATE', screen: 'entry' })}
