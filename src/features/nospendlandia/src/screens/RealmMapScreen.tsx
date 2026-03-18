@@ -228,8 +228,31 @@ export default function RealmMapScreen() {
           );
         })}
 
-        {/* Progress dots */}
-        {questLine && (
+        {/* Progress dots — scene-based system */}
+        {hasScenes && questDef && questDef.scenes.length > 0 && (
+          <g>
+            {questDef.scenes.map((sid, i) => {
+              const total = questDef.scenes.length;
+              const spacing = 16;
+              const startX = 250 - ((total - 1) * spacing) / 2;
+              const completed = completedScenes.includes(sid);
+              const isCurrent = !completed && (i === 0 || completedScenes.includes(questDef.scenes[i - 1]));
+              return (
+                <circle
+                  key={sid}
+                  cx={startX + i * spacing} cy="310"
+                  r={isCurrent ? 5 : 3.5}
+                  fill={completed ? colors.sage : isCurrent ? colors.gold : colors.lavender}
+                  opacity={completed || isCurrent ? 0.8 : 0.25}
+                >
+                  {isCurrent && <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />}
+                </circle>
+              );
+            })}
+          </g>
+        )}
+        {/* Progress dots — legacy encounter system */}
+        {!hasScenes && questLine && questLine.encounters.length > 0 && (
           <g>
             {questLine.encounters.map((enc, i) => {
               const total = questLine.encounters.length;
@@ -254,15 +277,29 @@ export default function RealmMapScreen() {
       </svg>
 
       {/* Scene info (new system) */}
-      {hasScenes && nextScene && (
+      {hasScenes && nextScene && (() => {
+        const nextSceneData = getScene(nextScene);
+        return (
+          <p style={{
+            fontFamily: fonts.heading,
+            fontSize: '0.95rem',
+            opacity: 0.6,
+            marginBottom: '1rem',
+            fontStyle: 'italic',
+          }}>
+            Next: {nextSceneData ? `Day ${nextSceneData.day} — ${nextSceneData.title}` : nextScene}
+          </p>
+        );
+      })()}
+      {hasScenes && !nextScene && currentQuest && (
         <p style={{
           fontFamily: fonts.heading,
           fontSize: '0.95rem',
-          opacity: 0.6,
+          opacity: 0.8,
           marginBottom: '1rem',
-          fontStyle: 'italic',
+          color: colors.gold,
         }}>
-          Next: {getScene(nextScene)?.title ?? nextScene}
+          All scenes complete. Your journey awaits its ending.
         </p>
       )}
 
