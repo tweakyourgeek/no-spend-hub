@@ -33,17 +33,12 @@ export const questLines: Record<string, QuestLine> = {
     encounters: [],
     endingDialogueId: 'nova-farewell',
   },
+  // Month quest uses the new scene-based system.
   'low_spend_month': {
     questId: 'low_spend_month',
     title: 'The Lunar Arch',
     description: 'The epic — thirty days of transformation',
-    encounters: [
-      { id: 'enc-month-1', dialogueNodeId: 'lexi-month' },
-      { id: 'enc-month-2', dialogueNodeId: 'arden-intro' },
-      { id: 'enc-month-3', dialogueNodeId: 'sable-intro' },
-      { id: 'enc-month-4', dialogueNodeId: 'cael-intro', requiredFlags: { met_sable: true } },
-      { id: 'enc-month-5', dialogueNodeId: 'nova-intro', requiredFlags: { met_cael: true } },
-    ],
+    encounters: [],
     endingDialogueId: 'nova-farewell',
   },
 };

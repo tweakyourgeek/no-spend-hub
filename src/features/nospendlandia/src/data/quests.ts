@@ -31,7 +31,13 @@ export const QUESTS: Record<string, QuestDefinition> = {
     description: 'The epic — thirty days of transformation',
     durationDays: 30,
     sessionMinutes: 12,
-    scenes: [],
-    // Scenes added when written
+    scenes: [
+      'scene_m01_day_one',
+      'scene_m05_first_weekend',
+      'scene_m10_week_two',
+      'scene_m15_halfway',
+      'scene_m21_week_three',
+      'scene_m30_the_world',
+    ],
   },
 };
