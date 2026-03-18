@@ -45,30 +45,57 @@ export function getPatternActions(
   return actions;
 }
 
-/** Get all patterns and their status for the PatternGrid display */
-export function getPatternGridData(state: GameState): Array<{
+/**
+ * Fog-of-war tier for a pattern card:
+ * - 'hidden'   — no interaction yet, fully fogged
+ * - 'glowing'  — pullCount >= 1, faint glow (something is here)
+ * - 'observed' — observedCount >= 1, silhouette visible (shape but not name)
+ * - 'revealed' — namedCount >= 2 (unlocked), full card with name + description
+ */
+export type PatternTier = 'hidden' | 'glowing' | 'observed' | 'revealed';
+
+export interface PatternGridItem {
   id: PatternId;
   name: string;
   icon: string;
   description: string;
   advice: string;
+  hermitQuestion: string;
+  tier: PatternTier;
   unlocked: boolean;
   pullCount: number;
+  observedCount: number;
   namedCount: number;
-}> {
+}
+
+/** Get all patterns and their status for the PatternGrid display */
+export function getPatternGridData(state: GameState): PatternGridItem[] {
   return (Object.keys(PATTERNS) as PatternId[]).map(pid => {
     const def = PATTERNS[pid];
     const tracking = state.patternData[pid] || {
       pullCount: 0, observedCount: 0, namedCount: 0, masteryCount: 0, unlocked: false,
     };
+
+    let tier: PatternTier = 'hidden';
+    if (tracking.unlocked || tracking.namedCount >= def.unlock.namedCount) {
+      tier = 'revealed';
+    } else if (tracking.observedCount >= 1 || tracking.namedCount >= 1) {
+      tier = 'observed';
+    } else if (tracking.pullCount >= 1) {
+      tier = 'glowing';
+    }
+
     return {
       id: pid,
       name: def.name,
       icon: def.icon,
       description: def.description,
       advice: def.advice,
-      unlocked: tracking.unlocked,
+      hermitQuestion: def.hermitQuestion,
+      tier,
+      unlocked: tracking.unlocked || tracking.namedCount >= def.unlock.namedCount,
       pullCount: tracking.pullCount,
+      observedCount: tracking.observedCount,
       namedCount: tracking.namedCount,
     };
   });

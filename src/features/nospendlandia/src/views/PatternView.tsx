@@ -7,18 +7,23 @@ import PatternGrid from '../components/PatternGrid';
 /** Player's pattern library — fog-of-war grid with unlocked pattern details */
 export default function PatternView() {
   const dispatch = useGameDispatch();
-  const { unlockedPatterns, allPatterns } = usePattern();
+  const { gridData, unlockedPatterns, allPatterns } = usePattern();
+
+  const revealedCount = gridData.filter(p => p.tier === 'revealed').length;
+  const observedCount = gridData.filter(p => p.tier === 'observed').length;
+  const glowingCount = gridData.filter(p => p.tier === 'glowing').length;
 
   return (
     <div style={{
-      minHeight: '100vh',
+      minHeight: '100dvh',
       background: `linear-gradient(180deg, ${colors.deepPlum} 0%, ${colors.plum} 100%)`,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '2rem',
+      padding: 'max(env(safe-area-inset-top, 0px), 1.5rem) clamp(1rem, 4vw, 2rem) max(env(safe-area-inset-bottom, 0px), 1.5rem)',
       color: colors.cream,
       animation: `${animations.fadeIn} 0.5s ease-out`,
+      overflowX: 'hidden',
     }}>
       <h2 style={{
         fontFamily: fonts.heading,
@@ -40,14 +45,16 @@ export default function PatternView() {
         maxWidth: 400,
         lineHeight: 1.6,
       }}>
-        {unlockedPatterns.length === 0
+        {revealedCount === 0
           ? 'Patterns reveal themselves as you play. Name them to unlock them.'
-          : `${unlockedPatterns.length} of 6 patterns discovered.`}
+          : `${revealedCount} of 6 revealed.`}
+        {observedCount > 0 && ` ${observedCount} emerging.`}
+        {glowingCount > 0 && ` ${glowingCount} stirring.`}
       </p>
 
       <PatternGrid />
 
-      {/* Unlocked pattern details */}
+      {/* Unlocked pattern detail cards */}
       {unlockedPatterns.length > 0 && (
         <div style={{
           marginTop: '2rem',
@@ -59,6 +66,7 @@ export default function PatternView() {
         }}>
           {unlockedPatterns.map(pid => {
             const p = allPatterns[pid];
+            const data = gridData.find(g => g.id === pid);
             return (
               <div key={pid} style={{
                 background: `${colors.deepPlum}cc`,
@@ -76,7 +84,29 @@ export default function PatternView() {
                   }}>
                     {p.name}
                   </span>
+                  {data && (
+                    <span style={{
+                      fontFamily: fonts.body,
+                      fontSize: '0.7rem',
+                      color: colors.lavender,
+                      opacity: 0.4,
+                      marginLeft: 'auto',
+                    }}>
+                      observed {data.observedCount} / named {data.namedCount}
+                    </span>
+                  )}
                 </div>
+                <p style={{
+                  fontFamily: fonts.heading,
+                  fontSize: '0.9rem',
+                  fontStyle: 'italic',
+                  lineHeight: 1.6,
+                  color: colors.cream,
+                  opacity: 0.75,
+                  marginBottom: '0.5rem',
+                }}>
+                  {p.hermitQuestion}
+                </p>
                 <p style={{
                   fontFamily: fonts.body,
                   fontSize: '0.85rem',

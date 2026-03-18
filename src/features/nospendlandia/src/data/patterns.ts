@@ -19,6 +19,7 @@ export const PATTERNS: Record<PatternId, PatternDefinition> = {
     description: 'Spending to soothe difficult emotions — stress, boredom, loneliness. The purchase feels warm for a moment, then hollow.',
     icon: '🌙',
     advice: 'Pause before buying. Name the feeling. Ask: what do I actually need right now?',
+    hermitQuestion: 'What were you really reaching for?',
     unlock: { namedCount: 2 },
   },
   rainbows: {
@@ -27,6 +28,7 @@ export const PATTERNS: Record<PatternId, PatternDefinition> = {
     description: 'Buying to keep up, fit in, or match what you see others doing. The cost of belonging that nobody asked you to pay.',
     icon: '🌈',
     advice: "Your worth isn't measured by what you own. Real friends don't keep a receipt.",
+    hermitQuestion: 'Whose approval are you purchasing?',
     unlock: { namedCount: 2 },
   },
   ambrosia: {
@@ -35,6 +37,7 @@ export const PATTERNS: Record<PatternId, PatternDefinition> = {
     description: "The thrill of the spontaneous buy. It's the dopamine of \"yes\" before the thought of \"why.\"",
     icon: '🍯',
     advice: 'Add it to a list instead of a cart. If you still want it in 48 hours, it\'s real.',
+    hermitQuestion: 'What happens to the thrill by tomorrow?',
     unlock: { namedCount: 2 },
   },
   stardust: {
@@ -43,6 +46,7 @@ export const PATTERNS: Record<PatternId, PatternDefinition> = {
     description: "Small recurring charges that each seem harmless. Together, they're a river flowing out unseen.",
     icon: '✨',
     advice: "Audit every subscription today. Cancel what you haven't used in 30 days.",
+    hermitQuestion: 'What are you paying for that you have already stopped using?',
     unlock: { namedCount: 2 },
   },
   sunshine: {
@@ -51,6 +55,7 @@ export const PATTERNS: Record<PatternId, PatternDefinition> = {
     description: '"I earned this." "I deserve a treat." The reward loop where spending becomes the prize for surviving.',
     icon: '☀️',
     advice: 'You do deserve good things. But the best rewards are free — rest, nature, connection.',
+    hermitQuestion: 'What would rewarding yourself look like without money?',
     unlock: { namedCount: 2 },
   },
   unicorns: {
@@ -59,6 +64,7 @@ export const PATTERNS: Record<PatternId, PatternDefinition> = {
     description: 'Buying to become who you think you should be. The aspirational self is expensive to maintain.',
     icon: '🦄',
     advice: 'Who are you without the stuff? That person is still whole.',
+    hermitQuestion: 'Who are you performing for?',
     unlock: { namedCount: 2 },
   },
 };
