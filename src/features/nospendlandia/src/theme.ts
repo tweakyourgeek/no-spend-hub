@@ -11,6 +11,8 @@ export const colors = {
   storm: '#5a6b7a',
   ember: '#8b4557',
   starBlue: '#6b7fa3',
+  night: '#1a1228',
+  moonGlow: '#d4b8e0',
 } as const;
 
 export const fonts = {

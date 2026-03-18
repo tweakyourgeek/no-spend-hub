@@ -10,6 +10,8 @@ interface Props {
 /** Tarot card-styled character portrait with layered CSS effects */
 export default function CharacterPortrait({ character, size = 120 }: Props) {
   const innerSize = size * 0.7;
+  const bgColor = character.colors.bg;
+  const accentColor = character.colors.accent;
 
   return (
     <div style={{
@@ -30,7 +32,7 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
         width: size * 1.2,
         height: size * 1.2,
         borderRadius: '50%',
-        background: `radial-gradient(circle, ${character.portraitColor}44 0%, transparent 70%)`,
+        background: `radial-gradient(circle, ${bgColor}44 0%, transparent 70%)`,
         animation: `${animations.pulseGlow} 3s ease-in-out infinite`,
       }} />
 
@@ -39,15 +41,15 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
         width: size,
         height: size * 1.35,
         borderRadius: 12,
-        border: `2px solid ${character.portraitAccent}66`,
-        background: `linear-gradient(160deg, ${character.portraitColor}dd, ${colors.deepPlum})`,
+        border: `2px solid ${accentColor}66`,
+        background: `linear-gradient(160deg, ${bgColor}dd, ${colors.deepPlum})`,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         position: 'relative',
         overflow: 'hidden',
-        boxShadow: `0 4px 30px ${character.portraitColor}44, inset 0 0 30px ${character.portraitColor}22`,
+        boxShadow: `0 4px 30px ${bgColor}44, inset 0 0 30px ${bgColor}22`,
       }}>
         {/* Decorative top arc */}
         <svg
@@ -59,30 +61,30 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
             opacity: 0.3,
           }}
         >
-          <path d="M0 30 Q50 0 100 30" fill="none" stroke={character.portraitAccent} strokeWidth="1" />
-          <circle cx="50" cy="8" r="3" fill={character.portraitAccent} opacity="0.5" />
+          <path d="M0 30 Q50 0 100 30" fill="none" stroke={accentColor} strokeWidth="1" />
+          <circle cx="50" cy="8" r="3" fill={accentColor} opacity="0.5" />
         </svg>
 
-        {/* Arcana number */}
+        {/* Roman numeral */}
         <div style={{
           position: 'absolute',
           top: 6,
           right: 8,
           fontFamily: fonts.heading,
           fontSize: size * 0.1,
-          color: character.portraitAccent,
+          color: accentColor,
           opacity: 0.5,
         }}>
-          {character.arcana}
+          {character.romanNumeral}
         </div>
 
-        {/* Character icon */}
+        {/* Character glyph */}
         <div style={{
           width: innerSize,
           height: innerSize,
           borderRadius: '50%',
-          background: `radial-gradient(circle at 30% 30%, ${character.portraitAccent}44, ${character.portraitColor}88, ${colors.deepPlum})`,
-          border: `2px solid ${character.portraitAccent}44`,
+          background: `radial-gradient(circle at 30% 30%, ${accentColor}44, ${bgColor}88, ${colors.deepPlum})`,
+          border: `2px solid ${accentColor}44`,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -90,24 +92,24 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
           color: colors.cream,
           fontFamily: fonts.heading,
           fontWeight: 700,
-          textShadow: `0 0 20px ${character.portraitAccent}`,
+          textShadow: `0 0 20px ${accentColor}`,
           animation: `${animations.float} 4s ease-in-out infinite`,
           overflow: 'hidden',
         }}>
-          {character.icon}
+          {character.glyph}
         </div>
 
-        {/* Character title */}
+        {/* Role label */}
         <div style={{
           fontFamily: fonts.heading,
           fontSize: size * 0.1,
-          color: character.portraitAccent,
+          color: accentColor,
           marginTop: 8,
           letterSpacing: '0.08em',
           textTransform: 'uppercase',
           opacity: 0.7,
         }}>
-          {character.title}
+          {character.role}
         </div>
 
         {/* Bottom decorative line */}
@@ -120,9 +122,9 @@ export default function CharacterPortrait({ character, size = 120 }: Props) {
             opacity: 0.3,
           }}
         >
-          <line x1="0" y1="5" x2="40" y2="5" stroke={character.portraitAccent} strokeWidth="0.5" strokeLinecap="round" />
-          <circle cx="50" cy="5" r="2" fill={character.portraitAccent} />
-          <line x1="60" y1="5" x2="100" y2="5" stroke={character.portraitAccent} strokeWidth="0.5" strokeLinecap="round" />
+          <line x1="0" y1="5" x2="40" y2="5" stroke={accentColor} strokeWidth="0.5" strokeLinecap="round" />
+          <circle cx="50" cy="5" r="2" fill={accentColor} />
+          <line x1="60" y1="5" x2="100" y2="5" stroke={accentColor} strokeWidth="0.5" strokeLinecap="round" />
         </svg>
       </div>
     </div>

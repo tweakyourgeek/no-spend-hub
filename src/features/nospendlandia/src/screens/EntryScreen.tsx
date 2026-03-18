@@ -1,25 +1,25 @@
 import React from 'react';
 import { useGameState, useGameDispatch } from '../contexts/GameStateContext';
 import { colors, fonts, animations } from '../theme';
-import type { Quest } from '../types';
+import type { QuestId } from '../types';
 
-const quests: { id: Quest; label: string; icon: string; description: string; color: string }[] = [
+const quests: { id: QuestId; label: string; icon: string; description: string; color: string }[] = [
   {
-    id: 'no-spend-weekend',
+    id: 'no_spend_weekend',
     label: 'The Weekend Gate',
     icon: '☽',
     description: 'A side quest — two days of stillness',
     color: colors.peach,
   },
   {
-    id: 'no-spend-week',
+    id: 'no_spend_week',
     label: 'The Seven-Day Door',
     icon: '⚝',
     description: 'The main quest — a full week of intention',
     color: colors.sage,
   },
   {
-    id: 'low-spend-month',
+    id: 'low_spend_month',
     label: 'The Lunar Arch',
     icon: '☾',
     description: 'The epic — thirty days of transformation',
@@ -28,11 +28,11 @@ const quests: { id: Quest; label: string; icon: string; description: string; col
 ];
 
 export default function EntryScreen() {
-  const { completedQuests, activeQuest } = useGameState();
+  const { completedQuests, currentQuest } = useGameState();
   const dispatch = useGameDispatch();
 
-  function selectQuest(quest: Quest) {
-    dispatch({ type: 'SET_QUEST', quest });
+  function selectQuest(quest: QuestId) {
+    dispatch({ type: 'START_QUEST', questId: quest });
     dispatch({ type: 'NAVIGATE', screen: 'realm-map' });
   }
 
@@ -121,7 +121,7 @@ export default function EntryScreen() {
       }}>
         {quests.map((q, i) => {
           const isCompleted = completedQuests.includes(q.id);
-          const isActive = activeQuest === q.id && !isCompleted;
+          const isActive = currentQuest === q.id && !isCompleted;
           return (
             <button
               key={q.id}
@@ -214,7 +214,6 @@ export default function EntryScreen() {
         "Your spending is data. Not a verdict."
       </p>
 
-      {/* Completed quests count */}
       {completedQuests.length > 0 && (
         <p style={{
           fontFamily: fonts.body,

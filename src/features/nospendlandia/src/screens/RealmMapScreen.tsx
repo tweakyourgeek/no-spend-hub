@@ -4,61 +4,96 @@ import { colors, fonts, animations } from '../theme';
 import { questLines } from '../data/questlines';
 import { characters } from '../data/characters';
 import { dialogues } from '../data/dialogues';
-import { chasingPatterns } from '../data/patterns';
+import { PATTERNS } from '../data/patterns';
+import { QUESTS } from '../data/quests';
+import { getScene } from '../data/scenes';
+import type { QuestId } from '../types';
 
 const pathData = [
-  { label: 'Weekend Gate', color: colors.peach, quest: 'no-spend-weekend' as const, angle: -40 },
-  { label: 'Seven-Day Door', color: colors.sage, quest: 'no-spend-week' as const, angle: 0 },
-  { label: 'Lunar Arch', color: colors.mauve, quest: 'low-spend-month' as const, angle: 40 },
+  { label: 'Weekend Gate', color: colors.peach, quest: 'no_spend_weekend' as const, angle: -40 },
+  { label: 'Seven-Day Door', color: colors.sage, quest: 'no_spend_week' as const, angle: 0 },
+  { label: 'Lunar Arch', color: colors.mauve, quest: 'low_spend_month' as const, angle: 40 },
 ];
 
 export default function RealmMapScreen() {
   const state = useGameState();
-  const { activeQuest, encounterIndex, flags, revealedPatterns } = state;
+  const { currentQuest, encounterIndex, flags, revealedPatterns, completedScenes, patternData } = state;
   const dispatch = useGameDispatch();
 
-  const questLine = activeQuest ? questLines[activeQuest] : null;
+  const questLine = currentQuest ? questLines[currentQuest] : null;
+  const questDef = currentQuest ? QUESTS[currentQuest] : null;
 
-  // Find next available encounter, and track why it might be locked
-  function getNextEncounter(): { encounter: typeof questLine extends { encounters: (infer E)[] } ? E : never; lockedReason: string | null } | null {
+  // Check if the quest has scene-based content (new system)
+  const hasScenes = questDef && questDef.scenes.length > 0;
+
+  // Find next scene (new system)
+  function getNextScene() {
+    if (!questDef) return null;
+    for (const sceneId of questDef.scenes) {
+      if (!completedScenes.includes(sceneId)) return sceneId;
+    }
+    return null; // all scenes complete
+  }
+
+  // Find next encounter (legacy system)
+  function getNextEncounter(): { encounter: any; lockedReason: string | null } | null {
     if (!questLine) return null;
     for (let i = encounterIndex; i < questLine.encounters.length; i++) {
       const enc = questLine.encounters[i];
       if (enc.requiredFlags) {
         const unmet = Object.entries(enc.requiredFlags).filter(([k, v]) => flags[k] !== v);
         if (unmet.length > 0) {
-          // Build a human-readable lock reason from the flag names
           const names = unmet.map(([k]) => {
             const match = k.match(/^met_(.+)$/);
             return match ? match[1] : k;
           });
-          return { encounter: enc as any, lockedReason: `Complete the encounter with ${names.join(', ')} first` };
+          return { encounter: enc, lockedReason: `Complete the encounter with ${names.join(', ')} first` };
         }
       }
-      return { encounter: enc as any, lockedReason: null };
+      return { encounter: enc, lockedReason: null };
     }
     return null;
   }
 
-  const nextResult = getNextEncounter();
+  const nextScene = hasScenes ? getNextScene() : null;
+  const nextResult = !hasScenes ? getNextEncounter() : null;
   const nextEnc = nextResult?.lockedReason ? null : nextResult?.encounter ?? null;
   const lockedReason = nextResult?.lockedReason ?? null;
   const nextCharId = nextEnc
-    ? (dialogues[nextEnc.dialogueNodeId]?.characterId ?? 'the-fool')
+    ? (dialogues[nextEnc.dialogueNodeId]?.characterId ?? 'fool')
     : null;
   const nextChar = nextCharId ? characters[nextCharId] : null;
 
   function beginEncounter() {
+    // New scene system
+    if (hasScenes && nextScene) {
+      dispatch({ type: 'START_SCENE', sceneId: nextScene });
+      return;
+    }
+    if (hasScenes && !nextScene) {
+      // All scenes complete
+      if (currentQuest) {
+        dispatch({ type: 'COMPLETE_QUEST', questId: currentQuest });
+        dispatch({ type: 'NAVIGATE', screen: 'ending' });
+      }
+      return;
+    }
+
+    // Legacy dialogue system
     if (!nextEnc) {
-      // Quest complete
-      if (activeQuest) {
-        dispatch({ type: 'COMPLETE_QUEST', quest: activeQuest });
+      if (currentQuest) {
+        dispatch({ type: 'COMPLETE_QUEST', questId: currentQuest });
         dispatch({ type: 'NAVIGATE', screen: 'ending' });
       }
       return;
     }
     dispatch({ type: 'SET_DIALOGUE', dialogueId: nextEnc.dialogueNodeId });
   }
+
+  // Count unlocked patterns (new system)
+  const unlockedCount = Object.values(patternData).filter(p => p.unlocked).length;
+  // Combine with legacy revealed patterns
+  const totalPatterns = Math.max(unlockedCount, revealedPatterns.length);
 
   return (
     <div style={{
@@ -88,7 +123,7 @@ export default function RealmMapScreen() {
         marginBottom: '2rem',
         textAlign: 'center',
       }}>
-        {activeQuest && questLine
+        {currentQuest && questLine
           ? `${questLine.title} — ${questLine.description}`
           : 'Three paths diverge beneath a starlit sky.'}
       </p>
@@ -142,19 +177,13 @@ export default function RealmMapScreen() {
           </circle>
         ))}
 
-        {/* Ground line */}
         <ellipse cx="250" cy="290" rx="220" ry="8" fill={colors.plum} opacity="0.4" />
-
-        {/* Center glow */}
         <circle cx="250" cy="250" r="60" fill="url(#center-glow)">
           <animate attributeName="r" values="55;65;55" dur="4s" repeatCount="indefinite" />
         </circle>
-
-        {/* Center stone */}
         <circle cx="250" cy="250" r="12" fill={colors.lavender} opacity="0.5" />
         <circle cx="250" cy="250" r="5" fill={colors.cream} />
 
-        {/* Paths and destinations */}
         {pathData.map((p, i) => {
           const positions = [
             { x: 80, y: 80, cx: 165, cy: 165 },
@@ -162,59 +191,32 @@ export default function RealmMapScreen() {
             { x: 420, y: 80, cx: 335, cy: 165 },
           ];
           const pos = positions[i];
-          const isActive = activeQuest === p.quest;
+          const isActive = currentQuest === p.quest;
 
           return (
             <g key={p.quest}>
-              {/* Path line */}
               <line
-                x1="250" y1="250"
-                x2={pos.x} y2={pos.y}
+                x1="250" y1="250" x2={pos.x} y2={pos.y}
                 stroke={p.color}
                 strokeWidth={isActive ? 3 : 1.5}
                 opacity={isActive ? 0.7 : 0.3}
                 strokeDasharray={isActive ? 'none' : '4 4'}
               />
-
-              {/* Midpoint glow */}
-              <circle
-                cx={pos.cx} cy={pos.cy}
-                r="4"
-                fill={p.color}
-                opacity={isActive ? 0.5 : 0.2}
-              >
-                {isActive && (
-                  <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" />
-                )}
+              <circle cx={pos.cx} cy={pos.cy} r="4" fill={p.color} opacity={isActive ? 0.5 : 0.2}>
+                {isActive && <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" />}
               </circle>
-
-              {/* Destination glow */}
-              <circle
-                cx={pos.x} cy={pos.y}
-                r={isActive ? 35 : 25}
-                fill={`url(#grad-${p.quest})`}
-              >
-                {isActive && (
-                  <animate attributeName="r" values="30;38;30" dur="3s" repeatCount="indefinite" />
-                )}
+              <circle cx={pos.x} cy={pos.y} r={isActive ? 35 : 25} fill={`url(#grad-${p.quest})`}>
+                {isActive && <animate attributeName="r" values="30;38;30" dur="3s" repeatCount="indefinite" />}
               </circle>
-
-              {/* Destination marker */}
               <circle
-                cx={pos.x} cy={pos.y}
-                r={isActive ? 18 : 14}
-                fill={p.color}
-                opacity={isActive ? 0.7 : 0.3}
+                cx={pos.x} cy={pos.y} r={isActive ? 18 : 14}
+                fill={p.color} opacity={isActive ? 0.7 : 0.3}
                 stroke={isActive ? colors.cream : 'none'}
                 strokeWidth={isActive ? 1.5 : 0}
               />
-
-              {/* Label */}
               <text
-                x={pos.x}
-                y={pos.y + (isActive ? 36 : 30)}
-                textAnchor="middle"
-                fill={colors.cream}
+                x={pos.x} y={pos.y + (isActive ? 36 : 30)}
+                textAnchor="middle" fill={colors.cream}
                 fontFamily={fonts.heading}
                 fontSize={isActive ? 12 : 10}
                 fontWeight={isActive ? 700 : 400}
@@ -226,7 +228,7 @@ export default function RealmMapScreen() {
           );
         })}
 
-        {/* Encounter progress dots */}
+        {/* Progress dots */}
         {questLine && (
           <g>
             {questLine.encounters.map((enc, i) => {
@@ -238,15 +240,12 @@ export default function RealmMapScreen() {
               return (
                 <circle
                   key={enc.id}
-                  cx={startX + i * spacing}
-                  cy="310"
+                  cx={startX + i * spacing} cy="310"
                   r={current ? 5 : 3.5}
                   fill={completed ? colors.sage : current ? colors.gold : colors.lavender}
                   opacity={completed || current ? 0.8 : 0.25}
                 >
-                  {current && (
-                    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
-                  )}
+                  {current && <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />}
                 </circle>
               );
             })}
@@ -254,8 +253,8 @@ export default function RealmMapScreen() {
         )}
       </svg>
 
-      {/* Encounter info */}
-      {nextEnc && nextChar && (
+      {/* Scene info (new system) */}
+      {hasScenes && nextScene && (
         <p style={{
           fontFamily: fonts.heading,
           fontSize: '0.95rem',
@@ -263,7 +262,20 @@ export default function RealmMapScreen() {
           marginBottom: '1rem',
           fontStyle: 'italic',
         }}>
-          Next: {nextChar.title} awaits...
+          Next: {getScene(nextScene)?.title ?? nextScene}
+        </p>
+      )}
+
+      {/* Encounter info (legacy) */}
+      {!hasScenes && nextEnc && nextChar && (
+        <p style={{
+          fontFamily: fonts.heading,
+          fontSize: '0.95rem',
+          opacity: 0.6,
+          marginBottom: '1rem',
+          fontStyle: 'italic',
+        }}>
+          Next: {nextChar.role} awaits...
         </p>
       )}
       {lockedReason && (
@@ -281,44 +293,28 @@ export default function RealmMapScreen() {
         </p>
       )}
 
-      {/* Revealed patterns */}
-      {revealedPatterns.length > 0 && (
-        <div style={{
-          marginBottom: '1.5rem',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '0.75rem',
-          width: '100%',
-          maxWidth: 400,
-        }}>
-          <p style={{
+      {/* Patterns indicator */}
+      {totalPatterns > 0 && (
+        <button
+          onClick={() => dispatch({ type: 'NAVIGATE', screen: 'patterns' })}
+          style={{
+            marginBottom: '1.5rem',
+            background: `${colors.deepPlum}cc`,
+            border: `1px solid ${colors.gold}33`,
+            borderRadius: 8,
+            padding: '0.5rem 1rem',
+            cursor: 'pointer',
+            color: colors.gold,
             fontFamily: fonts.heading,
             fontSize: '0.85rem',
-            color: colors.gold,
             opacity: 0.7,
-          }}>
-            Patterns Revealed: {revealedPatterns.length}
-          </p>
-          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {revealedPatterns.map((pid) => {
-              const pat = chasingPatterns[pid];
-              if (!pat) return null;
-              return (
-                <span key={pid} title={pat.name} style={{
-                  fontSize: '1.2rem',
-                  background: `${colors.deepPlum}cc`,
-                  border: `1px solid ${colors.gold}33`,
-                  borderRadius: 8,
-                  padding: '0.25rem 0.5rem',
-                  cursor: 'default',
-                }}>
-                  {pat.icon}
-                </span>
-              );
-            })}
-          </div>
-        </div>
+            transition: 'opacity 0.2s',
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.opacity = '1'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.opacity = '0.7'; }}
+        >
+          Patterns: {totalPatterns} discovered
+        </button>
       )}
 
       {/* Navigation */}
@@ -360,7 +356,7 @@ export default function RealmMapScreen() {
             }
           }}
         >
-          {lockedReason ? 'Locked' : nextEnc ? 'Begin Encounter' : 'Complete Quest'}
+          {lockedReason ? 'Locked' : (hasScenes ? (nextScene ? 'Begin Scene' : 'Complete Quest') : (nextEnc ? 'Begin Encounter' : 'Complete Quest'))}
         </button>
         <button
           onClick={() => dispatch({ type: 'NAVIGATE', screen: 'entry' })}

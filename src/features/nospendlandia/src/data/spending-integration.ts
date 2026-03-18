@@ -2,6 +2,8 @@
  * Integration with the main No Spend Hub app's localStorage data.
  * The main app stores challenge data in localStorage via src/lib/challenge-data.ts.
  * This module reads that data (if available) to enhance the RPG experience.
+ *
+ * Pattern IDs use the new metaphorical names (moonbeams, rainbows, etc).
  */
 
 interface ChallengeDay {
@@ -74,36 +76,36 @@ export function getSpendingStats(): {
   };
 }
 
-/** Suggest chasing patterns based on spending data */
+/** Suggest chasing patterns based on spending data (returns new metaphorical IDs) */
 export function suggestPatterns(): string[] {
   const stats = getSpendingStats();
   if (!stats) return [];
 
   const suggestions: string[] = [];
 
-  // If lots of spend days relative to no-spend, suggest comfort spending
+  // If lots of spend days relative to no-spend, suggest moonbeams (comfort-spending)
   if (stats.spendDays > stats.noSpendDays) {
-    suggestions.push('comfort-spending');
+    suggestions.push('moonbeams');
   }
 
   // Category-based suggestions
   const cats = stats.topCategories.map(c => c.toLowerCase());
   if (cats.some(c => c.includes('food') || c.includes('delivery') || c.includes('eat'))) {
-    suggestions.push('comfort-spending');
+    suggestions.push('moonbeams');
   }
   if (cats.some(c => c.includes('subscription') || c.includes('recurring'))) {
-    suggestions.push('subscription-creep');
+    suggestions.push('stardust');
   }
   if (cats.some(c => c.includes('cloth') || c.includes('shop') || c.includes('fashion'))) {
-    suggestions.push('identity-spending');
+    suggestions.push('unicorns');
   }
   if (cats.some(c => c.includes('social') || c.includes('drink') || c.includes('bar'))) {
-    suggestions.push('social-pressure');
+    suggestions.push('rainbows');
   }
 
-  // Short streaks suggest impulse issues
+  // Short streaks suggest ambrosia (impulse-rush)
   if (stats.currentStreak < 3 && stats.totalDays > 5) {
-    suggestions.push('impulse-rush');
+    suggestions.push('ambrosia');
   }
 
   return [...new Set(suggestions)];
