@@ -15,8 +15,15 @@ export const QUESTS: Record<string, QuestDefinition> = {
     description: 'The main quest — a full week of intention',
     durationDays: 7,
     sessionMinutes: 10,
-    scenes: [],
-    // Scenes added when written
+    scenes: [
+      'scene_w1_monday_morning',
+      'scene_w2_tuesday_evening',
+      'scene_w3_wednesday_night',
+      'scene_w4_thursday_surprise',
+      'scene_w5_friday_paycheck',
+      'scene_w6_weekend_test',
+      'scene_w7_sunday_world',
+    ],
   },
   low_spend_month: {
     id: 'low_spend_month',
