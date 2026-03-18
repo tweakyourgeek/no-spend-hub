@@ -7,8 +7,7 @@ export const QUESTS: Record<string, QuestDefinition> = {
     description: 'A side quest — two days of stillness',
     durationDays: 3,
     sessionMinutes: 7,
-    scenes: ['scene_01_friday_night'],
-    // Scenes 02 and 03 will be added when written
+    scenes: ['scene_01_friday_night', 'scene_02_saturday_morning', 'scene_03_sunday_evening'],
   },
   no_spend_week: {
     id: 'no_spend_week',
