@@ -3,11 +3,16 @@ import { useGameState, useGameDispatch } from '../contexts/GameStateContext';
 import { colors, fonts, animations } from '../theme';
 import { characters } from '../data/characters';
 import { dialogues } from '../data/dialogues';
-import { chasingPatterns } from '../data/patterns';
+import { PATTERNS } from '../data/patterns';
+import { LEGACY_PATTERN_MAP } from '../data/patterns';
 import CharacterPortrait from './CharacterPortrait';
-import PatternCard from './PatternCard';
 import type { DialogueChoice } from '../types';
 
+/**
+ * Legacy DialogueScreen — renders dialogue tree encounters.
+ * Used by quests that don't yet have scene-based content.
+ * Updated for new character type (glyph/colors instead of icon/portraitColor).
+ */
 export default function DialogueScreen() {
   const { currentDialogueId, flags } = useGameState();
   const dispatch = useGameDispatch();
@@ -46,7 +51,6 @@ export default function DialogueScreen() {
     return () => clearInterval(interval);
   }, [node?.id]);
 
-  // Skip typewriter on click
   function skipTypewriter() {
     if (!node || textComplete) return;
     setDisplayedText(node.text);
@@ -115,43 +119,71 @@ export default function DialogueScreen() {
     );
   }
 
-  // Pattern reveal overlay — tap to continue
-  if (revealedPattern && chasingPatterns[revealedPattern]) {
-    return (
-      <div
-        onClick={dismissPattern}
-        style={{
-          minHeight: '100vh',
-          background: `radial-gradient(ellipse at 50% 40%, ${colors.deepPlum} 0%, ${colors.plum} 70%)`,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '2rem',
-          color: colors.cream,
-          cursor: 'pointer',
-        }}>
-        <p style={{
-          fontFamily: fonts.heading,
-          fontSize: 'clamp(1rem, 3vw, 1.3rem)',
-          color: colors.gold,
-          marginBottom: '1.5rem',
-          animation: `${animations.fadeIn} 0.5s ease-out`,
-        }}>
-          A Chasing Pattern revealed...
-        </p>
-        <PatternCard pattern={chasingPatterns[revealedPattern]} isNew />
-        <p style={{
-          fontFamily: fonts.body,
-          fontSize: '0.8rem',
-          opacity: 0.5,
-          marginTop: '1.5rem',
-          animation: `${animations.fadeIn} 1s ease-out 0.5s both`,
-        }}>
-          tap anywhere to continue
-        </p>
-      </div>
-    );
+  // Pattern reveal overlay
+  if (revealedPattern) {
+    // Look up pattern by new ID or legacy ID
+    const patternDef = PATTERNS[revealedPattern as keyof typeof PATTERNS]
+      || PATTERNS[LEGACY_PATTERN_MAP[revealedPattern] as keyof typeof PATTERNS];
+
+    if (patternDef) {
+      return (
+        <div
+          onClick={dismissPattern}
+          style={{
+            minHeight: '100vh',
+            background: `radial-gradient(ellipse at 50% 40%, ${colors.deepPlum} 0%, ${colors.plum} 70%)`,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '2rem',
+            color: colors.cream,
+            cursor: 'pointer',
+          }}>
+          <p style={{
+            fontFamily: fonts.heading,
+            fontSize: 'clamp(1rem, 3vw, 1.3rem)',
+            color: colors.gold,
+            marginBottom: '1.5rem',
+            animation: `${animations.fadeIn} 0.5s ease-out`,
+          }}>
+            A Chasing Pattern revealed...
+          </p>
+          <div style={{
+            background: `linear-gradient(160deg, ${colors.deepPlum}, ${colors.plum})`,
+            border: `1px solid ${colors.gold}44`,
+            borderRadius: 12,
+            padding: '1.25rem 1.5rem',
+            maxWidth: 360,
+            width: '100%',
+            animation: `${animations.slideUp} 0.6s ease-out`,
+            boxShadow: `0 0 30px ${colors.gold}33`,
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
+              <span style={{ fontSize: '1.5rem' }}>{patternDef.icon}</span>
+              <div style={{ fontFamily: fonts.heading, fontSize: '1.1rem', fontWeight: 600, color: colors.gold }}>
+                {patternDef.name}
+              </div>
+            </div>
+            <p style={{ fontFamily: fonts.body, fontSize: '0.85rem', opacity: 0.85, lineHeight: 1.6, marginBottom: '0.75rem' }}>
+              {patternDef.description}
+            </p>
+            <p style={{ fontFamily: fonts.body, fontSize: '0.8rem', color: colors.sage, lineHeight: 1.5, fontStyle: 'italic' }}>
+              {patternDef.advice}
+            </p>
+          </div>
+          <p style={{
+            fontFamily: fonts.body,
+            fontSize: '0.8rem',
+            opacity: 0.5,
+            marginTop: '1.5rem',
+            animation: `${animations.fadeIn} 1s ease-out 0.5s both`,
+          }}>
+            tap anywhere to continue
+          </p>
+        </div>
+      );
+    }
   }
 
   return (
@@ -169,12 +201,10 @@ export default function DialogueScreen() {
         cursor: textComplete ? 'default' : 'pointer',
       }}
     >
-      {/* Character portrait */}
       <div style={{ marginBottom: '1.5rem' }}>
         <CharacterPortrait character={character} size={100} />
       </div>
 
-      {/* Character name */}
       <h3 style={{
         fontFamily: fonts.heading,
         fontSize: 'clamp(1.2rem, 3vw, 1.5rem)',
@@ -192,10 +222,9 @@ export default function DialogueScreen() {
         margin: '0 0 1.5rem',
         fontStyle: 'italic',
       }}>
-        {character.title}
+        {character.role}
       </p>
 
-      {/* Dialogue text */}
       <div style={{
         background: `${colors.deepPlum}cc`,
         border: `1px solid ${colors.mauve}33`,
@@ -222,19 +251,12 @@ export default function DialogueScreen() {
         )}
       </div>
 
-      {/* Click hint */}
       {!textComplete && (
-        <p style={{
-          fontFamily: fonts.body,
-          fontSize: '0.75rem',
-          opacity: 0.4,
-          marginBottom: '1rem',
-        }}>
+        <p style={{ fontFamily: fonts.body, fontSize: '0.75rem', opacity: 0.4, marginBottom: '1rem' }}>
           click to skip
         </p>
       )}
 
-      {/* Choice buttons */}
       {choicesVisible && (
         <div style={{
           display: 'flex',
@@ -250,7 +272,7 @@ export default function DialogueScreen() {
               onClick={(e) => { e.stopPropagation(); handleChoice(choice); }}
               style={{
                 fontFamily: fonts.body,
-                background: `${colors.deepPlum}`,
+                background: colors.deepPlum,
                 color: colors.cream,
                 border: `1px solid ${colors.sage}44`,
                 borderRadius: 8,
@@ -275,7 +297,6 @@ export default function DialogueScreen() {
               {choice.label}
             </button>
           ))}
-          {/* Leave dialogue option */}
           <button
             onClick={(e) => { e.stopPropagation(); leaveDialogue(); }}
             style={{

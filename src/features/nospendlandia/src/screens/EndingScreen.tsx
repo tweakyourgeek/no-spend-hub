@@ -1,16 +1,22 @@
 import React from 'react';
 import { useGameState, useGameDispatch } from '../contexts/GameStateContext';
 import { colors, fonts, animations } from '../theme';
-import { chasingPatterns } from '../data/patterns';
-import PatternCard from '../components/PatternCard';
+import { PATTERNS } from '../data/patterns';
 
 export default function EndingScreen() {
-  const { activeQuest, revealedPatterns, completedQuests, flags } = useGameState();
+  const { currentQuest, completedQuests, completedScenes, patternData, hermitJournal, flags, revealedPatterns } = useGameState();
   const dispatch = useGameDispatch();
 
-  const questName = activeQuest
-    ? { 'no-spend-weekend': 'The Weekend Gate', 'no-spend-week': 'The Seven-Day Door', 'low-spend-month': 'The Lunar Arch' }[activeQuest]
+  const questName = currentQuest
+    ? { 'no_spend_weekend': 'The Weekend Gate', 'no_spend_week': 'The Seven-Day Door', 'low_spend_month': 'The Lunar Arch' }[currentQuest]
     : 'your quest';
+
+  // Count patterns from both systems
+  const unlockedNew = Object.entries(patternData).filter(([_, p]) => p.unlocked).length;
+  const patternsCount = Math.max(unlockedNew, revealedPatterns.length);
+
+  // Count guides met from flags
+  const guidesMet = Object.keys(flags).filter(k => k.startsWith('met_')).length;
 
   return (
     <div style={{
@@ -23,13 +29,13 @@ export default function EndingScreen() {
       color: colors.cream,
       animation: `${animations.fadeIn} 1s ease-out`,
     }}>
-      {/* Star burst */}
+      {/* World glyph */}
       <div style={{
         fontSize: '3rem',
         marginBottom: '1rem',
         animation: `${animations.float} 3s ease-in-out infinite`,
       }}>
-        ⚝
+        ⊕
       </div>
 
       <h1 style={{
@@ -90,9 +96,7 @@ export default function EndingScreen() {
             flex: 1,
             textAlign: 'center',
           }}>
-            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>
-              {revealedPatterns.length}
-            </div>
+            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{patternsCount}</div>
             <div style={{ opacity: 0.7, fontSize: '0.8rem' }}>Patterns Found</div>
           </div>
           <div style={{
@@ -103,9 +107,7 @@ export default function EndingScreen() {
             flex: 1,
             textAlign: 'center',
           }}>
-            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>
-              {Object.keys(flags).filter(k => k.startsWith('met_')).length}
-            </div>
+            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{guidesMet}</div>
             <div style={{ opacity: 0.7, fontSize: '0.8rem' }}>Guides Met</div>
           </div>
           <div style={{
@@ -116,20 +118,14 @@ export default function EndingScreen() {
             flex: 1,
             textAlign: 'center',
           }}>
-            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>
-              {completedQuests.length + (activeQuest && !completedQuests.includes(activeQuest) ? 1 : 0)}
-            </div>
-            <div style={{ opacity: 0.7, fontSize: '0.8rem' }}>Quests Done</div>
+            <div style={{ fontSize: '1.5rem', marginBottom: '0.25rem' }}>{hermitJournal.length}</div>
+            <div style={{ opacity: 0.7, fontSize: '0.8rem' }}>Questions</div>
           </div>
         </div>
 
-        {/* Revealed patterns */}
-        {revealedPatterns.length > 0 && (
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '0.75rem',
-          }}>
+        {/* Unlocked patterns */}
+        {unlockedNew > 0 && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
             <p style={{
               fontFamily: fonts.heading,
               fontSize: '0.95rem',
@@ -138,16 +134,34 @@ export default function EndingScreen() {
             }}>
               Your Chasing Patterns:
             </p>
-            {revealedPatterns.map((pid) => {
-              const pat = chasingPatterns[pid];
-              if (!pat) return null;
-              return <PatternCard key={pid} pattern={pat} />;
-            })}
+            {Object.entries(patternData)
+              .filter(([_, p]) => p.unlocked)
+              .map(([pid]) => {
+                const def = PATTERNS[pid as keyof typeof PATTERNS];
+                if (!def) return null;
+                return (
+                  <div key={pid} style={{
+                    background: `${colors.deepPlum}`,
+                    border: `1px solid ${colors.gold}33`,
+                    borderRadius: 8,
+                    padding: '0.75rem 1rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                  }}>
+                    <span style={{ fontSize: '1.25rem' }}>{def.icon}</span>
+                    <div>
+                      <div style={{ fontFamily: fonts.heading, fontSize: '0.95rem', color: colors.gold }}>{def.name}</div>
+                      <div style={{ fontFamily: fonts.body, fontSize: '0.75rem', opacity: 0.6 }}>{def.advice}</div>
+                    </div>
+                  </div>
+                );
+              })}
           </div>
         )}
       </div>
 
-      {/* Personal insight based on journey flags */}
+      {/* Personal insight */}
       {(flags.pattern_loneliness || flags.pattern_boredom || flags.pattern_stress || flags.arden_saving || flags.month_imperfect) && (
         <div style={{
           background: `${colors.deepPlum}88`,
@@ -168,7 +182,7 @@ export default function EndingScreen() {
           </p>
           {flags.pattern_loneliness && <p>You recognized loneliness as a spending trigger. Connection, not consumption, is the antidote.</p>}
           {flags.pattern_boredom && <p>You saw boredom for what it is — an invitation to create, not consume.</p>}
-          {flags.pattern_stress && <p>You understood the stress-spending spiral. The pause is your power.</p>}
+          {flags.pattern_stress && <p>You understood the Moonbeams spiral. The pause is your power.</p>}
           {flags.arden_saving && <p>You looked beyond saving money to find what saving really means — freedom and self-trust.</p>}
           {flags.month_imperfect && <p>You embraced imperfection. Thirty fresh starts, not one impossible streak.</p>}
         </div>
@@ -195,27 +209,25 @@ export default function EndingScreen() {
         flexWrap: 'wrap',
         justifyContent: 'center',
       }}>
-        {flags.has_journal && (
-          <button
-            onClick={() => dispatch({ type: 'NAVIGATE', screen: 'journal' })}
-            style={{
-              fontFamily: fonts.body,
-              background: `linear-gradient(135deg, ${colors.gold}, ${colors.gold}cc)`,
-              color: colors.deepPlum,
-              border: 'none',
-              borderRadius: 8,
-              padding: '0.85rem 2rem',
-              cursor: 'pointer',
-              fontWeight: 600,
-              fontSize: '0.95rem',
-              transition: 'transform 0.2s',
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = ''; }}
-          >
-            Open Journal
-          </button>
-        )}
+        <button
+          onClick={() => dispatch({ type: 'NAVIGATE', screen: 'journal' })}
+          style={{
+            fontFamily: fonts.body,
+            background: `linear-gradient(135deg, ${colors.gold}, ${colors.gold}cc)`,
+            color: colors.deepPlum,
+            border: 'none',
+            borderRadius: 8,
+            padding: '0.85rem 2rem',
+            cursor: 'pointer',
+            fontWeight: 600,
+            fontSize: '0.95rem',
+            transition: 'transform 0.2s',
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = ''; }}
+        >
+          Open Journal
+        </button>
         <button
           onClick={() => dispatch({ type: 'NAVIGATE', screen: 'entry' })}
           style={{

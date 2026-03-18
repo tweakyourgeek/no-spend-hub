@@ -1,0 +1,31 @@
+import type { QuestDefinition } from '../types';
+
+export const QUESTS: Record<string, QuestDefinition> = {
+  no_spend_weekend: {
+    id: 'no_spend_weekend',
+    title: 'The Weekend Gate',
+    description: 'A side quest — two days of stillness',
+    durationDays: 3,
+    sessionMinutes: 7,
+    scenes: ['scene_01_friday_night'],
+    // Scenes 02 and 03 will be added when written
+  },
+  no_spend_week: {
+    id: 'no_spend_week',
+    title: 'The Seven-Day Door',
+    description: 'The main quest — a full week of intention',
+    durationDays: 7,
+    sessionMinutes: 10,
+    scenes: [],
+    // Scenes added when written
+  },
+  low_spend_month: {
+    id: 'low_spend_month',
+    title: 'The Lunar Arch',
+    description: 'The epic — thirty days of transformation',
+    durationDays: 30,
+    sessionMinutes: 12,
+    scenes: [],
+    // Scenes added when written
+  },
+};

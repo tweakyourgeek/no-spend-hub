@@ -1,9 +1,9 @@
 import React from 'react';
-import type { ChasingPattern } from '../types';
+import type { PatternDefinition } from '../types';
 import { colors, fonts, animations } from '../theme';
 
 interface Props {
-  pattern: ChasingPattern;
+  pattern: PatternDefinition;
   isNew?: boolean;
 }
 

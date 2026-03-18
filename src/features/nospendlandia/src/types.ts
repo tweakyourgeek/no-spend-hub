@@ -1,33 +1,148 @@
+// ─── Core IDs ────────────────────────────────────────────────────────────────
+
 /** All navigable screens in the game */
-export type Screen = 'entry' | 'realm-map' | 'dialogue' | 'journal' | 'ending';
+export type Screen = 'entry' | 'realm-map' | 'scene' | 'journal' | 'ending' | 'patterns';
 
 /** The three quest lines */
-export type Quest = 'no-spend-weekend' | 'no-spend-week' | 'low-spend-month';
+export type QuestId = 'no_spend_weekend' | 'no_spend_week' | 'low_spend_month';
 
-/** A recognized spending pattern (oracle card mechanic) */
-export interface ChasingPattern {
-  id: string;
+/** Scene identifier — one file per scene */
+export type SceneId = string;
+
+/** Character identifier */
+export type CharacterId =
+  | 'fool'
+  | 'queen_of_pentacles'
+  | 'magician'
+  | 'moon'
+  | 'devil'
+  | 'hermit'
+  | 'tower'
+  | 'wheel'
+  | 'world';
+
+/** Pattern identifier — internal ID (clinical mapping) */
+export type PatternId =
+  | 'moonbeams'
+  | 'rainbows'
+  | 'ambrosia'
+  | 'stardust'
+  | 'sunshine'
+  | 'unicorns';
+
+// ─── Characters ──────────────────────────────────────────────────────────────
+
+export interface Character {
+  id: CharacterId;
+  name: string;
+  romanNumeral: string;
+  role: string;
+  glyph: string;
+  colors: { bg: string; text: string; accent: string };
+}
+
+// ─── Patterns ────────────────────────────────────────────────────────────────
+
+export interface PatternDefinition {
+  id: PatternId;
   name: string;
   description: string;
   icon: string;
   advice: string;
+  unlock: { namedCount: number };
 }
 
-/** Arbitrary flags / inventory items keyed by id */
-export type Flags = Record<string, boolean | string | number>;
+export interface PatternTracking {
+  pullCount: number;
+  observedCount: number;
+  namedCount: number;
+  masteryCount: number;
+  unlocked: boolean;
+}
 
-/** Tarot-themed NPC character */
-export interface Character {
-  id: string;
-  name: string;
+// ─── Scenes & Beats ──────────────────────────────────────────────────────────
+
+export interface Scene {
+  id: SceneId;
+  questId: QuestId;
+  day: number;
   title: string;
-  icon: string;
-  portraitColor: string;
-  portraitAccent: string;
-  arcana: string;
+  timeLabel: string;
+  location: string;
+  characters: CharacterId[];
+  patternTags: PatternId[];
+  artKey: string;
+
+  beats: Beat[];
+
+  unlocks: {
+    scenes?: SceneId[];
+    patterns?: PatternId[];
+  };
+
+  stateChanges: {
+    [branchId: string]: Partial<StateTags>;
+  };
+
+  hermitQuestions: {
+    pull: string;
+    friction: string;
+    pattern: string;
+    mastery?: string;
+  };
 }
 
-/** A single dialogue node in a conversation tree */
+export type Beat = NarrationBeat | DialogueBeat | ChoiceBeat | HermitBeat | MercyBeat;
+
+export interface NarrationBeat {
+  type: 'narration';
+  text: string;
+}
+
+export interface DialogueBeat {
+  type: 'dialogue';
+  character: CharacterId;
+  variant?: string;
+  lines: string[];
+}
+
+export interface ChoiceBeat {
+  type: 'choices';
+  choices: Choice[];
+}
+
+export interface Choice {
+  id: string;
+  label: string;
+  patternRequired?: PatternId;
+  branchId: string;
+}
+
+export interface HermitBeat {
+  type: 'hermit';
+  /** If null, resolved from scene's hermitQuestions based on player path */
+  question?: string;
+}
+
+export interface MercyBeat {
+  type: 'mercy';
+  queenLine: string;
+  hermitQuestion: string;
+}
+
+// ─── Quests ──────────────────────────────────────────────────────────────────
+
+export interface QuestDefinition {
+  id: QuestId;
+  title: string;
+  description: string;
+  durationDays: number;
+  sessionMinutes: number;
+  scenes: SceneId[];
+}
+
+// ─── Legacy Dialogue (preserved from existing encounters) ────────────────────
+
 export interface DialogueNode {
   id: string;
   characterId: string;
@@ -35,68 +150,102 @@ export interface DialogueNode {
   choices: DialogueChoice[];
 }
 
-/** A single dialogue choice */
 export interface DialogueChoice {
   id: string;
   label: string;
-  /** Optional flag key to set when chosen */
   setsFlag?: string;
-  /** Screen to navigate to after choosing (defaults to staying on dialogue) */
   nextScreen?: Screen;
-  /** Next dialogue node to show */
   nextDialogue?: string;
-  /** Pattern to reveal when chosen */
   revealsPattern?: string;
 }
 
-/** Props fed into the Dialogue screen component */
-export interface DialogueData {
-  characterName: string;
-  portraitColor: string;
-  dialogueText: string;
-  choices: DialogueChoice[];
+// ─── Game State ──────────────────────────────────────────────────────────────
+
+export interface StateTags {
+  [key: string]: number;
 }
 
-/** An encounter in a quest's story */
-export interface Encounter {
-  id: string;
-  dialogueNodeId: string;
-  requiredFlags?: Record<string, boolean | string | number>;
+export interface HermitEntry {
+  sceneId: SceneId;
+  question: string;
+  path: 'pull' | 'friction' | 'pattern' | 'mastery';
+  timestamp: number;
+  questDay: number;
 }
 
-/** A full quest storyline */
-export interface QuestLine {
-  questId: Quest;
-  title: string;
-  description: string;
-  encounters: Encounter[];
-  endingDialogueId: string;
-}
-
-/** Full game state shape */
 export interface GameState {
+  // Navigation
   currentScreen: Screen;
   previousScreen: Screen | null;
-  activeQuest: Quest | null;
-  chasingPattern: ChasingPattern | null;
+
+  // Quest & scene progress
+  currentQuest: QuestId | null;
+  currentScene: SceneId | null;
+  currentBeatIndex: number;
+  currentBranch: string | null;
+
+  // Progress
+  completedScenes: SceneId[];
+  completedQuests: QuestId[];
+
+  // Pattern tracking
+  patternData: {
+    [patternId: string]: PatternTracking;
+  };
+
+  // Scene-level state tags
+  stateTags: StateTags;
+
+  // Hermit's questions (exportable)
+  hermitJournal: HermitEntry[];
+
+  // Session
+  sessionStartTime: number | null;
+  lastPlayedAt: number | null;
+
+  // Legacy support — flags from existing dialogue encounters
+  flags: Record<string, boolean | string | number>;
+  /** Old-style revealed patterns for backward compat with existing encounters */
   revealedPatterns: string[];
-  flags: Flags;
-  currentDialogueId: string | null;
+  /** Legacy encounter index */
   encounterIndex: number;
-  completedQuests: Quest[];
+  /** Legacy current dialogue id */
+  currentDialogueId: string | null;
+  /** Legacy journal entries */
   journalEntries: string[];
 }
 
-/** Actions the game state reducer can handle */
+// ─── Actions ─────────────────────────────────────────────────────────────────
+
 export type GameAction =
+  // Navigation
   | { type: 'NAVIGATE'; screen: Screen }
-  | { type: 'SET_QUEST'; quest: Quest }
-  | { type: 'SET_CHASING_PATTERN'; pattern: ChasingPattern }
-  | { type: 'REVEAL_PATTERN'; patternId: string }
+  // Quest
+  | { type: 'START_QUEST'; questId: QuestId }
+  | { type: 'COMPLETE_QUEST'; questId: QuestId }
+  // Scene
+  | { type: 'START_SCENE'; sceneId: SceneId }
+  | { type: 'ADVANCE_BEAT' }
+  | { type: 'SET_BRANCH'; branchId: string }
+  | { type: 'COMPLETE_SCENE'; sceneId: SceneId }
+  // Patterns
+  | { type: 'RECORD_PULL'; patternId: PatternId }
+  | { type: 'RECORD_OBSERVED'; patternId: PatternId }
+  | { type: 'RECORD_NAMED'; patternId: PatternId }
+  | { type: 'RECORD_MASTERY'; patternId: PatternId }
+  | { type: 'UNLOCK_PATTERN'; patternId: PatternId }
+  // State tags
+  | { type: 'APPLY_STATE_CHANGES'; changes: Partial<StateTags> }
+  // Hermit
+  | { type: 'ADD_HERMIT_ENTRY'; entry: HermitEntry }
+  // Session
+  | { type: 'START_SESSION' }
+  // Legacy support
   | { type: 'SET_FLAG'; key: string; value: boolean | string | number }
+  | { type: 'REVEAL_PATTERN'; patternId: string }
   | { type: 'SET_DIALOGUE'; dialogueId: string }
   | { type: 'ADVANCE_ENCOUNTER' }
-  | { type: 'COMPLETE_QUEST'; quest: Quest }
   | { type: 'ADD_JOURNAL'; entry: string }
+  // Persistence
   | { type: 'LOAD_STATE'; state: GameState }
   | { type: 'RESET' };
