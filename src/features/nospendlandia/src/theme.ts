@@ -33,6 +33,53 @@ export const animations = {
   cursorBlink: 'nsl-cursorBlink',
 } as const;
 
+/** Global base styles for the RPG */
+export const baseCSS = `
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+}
+
+/* Safe area for notched devices */
+@supports (padding: env(safe-area-inset-top)) {
+  body { padding-env: safe-area-inset; }
+}
+
+/* Larger touch targets on mobile */
+@media (pointer: coarse) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Prevent text selection on buttons but allow on content */
+button { user-select: none; -webkit-user-select: none; }
+
+/* Smooth focus rings */
+button:focus-visible {
+  outline: 2px solid ${colors.sage};
+  outline-offset: 2px;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+`;
+
 /** Keyframes CSS to inject */
 export const keyframesCSS = `
 @keyframes ${animations.fadeIn} {

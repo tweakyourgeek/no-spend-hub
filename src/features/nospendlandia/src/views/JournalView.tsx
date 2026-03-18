@@ -44,14 +44,15 @@ export default function JournalView() {
 
   return (
     <div style={{
-      minHeight: '100vh',
+      minHeight: '100dvh',
       background: `linear-gradient(180deg, ${colors.deepPlum} 0%, ${colors.plum} 100%)`,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      padding: '2rem',
+      padding: 'max(env(safe-area-inset-top, 0px), 1.5rem) clamp(1rem, 4vw, 2rem) max(env(safe-area-inset-bottom, 0px), 1.5rem)',
       color: colors.cream,
       animation: `${animations.fadeIn} 0.5s ease-out`,
+      overflowX: 'hidden',
     }}>
       <h2 style={{
         fontFamily: fonts.heading,
