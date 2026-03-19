@@ -8,6 +8,6 @@
     { "source": "/app", "destination": "/index.html" }
   ],
   "git": {
-    "deploymentEnabled": true
+    "deploymentEnabled": false
   }
 }
