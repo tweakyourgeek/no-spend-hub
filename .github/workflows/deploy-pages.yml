@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'src/features/**'
+      - 'nospendlandia/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -53,11 +54,20 @@ jobs:
           fi
 
           changed=""
+          # Check sub-apps in src/features/
           for dir in src/features/*/; do
             app=$(basename "$dir")
             if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
               if [ "$BUILD_ALL" = "true" ] || git diff --name-only HEAD~1 HEAD | grep -q "^src/features/$app/"; then
-                changed="$changed $app"
+                changed="$changed src/features/$app"
+              fi
+            fi
+          done
+          # Check top-level apps
+          for dir in nospendlandia; do
+            if [ -d "$dir" ] && { [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; }; then
+              if [ "$BUILD_ALL" = "true" ] || git diff --name-only HEAD~1 HEAD | grep -q "^$dir/"; then
+                changed="$changed $dir"
               fi
             fi
           done
@@ -74,22 +84,31 @@ jobs:
           mkdir -p _site
           changed="${{ steps.detect.outputs.apps }}"
 
+          # Collect all app dirs: src/features/* and top-level nospendlandia
+          app_dirs=""
           for dir in src/features/*/; do
+            [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ] && app_dirs="$app_dirs $dir"
+          done
+          for dir in nospendlandia; do
+            [ -d "$dir" ] && { [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; } && app_dirs="$app_dirs $dir"
+          done
+
+          REPO_ROOT="$PWD"
+          for dir in $app_dirs; do
+            dir="${dir%/}"
             app=$(basename "$dir")
-            if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
-              # Build if: app changed, or not yet in cache
-              if echo " $changed " | grep -q " $app " || [ ! -d "_site/$app" ]; then
-                echo "::group::Building $app"
-                cd "src/features/$app"
-                npm ci
-                npm run build
-                rm -rf "../../../_site/$app"
-                cp -r dist "../../../_site/$app"
-                cd ../../..
-                echo "::endgroup::"
-              else
-                echo "Skipping $app (cached, unchanged)"
-              fi
+            # Build if: app changed, or not yet in cache
+            if echo " $changed " | grep -q " $dir " || [ ! -d "_site/$app" ]; then
+              echo "::group::Building $app"
+              cd "$dir"
+              npm ci
+              npm run build
+              rm -rf "$REPO_ROOT/_site/$app"
+              cp -r dist "$REPO_ROOT/_site/$app"
+              cd "$REPO_ROOT"
+              echo "::endgroup::"
+            else
+              echo "Skipping $app (cached, unchanged)"
             fi
           done
 
@@ -130,9 +149,9 @@ jobs:
               <div class="grid">
           INDEXEOF
 
-          for dir in src/features/*/; do
+          for dir in src/features/*/ nospendlandia; do
             app=$(basename "$dir")
-            if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
+            if [ -d "$dir" ] && { [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; }; then
               label=$(echo "$app" | sed 's/-/ /g; s/\b\(.\)/\u\1/g')
               echo "        <a href=\"/no-spend-hub/$app/\"><span class=\"app-name\">$label</span></a>" >> _site/index.html
             fi
