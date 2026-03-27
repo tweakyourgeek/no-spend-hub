@@ -1,0 +1,134 @@
+name: Deploy Sub-Apps to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/features/**'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Detect changed apps
+        id: detect
+        run: |
+          BUILD_ALL=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BUILD_ALL=true
+          elif ! git rev-parse HEAD~1 >/dev/null 2>&1; then
+            BUILD_ALL=true
+          elif git diff --name-only HEAD~1 HEAD | grep -q '.github/workflows/deploy-pages.yml'; then
+            BUILD_ALL=true
+          fi
+
+          changed=""
+          for dir in src/features/*/; do
+            app=$(basename "$dir")
+            if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
+              if [ "$BUILD_ALL" = "true" ] || git diff --name-only HEAD~1 HEAD | grep -q "^src/features/$app/"; then
+                changed="$changed $app"
+              fi
+            fi
+          done
+
+          echo "apps=${changed# }" >> $GITHUB_OUTPUT
+          if [ -n "${changed# }" ]; then
+            echo "Apps to build:${changed}"
+          else
+            echo "No apps changed"
+          fi
+
+      - name: Build changed apps
+        if: steps.detect.outputs.apps != ''
+        run: |
+          mkdir -p _site
+          for app in ${{ steps.detect.outputs.apps }}; do
+            echo "::group::Building $app"
+            cd "src/features/$app"
+            npm ci
+            npm run build
+            cp -r dist "../../../_site/$app"
+            cd ../../..
+            echo "::endgroup::"
+          done
+
+      - name: Generate index page
+        if: steps.detect.outputs.apps != ''
+        run: |
+          cat > _site/index.html << 'INDEXEOF'
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>No Spend Hub — Apps</title>
+            <style>
+              * { margin: 0; padding: 0; box-sizing: border-box; }
+              body {
+                font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                background: #0a0a0a; color: #e0e0e0;
+                min-height: 100vh; padding: 3rem 1.5rem;
+              }
+              .container { max-width: 720px; margin: 0 auto; }
+              h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2rem; margin-bottom: 0.5rem; color: #fff; }
+              .subtitle { color: #888; margin-bottom: 2rem; font-size: 0.95rem; }
+              .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
+              a {
+                display: block; padding: 1rem 1.25rem;
+                background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px;
+                color: #e0e0e0; text-decoration: none;
+                transition: border-color 0.2s, background 0.2s;
+              }
+              a:hover { border-color: #555; background: #222; }
+              .app-name { font-weight: 600; font-size: 0.9rem; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <h1>No Spend Hub</h1>
+              <p class="subtitle">Sub-app directory</p>
+              <div class="grid">
+          INDEXEOF
+
+          for dir in src/features/*/; do
+            app=$(basename "$dir")
+            if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
+              label=$(echo "$app" | sed 's/-/ /g; s/\b\(.\)/\u\1/g')
+              echo "        <a href=\"/no-spend-hub/$app/\"><span class=\"app-name\">$label</span></a>" >> _site/index.html
+            fi
+          done
+
+          cat >> _site/index.html << 'INDEXEOF'
+              </div>
+            </div>
+          </body>
+          </html>
+          INDEXEOF
+
+          touch _site/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        if: steps.detect.outputs.apps != ''
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          keep_files: true
