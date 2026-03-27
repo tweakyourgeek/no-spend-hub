@@ -10,6 +10,7 @@ import ChoicePanel from '../components/ChoicePanel';
 import HermitBeatComp from '../components/HermitBeat';
 import MercyBeatComp from '../components/MercyBeat';
 import PatternGrid from '../components/PatternGrid';
+import LocationTransition from '../components/LocationTransition';
 import type { Choice, Beat } from '../types';
 import { colors, fonts } from '../theme';
 
@@ -25,6 +26,9 @@ export default function SceneRunner() {
   const dispatch = useGameDispatch();
   const { scene, currentBeat, currentBeatIndex } = useScene();
 
+  // Location transition state — shows when entering a new scene
+  const [showTransition, setShowTransition] = useState(true);
+
   // Mercy state — dynamically inserted after Pull choices
   const [mercyActive, setMercyActive] = useState(false);
   const [mercyQueenLine, setMercyQueenLine] = useState('');
@@ -37,10 +41,15 @@ export default function SceneRunner() {
   // Track which patterns just changed for animation
   const [changedPatterns, setChangedPatterns] = useState<string[]>([]);
 
-  // Reset mercy state when scene changes
+  // Track how many narration beats we've shown (for establishing shot detection)
+  const [narrationCount, setNarrationCount] = useState(0);
+
+  // Reset state when scene changes
   useEffect(() => {
     setMercyActive(false);
     setMercyHandled(false);
+    setShowTransition(true);
+    setNarrationCount(0);
   }, [state.currentScene]);
 
   // Advance from the RESOLVED beat index (not the raw stored index)
@@ -71,6 +80,17 @@ export default function SceneRunner() {
           }}
         >Return to map</button></p>
       </div>
+    );
+  }
+
+  // Location transition — the Fool arriving at this place
+  if (showTransition) {
+    return (
+      <LocationTransition
+        location={scene.location}
+        timeLabel={scene.timeLabel}
+        onComplete={() => setShowTransition(false)}
+      />
     );
   }
 
@@ -183,8 +203,20 @@ export default function SceneRunner() {
   // Render the current beat
   function renderBeat(beat: Beat) {
     switch (beat.type) {
-      case 'narration':
-        return <NarrationBlock key={currentBeatIndex} text={beat.text} onComplete={advanceBeat} />;
+      case 'narration': {
+        const isFirst = narrationCount === 0;
+        return (
+          <NarrationBlock
+            key={currentBeatIndex}
+            text={beat.text}
+            onComplete={() => {
+              setNarrationCount(c => c + 1);
+              advanceBeat();
+            }}
+            isEstablishing={isFirst}
+          />
+        );
+      }
 
       case 'dialogue':
         return (

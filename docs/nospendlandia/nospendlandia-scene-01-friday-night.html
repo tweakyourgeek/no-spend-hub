@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoSpendLandia — Scene 01: Friday Night</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --plum: #493751;
+  --mauve: #B375A0;
+  --sage: #A6C9BB;
+  --peach: #E8B4A0;
+  --lavender: #E0DAE7;
+  --cream: #F8F1F2;
+  --ink: #2d2035;
+  --night: #1a1228;
+  --moon-glow: #d4b8e0;
+  --moon-bg: #2d1f3a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.page-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+/* HERO */
+.hero {
+  background: var(--night);
+  padding: 4rem 2.5rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 40%, rgba(179,117,160,0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 25% 70%, rgba(166,201,187,0.08) 0%, transparent 50%);
+}
+.hero-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 2;
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 300;
+  color: var(--moon-glow);
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0.5rem;
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: rgba(212,184,224,0.6);
+  font-size: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.hero-tag {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(212,184,224,0.5);
+  border: 1px solid rgba(212,184,224,0.2);
+  padding: 0.25rem 0.7rem;
+  border-radius: 3px;
+}
+
+/* NAV STRIP */
+.nav-strip {
+  background: var(--plum);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+}
+.nav-strip a {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(212,184,224,0.65);
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+.nav-strip a:hover { color: var(--moon-glow); background: rgba(255,255,255,0.08); }
+
+/* SECTION */
+.section {
+  margin-bottom: 3.5rem;
+  scroll-margin-top: 2rem;
+}
+.section-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.4rem;
+}
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 400;
+  color: var(--plum);
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+.section-title em { font-style: italic; color: var(--mauve); }
+.rule { width: 28px; height: 2px; background: var(--sage); margin-bottom: 1.25rem; }
+
+p { margin-bottom: 0.85rem; }
+p:last-child { margin-bottom: 0; }
+
+/* OVERVIEW GRID */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+.ov-card {
+  background: var(--lavender);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+.ov-label {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.35rem;
+}
+.ov-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--plum);
+  line-height: 1.3;
+}
+
+/* SCENE CONTAINER */
+.scene-frame {
+  background: var(--moon-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+.scene-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(212,184,224,0.12);
+}
+.scene-portrait {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(179,117,160,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(179,117,160,0.3);
+}
+.scene-who {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: var(--moon-glow);
+  font-size: 1.05rem;
+}
+.scene-where {
+  font-size: 0.68rem;
+  color: rgba(212,184,224,0.45);
+  letter-spacing: 0.08em;
+  margin-top: 0.1rem;
+}
+.scene-body {
+  padding: 1.5rem;
+}
+.narration {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.98rem;
+  color: rgba(212,184,224,0.55);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+.dialogue-line {
+  background: rgba(255,255,255,0.05);
+  border-left: 2.5px solid var(--mauve);
+  border-radius: 0 6px 6px 0;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.25rem;
+}
+.dialogue-line p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem;
+  color: var(--moon-glow);
+  line-height: 1.6;
+  margin: 0;
+}
+.dialogue-line .speaker-tag {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+/* CHOICES */
+.choices-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(212,184,224,0.35);
+  margin-bottom: 0.75rem;
+}
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.choice {
+  border-radius: 6px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  border: 1px solid transparent;
+}
+.choice-key {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+.choice-a {
+  background: rgba(232,180,160,0.1);
+  border-color: rgba(232,180,160,0.2);
+  color: rgba(240,220,210,0.85);
+}
+.choice-a .choice-key { color: var(--peach); }
+.choice-b {
+  background: rgba(166,201,187,0.1);
+  border-color: rgba(166,201,187,0.2);
+  color: rgba(210,230,225,0.85);
+}
+.choice-b .choice-key { color: var(--sage); }
+.choice-c {
+  background: rgba(179,117,160,0.12);
+  border-color: rgba(179,117,160,0.35);
+  color: rgba(230,200,228,0.9);
+}
+.choice-c .choice-key { color: var(--mauve); }
+.choice-c-badge {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(179,117,160,0.25);
+  color: var(--mauve);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-left: auto;
+  align-self: center;
+  flex-shrink: 0;
+}
+.choice-locked {
+  opacity: 0.4;
+  filter: grayscale(0.5);
+}
+.choice-locked .choice-c-badge {
+  background: rgba(212,184,224,0.1);
+  color: rgba(212,184,224,0.4);
+}
+
+/* BRANCH SECTION */
+.branch-section {
+  background: white;
+  border-radius: 10px;
+  padding: 1.75rem;
+  margin: 1.25rem 0;
+  border: 1px solid var(--lavender);
+}
+.branch-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--lavender);
+}
+.branch-badge {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+}
+.badge-a { background: #fdf2ec; color: #7a4020; border: 1px solid rgba(232,180,160,0.4); }
+.badge-b { background: #eef5f2; color: #2d5a4a; border: 1px solid rgba(166,201,187,0.4); }
+.badge-c { background: #fdf8fc; color: #5a2e52; border: 1px solid rgba(179,117,160,0.35); }
+.branch-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--plum);
+}
+
+.response-frame {
+  background: var(--moon-bg);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+.moon-action {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: rgba(212,184,224,0.5);
+  margin-bottom: 0.6rem;
+}
+.moon-says {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--moon-glow);
+  line-height: 1.6;
+  border-left: 2px solid rgba(179,117,160,0.4);
+  padding-left: 0.9rem;
+}
+
+.consequence-note {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--lavender);
+  border-radius: 6px;
+  padding: 0.9rem 1.1rem;
+  margin-top: 0.75rem;
+}
+.consequence-note strong { color: var(--plum); }
+
+/* HERMIT BEAT */
+.hermit-beat {
+  background: #f5f0f8;
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+  border-left: 3px solid rgba(179,117,160,0.3);
+}
+.hermit-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+.hermit-glyph {
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+.hermit-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mauve);
+}
+.hermit-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--plum);
+  line-height: 1.55;
+}
+.hermit-note {
+  font-size: 0.78rem;
+  color: rgba(73,55,81,0.55);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* DATA TAG SECTION */
+.data-section {
+  background: var(--plum);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+}
+.data-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 1rem;
+}
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+.data-card {
+  background: rgba(255,255,255,0.07);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+}
+.data-key {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(166,201,187,0.65);
+  margin-bottom: 0.3rem;
+}
+.data-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.92rem;
+  color: var(--cream);
+  line-height: 1.5;
+}
+.data-val code {
+  font-family: 'Cormorant Garamond', serif;
+  background: rgba(179,117,160,0.2);
+  color: var(--moon-glow);
+  padding: 0.05rem 0.35rem;
+  border-radius: 3px;
+  font-size: 0.88rem;
+}
+
+/* NOTES */
+.writer-note {
+  background: #fdf2ec;
+  border-left: 3px solid var(--peach);
+  border-radius: 0 6px 6px 0;
+  padding: 0.9rem 1.1rem;
+  margin: 1rem 0;
+  font-size: 0.84rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.writer-note strong { color: var(--plum); }
+
+.box {
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.25rem 0;
+}
+.box-sage { background: #eef5f2; border-left: 3px solid var(--sage); }
+.box-plum { background: var(--plum); color: var(--cream); }
+.box-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.5rem;
+}
+.box-plum .box-label { color: var(--sage); }
+.box-plum p { color: var(--cream); }
+
+.divider { width: 100%; height: 1px; background: var(--lavender); margin: 2.5rem 0; }
+
+/* PULLQUOTE */
+.pullquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+  color: var(--mauve);
+  text-align: center;
+  border-top: 1px solid var(--lavender);
+  border-bottom: 1px solid var(--lavender);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.55;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--moon-bg);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+.footer p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: rgba(212,184,224,0.55);
+  font-size: 1.1rem;
+}
+
+/* STARS */
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--moon-glow);
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero" id="starfield">
+  <p class="hero-eyebrow">NoSpendLandia · Scene 01</p>
+  <h1 class="hero-title">Friday Night</h1>
+  <p class="hero-sub">The Moon's Apartment · No-Spend Weekend · Day One</p>
+  <div class="hero-meta">
+    <span class="hero-tag">Quest: No-Spend Weekend</span>
+    <span class="hero-tag">Location: The Moon's Apartment</span>
+    <span class="hero-tag">Time: 11:47pm</span>
+    <span class="hero-tag">Characters: The Moon, The Hermit</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav-strip">
+  <a href="#overview">Overview</a>
+  <a href="#scene-setup">Scene Setup</a>
+  <a href="#arrival">Arrival Beat</a>
+  <a href="#cart-scene">The Cart Scene</a>
+  <a href="#branches">All Branches</a>
+  <a href="#hermit-beat">Hermit Beat</a>
+  <a href="#data">Data &amp; Tags</a>
+  <a href="#notes">Writer Notes</a>
+</div>
+
+<div class="page-wrap">
+
+<!-- OVERVIEW -->
+<div class="section" id="overview">
+  <p class="section-label">Scene Overview</p>
+  <h2 class="section-title">What This Scene <em>Does</em></h2>
+  <div class="rule"></div>
+
+  <p>This is the first scene in the No-Spend Weekend quest. The Fool arrives at the Moon's apartment on Friday night — the exact moment the real game begins. The scene does three things:</p>
+
+  <div class="overview-grid">
+    <div class="ov-card">
+      <div class="ov-label">Function</div>
+      <div class="ov-val">Introduces the pull of a Friday night impulse buy</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Pattern in Play</div>
+      <div class="ov-val">Moonbeams — comfort as a purchase</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Pattern Tag</div>
+      <div class="ov-val">MOONBEAMS (primary) · RAINBOWS (secondary)</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Mechanic Introduced</div>
+      <div class="ov-val">Three-choice structure. Pattern-powered C option.</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Hermit Role</div>
+      <div class="ov-val">End-of-scene reflection question only — no dialogue</div>
+    </div>
+    <div class="ov-card">
+      <div class="ov-label">Art Used</div>
+      <div class="ov-val">The Moon's Apartment — late night city</div>
+    </div>
+  </div>
+
+  <div class="box box-sage" style="margin-top: 1.5rem;">
+    <div class="box-label">The scene's single question for the player</div>
+    <p style="font-size: 0.88rem;">Is the thing you're buying the thing you actually want — or are you buying the feeling you think the thing will produce?</p>
+    <p style="font-size: 0.88rem; margin-top: 0.5rem;">The Moon doesn't ask this directly. She demonstrates it. That's the job.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SCENE SETUP -->
+<div class="section" id="scene-setup">
+  <p class="section-label">Before the Dialogue</p>
+  <h2 class="section-title">Scene <em>Setup</em></h2>
+  <div class="rule"></div>
+
+  <p>This narration appears on screen before the first dialogue interaction. Short. Sets the vibe. The Moon is already present — the Fool finds her, not the other way around.</p>
+
+  <div class="scene-frame">
+    <div class="scene-body">
+      <div class="narration">
+        The apartment is warm in the way late nights get warm. Low light. Phone screen glow. The particular quiet of a Friday that should feel like relief but hasn't quite landed yet.
+      </div>
+      <div class="narration">
+        The Moon is here. She's always here on Fridays.
+      </div>
+      <div class="narration">
+        She doesn't look up when you come in.
+      </div>
+    </div>
+  </div>
+
+  <div class="writer-note">
+    <strong>Craft note:</strong> The Moon never "arrives." She's already there. This is her natural habitat — the gap between wanting to decompress and actually being able to. The Fool walks into that gap.
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ARRIVAL BEAT -->
+<div class="section" id="arrival">
+  <p class="section-label">Beat One</p>
+  <h2 class="section-title">The <em>Arrival</em></h2>
+  <div class="rule"></div>
+
+  <p>The Moon opens the scene. Her first line is low-stakes and warm. She's not pitching anything yet — she's just being present. This is the setup choice: how the Fool enters the conversation determines which version of the cart scene follows.</p>
+
+  <div class="scene-frame">
+    <div class="scene-header">
+      <div class="scene-portrait">☽</div>
+      <div>
+        <div class="scene-who">The Moon</div>
+        <div class="scene-where">11:47pm · The Moon's Apartment</div>
+      </div>
+    </div>
+    <div class="scene-body">
+      <div class="dialogue-line">
+        <span class="speaker-tag">The Moon</span>
+        <p>"Friday night. You made it. The week tried to eat you alive and here you are, still standing."</p>
+      </div>
+      <div class="dialogue-line" style="border-left-color: rgba(166,201,187,0.3); margin-top: 0.5rem;">
+        <span class="speaker-tag" style="color: rgba(166,201,187,0.6);">The Moon</span>
+        <p>"I was just looking at something. Come see."</p>
+      </div>
+
+      <div class="choices-label">The Fool's Response</div>
+      <div class="choices">
+        <div class="choice choice-a">
+          <span class="choice-key">A</span>
+          <span>"What is it?"</span>
+        </div>
+        <div class="choice choice-b">
+          <span class="choice-key">B</span>
+          <span>"I already know what you're about to show me."</span>
+        </div>
+        <div class="choice choice-c">
+          <span class="choice-key">C</span>
+          <span>"You always show up on Fridays."</span>
+          <span class="choice-c-badge">✦ Moonbeams</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 0.82rem; color: var(--mauve); margin-top: 0.25rem;">↑ Choice C requires the Moonbeams pattern to be unlocked. If the player hasn't unlocked it yet, it appears grayed out with a lock icon.</p>
+
+  <div class="box box-sage" style="margin-top: 1.25rem;">
+    <div class="box-label">What each arrival choice signals</div>
+    <p style="font-size: 0.86rem;"><strong>A ("What is it?"):</strong> Curiosity. The Fool is open. This is the most common path — leads directly to the cart scene.</p>
+    <p style="font-size: 0.86rem; margin-top: 0.5rem;"><strong>B ("I already know..."):</strong> Mild resistance, but still here. Leads to the cart scene with a shifted Moon opener — she's amused, not deterred.</p>
+    <p style="font-size: 0.86rem; margin-top: 0.5rem;"><strong>C ("You always show up on Fridays"):</strong> Pattern recognition active. Skips the cart entirely and leads to the reflective branch. This is the earned path.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CART SCENE -->
+<div class="section" id="cart-scene">
+  <p class="section-label">Beat Two</p>
+  <h2 class="section-title">The <em>Cart Scene</em></h2>
+  <div class="rule"></div>
+
+  <p>This beat follows choice A or B from the arrival. The Moon shows the Fool the cart. This is the main encounter — the actual three-choice moment that drives the scene's emotional core.</p>
+
+  <div class="scene-frame">
+    <div class="scene-header">
+      <div class="scene-portrait">☽</div>
+      <div>
+        <div class="scene-who">The Moon</div>
+        <div class="scene-where">The Cart · A few things, nothing serious</div>
+      </div>
+    </div>
+    <div class="scene-body">
+
+      <div class="narration">
+        <em>If the Fool arrived with A ("What is it?"):</em>
+      </div>
+      <div class="dialogue-line">
+        <span class="speaker-tag">The Moon</span>
+        <p>"Just a few things. Nothing serious. You don't have to buy any of it. I'm just saying — you've been carrying a lot this week. Here's what putting it down could feel like."</p>
+      </div>
+
+      <div class="narration" style="margin-top: 1.25rem;">
+        <em>If the Fool arrived with B ("I already know..."):</em>
+      </div>
+      <div class="dialogue-line">
+        <span class="speaker-tag">The Moon</span>
+        <p>"Maybe. Knowing doesn't always change the feeling, though." <em style="opacity: 0.6;">She smiles a little.</em> "You've been staring at this cart for forty minutes. That's basically a decision already."</p>
+      </div>
+
+      <div class="narration" style="margin-top: 1.5rem; opacity: 0.7;">— shared from here —</div>
+
+      <div class="dialogue-line" style="margin-top: 1rem;">
+        <span class="speaker-tag">The Moon</span>
+        <p>"You can think of clicking buy as just... finishing the thought."</p>
+      </div>
+
+      <div class="choices-label">The Fool's Choice</div>
+      <div class="choices">
+        <div class="choice choice-a">
+          <span class="choice-key">A</span>
+          <span>She has a point. I'll just grab one thing.</span>
+        </div>
+        <div class="choice choice-b">
+          <span class="choice-key">B</span>
+          <span>I want to. But I said I wouldn't this weekend.</span>
+        </div>
+        <div class="choice choice-c">
+          <span class="choice-key">C</span>
+          <span>This is Moonbeams. I'm not buying a thing. I'm buying the feeling of Friday being okay.</span>
+          <span class="choice-c-badge">✦ Moonbeams</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pullquote">The Moon's logic is not wrong — you do deserve things.<br>Just not at 11:47pm when the real thing you need is sleep.</div>
+
+</div>
+
+<div class="divider"></div>
+
+<!-- BRANCHES -->
+<div class="section" id="branches">
+  <p class="section-label">Beat Three</p>
+  <h2 class="section-title">All <em>Response Branches</em></h2>
+  <div class="rule"></div>
+
+  <p>What happens after each cart choice. Plus the separate C-arrival branch that bypasses the cart entirely. No choice is wrong. Every path ends with the Hermit and more data.</p>
+
+  <!-- BRANCH A -->
+  <div class="branch-section">
+    <div class="branch-header">
+      <span class="branch-badge badge-a">Choice A — The Pull</span>
+      <span class="branch-title">"She has a point. I'll just grab one thing."</span>
+    </div>
+
+    <div class="response-frame">
+      <div class="moon-action">She steps back. Not triumphant — just settled. Like she knew.</div>
+      <div class="moon-says">"Of course. One thing."</div>
+    </div>
+
+    <div class="narration" style="padding: 0 0.25rem; color: var(--ink); opacity: 0.7; font-style: normal; font-family: 'Open Sans', sans-serif; font-size: 0.85rem;">
+      The scene continues. The purchase happens. No dramatic music. No X through the weekend counter. The Moon doesn't comment further.
+    </div>
+
+    <div class="consequence-note">
+      <strong>What the game does:</strong> The cart item is purchased. The Moon's apartment feels the same. The Hermit appears in the margin — a small warm glow, no dialogue, just one question on screen. The weekend continues.
+      <br><br>
+      <strong>Data recorded:</strong> <code>MOONBEAMS_PULL +1</code>. If this is the second MOONBEAMS_PULL tag, the Moonbeams pattern becomes available to unlock in the oracle card draw.
+    </div>
+  </div>
+
+  <!-- BRANCH B -->
+  <div class="branch-section">
+    <div class="branch-header">
+      <span class="branch-badge badge-b">Choice B — The Friction</span>
+      <span class="branch-title">"I want to. But I said I wouldn't this weekend."</span>
+    </div>
+
+    <div class="response-frame">
+      <div class="moon-action">She tilts her head. Not bothered. Just noting it.</div>
+      <div class="moon-says">"Fair enough. I'll be here if the week gets loud."</div>
+    </div>
+
+    <div class="consequence-note">
+      <strong>What the game does:</strong> No purchase. The Moon's apartment fades. A small note appears — not a score, just a fact: "Cart left behind." The Hermit appears with a different question than the A branch.
+      <br><br>
+      <strong>Data recorded:</strong> <code>FRICTION +1</code> · <code>MOONBEAMS_OBSERVED +1</code>. Unlocks the Friday Night Reflection scene on Day Two (Saturday morning) — the Hermit asks a follow-up in context.
+    </div>
+  </div>
+
+  <!-- BRANCH C — CART -->
+  <div class="branch-section">
+    <div class="branch-header">
+      <span class="branch-badge badge-c">Choice C — The Pattern</span>
+      <span class="branch-title">"This is Moonbeams. I'm not buying a thing..."</span>
+    </div>
+
+    <div class="response-frame">
+      <div class="moon-action">She goes still. This is the tell — The Moon is never still.</div>
+      <div class="moon-says">"I know."</div>
+      <div class="moon-action" style="margin-top: 0.75rem;">A beat. She looks at the cart, then back.</div>
+      <div class="moon-says">"I'm just not sure I'm actually what you need right now."</div>
+    </div>
+
+    <div class="writer-note">
+      <strong>This is the most important line The Moon says in the whole scene.</strong> She doesn't argue. She doesn't double down. She concedes — gently, without drama. The player named the spell and the Moon acknowledged it. That acknowledgment IS the reward.
+    </div>
+
+    <div class="consequence-note">
+      <strong>What the game does:</strong> Cart closes. The Moon's apartment shifts slightly — the lighting warms, the mood changes from "late night restless" to "late night okay." No purchase. The Hermit arrives with a question that's specific to the pattern, not the cart.
+      <br><br>
+      <strong>Data recorded:</strong> <code>MOONBEAMS_NAMED +1</code>. Unlocks the Hermit's Friday scene — a quiet optional moment where the Fool can journal what they were actually looking for. Also seeds a callback in the Day Three (Sunday) closing scene.
+    </div>
+  </div>
+
+  <!-- BRANCH C — ARRIVAL -->
+  <div class="branch-section" style="border-color: rgba(179,117,160,0.25); background: #fdf8fc;">
+    <div class="branch-header">
+      <span class="branch-badge badge-c">C Arrival Branch</span>
+      <span class="branch-title">"You always show up on Fridays." — skips the cart entirely</span>
+    </div>
+
+    <p style="font-size: 0.86rem; color: var(--ink); margin-bottom: 1.25rem;">This branch is only available if the player arrived with choice C at the Arrival beat. The cart never appears. The Moon and the Fool have a different conversation.</p>
+
+    <div class="response-frame">
+      <div class="moon-action">She looks up. Something shifts in her expression — not discomfort, exactly. Recognition.</div>
+      <div class="moon-says">"I do, don't I."</div>
+      <div class="moon-action" style="margin-top: 0.75rem;">She sets the phone down.</div>
+      <div class="moon-says">"The question is whether you came here for company or for the cart."</div>
+    </div>
+
+    <div class="choices-label">The Fool's Response</div>
+    <div class="choices">
+      <div class="choice choice-a">
+        <span class="choice-key">A</span>
+        <span>I'm not sure. Maybe both.</span>
+      </div>
+      <div class="choice choice-b">
+        <span class="choice-key">B</span>
+        <span>Honestly, I just didn't want to be alone with my thoughts.</span>
+      </div>
+    </div>
+
+    <div class="consequence-note" style="margin-top: 1rem;">
+      <strong>Both responses here lead to the same outcome:</strong> no cart, no purchase, a quiet scene-end where The Moon just says "Then stay a while." The Hermit arrives with the deepest Friday night question of the three paths.
+      <br><br>
+      <strong>Data recorded:</strong> <code>MOONBEAMS_NAMED +1</code> · <code>PATTERN_MASTERY_MOONBEAMS +1</code>. This is the highest-insight path through Scene 01.
+    </div>
+  </div>
+
+</div>
+
+<div class="divider"></div>
+
+<!-- HERMIT BEAT -->
+<div class="section" id="hermit-beat">
+  <p class="section-label">Beat Four — All Paths</p>
+  <h2 class="section-title">The <em>Hermit</em></h2>
+  <div class="rule"></div>
+
+  <p>Every branch ends with The Hermit. He doesn't arrive as a character — just a warm light in the corner and a question on screen. No response box. No dialogue. The question just sits there.</p>
+
+  <p>The question changes based on the path the player took through the scene.</p>
+
+  <div class="hermit-beat">
+    <div class="hermit-header">
+      <span class="hermit-glyph">○</span>
+      <span class="hermit-label">After Choice A — The Pull</span>
+    </div>
+    <div class="hermit-q">"What were you actually going for?"</div>
+    <div class="hermit-note">No answer required. The question is the experience.</div>
+  </div>
+
+  <div class="hermit-beat">
+    <div class="hermit-header">
+      <span class="hermit-glyph">○</span>
+      <span class="hermit-label">After Choice B — The Friction</span>
+    </div>
+    <div class="hermit-q">"What did you want the thing to do for you?"</div>
+    <div class="hermit-note">No answer required. Plants a seed for the Saturday morning reflection.</div>
+  </div>
+
+  <div class="hermit-beat">
+    <div class="hermit-header">
+      <span class="hermit-glyph">○</span>
+      <span class="hermit-label">After Choice C — The Pattern (either version)</span>
+    </div>
+    <div class="hermit-q">"What does Friday night feel like when it's actually good?"</div>
+    <div class="hermit-note">No answer required. This one's for after the weekend — the callback arrives in the Sunday closing scene.</div>
+  </div>
+
+  <div class="box box-plum" style="margin-top: 1.5rem;">
+    <div class="box-label">Design principle</div>
+    <p>The Hermit never summarizes the scene. He never says "you did well" or "interesting choice." He only moves the question forward — not backward. His questions are always about what comes next, not what just happened.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DATA TAGS -->
+<div class="section" id="data">
+  <p class="section-label">For Claude Code</p>
+  <h2 class="section-title">Scene <em>Data Model</em></h2>
+  <div class="rule"></div>
+
+  <p>Everything the game needs to track from this scene. Written for Claude Code to build the state structure from.</p>
+
+  <div class="data-section">
+    <div class="data-label">Scene Metadata</div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-key">Scene ID</div>
+        <div class="data-val"><code>scene_01_friday_night</code></div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">Quest</div>
+        <div class="data-val"><code>no_spend_weekend</code></div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">Day</div>
+        <div class="data-val"><code>day_one</code></div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">Characters</div>
+        <div class="data-val"><code>moon</code> · <code>hermit</code></div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">Pattern Tags</div>
+        <div class="data-val"><code>MOONBEAMS</code> · <code>RAINBOWS</code></div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">Prerequisite</div>
+        <div class="data-val">None — this is the first scene</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-section" style="margin-top: 0.75rem;">
+    <div class="data-label">State Changes by Branch</div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-key">A — The Pull</div>
+        <div class="data-val"><code>MOONBEAMS_PULL +1</code><br>purchase logged</div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">B — The Friction</div>
+        <div class="data-val"><code>FRICTION +1</code><br><code>MOONBEAMS_OBSERVED +1</code></div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">C — Cart Pattern</div>
+        <div class="data-val"><code>MOONBEAMS_NAMED +1</code><br>Hermit's Friday unlocked</div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">C — Arrival Pattern</div>
+        <div class="data-val"><code>MOONBEAMS_NAMED +1</code><br><code>PATTERN_MASTERY_MOONBEAMS +1</code></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-section" style="margin-top: 0.75rem;">
+    <div class="data-label">Scenes This Unlocks</div>
+    <div class="data-grid">
+      <div class="data-card">
+        <div class="data-key">After B</div>
+        <div class="data-val">Friday Night Reflection (Sat. morning Hermit follow-up)</div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">After C (either)</div>
+        <div class="data-val">Hermit's Friday (optional journal scene)</div>
+      </div>
+      <div class="data-card">
+        <div class="data-key">Hermit Q callback</div>
+        <div class="data-val">Sunday closing scene references C-path question</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- WRITER NOTES -->
+<div class="section" id="notes">
+  <p class="section-label">Writing Notes</p>
+  <h2 class="section-title">Things to <em>Hold Onto</em></h2>
+  <div class="rule"></div>
+
+  <div class="writer-note">
+    <strong>On The Moon's voice throughout:</strong> She never raises it. She never pressures. She genuinely believes you deserve comfort — and she's not wrong. The tension in this scene isn't between good and bad. It's between what you want right now and what you wanted when you started the weekend.
+  </div>
+
+  <div class="writer-note">
+    <strong>On the cart scene opener variation:</strong> The two versions of The Moon's cart opener (after A vs after B) should feel meaningfully different. After A, she's explaining. After B, she's pivoting. Same destination, different approach. That's the Moon — she's flexible.
+  </div>
+
+  <div class="writer-note">
+    <strong>On Choice C timing:</strong> Choice C should never feel like the "correct" answer — even when the player recognizes the pattern, the pull is still real. The Moon going still when named is a reward, not a punishment. The player should feel like they did something precise, not something virtuous.
+  </div>
+
+  <div class="writer-note">
+    <strong>On the Hermit:</strong> He does not appear as a character in this scene. No portrait. No dialogue header. Just the glow and the question. The visual design should reinforce this — he's ambient, not present.
+  </div>
+
+  <div class="box box-sage">
+    <div class="box-label">The line this scene must not cross</div>
+    <p style="font-size: 0.87rem;">At no point does the game tell the Fool that Friday night impulse shopping is bad. The Moon is not a villain. Choice A is not a failure. The scene just records what happened and asks one question. The player does all the meaning-making themselves.</p>
+  </div>
+</div>
+
+</div><!-- /page-wrap -->
+
+<div style="max-width: 800px; margin: 0 auto; padding: 0 1.5rem;">
+  <div class="footer">
+    <p>"You can't do this wrong."</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var sf = document.getElementById('starfield');
+  if (!sf) return;
+  var html = '';
+  for (var i = 0; i < 60; i++) {
+    var x = (Math.random() * 96 + 1).toFixed(1);
+    var y = (Math.random() * 96 + 1).toFixed(1);
+    var s = Math.random() < 0.6 ? 1 : Math.random() < 0.8 ? 1.5 : 2;
+    var o = (0.15 + Math.random() * 0.45).toFixed(2);
+    html += '<div class="star" style="left:' + x + '%;top:' + y + '%;width:' + s + 'px;height:' + s + 'px;opacity:' + o + '"></div>';
+  }
+  sf.insertAdjacentHTML('beforeend', html);
+})();
+</script>
+</body>
+</html>
