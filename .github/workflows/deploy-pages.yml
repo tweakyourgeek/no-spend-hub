@@ -101,7 +101,7 @@ jobs:
             if echo " $changed " | grep -q " $dir " || [ ! -d "_site/$app" ]; then
               echo "::group::Building $app"
               cd "$dir"
-              npm ci
+              if [ -f package-lock.json ]; then npm ci; else npm install; fi
               npm run build
               rm -rf "$REPO_ROOT/_site/$app"
               cp -r dist "$REPO_ROOT/_site/$app"
