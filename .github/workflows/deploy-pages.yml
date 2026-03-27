@@ -9,7 +9,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages-deploy
@@ -18,6 +20,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,6 +31,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Restore cached builds
+        uses: actions/cache@v4
+        with:
+          path: _site
+          key: pages-builds-${{ github.sha }}
+          restore-keys: |
+            pages-builds-
 
       - name: Detect changed apps
         id: detect
@@ -56,22 +69,31 @@ jobs:
             echo "No apps changed"
           fi
 
-      - name: Build changed apps
-        if: steps.detect.outputs.apps != ''
+      - name: Build apps
         run: |
           mkdir -p _site
-          for app in ${{ steps.detect.outputs.apps }}; do
-            echo "::group::Building $app"
-            cd "src/features/$app"
-            npm ci
-            npm run build
-            cp -r dist "../../../_site/$app"
-            cd ../../..
-            echo "::endgroup::"
+          changed="${{ steps.detect.outputs.apps }}"
+
+          for dir in src/features/*/; do
+            app=$(basename "$dir")
+            if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
+              # Build if: app changed, or not yet in cache
+              if echo " $changed " | grep -q " $app " || [ ! -d "_site/$app" ]; then
+                echo "::group::Building $app"
+                cd "src/features/$app"
+                npm ci
+                npm run build
+                rm -rf "../../../_site/$app"
+                cp -r dist "../../../_site/$app"
+                cd ../../..
+                echo "::endgroup::"
+              else
+                echo "Skipping $app (cached, unchanged)"
+              fi
+            fi
           done
 
       - name: Generate index page
-        if: steps.detect.outputs.apps != ''
         run: |
           cat > _site/index.html << 'INDEXEOF'
           <!DOCTYPE html>
@@ -125,10 +147,10 @@ jobs:
 
           touch _site/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        if: steps.detect.outputs.apps != ''
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
-          keep_files: true
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
