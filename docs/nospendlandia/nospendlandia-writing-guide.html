@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoSpendLandia — The Writer's Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --plum: #493751;
+  --mauve: #B375A0;
+  --sage: #A6C9BB;
+  --peach: #E8B4A0;
+  --lavender: #E0DAE7;
+  --cream: #F8F1F2;
+  --periwinkle: #A7AFC8;
+  --ink: #2d2035;
+  --sage-dark: #7aab99;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.page-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+/* HERO */
+.hero {
+  background: var(--plum);
+  padding: 4rem 2.5rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 60%, rgba(179,117,160,0.18) 0%, transparent 65%),
+              radial-gradient(ellipse at 75% 30%, rgba(166,201,187,0.12) 0%, transparent 55%);
+}
+.hero-eyebrow {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 300;
+  color: var(--cream);
+  line-height: 1.05;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0.5rem;
+}
+.hero-title em {
+  font-style: italic;
+  color: var(--peach);
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--lavender);
+  font-size: 1.05rem;
+  position: relative;
+  z-index: 2;
+  margin-top: 0.75rem;
+  opacity: 0.85;
+}
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--peach);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* NAV STRIP */
+.nav-strip {
+  background: var(--mauve);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.6rem 1rem;
+  margin-bottom: 3rem;
+}
+.nav-strip a {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  opacity: 0.85;
+  transition: opacity 0.15s, background 0.15s;
+}
+.nav-strip a:hover { opacity: 1; background: rgba(255,255,255,0.15); }
+
+/* SECTION */
+.section {
+  margin-bottom: 3.5rem;
+  scroll-margin-top: 2rem;
+}
+.section-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.5rem;
+}
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 400;
+  color: var(--plum);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+.section-title em { font-style: italic; color: var(--mauve); }
+.rule {
+  width: 32px;
+  height: 2.5px;
+  background: var(--sage);
+  margin-bottom: 1.4rem;
+}
+
+p { margin-bottom: 0.9rem; }
+p:last-child { margin-bottom: 0; }
+
+/* CALLOUT BOXES */
+.box {
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0;
+}
+.box-plum { background: var(--plum); color: var(--cream); }
+.box-plum .box-label { color: var(--sage); }
+.box-sage { background: #eef5f2; border-left: 3px solid var(--sage); }
+.box-lavender { background: var(--lavender); }
+.box-peach { background: #fdf2ec; border-left: 3px solid var(--peach); }
+.box-outline { border: 1.5px solid var(--mauve); background: #fdf8fc; }
+
+.box-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mauve);
+  margin-bottom: 0.6rem;
+}
+.box-plum .box-p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: white;
+}
+.box p { margin-bottom: 0.5rem; }
+.box p:last-child { margin-bottom: 0; }
+
+/* PULLQUOTE */
+.pullquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  color: var(--mauve);
+  text-align: center;
+  border-top: 1.5px solid var(--lavender);
+  border-bottom: 1.5px solid var(--lavender);
+  padding: 1.5rem 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.55;
+}
+
+/* CHARACTER CARDS */
+.char-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.char-card {
+  border-radius: 8px;
+  padding: 1.25rem 1.1rem;
+  position: relative;
+  overflow: hidden;
+}
+.char-card::after {
+  content: attr(data-roman);
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0.6rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  opacity: 0.07;
+  color: currentColor;
+  line-height: 1;
+  pointer-events: none;
+}
+.char-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.char-role {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.6rem;
+}
+.char-voice {
+  font-size: 0.83rem;
+  line-height: 1.6;
+}
+.char-sample {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* DIALOGUE ANATOMY */
+.dialogue-demo {
+  background: var(--plum);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+.dd-header {
+  background: rgba(0,0,0,0.2);
+  padding: 0.7rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.dd-portrait {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--mauve);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+.dd-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--peach);
+}
+.dd-title {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  opacity: 0.7;
+}
+.dd-body {
+  padding: 1.2rem 1.4rem;
+}
+.dd-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--cream);
+  line-height: 1.65;
+  margin-bottom: 1.1rem;
+}
+.dd-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dd-choice {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: var(--lavender);
+  cursor: pointer;
+  transition: background 0.15s;
+  position: relative;
+  padding-left: 2rem;
+}
+.dd-choice::before {
+  content: attr(data-key);
+  position: absolute;
+  left: 0.7rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: var(--mauve);
+  font-size: 0.9rem;
+}
+.dd-choice:hover { background: rgba(179,117,160,0.2); }
+.dd-choice.powered {
+  border-color: var(--sage);
+  background: rgba(166,201,187,0.12);
+  color: #c8e8df;
+}
+.dd-choice.powered::after {
+  content: '✦ pattern recognized';
+  position: absolute;
+  right: 0.7rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* RULES LIST */
+.rules-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1.2rem 0;
+}
+.rules-list li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+.rule-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--mauve);
+  flex-shrink: 0;
+  width: 1.6rem;
+  line-height: 1.4;
+}
+.rule-text { font-size: 0.9rem; line-height: 1.65; }
+.rule-text strong { color: var(--plum); font-weight: 700; }
+
+/* EXERCISE BLOCKS */
+.exercise {
+  background: var(--lavender);
+  border-radius: 8px;
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+.exercise-badge {
+  display: inline-block;
+  background: var(--mauve);
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  margin-bottom: 0.7rem;
+}
+.exercise-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--plum);
+  margin-bottom: 0.5rem;
+}
+.exercise p { font-size: 0.88rem; color: var(--ink); }
+.write-line {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(73,55,81,0.2);
+  height: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+/* PATTERN MECHANIC */
+.pattern-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.83rem;
+}
+.pattern-table th {
+  background: var(--plum);
+  color: var(--cream);
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.pattern-table td {
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--lavender);
+  vertical-align: top;
+  line-height: 1.55;
+}
+.pattern-table tr:nth-child(even) td { background: #fdf8fc; }
+.pattern-table tr:last-child td { border-bottom: none; }
+.p-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--plum);
+  white-space: nowrap;
+}
+
+/* TWO COL */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.2rem 0;
+}
+@media (max-width: 560px) { .two-col { grid-template-columns: 1fr; } }
+
+/* FOOTER */
+.footer {
+  background: var(--peach);
+  margin-top: 4rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+.footer p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--plum);
+  margin: 0;
+}
+
+/* DIVIDER */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--lavender);
+  margin: 2.5rem 0;
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero" id="starfield">
+  <p class="hero-eyebrow">Writing Guide</p>
+  <h1 class="hero-title">NoSpendLandia<br><em>for Writers</em></h1>
+  <p class="hero-sub">How to give nine tarot characters a voice worth listening to.</p>
+</div>
+
+<!-- NAV -->
+<div class="nav-strip">
+  <a href="#mental-model">The Mental Model</a>
+  <a href="#character-voices">Character Voices</a>
+  <a href="#anatomy">Dialogue Anatomy</a>
+  <a href="#choices">Writing Choices</a>
+  <a href="#pattern-mechanic">The Pattern Mechanic</a>
+  <a href="#rules">The Rules</a>
+  <a href="#exercises">Exercises</a>
+</div>
+
+<div class="page-wrap">
+
+<!-- MENTAL MODEL -->
+<div class="section" id="mental-model">
+  <p class="section-label">Section One</p>
+  <h2 class="section-title">The <em>Mental Model</em></h2>
+  <div class="rule"></div>
+
+  <p>Regular writing is a monologue. The reader receives it. Game writing is a conversation that branches — and your player is one of the speakers.</p>
+
+  <p>Here is what makes interactive fiction writing different from everything else you have written:</p>
+
+  <ul class="rules-list">
+    <li><span class="rule-num">1</span><span class="rule-text"><strong>You write the character. The player writes the Fool.</strong> You control nine voices. You do not control the tenth. The Fool's lines are your players' choices, so make the choices feel like real options a real person would actually reach for.</span></li>
+    <li><span class="rule-num">2</span><span class="rule-text"><strong>Every scene has a function.</strong> Not just a vibe. A scene introduces a pattern, tests a belief, delivers data, or gives the player a chance to practice something. Know which one before you write it.</span></li>
+    <li><span class="rule-num">3</span><span class="rule-text"><strong>Characters don't lecture.</strong> The Moon does not explain that late-night shopping is an emotional regulation strategy. The Moon just shows up with something shiny and says you deserve it. The player figures out the rest.</span></li>
+    <li><span class="rule-num">4</span><span class="rule-text"><strong>Consequences should feel true, not punishing.</strong> The Fool makes a "bad" choice and the Queen doesn't sigh. She hands over the data. That IS the brand inside the mechanic.</span></li>
+    <li><span class="rule-num">5</span><span class="rule-text"><strong>Short lines win.</strong> Dialogue on a screen is not prose in a book. If you can't say it in three sentences, cut until you can. Then cut one more.</span></li>
+  </ul>
+
+  <div class="box box-plum">
+    <div class="box-label">The Core Tension</div>
+    <p class="box-p">Every encounter in NoSpendLandia is a version of the same moment: something wants your money (or your attention, or your impulse) and you are deciding what to do with that. The magic is that "deciding" is the gameplay.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CHARACTER VOICES -->
+<div class="section" id="character-voices">
+  <p class="section-label">Section Two</p>
+  <h2 class="section-title">The <em>Nine Voices</em></h2>
+  <div class="rule"></div>
+
+  <p>Every character needs one thing you can't design around: a specific voice. Not a vibe. A voice. The way they build sentences. What they never say. The word they always reach for. Here is the starting brief for each — your job is to push further.</p>
+
+  <div class="char-grid">
+    <div class="char-card" data-roman="0" style="background:#fdf2ec; color:#3d2035;">
+      <div class="char-role">The Player</div>
+      <div class="char-name">The Fool</div>
+      <div class="char-voice">Curious. A little overwhelmed. Not naive — just new to looking. Asks real questions. Doesn't pretend they have it figured out.</div>
+      <div class="char-sample" style="border-top-color: rgba(73,55,81,0.15);">"Wait, I do that? I didn't realize I do that."</div>
+    </div>
+
+    <div class="char-card" data-roman="Q♦" style="background:#3d2f47; color:#E8B4A0;">
+      <div class="char-role" style="color:rgba(166,201,187,0.7);">The Guide</div>
+      <div class="char-name">Queen of Pentacles</div>
+      <div class="char-voice">Warm and direct. Never condescending. Has seen everything and is surprised by none of it. Hands you the map, doesn't carry you.</div>
+      <div class="char-sample">"That's data. Want to figure out what it means?"</div>
+    </div>
+
+    <div class="char-card" data-roman="I" style="background:#eef5f2; color:#2d4a42;">
+      <div class="char-role" style="color:var(--sage-dark);">The Toolkit</div>
+      <div class="char-name">The Magician</div>
+      <div class="char-voice">Practical and a little smug about it. "Everything you need is already on the table" is genuinely his personality, not a catchphrase. Efficient. Not warm.</div>
+      <div class="char-sample">"You already have what you need. You're just not looking at it."</div>
+    </div>
+
+    <div class="char-card" data-roman="XVIII" style="background:#2d1f3a; color:#d4b8e0;">
+      <div class="char-role" style="color:rgba(179,117,160,0.7);">The Tempter</div>
+      <div class="char-name">The Moon</div>
+      <div class="char-voice">Shows up at 11pm. Languid. Never sells — suggests. Knows you're tired and leads with it. Genuinely believes you deserve the thing. That's what makes her dangerous.</div>
+      <div class="char-sample">"You've been so good. One thing won't hurt."</div>
+    </div>
+
+    <div class="char-card" data-roman="XV" style="background:#e8f2ef; color:#1e3d34;">
+      <div class="char-role" style="color:var(--sage-dark);">The Shopkeeper</div>
+      <div class="char-name">The Devil</div>
+      <div class="char-voice">Cheerful. Frictionless. Not evil — just very, very good at his job. He's already holding exactly what you want when you walk in. That's not magic. That's data.</div>
+      <div class="char-sample">"Oh, I was just putting this aside for someone like you."</div>
+    </div>
+
+    <div class="char-card" data-roman="IX" style="background:#f5f0f8; color:#3d2035;">
+      <div class="char-role" style="color:var(--mauve);">The Journal</div>
+      <div class="char-name">The Hermit</div>
+      <div class="char-voice">Only asks questions. Never answers them. Zero agenda. Comfortable with silence. If you leave a sentence unfinished, The Hermit waits.</div>
+      <div class="char-sample">"What was happening right before you bought it?"</div>
+    </div>
+
+    <div class="char-card" data-roman="XVI" style="background:#4a2535; color:#f0d0dc;">
+      <div class="char-role" style="color:rgba(240,208,220,0.6);">The Unexpected Bill</div>
+      <div class="char-name">The Tower</div>
+      <div class="char-voice">Abrupt. No apology. Not cruel — just indifferent. Arrives mid-sentence. Doesn't explain himself. The chaos is the character.</div>
+      <div class="char-sample">"The car needs brakes. I don't make the schedule."</div>
+    </div>
+
+    <div class="char-card" data-roman="X" style="background:#faf5e8; color:#3d2800;">
+      <div class="char-role" style="color:#c19a30;">The Paycheck</div>
+      <div class="char-name">The Wheel</div>
+      <div class="char-voice">Chaotic neutral. Genuinely cheerful about things that shouldn't be cheerful. Payday energy and overdue bill energy in the same body. Gives and takes without preference.</div>
+      <div class="char-sample">"Great news and also bad news. In that order. Ready?"</div>
+    </div>
+
+    <div class="char-card" data-roman="XXI" style="background:#493751; color:#E8B4A0;">
+      <div class="char-role" style="color:rgba(166,201,187,0.8);">The Destination</div>
+      <div class="char-name">The World</div>
+      <div class="char-voice">Rare. Only speaks at the end of a quest. Short. Specific. Confirms what the player already knows about themselves. Never surprised. Always proud.</div>
+      <div class="char-sample">"You knew that one before I said it."</div>
+    </div>
+  </div>
+
+  <div class="box box-sage">
+    <div class="box-label">The test for any character line</div>
+    <p>Read it out loud. Could you tell who said it without the name? If you can, the voice is working. If it could be anyone, rewrite it.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ANATOMY -->
+<div class="section" id="anatomy">
+  <p class="section-label">Section Three</p>
+  <h2 class="section-title">Dialogue <em>Anatomy</em></h2>
+  <div class="rule"></div>
+
+  <p>Every encounter has the same basic structure. Character speaks. Player chooses. Something shifts. Here is what a well-built dialogue screen contains:</p>
+
+  <div class="dialogue-demo">
+    <div class="dd-header">
+      <div class="dd-portrait">☽</div>
+      <div>
+        <div class="dd-name">The Moon</div>
+        <div class="dd-title">11:47pm · The Moon's Apartment</div>
+      </div>
+    </div>
+    <div class="dd-body">
+      <div class="dd-text">"You've been staring at that cart for forty minutes. That's basically a decision already. You can think of clicking buy as just... finishing the thought."</div>
+      <div class="dd-choices">
+        <div class="dd-choice" data-key="A">She has a point. I'll just grab one thing.</div>
+        <div class="dd-choice" data-key="B">I want to, but I said I wouldn't this weekend.</div>
+        <div class="dd-choice powered" data-key="C">This is Rainbows. I'm not actually buying the thing. I'm buying the feeling of things being better.</div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size:0.82rem; color: var(--mauve); margin-top:-0.5rem;">↑ Choice C is powered because the player recognized their pattern. The teal border and ✦ tag appear when a pattern has been unlocked.</p>
+
+  <div class="two-col" style="margin-top:1.5rem;">
+    <div class="box box-lavender">
+      <div class="box-label">Character line should</div>
+      <p style="font-size:0.85rem;">Sound like that specific character. Present a real pull — not a cartoon temptation. Be 1-3 sentences. Leave room for the player to respond.</p>
+    </div>
+    <div class="box box-lavender">
+      <div class="box-label">Choices should</div>
+      <p style="font-size:0.85rem;">Feel like things a real person would actually reach for. Include one emotionally honest option, one practical option, and one pattern-recognition option when a pattern is in play.</p>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CHOICES -->
+<div class="section" id="choices">
+  <p class="section-label">Section Four</p>
+  <h2 class="section-title">Writing <em>Good Choices</em></h2>
+  <div class="rule"></div>
+
+  <p>This is where most interactive fiction falls apart. Bad choices are obvious. Good choices are actually hard to pick between — because they're all true at the same time.</p>
+
+  <div class="box box-plum">
+    <div class="box-label">The Structure That Works</div>
+    <p class="box-p">Give the player three real options: the thing they want to do, the thing they think they should do, and the thing they didn't know they were allowed to say out loud.</p>
+  </div>
+
+  <ul class="rules-list" style="margin-top:1.2rem;">
+    <li><span class="rule-num">A</span><span class="rule-text"><strong>The Pull.</strong> This is the choice that gives in. Write it sympathetically. It should feel completely reasonable. The Moon's logic is not wrong — you do deserve things. Just not at 11:47pm.</span></li>
+    <li><span class="rule-num">B</span><span class="rule-text"><strong>The Friction.</strong> This is the player asserting the commitment. Not heroic. Just honest. "I said I wouldn't." Short. Real. Doesn't need to explain itself.</span></li>
+    <li><span class="rule-num">C</span><span class="rule-text"><strong>The Pattern.</strong> This unlocks when the player has identified their Chasing Pattern. It names what's actually happening. This choice should only be available after the oracle card mechanic has fired — it's earned, not given.</span></li>
+  </ul>
+
+  <div class="pullquote">No choice should feel like the obviously correct answer.<br>If A is clearly bad and C is clearly good, rewrite A.
+  </div>
+
+  <div class="box box-peach">
+    <div class="box-label">On Consequences</div>
+    <p style="font-size:0.88rem;">When the player picks The Pull, they don't fail. They get data. The Queen might appear afterward: "Okay. What was happening right before that?" The Tower might show up a scene later. The Hermit writes it down. Nobody lectures. The world just continues with more information in it.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PATTERN MECHANIC -->
+<div class="section" id="pattern-mechanic">
+  <p class="section-label">Section Five</p>
+  <h2 class="section-title">The <em>Pattern Mechanic</em></h2>
+  <div class="rule"></div>
+
+  <p>This is the thing that makes NoSpendLandia different from every other money game. Pattern recognition is not a tutorial. It is the power system.</p>
+
+  <p>When the player draws their oracle card (the Chasing Patterns mechanic), they unlock a new tier of dialogue option in encounters that match their pattern. The character's behavior shifts. The conversation changes. Recognition has consequence.</p>
+
+  <table class="pattern-table">
+    <thead>
+      <tr>
+        <th>Pattern</th>
+        <th>What it looks like in an encounter</th>
+        <th>How the character reacts when named</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="p-name">Ambrosia</span></td>
+        <td>Chasing a feeling of abundance or indulgence. The thing is the experience, not the object.</td>
+        <td>The Moon loses her ease. Gets a little formal. "You don't need me to explain it to you."</td>
+      </tr>
+      <tr>
+        <td><span class="p-name">Rainbows</span></td>
+        <td>Buying the version of life that would exist if only this one thing arrived.</td>
+        <td>The Devil pauses mid-pitch. "You already know what happens when you get it home."</td>
+      </tr>
+      <tr>
+        <td><span class="p-name">Unicorns</span></td>
+        <td>Chasing something perfect that doesn't exist yet. One more search. One more tab.</td>
+        <td>The Magician actually smiles. "Everything you need is already on the table. You've checked."</td>
+      </tr>
+      <tr>
+        <td><span class="p-name">Stardust</span></td>
+        <td>Spending to feel connected or like someone. The item = belonging.</td>
+        <td>The Queen gets quieter. "What are you actually trying to get closer to?"</td>
+      </tr>
+      <tr>
+        <td><span class="p-name">Sunshine</span></td>
+        <td>Spending as celebration or reward. Earned it, deserve it, this counts.</td>
+        <td>The Wheel stops spinning. "You did earn something. Is this how you want to spend it?"</td>
+      </tr>
+      <tr>
+        <td><span class="p-name">Moonbeams</span></td>
+        <td>Chasing comfort or relief. Soothing something. The purchase is a hug in disguise.</td>
+        <td>The Moon goes still. "I know. I'm just not sure I'm actually what you need right now."</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="box box-sage">
+    <div class="box-label">How to write a pattern-powered choice</div>
+    <p style="font-size:0.88rem;">The player should feel like they're naming the spell to break it — not feeling judged for casting it. The line should feel like clarity, not accusation. "This is Rainbows" should feel like a relief, not a scolding.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- RULES -->
+<div class="section" id="rules">
+  <p class="section-label">Section Six</p>
+  <h2 class="section-title">The <em>Rules</em></h2>
+  <div class="rule"></div>
+
+  <p>These apply to every line, every scene, every character in NoSpendLandia. Tape them somewhere.</p>
+
+  <ul class="rules-list">
+    <li><span class="rule-num">1</span><span class="rule-text"><strong>No lectures.</strong> Characters can have opinions. They cannot deliver them as speeches. If a block of character dialogue could be a newsletter section, it's a lecture. Cut it.</span></li>
+    <li><span class="rule-num">2</span><span class="rule-text"><strong>No villains.</strong> The Moon is not the enemy. The Devil is doing his job beautifully. The Tower didn't pick you. Nobody in this world is trying to destroy the Fool. They all just have their own nature.</span></li>
+    <li><span class="rule-num">3</span><span class="rule-text"><strong>No shame in the consequences.</strong> If a player picks the "wrong" choice, the game continues with more data. That is all. Match the brand mantra to the mechanic.</span></li>
+    <li><span class="rule-num">4</span><span class="rule-text"><strong>No sentences that start with "You should."</strong> Not from the Queen. Not from the Hermit. Not from the World at the end of a quest. Should is a lecture wearing a costume.</span></li>
+    <li><span class="rule-num">5</span><span class="rule-text"><strong>The Hermit only asks questions.</strong> Not suggestions phrased as questions. Actual questions. "What was happening right before that?" is Hermit. "Have you considered that maybe you don't need it?" is not.</span></li>
+    <li><span class="rule-num">6</span><span class="rule-text"><strong>Humor is allowed. Snark is not.</strong> The Wheel can be funny. The Devil can be charming. Nobody gets to be condescending — not even affectionately.</span></li>
+    <li><span class="rule-num">7</span><span class="rule-text"><strong>Write the world warm.</strong> Magical realism, not dark fantasy. The colors are plum and sage and peach. The Moon's apartment has good lighting. The shopkeeper has nice handwriting. The Hermit's lantern is warm, not ominous.</span></li>
+  </ul>
+</div>
+
+<div class="divider"></div>
+
+<!-- EXERCISES -->
+<div class="section" id="exercises">
+  <p class="section-label">Section Seven</p>
+  <h2 class="section-title">Writing <em>Exercises</em></h2>
+  <div class="rule"></div>
+
+  <p>Start here. Not with a full scene. Just these.</p>
+
+  <div class="exercise">
+    <span class="exercise-badge">Exercise 01</span>
+    <div class="exercise-title">Three Lines for The Moon</div>
+    <p>The Moon shows up at 11pm. The player has been good all weekend. Write three things she could say — no setup, just the line. She's not threatening. She genuinely believes this.</p>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+    <p style="margin-top:0.6rem; font-style:italic; opacity:0.65; font-size:0.8rem;">This is the voice test. If these feel like The Moon, you have her.</p>
+  </div>
+
+  <div class="exercise">
+    <span class="exercise-badge">Exercise 02</span>
+    <div class="exercise-title">The Hermit's Five Questions</div>
+    <p>Write five questions The Hermit might ask after the player spends money they didn't plan to. No suggestions. No "have you considered." Just honest questions with no implied answer.</p>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+  </div>
+
+  <div class="exercise">
+    <span class="exercise-badge">Exercise 03</span>
+    <div class="exercise-title">The Devil's Opening Line</div>
+    <p>The player walks into the shop. The Devil already has exactly what they want. He's not sinister — he's delighted. Write his first line. It should be warm, slightly uncanny, and completely reasonable.</p>
+    <span class="write-line"></span>
+    <span class="write-line"></span>
+  </div>
+
+  <div class="exercise">
+    <span class="exercise-badge">Exercise 04</span>
+    <div class="exercise-title">A Full Three-Choice Beat</div>
+    <p>Write one dialogue beat: The Moon's line, then three choices for The Fool — The Pull, The Friction, and The Pattern (use Rainbows). The Pattern choice should feel like relief, not judgment.</p>
+    <p style="font-size:0.8rem; margin-top:0.5rem; font-weight:700; opacity:0.7;">The Moon:</p>
+    <span class="write-line"></span>
+    <p style="font-size:0.8rem; margin-top:0.5rem; font-weight:700; opacity:0.7;">A — The Pull:</p>
+    <span class="write-line"></span>
+    <p style="font-size:0.8rem; margin-top:0.25rem; font-weight:700; opacity:0.7;">B — The Friction:</p>
+    <span class="write-line"></span>
+    <p style="font-size:0.8rem; margin-top:0.25rem; font-weight:700; opacity:0.7;">C — The Pattern (Rainbows):</p>
+    <span class="write-line"></span>
+  </div>
+
+  <div class="box box-outline" style="margin-top:2rem;">
+    <div class="box-label">When you're stuck</div>
+    <p style="font-size:0.88rem;">Ask: what would this character never say? Write that. Then write the opposite. The truth is usually somewhere between those two and it's almost always more interesting than your first draft.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>"You can't do this wrong."</p>
+</div>
+
+</div><!-- /page-wrap -->
+
+<script>
+// Scatter stars in hero
+(function(){
+  var hero = document.getElementById('starfield');
+  if (!hero) return;
+  for (var i = 0; i < 55; i++) {
+    var s = document.createElement('div');
+    s.className = 'star';
+    var size = Math.random() < 0.6 ? 1 : Math.random() < 0.8 ? 2 : 3;
+    var colors = ['#E8B4A0','#A6C9BB','#E0DAE7','#B375A0'];
+    s.style.cssText = [
+      'width:'+size+'px',
+      'height:'+size+'px',
+      'left:'+(2+Math.random()*96)+'%',
+      'top:'+(2+Math.random()*96)+'%',
+      'opacity:'+(0.15+Math.random()*0.55),
+      'background:'+colors[Math.floor(Math.random()*colors.length)]
+    ].join(';');
+    hero.appendChild(s);
+  }
+})();
+</script>
+</body>
+</html>
