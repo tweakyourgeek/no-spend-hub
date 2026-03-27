@@ -118,4 +118,14 @@ export const keyframesCSS = `
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+@keyframes nsl-starTwinkle {
+  0%, 100% { opacity: inherit; }
+  50% { opacity: 0.02; }
+}
+@keyframes nsl-phoneFlicker {
+  0%, 100% { opacity: 0.8; }
+  30% { opacity: 0.6; }
+  50% { opacity: 0.9; }
+  70% { opacity: 0.5; }
+}
 `;
