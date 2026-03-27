@@ -5,11 +5,14 @@ on:
     branches: [main]
     paths:
       - 'src/features/**'
+      - 'nospendlandia/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages-deploy
@@ -18,6 +21,9 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,6 +32,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Restore cached builds
+        uses: actions/cache@v4
+        with:
+          path: _site
+          key: pages-builds-${{ github.sha }}
+          restore-keys: |
+            pages-builds-
 
       - name: Detect changed apps
         id: detect
@@ -40,11 +54,20 @@ jobs:
           fi
 
           changed=""
+          # Check sub-apps in src/features/
           for dir in src/features/*/; do
             app=$(basename "$dir")
             if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
               if [ "$BUILD_ALL" = "true" ] || git diff --name-only HEAD~1 HEAD | grep -q "^src/features/$app/"; then
-                changed="$changed $app"
+                changed="$changed src/features/$app"
+              fi
+            fi
+          done
+          # Check top-level apps
+          for dir in nospendlandia; do
+            if [ -d "$dir" ] && { [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; }; then
+              if [ "$BUILD_ALL" = "true" ] || git diff --name-only HEAD~1 HEAD | grep -q "^$dir/"; then
+                changed="$changed $dir"
               fi
             fi
           done
@@ -56,22 +79,40 @@ jobs:
             echo "No apps changed"
           fi
 
-      - name: Build changed apps
-        if: steps.detect.outputs.apps != ''
+      - name: Build apps
         run: |
           mkdir -p _site
-          for app in ${{ steps.detect.outputs.apps }}; do
-            echo "::group::Building $app"
-            cd "src/features/$app"
-            npm ci
-            npm run build
-            cp -r dist "../../../_site/$app"
-            cd ../../..
-            echo "::endgroup::"
+          changed="${{ steps.detect.outputs.apps }}"
+
+          # Collect all app dirs: src/features/* and top-level nospendlandia
+          app_dirs=""
+          for dir in src/features/*/; do
+            [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ] && app_dirs="$app_dirs $dir"
+          done
+          for dir in nospendlandia; do
+            [ -d "$dir" ] && { [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; } && app_dirs="$app_dirs $dir"
+          done
+
+          REPO_ROOT="$PWD"
+          for dir in $app_dirs; do
+            dir="${dir%/}"
+            app=$(basename "$dir")
+            # Build if: app changed, or not yet in cache
+            if echo " $changed " | grep -q " $dir " || [ ! -d "_site/$app" ]; then
+              echo "::group::Building $app"
+              cd "$dir"
+              npm ci
+              npm run build
+              rm -rf "$REPO_ROOT/_site/$app"
+              cp -r dist "$REPO_ROOT/_site/$app"
+              cd "$REPO_ROOT"
+              echo "::endgroup::"
+            else
+              echo "Skipping $app (cached, unchanged)"
+            fi
           done
 
       - name: Generate index page
-        if: steps.detect.outputs.apps != ''
         run: |
           cat > _site/index.html << 'INDEXEOF'
           <!DOCTYPE html>
@@ -108,9 +149,9 @@ jobs:
               <div class="grid">
           INDEXEOF
 
-          for dir in src/features/*/; do
+          for dir in src/features/*/ nospendlandia; do
             app=$(basename "$dir")
-            if [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; then
+            if [ -d "$dir" ] && { [ -f "$dir/vite.config.js" ] || [ -f "$dir/vite.config.ts" ]; }; then
               label=$(echo "$app" | sed 's/-/ /g; s/\b\(.\)/\u\1/g')
               echo "        <a href=\"/no-spend-hub/$app/\"><span class=\"app-name\">$label</span></a>" >> _site/index.html
             fi
@@ -125,10 +166,10 @@ jobs:
 
           touch _site/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        if: steps.detect.outputs.apps != ''
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
-          keep_files: true
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
