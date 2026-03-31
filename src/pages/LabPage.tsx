@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import LandingNav from "@/components/landing/LandingNav";
 import LandingFooter from "@/components/landing/LandingFooter";
 import ToolCard from "@/components/lab/ToolCard";
+import BetaWelcomeModal, { useBetaWelcome } from "@/components/BetaWelcomeModal";
 import { LAB_TOOLS } from "@/lib/lab-tools";
 
 const tiers = [
@@ -11,8 +13,12 @@ const tiers = [
 ];
 
 export default function LabPage() {
+  const { shouldShow } = useBetaWelcome();
+  const [showWelcome, setShowWelcome] = useState(shouldShow);
+
   return (
     <div className="min-h-screen bg-background">
+      <BetaWelcomeModal open={showWelcome} onDismiss={() => setShowWelcome(false)} />
       <LandingNav />
 
       {/* Header */}
