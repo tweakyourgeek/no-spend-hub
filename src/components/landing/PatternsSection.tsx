@@ -12,7 +12,7 @@ export default function PatternsSection() {
         <h2 className="font-display text-3xl md:text-4xl font-semibold mb-3" style={{ color: "#F8F1F2" }}>
           Six patterns. You're probably running at least two.
         </h2>
-        <p className="font-body text-base mb-10" style={{ color: "#A7AFC8" }}>
+        <p className="font-body text-base mb-10" style={{ color: "#C5CCDF" }}>
           Not labels. Not diagnoses. Just names for the things spending is doing for you right now.
         </p>
 
@@ -38,7 +38,7 @@ export default function PatternsSection() {
               </span>
               <p
                 className="font-body text-base md:text-sm mt-1"
-                style={{ color: expanded === p.name ? "#3B3B58" : "#B7BED2" }}
+                style={{ color: expanded === p.name ? "#3B3B58" : "#CDD3E3" }}
               >
                 {p.description}
               </p>
@@ -46,7 +46,7 @@ export default function PatternsSection() {
           ))}
         </div>
 
-        <p className="font-body text-base md:text-sm mt-8 text-center" style={{ color: "#A7AFC8" }}>
+        <p className="font-body text-base md:text-sm mt-8 text-center" style={{ color: "#C5CCDF" }}>
           The full Pattern Quiz is inside the challenge. It takes about 4 minutes and will absolutely make you go "oh."
         </p>
       </div>
