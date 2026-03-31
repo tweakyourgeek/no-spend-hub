@@ -1,11 +1,6 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/coming-soon/index.html" },
-    { "source": "/guides/:path*", "destination": "/index.html" },
-    { "source": "/lab/:path*", "destination": "/index.html" },
-    { "source": "/login", "destination": "/index.html" },
-    { "source": "/signup", "destination": "/index.html" },
-    { "source": "/app", "destination": "/index.html" }
+    { "source": "/((?!api|coming-soon).*)", "destination": "/index.html" }
   ],
   "git": {
     "deploymentEnabled": false
