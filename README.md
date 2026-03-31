@@ -44,12 +44,36 @@ npm run build
 
 ```
 src/
-├── components/   # UI components
-├── hooks/        # Custom React hooks
-├── lib/          # Utility functions
-├── pages/        # Route pages
-└── main.tsx      # App entry point
+├── pages/          # Route pages (Index, App, Lab, Patterns, Guides, Auth)
+├── components/     # Shared React components (landing, app, lab, ui)
+├── features/       # 22 standalone sub-apps (each independently buildable)
+├── data/           # Static content (chasing patterns)
+├── contexts/       # React context providers (Auth)
+├── hooks/          # Custom React hooks
+├── lib/            # Utilities, data helpers, tool registry
+└── main.tsx        # App entry point
+
+public/
+├── coming-soon/    # Static pre-launch landing page
+
+api/
+└── subscribe.js    # Vercel serverless function (MailerLite)
 ```
+
+## Environment Variables
+
+Copy `.env.example` and fill in values:
+
+```sh
+cp .env.example .env
+```
+
+Required for email subscription: `MAILERLITE_API_KEY`, `MAILERLITE_GROUP_ID`.
+
+## Deployment
+
+Hosted on Vercel. The root `vercel.json` sends all non-API routes to the React
+app via a catch-all rewrite. The `/api` directory contains serverless functions.
 
 ## License
 
